@@ -1,5 +1,12 @@
 {
   "dependencies": {
+    "be.technocite.openbrushmeasure": {
+      "version": "https://github.com/EloiStree/2025_05_20_MeasureOfTechnociteWithQuest3.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "33f46ce2451115d55d9de8477d0d665224b3a285"
+    },
     "com.unity.ai.navigation": {
       "version": "2.0.6",
       "depth": 0,
