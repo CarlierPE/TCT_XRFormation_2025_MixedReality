@@ -1,14 +1,14 @@
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
-using UnityEngine.SocialPlatforms.Impl;
+using TMPro;
 
 public class ScoreEndingShower : MonoBehaviour
 {
     public static ScoreEndingShower Instance;
+    private List<eMonitoredAction> historicActions = new List<eMonitoredAction>();
     
     public GameObject endPanel;
-    
+     private int Totalscore = 0;
     private Dictionary<eMonitoredAction, int> actionScores = new Dictionary<eMonitoredAction, int>()
      {
          { eMonitoredAction.OpenAlarmBox, 0 },
@@ -20,7 +20,26 @@ public class ScoreEndingShower : MonoBehaviour
          // etc.
      };
  //public SaveOnFile saveOnFile;
-    private int score = 0;
+ public void SaveActionScore(eMonitoredAction action)
+ {
+     historicActions.Add(action);
+     if (actionScores.TryGetValue(action, out int score))
+     {
+         Totalscore += score;
+         Debug.Log($"Enregistrement D'action en cours : {action} | Score : {score} | Totalscore : {Totalscore}");}
+     else
+     {
+         Debug.LogWarning($"Rien ne fut trouvé : {action}");};
+ }
+
+ public void AfficherLHistorique()
+ {
+     foreach (var action in historicActions)
+     {
+         Debug.Log($"Action : {action} |  score : {actionScores[action]}");
+     }
+     Debug.Log ($"FinalScore : {Totalscore}");
+ }
     
 
     private void Awake()
@@ -58,13 +77,13 @@ public class ScoreEndingShower : MonoBehaviour
     }
     public void AddScore(int points)
     {
-        score += points;
+        Totalscore += points;
        
     }
 
     public void SubtractScore(int amount)
     {
-        score = Mathf.Max(0, score - amount);
+        Totalscore = Mathf.Max(0, Totalscore - amount);
        
     }
 
