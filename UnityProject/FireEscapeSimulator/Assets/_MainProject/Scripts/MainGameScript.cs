@@ -18,7 +18,9 @@ public class MainGameScript : MonoBehaviour
     void Start()
     {
         _stateMachine = new StateMachine();
-        //TODO - Injecter dans chaque état son/ses gameobjects propres
+        //TODO - Inject the proper gameobjects/scripts/whatever into the game states
+        //I've put some gameobjects as examples, but we can pass whatever we need
+        //UI, scripts...
         _ = _stateMachine
                 .AddState(new StartedState(_startingObject))
                 .AddState(new UncalibratedState(_calibrationObject))
@@ -36,6 +38,61 @@ public class MainGameScript : MonoBehaviour
     private void Update()
     {
         _stateMachine.OnUpdate();
+    }
+
+    public void OnGameStarted()
+    {
+        _stateMachine.ChangeState(eGameStateID.Uncalibrated);
+    }
+
+    public void OnCalibrated()
+    {
+        _stateMachine.ChangeState(eGameStateID.Calibrated);
+    }
+
+    public void OnCalibrationConfirmed()
+    {
+        _stateMachine.ChangeState(eGameStateID.BeforeTutorial);
+    }
+
+    public void OnCalibrationInvalidated()
+    {
+        _stateMachine.ChangeState(eGameStateID.Uncalibrated);
+    }
+
+    public void OnTutorialStarting()
+    {
+        _stateMachine.ChangeState(eGameStateID.Tutorial);
+    }
+
+    public void OnTutorialEnding()
+    {
+        _stateMachine.ChangeState(eGameStateID.AfterTutorial);
+    }
+
+    public void OnTutorialEnded()
+    {
+        _stateMachine.ChangeState(eGameStateID.BeforeSimulation);
+    }
+
+    public void OnSimulationStarting()
+    {
+        _stateMachine.ChangeState(eGameStateID.Simulation);
+    }
+
+    public void OnSimulationEnding()
+    {
+        _stateMachine.ChangeState(eGameStateID.AfterSimulation);
+    }
+
+    public void OnSimulationEnded()
+    {
+        _stateMachine.ChangeState(eGameStateID.Debriefing);
+    }
+
+    public void OnGameReset()
+    {
+        _stateMachine.ChangeState(eGameStateID.Started);
     }
 }
 
