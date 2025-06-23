@@ -294,6 +294,10 @@ public class ScoreEndingShower : MonoBehaviour
         timeStarted = Time.time - timeStarted;
         timePanel.text = "Temps remit à zero\n";
 
+        timeStarted = Time.time - timeStarted;
+        timePanel.text = "Temps remit à zero\n";
+
+        saveOnFile.OnSave(GetGameDebriefing());
         endPanel.text = $"Partie terminée !\n" +
                         $"Temps écoulé : {timeStarted:F2} secondes\n" +
                         $"Score final : {Totalscore}\n" +
@@ -442,6 +446,9 @@ public class ScoreEndingShower : MonoBehaviour
     private void GetGameDebriefing()
     {
         _player = new GameDebriefing
+    private GameDebriefing GetGameDebriefing()
+    {
+        return new GameDebriefing
         {
             startGame = timeStarted,
             scoreEnd = Totalscore,
