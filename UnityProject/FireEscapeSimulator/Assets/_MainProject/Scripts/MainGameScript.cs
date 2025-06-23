@@ -8,18 +8,19 @@ public class MainGameScript : MonoBehaviour
     void Start()
     {
         _stateMachine = new StateMachine();
-        //TODO - Injecter dans chaque état son gameobject propre
-        //_ = _stateMachine.AddState(new AfterSimulationState())
-        //                .AddState(new AfterTutorialState())
-        //                .AddState(new BeforeSimulationState())
-        //                .AddState(new BeforeTutorialState())
-        //                .AddState(new CalibratedState())
-        //                .AddState(new DebriefingState())
-        //                .AddState(new SimulationState())
-        //                .AddState(new StartedState())
-        //                .AddState(new TutorialState())
-        //                .AddState(new UncalibratedState())
-        //                .SetInitialState(eGameStateID.Started);
+        //TODO - Injecter dans chaque état son/ses gameobjects propres
+        _ = _stateMachine
+                        .AddState(new StartedState())
+                        .AddState(new UncalibratedState())
+                        .AddState(new CalibratedState())
+                        .AddState(new BeforeTutorialState())
+                        .AddState(new TutorialState())
+                        .AddState(new AfterTutorialState())
+                        .AddState(new BeforeSimulationState())
+                        .AddState(new SimulationState())
+                        .AddState(new AfterSimulationState())
+                        .AddState(new DebriefingState())
+                        .SetInitialState(eGameStateID.Started);
     }
 
     private void Update()

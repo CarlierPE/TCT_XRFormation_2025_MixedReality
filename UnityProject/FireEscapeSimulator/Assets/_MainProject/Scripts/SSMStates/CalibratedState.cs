@@ -7,6 +7,6 @@ public class CalibratedState : GameState
 
     public override bool CanTransitionTo(eGameStateID nextState)
     {
-        throw new System.NotImplementedException();
+        return nextState == eGameStateID.Uncalibrated || nextState == eGameStateID.BeforeTutorial;
     }
 }

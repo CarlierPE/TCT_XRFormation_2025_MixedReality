@@ -7,6 +7,6 @@ public class SimulationState : GameState
 
     public override bool CanTransitionTo(eGameStateID nextState)
     {
-        throw new System.NotImplementedException();
+        return nextState == eGameStateID.AfterSimulation;
     }
 }
