@@ -153,6 +153,28 @@ public class ScoreEndingShower : MonoBehaviour
 
         ScoreLog newAction = new ScoreLog
         {
+            timeAction = Time.time - timeStarted,
+            action = (eMonitoredAction)scoreValue,
+            scoreValid = actionScores[(eMonitoredAction)scoreValue]
+        };
+        SaveActionScore(newAction);
+    }
+    
+    private void Start()
+    {
+        startGame.action.performed += ctx => StartGame();
+        endGame.action.performed += ctx => EndGame();
+        score.action.performed += ctx => AddScore();
+    }
+
+    public void AddScore()
+    {
+        int scoreValue = Random.Range(0, actionScores.Count); // Example score value
+
+        RegisterAction((eMonitoredAction)scoreValue);
+
+        ScoreLog newAction = new ScoreLog
+        {
             Instance = this;
         }
         else
@@ -374,6 +396,49 @@ public class ScoreEndingShower : MonoBehaviour
     private GameDebriefing GetGameDebriefing()
     {
         _player = new GameDebriefing
+        return new GameDebriefing
+        {
+            startGame = timeStarted,
+            scoreEnd = Totalscore,
+            scoreLogs = historicActions
+        };
+        
+        timeStarted = Time.time - timeStarted;
+        timePanel.text = "Temps remit à zero\n";
+
+        saveOnFile.OnSave(GetGameDebriefing());
+        endPanel.text = $"Partie terminée !\n" +
+                        $"Temps écoulé : {timeStarted:F2} secondes\n" +
+                        $"Score final : {Totalscore}\n" +
+                        "Historique des actions sauvegardé.\n" +
+                        "Appuyez sur 'Y' pour recommencer";
+        History();
+    }
+
+    public void History()
+    {
+        history.text = "Voici l'historique : \n";
+
+        List<GameDebriefing> historiq = saveOnFile.ReadOnFile(out string message);
+        history.text += message + "\n";
+
+        if (historiq.Count == 0 || historiq == null)
+        {
+            history.text += "Aucune partie n'a été jouée";
+            return;
+        }
+
+        history.text += $"Nombre de parties jouées : {historiq.Count}\n";
+
+        foreach (var item in historiq)
+        {
+            history.text += $"Temps du parcours : {item.startGame}, Score final : {item.scoreEnd}\n";
+        }
+
+    }
+
+    private GameDebriefing GetGameDebriefing()
+    {
         return new GameDebriefing
         {
             startGame = timeStarted,
