@@ -42,5 +42,10 @@ namespace FireSim.SSM
                 _currentState.OnEnter();
             }
         }
+
+        public void OnUpdate()
+        {
+            _currentState?.OnUpdate();
+        }
     }
 }
