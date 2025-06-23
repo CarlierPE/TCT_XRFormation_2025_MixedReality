@@ -7,6 +7,6 @@ public class DebriefingState : GameState
 
     public override bool CanTransitionTo(eGameStateID nextState)
     {
-        return nextState == eGameStateID.BeforeTutorial || nextState == eGameStateID.Started;
+        return nextState == eGameStateID.Started;
     }
 }
