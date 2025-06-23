@@ -20,11 +20,6 @@ public class MainGameScript : MonoBehaviour
                         .AddState(new UncalibratedState())
                         .SetInitialState(eGameStateID.Started);
     }
-
-    void Update()
-    {
-        _stateMachine.Update();
-    }
 }
 
 
