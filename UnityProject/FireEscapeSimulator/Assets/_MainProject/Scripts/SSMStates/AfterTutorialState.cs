@@ -7,6 +7,7 @@ public class AfterTutorialState : GameState
 
     public override bool CanTransitionTo(eGameStateID nextState)
     {
-        return nextState == eGameStateID.BeforeSimulation;
+        //TODO before tutorial or tutorial?
+        return nextState == eGameStateID.BeforeSimulation || nextState == eGameStateID.BeforeTutorial;
     }
 }
