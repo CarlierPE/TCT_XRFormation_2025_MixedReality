@@ -15,7 +15,19 @@ public class MainGameScript : MonoBehaviour
     [SerializeField] MonoBehaviour _simulationScript;
     [SerializeField] MonoBehaviour _afterSimulationScript;
     [SerializeField] MonoBehaviour _debriefingScript;
+    
+    private static MainGameScript _instance;
 
+    private void Awake()
+    {
+        if(_instance != null && _instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }    
+
+        _instance = this;
+    }
     void Start()
     {
         _stateMachine = new StateMachine();
