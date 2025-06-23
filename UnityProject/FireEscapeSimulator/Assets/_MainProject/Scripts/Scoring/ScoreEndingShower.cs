@@ -272,6 +272,7 @@ public class ScoreEndingShower : MonoBehaviour
         timeStarted = Time.time - timeStarted;
         timePanel.text = "Temps remit à zero\n";
 
+        saveOnFile.OnSave(GetGameDebriefing());
         endPanel.text = $"Partie terminée !\n" +
                         $"Temps écoulé : {timeStarted:F2} secondes\n" +
                         $"Score final : {Totalscore}\n" +
@@ -329,6 +330,8 @@ public class ScoreEndingShower : MonoBehaviour
         history.text = "Voici l'historique : \n";
 
         List<GameDebriefing> historiq = saveOnFile.GetAllDebriefings();
+        List<GameDebriefing> historiq = saveOnFile.ReadOnFile(out string message);
+        history.text += message + "\n";
 
         if (historiq == null || historiq.Count == 0)
         {
@@ -372,6 +375,7 @@ public class ScoreEndingShower : MonoBehaviour
     private GameDebriefing GetGameDebriefing()
     {
         _player = new GameDebriefing
+        return new GameDebriefing
         {
             startGame = timeStarted,
             scoreEnd = Totalscore,
