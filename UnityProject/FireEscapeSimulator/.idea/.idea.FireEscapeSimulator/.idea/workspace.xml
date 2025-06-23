@@ -5,6 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57306a0e-e791-4839-83d7-46ad4265f074" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/_MainProject/Scenes/Sandboxes/Shawn.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_MainProject/Scenes/Sandboxes/Shawn.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_MainProject/Scripts/Scoring/ShowingInformation.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_MainProject/Scripts/Scoring/ShowingInformation.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/Scripts/Scoring/ScoreEndingShower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MainProject/Scripts/Scoring/ScoreEndingShower.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FireEscapeSimulator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FireEscapeSimulator/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_MainProject/Scenes/Sandboxes/Shawn.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MainProject/Scenes/Sandboxes/Shawn.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FireEscapeSimulator_BurstDebugInformation_DoNotShip/tempburstlibs/arm64-v8a/lib_burst_generated.txt" beforeDir="false" afterPath="$PROJECT_DIR$/FireEscapeSimulator_BurstDebugInformation_DoNotShip/tempburstlibs/arm64-v8a/lib_burst_generated.txt" afterDir="false" />
