@@ -1,20 +1,21 @@
 using UnityEditor;
 using UnityEngine;
 using FireSim.SSM;
-using Ldm.Relocator;
-[RequireComponent(typeof(AnchorBasedRelocator))]
 public class MainGameScript : MonoBehaviour
 {
     private StateMachine _stateMachine;
     [Header("Main component of each game state")]
-    [SerializeField] GameObject _startingObject;
-    [SerializeField] GameObject _calibrationObject;
-    [SerializeField] GameObject _confirmCalibrationObject;
-    AnchorBasedRelocator _relocator;
-    private void Awake()
-    {
-        _relocator = GetComponent<AnchorBasedRelocator>();
-    }
+    [SerializeField] MonoBehaviour _startingScript;//will be the UI script Shawn is working on and not a GameObject
+    [SerializeField] MonoBehaviour _calibrationScript;//it needs more than a simple UI
+    [SerializeField] MonoBehaviour _confirmCalibrationScript;//will be UI script
+    [SerializeField] MonoBehaviour _beforeTutorialScript;//will maybe setup things, or do nothing but firing the next state
+    [SerializeField] MonoBehaviour _tutorialScript;
+    [SerializeField] MonoBehaviour _afterTutorialScript;
+    [SerializeField] MonoBehaviour _beforeSimulationScript;
+    [SerializeField] MonoBehaviour _simulationScript;
+    [SerializeField] MonoBehaviour _afterSimulationScript;
+    [SerializeField] MonoBehaviour _debriefingScript;
+
     void Start()
     {
         _stateMachine = new StateMachine();
@@ -22,16 +23,16 @@ public class MainGameScript : MonoBehaviour
         //I've put some gameobjects as examples, but we can pass whatever we need
         //UI, scripts...
         _ = _stateMachine
-                .AddState(new StartedState(_startingObject))
-                .AddState(new UncalibratedState(_calibrationObject))
-                .AddState(new CalibratedState(_confirmCalibrationObject))
-                .AddState(new BeforeTutorialState())
-                .AddState(new TutorialState())
-                .AddState(new AfterTutorialState())
-                .AddState(new BeforeSimulationState())
-                .AddState(new SimulationState())
-                .AddState(new AfterSimulationState())
-                .AddState(new DebriefingState())
+                .AddState(new StartedState(_startingScript))
+                .AddState(new UncalibratedState(_calibrationScript))
+                .AddState(new CalibratedState(_confirmCalibrationScript))
+                .AddState(new BeforeTutorialState(_beforeTutorialScript))
+                .AddState(new TutorialState(_tutorialScript))
+                .AddState(new AfterTutorialState(_afterTutorialScript))
+                .AddState(new BeforeSimulationState(_beforeSimulationScript))
+                .AddState(new SimulationState(_simulationScript))
+                .AddState(new AfterSimulationState(_afterSimulationScript))
+                .AddState(new DebriefingState(_debriefingScript))
                 .SetInitialState(eGameStateID.Started);
     }
 
