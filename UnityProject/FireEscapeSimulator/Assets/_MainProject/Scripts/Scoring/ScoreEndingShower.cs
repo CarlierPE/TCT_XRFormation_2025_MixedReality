@@ -29,6 +29,17 @@ public class ScoreEndingShower : MonoBehaviour
     private int _totalscore = 0;
     private SaveOnFile saveOnFile = new();
     private GameDebriefing _player;
+    private List<ScoreLog> historicActions = new List<ScoreLog>();
+
+    private float timeStarted;
+
+    public TextMeshProUGUI endPanel;
+    public TextMeshProUGUI timePanel;
+    public TextMeshProUGUI history;
+    bool isStartGame;
+    bool isfinishGame;
+    private int Totalscore = 0;
+    private SaveOnFile saveOnFile = new();
 
     private Dictionary<eMonitoredAction, int> actionScores = new Dictionary<eMonitoredAction, int>()
      {
@@ -83,6 +94,8 @@ public class ScoreEndingShower : MonoBehaviour
 
     private void Awake()
     {
+        saveOnFile.InitBased();
+        
         if (Instance == null)
         {
             Instance = this;
@@ -104,6 +117,31 @@ public class ScoreEndingShower : MonoBehaviour
 
 
         History();
+
+
+        History();
+    }
+
+    public void AddScore()
+    {
+        int scoreValue = Random.Range(0, actionScores.Count); // Example score value
+
+        RegisterAction((eMonitoredAction)scoreValue);
+
+        ScoreLog newAction = new ScoreLog
+        {
+            timeAction = Time.time - timeStarted,
+            action = (eMonitoredAction)scoreValue,
+            scoreValid = actionScores[(eMonitoredAction)scoreValue]
+        };
+        SaveActionScore(newAction);
+    }
+    
+    private void Start()
+    {
+        startGame.action.performed += ctx => StartGame();
+        endGame.action.performed += ctx => EndGame();
+        score.action.performed += ctx => AddScore();
     }
 
     public void AddScore()
@@ -145,6 +183,14 @@ public class ScoreEndingShower : MonoBehaviour
         {
             endPanel.text += "pas de valeur de score définie pour l'action";
         }
+            int points = actionScores[action];
+
+            AddScore(points);;
+        }
+        else
+        {
+            endPanel.text += "pas de valeur de score définie pour l'action";
+        }
     }
 
     public void StartGame()
@@ -166,6 +212,12 @@ public class ScoreEndingShower : MonoBehaviour
     }
 
     private void EndGame()
+        Totalscore = 0;
+        historicActions.Clear();
+        saveOnFile = new();
+    }
+
+    public void EndGame()
     {
         isStartGame = false;
         isfinishGame = true;
@@ -201,9 +253,29 @@ public class ScoreEndingShower : MonoBehaviour
         {
             EndGame();
         }
+        AfficherLHistorique();
+    }
+
+    public void AddScore(int points)
+    {
+        Totalscore += points;
     }
 
     public void ShowEndScreen()
+    {           
+        timeStarted = Time.time - timeStarted;
+        timePanel.text = "Temps remit à zero\n";
+
+        saveOnFile.OnSave(GetGameDebriefing());
+        endPanel.text = $"Partie terminée !\n" +
+                        $"Temps écoulé : {timeStarted:F2} secondes\n" +
+                        $"Score final : {Totalscore}\n" +
+                        "Historique des actions sauvegardé.\n" +
+                        "Appuyez sur 'Y' pour recommencer";
+        History();
+    }
+
+    public void History()
     {
         _player.startGame = Time.time - timeStarted;
         _player.scoreEnd = _totalscore;
@@ -263,6 +335,53 @@ public class ScoreEndingShower : MonoBehaviour
         }
 
         return history;
+    }
+        history.text = "Voici l'historique : \n";
+
+        List<GameDebriefing> historiq = saveOnFile.ReadOnFile(out string message);
+        history.text += message + "\n";
+
+        if (historiq.Count == 0 || historiq == null)
+        {
+            history.text += "Aucune partie n'a été jouée";
+            return;
+        }
+
+        history.text += $"Nombre de parties jouées : {historiq.Count}\n";
+
+        foreach (var item in historiq)
+        {
+            history.text += $"Temps du parcours : {item.startGame}, Score final : {item.scoreEnd}\n";
+        }
+
+    }
+
+    private GameDebriefing GetGameDebriefing()
+    {
+        return new GameDebriefing
+        {
+            startGame = timeStarted,
+            scoreEnd = Totalscore,
+            scoreLogs = historicActions
+        };
+        
+    }
+
+    private void Update()
+    {
+        if (isStartGame)
+        {
+            timePanel.text = $"Temps écoulé : {Time.time - timeStarted:F2} secondes";
+        }
+        else if (isfinishGame)
+        {
+            timePanel.text = "Partie terminée \n Appuyez sur 'Y' pour recommencer";
+            History();
+        }
+        else
+        {
+            timePanel.text = "Appuyez sur 'Y' pour commencer";
+        }
     }
 }
     
