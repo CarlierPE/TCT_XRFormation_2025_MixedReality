@@ -5,16 +5,16 @@ public class MainGameScript : MonoBehaviour
 {
     private StateMachine _stateMachine;
     [Header("Main component of each game state")]
-    [SerializeField] MonoBehaviour _startingScript;//will be the UI script Shawn is working on and not a GameObject
-    [SerializeField] MonoBehaviour _calibrationScript;//it needs more than a simple UI
-    [SerializeField] MonoBehaviour _confirmCalibrationScript;//will be UI script
-    [SerializeField] MonoBehaviour _beforeTutorialScript;//will maybe setup things, or do nothing but firing the next state
-    [SerializeField] MonoBehaviour _tutorialScript;
-    [SerializeField] MonoBehaviour _afterTutorialScript;
-    [SerializeField] MonoBehaviour _beforeSimulationScript;
-    [SerializeField] MonoBehaviour _simulationScript;
-    [SerializeField] MonoBehaviour _afterSimulationScript;
-    [SerializeField] MonoBehaviour _debriefingScript;
+    [SerializeField] StartScript _startingScript;//will be the UI script Shawn is working on and not a GameObject
+    [SerializeField] Calibration _calibrationScript;//it needs more than a simple UI
+    [SerializeField] CalibrationConfirmation _confirmCalibrationScript;//will be UI script
+    [SerializeField] BeforeTutorial _beforeTutorialScript;//will maybe setup things, or do nothing but firing the next state
+    [SerializeField] Tutorial _tutorialScript;
+    [SerializeField] AfterTutorial _afterTutorialScript;
+    [SerializeField] BeforeSimulation _beforeSimulationScript;
+    [SerializeField] Simulation _simulationScript;
+    [SerializeField] AfterSimulation _afterSimulationScript;
+    [SerializeField] Debriefing _debriefingScript;
     
     private static MainGameScript _instance;
 
@@ -27,13 +27,9 @@ public class MainGameScript : MonoBehaviour
         }    
 
         _instance = this;
-    }
-    void Start()
-    {
+
         _stateMachine = new StateMachine();
-        //TODO - Inject the proper gameobjects/scripts/whatever into the game states
-        //I've put some gameobjects as examples, but we can pass whatever we need
-        //UI, scripts...
+
         _ = _stateMachine
                 .AddState(new StartedState(_startingScript))
                 .AddState(new UncalibratedState(_calibrationScript))
@@ -46,6 +42,32 @@ public class MainGameScript : MonoBehaviour
                 .AddState(new AfterSimulationState(_afterSimulationScript))
                 .AddState(new DebriefingState(_debriefingScript))
                 .SetInitialState(eGameStateID.Started);
+
+    }
+
+    private void OnEnable()
+    {
+        _startingScript.OnSessionStart.AddListener(OnGameStarted);
+
+        _calibrationScript.OnCalibration.AddListener(OnCalibrated);
+        _confirmCalibrationScript.OnCalibrationValidated.AddListener(OnCalibrationConfirmed);
+        _confirmCalibrationScript.OnCalibrationFailed.AddListener(OnCalibrationInvalidated);
+
+        _beforeTutorialScript.OnTutorialStarting.AddListener(OnTutorialStarting);
+        _tutorialScript.OnTutorialValidated.AddListener(OnTutorialEnded);
+        _tutorialScript.OnTutorialFailed.AddListener(OnTutorialRepeat);
+        _afterTutorialScript.OnTutorialEnded.AddListener(OnTutorialEnded);
+
+        _beforeSimulationScript.OnSimulationStarting.AddListener(OnSimulationStarting);
+        _simulationScript.OnSimulationEnding.AddListener(OnSimulationEnding);
+        _afterSimulationScript.OnSimulationEnded.AddListener(OnSimulationEnded);
+
+        _debriefingScript.OnDebriefingExited.AddListener(OnGameReset);
+    }
+
+    private void OnDisable()
+    {
+        _calibrationScript.OnCalibration.RemoveListener(OnCalibrated);
     }
 
     private void Update()
@@ -81,6 +103,11 @@ public class MainGameScript : MonoBehaviour
     public void OnTutorialEnding()
     {
         _stateMachine.ChangeState(eGameStateID.AfterTutorial);
+    }
+
+    public void OnTutorialRepeat()
+    {
+        _stateMachine.ChangeState(eGameStateID.BeforeTutorial);
     }
 
     public void OnTutorialEnded()
