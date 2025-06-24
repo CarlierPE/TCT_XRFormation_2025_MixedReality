@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 /*
  * Ce script demande à l'utilisateur si la pièce est calibrée correctement.
@@ -9,6 +10,8 @@ using UnityEngine;
  * */
 public class CalibrationConfirmation : MonoBehaviour
 {
+    public UnityEvent OnCalibrationValidated;
+    public UnityEvent OnCalibrationFailed;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

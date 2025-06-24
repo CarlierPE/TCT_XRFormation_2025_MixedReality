@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 /*
  * Ce script est là pour éventuellement gérer "l'après tutorial" 
@@ -8,6 +9,7 @@ using UnityEngine;
  * */
 public class AfterTutorial : MonoBehaviour
 {
+    public UnityEvent OnTutorialEnded;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

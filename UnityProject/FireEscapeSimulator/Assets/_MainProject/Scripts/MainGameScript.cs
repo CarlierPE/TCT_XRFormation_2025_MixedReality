@@ -49,7 +49,22 @@ public class MainGameScript : MonoBehaviour
 
     private void OnEnable()
     {
+        _startingScript.OnSessionStart.AddListener(OnGameStarted);
+
         _calibrationScript.OnCalibration.AddListener(OnCalibrated);
+        _confirmCalibrationScript.OnCalibrationValidated.AddListener(OnCalibrationConfirmed);
+        _confirmCalibrationScript.OnCalibrationFailed.AddListener(OnCalibrationInvalidated);
+
+        _beforeTutorialScript.OnTutorialStarting.AddListener(OnTutorialStarting);
+        _tutorialScript.OnTutorialValidated.AddListener(OnTutorialEnded);
+        _tutorialScript.OnTutorialFailed.AddListener(OnTutorialRepeat);
+        _afterTutorialScript.OnTutorialEnded.AddListener(OnTutorialEnded);
+
+        _beforeSimulationScript.OnSimulationStarting.AddListener(OnSimulationStarting);
+        _simulationScript.OnSimulationEnding.AddListener(OnSimulationEnding);
+        _afterSimulationScript.OnSimulationEnded.AddListener(OnSimulationEnded);
+
+        _debriefingScript.OnDebriefingExited.AddListener(OnGameReset);
     }
 
     private void OnDisable()
@@ -90,6 +105,11 @@ public class MainGameScript : MonoBehaviour
     public void OnTutorialEnding()
     {
         _stateMachine.ChangeState(eGameStateID.AfterTutorial);
+    }
+
+    public void OnTutorialRepeat()
+    {
+        _stateMachine.ChangeState(eGameStateID.BeforeTutorial);
     }
 
     public void OnTutorialEnded()
