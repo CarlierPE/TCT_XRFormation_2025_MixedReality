@@ -69,6 +69,7 @@ public class Seb_TestSave : MonoBehaviour
         _fileNumber = "01"; // Start with file number 01
         _fileName = $"{_prefix}{_fileNumber}{_extension}";
         _PathCreatedFolder = $"{_rootPathSearch}/{_folderName}";
+        _fullFilePath = $"{_rootPath}/{_folderName}";
         CreateFolderIfNeeded();
         _saveDocument = $"{_fileName}{_fileNumber}{_fileExtension}";
         _rootFullPath = $"{_fullFilePath}/{_saveDocument}";
