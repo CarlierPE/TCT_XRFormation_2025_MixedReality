@@ -23,6 +23,10 @@ public class Seb_TestSave : MonoBehaviour
     private string _fileNumber;
     private string _PathCreatedFolder;
     private string _rootPathToSave;
+    private string _fileExtension = ".json";
+    private string _fullFilePath;
+    private string _rootFullPath;
+    private string _saveDocument;
 
     private int _numFile;
     private int _fileCount;
@@ -60,6 +64,10 @@ public class Seb_TestSave : MonoBehaviour
         _fileNumber = "01"; // Start with file number 01
         _fileName = $"{_prefix}{_fileNumber}{_extension}";
         _PathCreatedFolder = $"{_rootPathSearch}/{_folderName}";
+        _rootPath = Application.persistentDataPath;
+        _fileName = "Player_";
+        _fileNumber = "01"; // Start with file number 01
+        _fullFilePath = $"{_rootPath}/{_folderName}";
         CreateFolderIfNeeded();
         _saveDocument = $"{_fileName}{_fileNumber}{_fileExtension}";
         _rootFullPath = $"{_fullFilePath}/{_saveDocument}";
