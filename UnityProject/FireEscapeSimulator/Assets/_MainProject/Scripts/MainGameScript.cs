@@ -5,16 +5,16 @@ public class MainGameScript : MonoBehaviour
 {
     private StateMachine _stateMachine;
     [Header("Main component of each game state")]
-    [SerializeField] MonoBehaviour _startingScript;//will be the UI script Shawn is working on and not a GameObject
-    [SerializeField] MonoBehaviour _calibrationScript;//it needs more than a simple UI
-    [SerializeField] MonoBehaviour _confirmCalibrationScript;//will be UI script
-    [SerializeField] MonoBehaviour _beforeTutorialScript;//will maybe setup things, or do nothing but firing the next state
-    [SerializeField] MonoBehaviour _tutorialScript;
-    [SerializeField] MonoBehaviour _afterTutorialScript;
-    [SerializeField] MonoBehaviour _beforeSimulationScript;
-    [SerializeField] MonoBehaviour _simulationScript;
-    [SerializeField] MonoBehaviour _afterSimulationScript;
-    [SerializeField] MonoBehaviour _debriefingScript;
+    [SerializeField] StartScript _startingScript;//will be the UI script Shawn is working on and not a GameObject
+    [SerializeField] Calibration _calibrationScript;//it needs more than a simple UI
+    [SerializeField] CalibrationConfirmation _confirmCalibrationScript;//will be UI script
+    [SerializeField] BeforeTutorial _beforeTutorialScript;//will maybe setup things, or do nothing but firing the next state
+    [SerializeField] Tutorial _tutorialScript;
+    [SerializeField] AfterTutorial _afterTutorialScript;
+    [SerializeField] BeforeSimulation _beforeSimulationScript;
+    [SerializeField] Simulation _simulationScript;
+    [SerializeField] AfterSimulation _afterSimulationScript;
+    [SerializeField] Debriefing _debriefingScript;
     
     private static MainGameScript _instance;
 
@@ -46,6 +46,17 @@ public class MainGameScript : MonoBehaviour
                 .SetInitialState(eGameStateID.Started);
 
     }
+
+    private void OnEnable()
+    {
+        _calibrationScript.OnCalibration.AddListener(OnCalibrated);
+    }
+
+    private void OnDisable()
+    {
+        _calibrationScript.OnCalibration.RemoveListener(OnCalibrated);
+    }
+
     private void Update()
     {
         _stateMachine.OnUpdate();
