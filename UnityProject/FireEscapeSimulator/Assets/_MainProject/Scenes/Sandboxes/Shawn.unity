@@ -9292,7 +9292,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 147120112}
+  - component: {fileID: 147120114}
   - component: {fileID: 147120111}
   m_Layer: 0
   m_Name: GameObject
@@ -9316,7 +9316,7 @@ MonoBehaviour:
   mainCamera: {fileID: 273234010}
   canvasObject: {fileID: 845137670}
   offset: {x: 0, y: 0, z: 2}
---- !u!4 &147120112
+--- !u!4 &147120114
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -30505,7 +30505,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2107823586
 RectTransform:
   m_ObjectHideFlags: 0
@@ -31759,4 +31759,4 @@ SceneRoots:
   - {fileID: 176512705}
   - {fileID: 2033833922}
   - {fileID: 845137675}
-  - {fileID: 147120112}
+  - {fileID: 147120114}
