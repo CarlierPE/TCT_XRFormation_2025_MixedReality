@@ -29,9 +29,7 @@ public class MainGameScript : MonoBehaviour
         _instance = this;
 
         _stateMachine = new StateMachine();
-        //TODO - Inject the proper gameobjects/scripts/whatever into the game states
-        //I've put some gameobjects as examples, but we can pass whatever we need
-        //UI, scripts...
+
         _ = _stateMachine
                 .AddState(new StartedState(_startingScript))
                 .AddState(new UncalibratedState(_calibrationScript))
