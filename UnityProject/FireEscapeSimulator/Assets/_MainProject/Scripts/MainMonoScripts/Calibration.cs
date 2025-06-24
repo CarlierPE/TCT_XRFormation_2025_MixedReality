@@ -1,11 +1,15 @@
 using Ldm.Relocator;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(AnchorBasedRelocator))]
 public class Calibration : MonoBehaviour
 {
+    public UnityEvent OnCalibration;
     private AnchorBasedRelocator _relocator;
+    [SerializeField] GameObject _calibrationUI;
+    [SerializeField] GameObject _calibrationVisor;
     [SerializeField] InputActionReference _calibrationConfirmationAction;
     private Transform _camTransform;
     private void Awake()
@@ -17,6 +21,8 @@ public class Calibration : MonoBehaviour
     private void OnEnable()
     {
         _calibrationConfirmationAction.action.performed += OnCalibrationConfirmed;
+        _calibrationUI.SetActive(true);
+        _calibrationVisor.SetActive(true);
     }
 
     private Pose AnchorPose =>
@@ -28,10 +34,13 @@ public class Calibration : MonoBehaviour
     {
         
         _relocator.Relocate(AnchorPose);
+        OnCalibration?.Invoke();
     }
 
     private void OnDisable()
     {
         _calibrationConfirmationAction.action.performed -= OnCalibrationConfirmed;
+        _calibrationUI.SetActive(false);
+        _calibrationVisor.SetActive(false);
     }
 }
