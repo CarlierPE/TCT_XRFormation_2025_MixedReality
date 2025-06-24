@@ -7,5 +7,6 @@ public enum eMonitoredAction
    WalkIntoFire,
    CloseDoor,
    OpenDoor,
+   FinishLine
    //etc
 }

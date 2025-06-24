@@ -8,7 +8,8 @@ namespace FireSim.SSM
 
         public virtual void OnEnter() { }
         public virtual void OnExit() { }
-        public virtual void OnUpdate() { }
         public abstract bool CanTransitionTo(eGameStateID nextState);
+
+        public virtual void OnUpdate() { }
     }
 }
