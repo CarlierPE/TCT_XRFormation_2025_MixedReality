@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 /*
  * Ce script va gérer l'affichage du score à l'utilisateur
@@ -10,6 +11,7 @@ using UnityEngine;
  * */
 public class Debriefing : MonoBehaviour
 {
+    public UnityEvent OnDebriefingExited;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -21,4 +23,5 @@ public class Debriefing : MonoBehaviour
     {
         
     }
+
 }

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 /*
  * Script principal de la simulation
@@ -6,11 +7,11 @@ using UnityEngine;
  * - déclencher le départ et expansion du feu/fumée
  * - démarrer le timer et le scoring
  * - indiquer au scoring les actions prises par l'utilisateur
- * - indiquer que la simulation est terminée via un unityevent<bool>, true si succès, false si game over.
- *      sauf si on décide de gérer l'éventuel écran de mort ici? à voir
+ * - indiquer que la simulation est terminée via un unityevent
  * */
 public class Simulation : MonoBehaviour
 {
+    public UnityEvent OnSimulationEnding;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

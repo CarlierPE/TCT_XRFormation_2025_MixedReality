@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 /*
  * Ce script doit préparer le terrain le script simulation
  * Encore à déterminer
@@ -6,6 +7,7 @@ using UnityEngine;
  * */
 public class BeforeSimulation : MonoBehaviour
 {
+    public UnityEvent OnSimulationStarting;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

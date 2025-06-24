@@ -16,6 +16,7 @@ using UnityEngine.InputSystem;
 public class Calibration : MonoBehaviour
 {
     public UnityEvent OnCalibration;
+
     private AnchorBasedRelocator _relocator;
     [SerializeField] GameObject _calibrationUI;
     [SerializeField] GameObject _calibrationVisor;
