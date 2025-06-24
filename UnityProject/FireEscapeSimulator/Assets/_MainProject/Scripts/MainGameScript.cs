@@ -27,9 +27,7 @@ public class MainGameScript : MonoBehaviour
         }    
 
         _instance = this;
-    }
-    void Start()
-    {
+
         _stateMachine = new StateMachine();
         //TODO - Inject the proper gameobjects/scripts/whatever into the game states
         //I've put some gameobjects as examples, but we can pass whatever we need
@@ -46,8 +44,8 @@ public class MainGameScript : MonoBehaviour
                 .AddState(new AfterSimulationState(_afterSimulationScript))
                 .AddState(new DebriefingState(_debriefingScript))
                 .SetInitialState(eGameStateID.Started);
-    }
 
+    }
     private void Update()
     {
         _stateMachine.OnUpdate();
