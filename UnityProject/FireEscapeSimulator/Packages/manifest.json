@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "be.technocite.openbrushmeasure": "https://github.com/EloiStree/2025_05_20_MeasureOfTechnociteWithQuest3.git",
+    "com.kyrylokuzyk.primetween": "file:../Assets/Plugins/PrimeTween/internal/com.kyrylokuzyk.primetween.tgz",
     "com.meta.xr.sdk.all": "77.0.0",
     "com.unity.ai.navigation": "2.0.6",
     "com.unity.collab-proxy": "2.8.2",
