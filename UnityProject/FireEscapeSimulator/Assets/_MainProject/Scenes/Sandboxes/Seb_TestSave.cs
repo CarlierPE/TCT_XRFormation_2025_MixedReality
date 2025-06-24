@@ -21,6 +21,14 @@ public class Seb_TestSave : MonoBehaviour
     private string _folderName;
     private string _fileName;
     private string _fileNumber;
+    private string _fileExtension = ".json";
+    private string _fullFilePath;
+    private string _rootFullPath;
+    private string _saveDocument;
+
+    private int _numFile;
+    private int _fileCount;
+    private int _saveCount;
     private string _PathCreatedFolder;
     private string _rootPathToSave;
 
@@ -45,6 +53,11 @@ public class Seb_TestSave : MonoBehaviour
         _rootPath = Application.persistentDataPath;
         _fileName = "Player_";
         _fileNumber = "01"; // Start with file number 01
+        _fullFilePath = $"{_rootPath}/{_folderName}";
+        CreateFolderIfNeeded();
+        _saveDocument = $"{_fileName}{_fileNumber}{_fileExtension}";
+        _rootFullPath = $"{_fullFilePath}/{_saveDocument}";
+        if (File.Exists(_rootFullPath))
         _fileName = $"{_prefix}{_fileNumber}{_extension}";
         _PathCreatedFolder = $"{_rootPathSearch}/{_folderName}";
         CreateFolderIfNeeded();
@@ -123,6 +136,7 @@ public class Seb_TestSave : MonoBehaviour
         if(_rootFullPath == null)
             InitBased();
 
+        string[] fileJson = Directory.GetFiles(_fullFilePath);
         string[] fileJson = Directory.GetFiles(_PathCreatedFolder);
 
         if(fileJson.Length == 0 || fileJson == null)
@@ -138,6 +152,8 @@ public class Seb_TestSave : MonoBehaviour
         foreach (var file in fileJson)
         {
             string contenu = File.ReadAllText(file);
+            readSaved = JsonUtility.FromJson<GameDebriefing>(contenu);
+            _gameDebriefings.Add(readSaved);
 
             _gameDebriefings.Add(JsonUtility.FromJson<GameDebriefing>(contenu));
         }
@@ -163,6 +179,8 @@ public class Seb_TestSave : MonoBehaviour
         foreach (var file in fileJson)
         {
             string contenu = File.ReadAllText(file);
+            readSaved = JsonUtility.FromJson<GameDebriefing>(contenu);
+            _gameDebriefings.Add(readSaved);
 
             _gameDebriefings.Add(JsonUtility.FromJson<GameDebriefing>(contenu));
         }
