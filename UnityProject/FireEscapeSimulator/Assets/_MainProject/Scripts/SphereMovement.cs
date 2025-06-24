@@ -1,74 +1,97 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class SphereMovement : MonoBehaviour
 {
+    public UnityEvent _onPathCompleted;
 
+    [SerializeField] private List<Transform> _transformList = new();
+    [SerializeField] private float _speed = 5f;
+    [SerializeField] private GuideProvider _guideProvider;
+    [SerializeField] private Transform _follower;
+    [SerializeField] private float _distanceFollower = 3f;
 
-   
-    [SerializeField] List<Transform> _transformList = new List<Transform>();
-    [SerializeField]float _speed = 5f;
-    [SerializeField] GuideProvider _guideProvider;
+    private bool _firstStart = false;
     private int _currentWaypointIndex = 0;
     private Guide _guide;
-    private bool _start = false;
+    private bool fini = false;
+
     private void Start()
     {
         _guide = _guideProvider.GetGuide();
         _guide.gameObject.SetActive(true);
     }
 
+    private void Update()
+    {
+        float distance = Vector3.Distance(_guide.transform.position, _follower.position);
 
-   
-        void Update()
+        // Mode "regard" : une fois la fin atteinte, ou si le follower est trop loin
+        if (fini || distance >= _distanceFollower)
         {
-            if (_start == true)
+            ToLookPlayer();
+            return;
+        }
+
+        // Mode "suivi de waypoints"
+        if (!_firstStart) return;
+
+        if (_currentWaypointIndex < _transformList.Count)
+        {
+            Transform target = _transformList[_currentWaypointIndex];
+            _guide.transform.position = Vector3.MoveTowards(
+                _guide.transform.position, target.position, _speed * Time.deltaTime
+            );
+
+            if (Vector3.Distance(_guide.transform.position, target.position) < 0.1f)
             {
-                 Debug.Log("shit");
-                 if (_transformList.Count == 0) return;
-
-                 Transform target = _transformList[_currentWaypointIndex];
-                 _guide.transform.position = Vector3.MoveTowards(
-                 _guide.transform.position,
-                 target.position,
-                _speed * Time.deltaTime);
-
-                 if (Vector3.Distance(_guide.transform.position, target.position) < 0.1f)
-                 {
-                     _currentWaypointIndex++;
-                     if (_currentWaypointIndex >= _transformList.Count)
-                     {
-                         ResetAction();
-                     }
-                 }
+                _currentWaypointIndex++;
+                if (_currentWaypointIndex >= _transformList.Count)
+                {
+                    fini = true;
+                    _onPathCompleted?.Invoke();
+                    return;
+                }
             }
+
+            RotateTowards(target.position);
         }
-        public void StarteAction()
-        {
-             _start = true;
-        }
+    }
+
+    private void ToLookPlayer()
+    {
+        RotateTowards(_follower.position);
+    }
+
+    private void RotateTowards(Vector3 destination)
+    {
+        Vector3 dir = (destination - _guide.transform.position).normalized;
+        if (dir.sqrMagnitude < 0.0001f) return;
+        Quaternion rot = Quaternion.LookRotation(dir, Vector3.up);
+        _guide.transform.rotation = Quaternion.RotateTowards(
+            _guide.transform.rotation, rot, 360f * Time.deltaTime
+        );
+    }
+
+    public void StarteAction()
+    {
+        _firstStart = true;
+    }
+
     public void BreakAction()
     {
-        _start = false;
+        _firstStart = false;
     }
-    public void ResetAction()
-    {
-        
-        _guide.transform.position =  _transformList[0].position;
-        _currentWaypointIndex = 0;
-    }
-    void OnDrawGizmos()
-        {
-             if (_transformList == null || _transformList.Count < 2) return;
 
-             Gizmos.color = Color.green;
-             for (int i = 0; i < _transformList.Count - 1; i++)
-             {
-                 if (_transformList[i] != null && _transformList[i + 1] != null)
-                 {
+    private void OnDrawGizmos()
+    {
+        if (_transformList == null || _transformList.Count < 2) return;
+        Gizmos.color = Color.green;
+        for (int i = 0; i < _transformList.Count - 1; i++)
+        {
+            if (_transformList[i] != null && _transformList[i + 1] != null)
                 Gizmos.DrawLine(_transformList[i].position, _transformList[i + 1].position);
-                 }
-             }
         }
+    }
 }
