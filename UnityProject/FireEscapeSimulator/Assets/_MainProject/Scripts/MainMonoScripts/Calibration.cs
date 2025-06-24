@@ -12,10 +12,13 @@ public class Calibration : MonoBehaviour
     [SerializeField] GameObject _calibrationVisor;
     [SerializeField] InputActionReference _calibrationConfirmationAction;
     private Transform _camTransform;
+    private Transform _visorTransform;
     private void Awake()
     {
         _relocator = GetComponent<AnchorBasedRelocator>();
         _camTransform = Camera.main.transform;
+        _visorTransform = _calibrationVisor.transform;
+        _visorTransform.SetParent(_camTransform, false);
     }
 
     private void OnEnable()
