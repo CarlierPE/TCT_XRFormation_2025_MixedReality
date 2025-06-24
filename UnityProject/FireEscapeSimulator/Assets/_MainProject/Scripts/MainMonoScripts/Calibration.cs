@@ -2,6 +2,15 @@ using Ldm.Relocator;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
+/*
+ * Script qui permet à l'utilisateur de se calibrer
+ * Un écran lui donne les instructions
+ * - Se tenir debout sur les marques au sol
+ * - Viser une gommette rouge avec son regard/une bouboule blance
+ * - Cliquer sur la gâchette de la manette droite
+ * 
+ * Une relocalisation est alors effectuée, et un UnityEvent se déclenche
+ * */
 
 [RequireComponent(typeof(AnchorBasedRelocator))]
 public class Calibration : MonoBehaviour

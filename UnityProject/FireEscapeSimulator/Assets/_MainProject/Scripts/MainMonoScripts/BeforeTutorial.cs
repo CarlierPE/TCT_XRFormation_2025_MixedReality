@@ -1,5 +1,9 @@
 using UnityEngine;
 
+/*
+ * Ce script est prévu pour préparer le tutorial, les initialisation ou réinitialisation de ce dont le tutorial a besoin
+ * Il doit avoir un UnityEvent pour signaler qu'il a terminé son travail (même s'il n'a rien à faire)
+ */
 public class BeforeTutorial : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
