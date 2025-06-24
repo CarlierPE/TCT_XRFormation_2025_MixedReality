@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 /*
  * Script principal du tutorial.
@@ -9,6 +10,8 @@ using UnityEngine;
  */
 public class Tutorial : MonoBehaviour
 {
+    public UnityEvent OnTutorialValidated;
+    public UnityEvent OnTutorialFailed;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 /*
  *  Le but de ce script est d'afficher l'UI du tout premier menu quand on ouvre l'application
@@ -7,6 +8,7 @@ using UnityEngine;
  */
 public class StartScript : MonoBehaviour
 {
+    public UnityEvent OnSessionStart;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
