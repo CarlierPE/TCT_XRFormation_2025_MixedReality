@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="57306a0e-e791-4839-83d7-46ad4265f074" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FireEscapeSimulator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FireEscapeSimulator/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InteractionSDK.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InteractionSDK.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OculusRuntimeSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OculusRuntimeSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_MainProject/Scenes/Sandboxes/Shawn.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MainProject/Scenes/Sandboxes/Shawn.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FireEscapeSimulator_BurstDebugInformation_DoNotShip/tempburstlibs/arm64-v8a/lib_burst_generated.txt" beforeDir="false" afterPath="$PROJECT_DIR$/FireEscapeSimulator_BurstDebugInformation_DoNotShip/tempburstlibs/arm64-v8a/lib_burst_generated.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
@@ -21,6 +19,9 @@
       <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +67,7 @@
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.45f1\Editor\Unity.exe" />
@@ -130,6 +131,7 @@
       <workItem from="1750683531783" duration="1618000" />
       <workItem from="1750748259317" duration="2659000" />
       <workItem from="1750683531783" duration="1618000" />
+      <workItem from="1750748259317" duration="2659000" />
     </task>
     <servers />
   </component>
