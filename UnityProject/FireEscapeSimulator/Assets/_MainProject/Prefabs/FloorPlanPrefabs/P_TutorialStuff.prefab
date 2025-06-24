@@ -94,3 +94,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2270768207117254890, guid: 42acb11a17dd087449c56465c01ba94b, type: 3}
   m_PrefabInstance: {fileID: 8761410915177623999}
   m_PrefabAsset: {fileID: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
