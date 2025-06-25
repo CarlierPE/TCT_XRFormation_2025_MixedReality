@@ -6495,6 +6495,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: P_Calibration
       objectReference: {fileID: 0}
+    - target: {fileID: 8464064523756821938, guid: a5af11b23614d0744a1ec6cf8a3e7477, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
