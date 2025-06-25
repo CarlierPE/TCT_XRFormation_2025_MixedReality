@@ -5,22 +5,30 @@ using UnityEngine.Events;
 public class SphereMovement : MonoBehaviour
 {
     public UnityEvent _onPathCompleted;
-
+    public UnityEvent _onPathWait;
+    public UnityEvent _onPathContinue;
     [SerializeField] private List<Transform> _transformList = new();
     [SerializeField] private float _speed = 5f;
     [SerializeField] private GuideProvider _guideProvider;
     [SerializeField] private Transform _follower;
     [SerializeField] private float _distanceFollower = 3f;
-
+    [SerializeField] private Transform firstCube;
     private bool _firstStart = false;
     private int _currentWaypointIndex = 0;
     private Guide _guide;
     private bool fini = false;
-
+    private bool firstpos = true;
     private void Start()
     {
         _guide = _guideProvider.GetGuide();
         _guide.gameObject.SetActive(true);
+        if (firstCube != null)
+        {
+            _guide.transform.position = firstCube.position;
+            _currentWaypointIndex = 0;
+               
+        }
+
     }
 
     private void Update()
@@ -31,6 +39,7 @@ public class SphereMovement : MonoBehaviour
         if (fini || distance >= _distanceFollower)
         {
             ToLookPlayer();
+          
             return;
         }
 
@@ -43,7 +52,7 @@ public class SphereMovement : MonoBehaviour
             _guide.transform.position = Vector3.MoveTowards(
                 _guide.transform.position, target.position, _speed * Time.deltaTime
             );
-
+           
             if (Vector3.Distance(_guide.transform.position, target.position) < 0.1f)
             {
                 _currentWaypointIndex++;
@@ -53,18 +62,23 @@ public class SphereMovement : MonoBehaviour
                     _onPathCompleted?.Invoke();
                     return;
                 }
+               
+               
             }
-
+           
+              
             RotateTowards(target.position);
+           
+            
         }
     }
 
     private void ToLookPlayer()
     {
         RotateTowards(_follower.position);
-    }
-
-    private void RotateTowards(Vector3 destination)
+    }    
+   
+        private void RotateTowards(Vector3 destination)
     {
         Vector3 dir = (destination - _guide.transform.position).normalized;
         if (dir.sqrMagnitude < 0.0001f) return;
@@ -72,16 +86,20 @@ public class SphereMovement : MonoBehaviour
         _guide.transform.rotation = Quaternion.RotateTowards(
             _guide.transform.rotation, rot, 360f * Time.deltaTime
         );
+        _onPathWait?.Invoke();
     }
 
     public void StarteAction()
     {
         _firstStart = true;
+        _onPathContinue?.Invoke();
     }
 
     public void BreakAction()
     {
         _firstStart = false;
+        _onPathWait?.Invoke();
+        ToLookPlayer();
     }
 
     private void OnDrawGizmos()
