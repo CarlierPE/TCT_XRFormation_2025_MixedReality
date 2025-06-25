@@ -26,7 +26,7 @@ public class SphereMovement : MonoBehaviour
         {
             _guide.transform.position = firstCube.position;
             _currentWaypointIndex = 0;
-               
+
         }
 
     }
@@ -39,7 +39,7 @@ public class SphereMovement : MonoBehaviour
         if (fini || distance >= _distanceFollower)
         {
             ToLookPlayer();
-          
+
             return;
         }
 
@@ -52,7 +52,7 @@ public class SphereMovement : MonoBehaviour
             _guide.transform.position = Vector3.MoveTowards(
                 _guide.transform.position, target.position, _speed * Time.deltaTime
             );
-           
+
             if (Vector3.Distance(_guide.transform.position, target.position) < 0.1f)
             {
                 _currentWaypointIndex++;
@@ -62,23 +62,23 @@ public class SphereMovement : MonoBehaviour
                     _onPathCompleted?.Invoke();
                     return;
                 }
-               
-               
+
+
             }
-           
-              
+
+
             RotateTowards(target.position);
-           
-            
+
+
         }
     }
 
     private void ToLookPlayer()
     {
         RotateTowards(_follower.position);
-    }    
-   
-        private void RotateTowards(Vector3 destination)
+    }
+
+    private void RotateTowards(Vector3 destination)
     {
         Vector3 dir = (destination - _guide.transform.position).normalized;
         if (dir.sqrMagnitude < 0.0001f) return;
