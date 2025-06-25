@@ -13,9 +13,10 @@ public class SimulationSript : MonoBehaviour
     [SerializeField] List<GameObject> _prefabDoor;
     [SerializeField] GameObject _prefabPhone;
 
-    eMonitoredAction _actoin;
+    //eMonitoredAction _actoin;
     ScoreEndingShower _scoreGame;
     FireInstancate _fireInstancate;
+    Victory _victory;
     float _startGame;
     
 
@@ -38,36 +39,34 @@ public class SimulationSript : MonoBehaviour
             _timeExpension = 5f;
         }
 
-        _scoreGame = new ScoreEndingShower();
-        _fireInstancate = new FireInstancate();
+        _scoreGame = new();
+        _fireInstancate = new();
+        _scoreGame = new();
 
     }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     public void OnStartSenario()
     {
-        UpdateScoreSenario();
+        _fireInstancate.StartFire();
+        _scoreGame.InitScore();
     }
 
-    private void UpdateScoreSenario()
+    public void UpdateScoreSenario(ScoreLog score)
     {
+        float actionTime = Time.time - _startGame;
+        _victory.SetTime(actionTime);
+        _scoreGame.SaveActionScore(score, actionTime);
+    }
+     public void PauseSimulation()
+    {
+        _fireInstancate.PauseFire();
 
     }
 
-    public void OnEndSenario()
+    public void StopSimulation()
     {
+        _fireInstancate.ResetFire();
         
-
     }
 }

@@ -5,19 +5,16 @@ using UnityEngine.InputSystem;
 
 public class ScoreEndingShower : MonoBehaviour
 {
-    
+
+    const float _maxTime = 10f;
     public static ScoreEndingShower Instance;
     private List<ScoreLog> historicActions = new();
 
-    private float timeStarted;
-
-    bool isStartGame;
-    bool isfinishGame;
     private int _totalscore = 0;
     private SaveOnFile saveOnFile = new();
     private GameDebriefing _player;
 
-    private Dictionary<eMonitoredAction, int> actionScores = new Dictionary<eMonitoredAction, int>()
+    private Dictionary<eMonitoredAction, int> actionScores = new ()
      {
          { eMonitoredAction.OpenAlarmBox, 0 },
          { eMonitoredAction.PressAlarmButton, 300 },
@@ -28,7 +25,7 @@ public class ScoreEndingShower : MonoBehaviour
          // etc.
      };
 
-    private void Awake()
+    public void InitScore()
     {
         if (Instance == null)
         {
@@ -39,41 +36,18 @@ public class ScoreEndingShower : MonoBehaviour
             Destroy(gameObject);
         }
 
-        saveOnFile = new SaveOnFile();
+        saveOnFile = new();
         saveOnFile.InitBased();
 
         _player = new GameDebriefing();
-    }
-
-    private void Start()
-    {
-        
-    }
-
-    private void Update()
-    {
-        
-    }
-
-    public void StartGame()
-    {
-        isStartGame = true;
-        isfinishGame = false;
-        timeStarted = Time.time;
+    
         _totalscore = 0;
         historicActions.Clear();
 
         _player = new GameDebriefing(); 
     }
 
-    private void EndGame()
-    {
-        isStartGame = false;
-        isfinishGame = true;
-        ShowEndScreen();
-    }
-
-    public void SaveActionScore(ScoreLog action)
+    public void SaveActionScore(ScoreLog action, float elapsedTime)
     {
         if (actionScores.TryGetValue(action.action, out int score))
         {
@@ -82,15 +56,15 @@ public class ScoreEndingShower : MonoBehaviour
 
         historicActions.Add(action);
 
-        if (action.action == eMonitoredAction.FinishLine)
+        if (action.action == eMonitoredAction.FinishLine || elapsedTime == _maxTime)
         {
-            EndGame();
+            ShowEndScreen(elapsedTime);
         }
     }
 
-    public void ShowEndScreen()
+    public void ShowEndScreen(float elapsedTime)
     {
-        _player.startGame = Time.time - timeStarted;
+        _player.startGame = elapsedTime;
         _player.scoreEnd = _totalscore;
         _player.scoreLogs = new List<ScoreLog>(historicActions);
 
