@@ -33,12 +33,9 @@ public class ScoreEndingShower : MonoBehaviour
 
     private float timeStarted;
 
-    public TextMeshProUGUI endPanel;
-    public TextMeshProUGUI timePanel;
-    public TextMeshProUGUI history;
     bool isStartGame;
     bool isfinishGame;
-    private int Totalscore = 0;
+    private int _totalscore = 0;
     private SaveOnFile saveOnFile = new();
     private GameDebriefing _player;
 
@@ -95,8 +92,6 @@ public class ScoreEndingShower : MonoBehaviour
 
     private void Awake()
     {
-        saveOnFile.InitBased();
-        
         if (Instance == null)
         {
             Instance = this;
@@ -153,18 +148,22 @@ public class ScoreEndingShower : MonoBehaviour
 
         ScoreLog newAction = new ScoreLog
         {
-            timeAction = Time.time - timeStarted,
-            action = (eMonitoredAction)scoreValue,
-            scoreValid = actionScores[(eMonitoredAction)scoreValue]
-        };
-        SaveActionScore(newAction);
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+
+        saveOnFile = new SaveOnFile();
+        saveOnFile.InitBased();
+
+        _player = new GameDebriefing();
     }
-    
+
     private void Start()
     {
-        startGame.action.performed += ctx => StartGame();
-        endGame.action.performed += ctx => EndGame();
-        score.action.performed += ctx => AddScore();
+        
     }
 
     public void AddScore()
@@ -240,7 +239,7 @@ public class ScoreEndingShower : MonoBehaviour
         saveOnFile = new();
     }
 
-    public void EndGame()
+    private void EndGame()
     {
         isStartGame = false;
         isfinishGame = true;
@@ -281,7 +280,17 @@ public class ScoreEndingShower : MonoBehaviour
 
     public void AddScore(int points)
     {
-        Totalscore += points;
+        if (actionScores.TryGetValue(action.action, out int score))
+        {
+            _totalscore += score;
+        }
+
+        historicActions.Add(action);
+
+        if (action.action == eMonitoredAction.FinishLine)
+        {
+            EndGame();
+        }
     }
 
     public void ShowEndScreen()
@@ -303,14 +312,18 @@ public class ScoreEndingShower : MonoBehaviour
                         "Historique des actions sauvegardé.\n" +
                         "Appuyez sur 'Y' pour recommencer";
 
+    {
+        _player.startGame = Time.time - timeStarted;
+        _player.scoreEnd = _totalscore;
+        _player.scoreLogs = new List<ScoreLog>(historicActions);
 
         saveOnFile.SaveDocument(_player);
-        
-        History();
     }
 
-    public void History()
+    public string History()
     {
+        string history;
+        history = "Voici l'historique : \n";
         _player.startGame = Time.time - timeStarted;
         _player.scoreEnd = _totalscore;
         _player.scoreLogs = new List<ScoreLog>(historicActions);
@@ -380,15 +393,15 @@ public class ScoreEndingShower : MonoBehaviour
 
         if (historiq.Count == 0 || historiq == null)
         {
-            history.text += "Aucune partie n'a été jouée";
-            return;
+            history += "Aucune partie n'a été jouée";
+            return history;
         }
 
-        history.text += $"Nombre de parties jouées : {historiq.Count}\n";
+        history += $"Nombre de parties jouées : {historiq.Count}\n";
 
         foreach (var item in historiq)
         {
-            history.text += $"Temps du parcours : {item.startGame}, Score final : {item.scoreEnd}\n";
+            history += $"Temps du parcours : {item.startGame:F3}, Score final : {item.scoreEnd}\n";
         }
 
     }
@@ -472,6 +485,7 @@ public class ScoreEndingShower : MonoBehaviour
         {
             timePanel.text = "Appuyez sur 'Y' pour commencer";
         }
+        return history;
     }
 }
     
