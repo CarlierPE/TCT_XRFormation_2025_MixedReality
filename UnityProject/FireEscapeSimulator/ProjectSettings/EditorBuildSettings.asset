@@ -14,9 +14,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/_MainProject/Scenes/Sandboxes/Sandbox_Sebastien.unity
     guid: 67955951b2c6e344e8f343c01eeb7eaf
-  - enabled: 1
+  - enabled: 0
     path: Assets/_MainProject/Scenes/Sandboxes/Shawn.unity
-    guid: e0aec291e7c69e948ab9146fe5801c64
+    guid: 06111de21c6d7014fbb78302bfbcc7ef
+  - enabled: 1
+    path: Assets/_MainProject/Scenes/Sandboxes/SandBox_PE_Calibration.unity
+    guid: 2fe2e81de7ac017469bdbfc47b4529af
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 15e558c5dfe264d4e8e4d162795b1d9f, type: 2}
