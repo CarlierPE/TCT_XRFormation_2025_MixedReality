@@ -67,7 +67,8 @@ public class Seb_TestSave : MonoBehaviour
         _rootPath = Application.persistentDataPath;
         _fileName = "Player_";
         _fileNumber = "01"; // Start with file number 01
-        _fullFilePath = $"{_rootPath}/{_folderName}";
+        _fileName = $"{_prefix}{_fileNumber}{_extension}";
+        _PathCreatedFolder = $"{_rootPathSearch}/{_folderName}";
         CreateFolderIfNeeded();
         _saveDocument = $"{_fileName}{_fileNumber}{_fileExtension}";
         _rootFullPath = $"{_fullFilePath}/{_saveDocument}";
@@ -163,6 +164,8 @@ public class Seb_TestSave : MonoBehaviour
             InitBased();
 
         string[] fileJson = Directory.GetFiles(_fullFilePath);
+            InitBased();
+
         string[] fileJson = Directory.GetFiles(_PathCreatedFolder);
         if(_rootFullPath == null)
             InitBased();
@@ -185,6 +188,9 @@ public class Seb_TestSave : MonoBehaviour
             string contenu = File.ReadAllText(file);
             readSaved = JsonUtility.FromJson<GameDebriefing>(contenu);
             _gameDebriefings.Add(readSaved);
+        foreach (var file in fileJson)
+        {
+            string contenu = File.ReadAllText(file);
 
             _gameDebriefings.Add(JsonUtility.FromJson<GameDebriefing>(contenu));
             readSaved = JsonUtility.FromJson<GameDebriefing>(contenu);
@@ -214,6 +220,9 @@ public class Seb_TestSave : MonoBehaviour
             string contenu = File.ReadAllText(file);
             readSaved = JsonUtility.FromJson<GameDebriefing>(contenu);
             _gameDebriefings.Add(readSaved);
+        foreach (var file in fileJson)
+        {
+            string contenu = File.ReadAllText(file);
 
             _gameDebriefings.Add(JsonUtility.FromJson<GameDebriefing>(contenu));
             readSaved = JsonUtility.FromJson<GameDebriefing>(contenu);

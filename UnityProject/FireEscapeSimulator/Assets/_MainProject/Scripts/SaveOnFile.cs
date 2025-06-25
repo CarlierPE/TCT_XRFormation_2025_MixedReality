@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic; // Assuming you are using TextMeshPro for UI text display
 using System.IO;
 using UnityEngine;
@@ -46,6 +47,7 @@ public class SaveOnFile : MonoBehaviour
     private string _rootPathToSave;
     private string _PathCreatedFolder;
 
+
     private string _currentDate;
     private string _folderName;
     private string _fileName;
@@ -79,7 +81,14 @@ public class SaveOnFile : MonoBehaviour
 
     private List<GameDebriefing> _gameDebriefings;
 
-    private int _numFile; // Counter for file versions
+    private string _rootPathSearch;
+    private string _rootPathToSave;
+    private string _PathCreatedFolder;
+
+    private int _numFile = 1;
+    private int _fileCount = 0;
+
+    private List<GameDebriefing> _gameDebriefings;
 
     public void InitBased()
     {
@@ -243,43 +252,24 @@ public class SaveOnFile : MonoBehaviour
                 _numFile = _gameDebriefings.Count + 1;
         }
         else
-            _numFile = numberFiles++;
-    }
-
-    private void ChangedName(int numberFiles)
-    {
-        NumberFile(numberFiles);
-
-        _numberFile = _numFile.ToString("D2"); // Format number with leading zero
-        _fileFullName = $"{_fileName}{_numberFile}{_fileExtetion}"; // Update file name with new number
-        _fullFileDocument = Path.Combine(_fullFilePath, _fileFullName); // Update full file path with new file name
-
-        if (ResearchToFile(_fullFileDocument)) // Check if the file already exists
         {
-            ChangedName(_numFile); // Recursively change the name until a unique one is found
+            _numFile = 1;
         }
-    }
-
-    public void OnSave(GameDebriefing gameDebriefing)
-    {
-        SaveInFile(gameDebriefing, _fullFileDocument); // Save the game debriefing to file
-    }
-
-    public List<GameDebriefing> ReadOnFile(out string message)
-    {
-        _gameDebriefings = ReadFile(out message); // Read game debriefings from file
-
-        return _gameDebriefings; // Return the list of game debriefings
-    }
-
-
-    private List<GameDebriefing> ReadFile(out string message)
-    {
-        InitBased(); // Initialize the file paths and names 
         
-        string[] fichiersJson = Directory.GetFiles(_fullFilePath, "*.json", SearchOption.AllDirectories);
+        _rootPathToSave = GenerateFileName();
+    }
 
-        if (fichiersJson.Length == 0 || fichiersJson == null) // Check if any JSON files are found
+    private string GenerateFileName()
+    {
+        _fileNumber = _numFile.ToString("D2");
+        _fileName = $"{_prefix}{_fileNumber}{_extension}";
+        return Path.Combine(_PathCreatedFolder, _fileName);
+
+    }
+
+    public void SaveDocument(GameDebriefing saveFile)
+    {
+        if (saveFile == null)
         {
             message = "Aucun fichier trouv�."; // Set the message if no file is found
             return new List<GameDebriefing>(); // Return an empty list on error
@@ -287,15 +277,37 @@ public class SaveOnFile : MonoBehaviour
 
         message = "Fichier(s) trouv�(s) : " + fichiersJson.Length;
         GameDebriefing saveFile = new();
-
-        foreach (string fichier in fichiersJson)
-        {
-            string contenu = File.ReadAllText(fichier);
-            message += $"\n- {fichier}"; // Append the file name to the message
-            saveFile = JsonUtility.FromJson<GameDebriefing>(contenu); // Deserialize the JSON to GameDebriefing object
+            return;
         }
 
-        return new List<GameDebriefing> { saveFile }; // Return a list containing the debriefing
+        _rootPathToSave = GenerateFileName();
+        _numFile++; // pr�t pour la prochaine sauvegarde
+    }
+
+        string json = JsonUtility.ToJson(saveFile, true);
+
+        File.WriteAllText(_rootPathToSave, json);
+
+
+    private void LoadAllFiles()
+    {
+        _gameDebriefings.Clear();
+
+        string[] fichiersJson = Directory.GetFiles(_PathCreatedFolder, "*.json");
+
+        if (fichiersJson.Length > 0)
+        {
+            foreach (string fichier in fichiersJson)
+            {
+                string contenu = File.ReadAllText(fichier);
+                GameDebriefing data = JsonUtility.FromJson<GameDebriefing>(contenu);
+
+                if (data != null)
+                {
+                    _gameDebriefings.Add(data);
+                }
+            }
+        }
     }
 
     private void LoadAllFiles()
@@ -458,13 +470,11 @@ public class SaveOnFile : MonoBehaviour
         LoadAllFiles();
 
         return _gameDebriefings;
+    public List<GameDebriefing> GetAllDebriefings()
+    {
+        LoadAllFiles();
 
-        if (ResearchToFile(file)) // Check if the file already exists
-        {
-            ChangedName(_numFile); // Change the file name if it already exists
-        }
-
-        File.WriteAllText(file, json); // Write the JSON to the file
+        return _gameDebriefings;
     }
 
     public bool ResearchToFile(string fullFileToSave)
