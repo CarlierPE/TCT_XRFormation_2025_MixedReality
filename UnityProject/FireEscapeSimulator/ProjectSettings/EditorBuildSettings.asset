@@ -19,7 +19,7 @@ EditorBuildSettings:
     guid: bbc5ff96b21ef87478121188850737c5
     guid: 06111de21c6d7014fbb78302bfbcc7ef
     guid: 06111de21c6d7014fbb78302bfbcc7ef
-  - enabled: 1
+  - enabled: 0
     path: Assets/_MainProject/Scenes/Sandboxes/SandBox_PE_Calibration.unity
     guid: 2fe2e81de7ac017469bdbfc47b4529af
   m_configObjects:
