@@ -33,7 +33,6 @@ public class Seb_TestSave : MonoBehaviour
 
     private int _numFile;
     private int _fileCount;
-    private int _saveCount;
     private string _currentDate;
 
     private List<GameDebriefing> _gameDebriefings;
@@ -61,11 +60,11 @@ public class Seb_TestSave : MonoBehaviour
         _rootPath = Application.persistentDataPath;
         _fileName = "Player_";
         _fileNumber = "01"; // Start with file number 01
-        _fullFilePath = $"{_rootPath}/{_folderName}";
+        _fileName = $"{_prefix}{_fileNumber}{_extension}";
+        _PathCreatedFolder = $"{_rootPathSearch}/{_folderName}";
         CreateFolderIfNeeded();
-        _saveDocument = $"{_fileName}{_fileNumber}{_fileExtension}";
-        _rootFullPath = $"{_fullFilePath}/{_saveDocument}";
-        if (File.Exists(_rootFullPath))
+        _rootPathToSave = $"{_PathCreatedFolder}/{_fileName}";
+        if (File.Exists(_rootPathToSave))
         {
             ReadOnFolder();
 
@@ -143,7 +142,7 @@ public class Seb_TestSave : MonoBehaviour
         if(_rootFullPath == null)
             InitBased();
 
-        string[] fileJson = Directory.GetFiles(_fullFilePath);
+        string[] fileJson = Directory.GetFiles(_PathCreatedFolder);
 
         if(fileJson.Length == 0 || fileJson == null)
             return new List<GameDebriefing>();
