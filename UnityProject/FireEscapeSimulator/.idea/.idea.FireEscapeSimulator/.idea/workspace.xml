@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="57306a0e-e791-4839-83d7-46ad4265f074" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FireEscapeSimulator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FireEscapeSimulator/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/Scripts/animationDiaporama.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MainProject/Scripts/animationDiaporama.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +102,8 @@
       <workItem from="1750683531783" duration="3053000" />
       <workItem from="1750746520138" duration="127000" />
       <workItem from="1750748259317" duration="5966000" />
-      <workItem from="1750938118587" duration="3345000" />
+      <workItem from="1750938118587" duration="5075000" />
+      <workItem from="1750945664855" duration="3000" />
     </task>
     <servers />
   </component>

@@ -1,52 +1,67 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
 using System.Collections.Generic;
-using PrimeTween;
 
-public class SlideshowWithPrimeTween : MonoBehaviour
+public class SlideshowWithImageList : MonoBehaviour
 {
-    public RawImage displayImage;
-    public CanvasGroup canvasGroup; // Assign the CanvasGroup of the wrapper
-    public string imagesFolder = "Images";
+    public List<RawImage> imageList; // Assigne dans l’Inspector
     public float interval = 2f;
-    public float transitionDuration = 0.5f;
+    public float fadeDuration = 0.5f;
 
-    private List<Texture2D> textures = new List<Texture2D>();
     private int currentIndex = 0;
 
     void Start()
     {
-        LoadImages();
-        ShowNextImage();
+        // Masquer toutes les images sauf la première
+        for (int i = 0; i < imageList.Count; i++)
+        {
+            SetAlpha(imageList[i], i == 0 ? 1f : 0f);
+        }
+
+        if (imageList.Count > 1)
+            StartCoroutine(PlaySlideshow());
     }
 
-    void LoadImages()
+    IEnumerator PlaySlideshow()
     {
-        Object[] loadedImages = Resources.LoadAll(imagesFolder, typeof(Texture2D));
-        foreach (Object img in loadedImages)
+        while (true)
         {
-            textures.Add((Texture2D)img);
+            RawImage currentImage = imageList[currentIndex];
+            int nextIndex = (currentIndex + 1) % imageList.Count;
+            RawImage nextImage = imageList[nextIndex];
+
+            // Fade out current
+            yield return StartCoroutine(FadeImage(currentImage, 1f, 0f, fadeDuration));
+
+            // Fade in next
+            yield return StartCoroutine(FadeImage(nextImage, 0f, 1f, fadeDuration));
+
+            currentIndex = nextIndex;
+
+            yield return new WaitForSeconds(interval);
         }
     }
 
-    void ShowNextImage()
+    IEnumerator FadeImage(RawImage img, float from, float to, float duration)
     {
-        if (textures.Count == 0) return;
+        float elapsed = 0f;
+        Color c = img.color;
+        while (elapsed < duration)
+        {
+            c.a = Mathf.Lerp(from, to, elapsed / duration);
+            img.color = c;
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+        c.a = to;
+        img.color = c;
+    }
 
-        // Fade out
-        Tween.(canvasGroup, 1f, 0f, transitionDuration)
-            .OnComplete(() =>
-            {
-                // Change image
-                displayImage.texture = textures[currentIndex];
-                currentIndex = (currentIndex + 1) % textures.Count;
-
-                // Fade in
-                Tween.(canvasGroup, 0f, 1f, transitionDuration)
-                    .OnComplete(() =>
-                    {
-                        Tween.Delay(interval).OnComplete(() => ShowNextImage());
-                    });
-            });
+    void SetAlpha(RawImage img, float alpha)
+    {
+        Color c = img.color;
+        c.a = alpha;
+        img.color = c;
     }
 }
