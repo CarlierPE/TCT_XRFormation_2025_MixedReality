@@ -1,14 +1,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.InputSystem;
 
 public class ScoreEndingShower : MonoBehaviour
 {
-    public static ScoreEndingShower Instance;
-    private List<eMonitoredAction> historicActions = new List<eMonitoredAction>();
     
-    public GameObject endPanel;
-     private int Totalscore = 0;
+    public static ScoreEndingShower Instance;
+    private List<ScoreLog> historicActions = new();
+
+    private float timeStarted;
+
+    bool isStartGame;
+    bool isfinishGame;
+    private int _totalscore = 0;
+    private SaveOnFile saveOnFile = new();
+    private GameDebriefing _player;
+
     private Dictionary<eMonitoredAction, int> actionScores = new Dictionary<eMonitoredAction, int>()
      {
          { eMonitoredAction.OpenAlarmBox, 0 },
@@ -19,80 +27,98 @@ public class ScoreEndingShower : MonoBehaviour
          { eMonitoredAction.FinishLine, 2500 },
          // etc.
      };
- //public SaveOnFile saveOnFile;
- public void SaveActionScore(eMonitoredAction action)
- {
-     historicActions.Add(action);
-     if (actionScores.TryGetValue(action, out int score))
-     {
-         Totalscore += score;
-         Debug.Log($"Enregistrement D'action en cours : {action} | Score : {score} | Totalscore : {Totalscore}");}
-     else
-     {
-         Debug.LogWarning($"Rien ne fut trouvé : {action}");};
- }
-
- public void AfficherLHistorique()
- {
-     foreach (var action in historicActions)
-     {
-         Debug.Log($"Action : {action} |  score : {actionScores[action]}");
-     }
-     Debug.Log ($"FinalScore : {Totalscore}");
- }
-    
 
     private void Awake()
     {
-        endPanel.SetActive(false);
-
         if (Instance == null)
+        {
             Instance = this;
+        }
         else
+        {
             Destroy(gameObject);
+        }
+
+        saveOnFile = new SaveOnFile();
+        saveOnFile.InitBased();
+
+        _player = new GameDebriefing();
     }
-    
 
     private void Start()
     {
-       
-        if (endPanel != null)
-            endPanel.SetActive(false);
+        
     }
 
-    public void RegisterAction(eMonitoredAction action)
+    private void Update()
     {
-        if (actionScores.ContainsKey(action))
-        {
-            int points = actionScores[action];
-            if (points > 0)
-            AddScore(points);
-            else
-            SubtractScore(Mathf.Abs(points));
-        }
-        else
-        {
-            Debug.LogWarning("pas de valeur de score définie pour l'action");
-        }
-    }
-    public void AddScore(int points)
-    {
-        Totalscore += points;
-       
+        
     }
 
-    public void SubtractScore(int amount)
+    public void StartGame()
     {
-        Totalscore = Mathf.Max(0, Totalscore - amount);
-       
+        isStartGame = true;
+        isfinishGame = false;
+        timeStarted = Time.time;
+        _totalscore = 0;
+        historicActions.Clear();
+
+        _player = new GameDebriefing(); 
+    }
+
+    private void EndGame()
+    {
+        isStartGame = false;
+        isfinishGame = true;
+        ShowEndScreen();
+    }
+
+    public void SaveActionScore(ScoreLog action)
+    {
+        if (actionScores.TryGetValue(action.action, out int score))
+        {
+            _totalscore += score;
+        }
+
+        historicActions.Add(action);
+
+        if (action.action == eMonitoredAction.FinishLine)
+        {
+            EndGame();
+        }
     }
 
     public void ShowEndScreen()
     {
-        endPanel.SetActive(true);
-        
-           // SaveOnFile.save;
-        }
+        _player.startGame = Time.time - timeStarted;
+        _player.scoreEnd = _totalscore;
+        _player.scoreLogs = new List<ScoreLog>(historicActions);
+
+        saveOnFile.SaveDocument(_player);
     }
+
+    public string History()
+    {
+        string history;
+        history = "Voici l'historique : \n";
+
+        List<GameDebriefing> historiq = saveOnFile.GetAllDebriefings();
+
+        if (historiq == null || historiq.Count == 0)
+        {
+            history += "Aucune partie n'a été jouée";
+            return history;
+        }
+
+        history += $"Nombre de parties jouées : {historiq.Count}\n";
+
+        foreach (var item in historiq)
+        {
+            history += $"Temps du parcours : {item.startGame:F3}, Score final : {item.scoreEnd}\n";
+        }
+
+        return history;
+    }
+}
     
 
