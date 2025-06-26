@@ -13,16 +13,8 @@ public class ScoreEndingShower : MonoBehaviour
     private GameDebriefing _player;
     private List<ScoreLog> historicActions = new();
 
-    private Dictionary<eMonitoredAction, int> actionScores = new ()
-     {
-         { eMonitoredAction.OpenAlarmBox, 0 },
-         { eMonitoredAction.PressAlarmButton, 300 },
-         { eMonitoredAction.WalkIntoFire, -150 }, 
-         { eMonitoredAction.CloseDoor, 20 },
-         { eMonitoredAction.OpenDoor, -10 },
-         { eMonitoredAction.FinishLine, 2500 },
-         // etc.
-     };
+    private IScoreAction _scoreAction = new ();
+
 
     public void InitScore()
     {
@@ -54,7 +46,9 @@ public class ScoreEndingShower : MonoBehaviour
             action = action,
             scoreValid = 0 // Will be updated below
         };
-        if (actionScores.TryGetValue(action, out int score))
+
+        
+        if (_scoreAction.tableScoreAction.TryGetValue(action, out int score))
         {
             _totalscore += score;
             log.scoreValid = score;

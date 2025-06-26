@@ -1,16 +1,9 @@
 using UnityEngine;
 
-public class Elevator : MonoBehaviour
+public class Elevator : TriggerableByPlayer
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public void TouchElevator()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        OnTriggeredByPlayer(eMonitoredAction.TouchElevator);
     }
 }

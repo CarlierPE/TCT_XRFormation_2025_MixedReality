@@ -8,10 +8,11 @@ public enum eMonitoredAction
     CloseDoor,
     OpenDoor,
     FinishLine,
-    Extinguisher,
+    ExtinguisherTake,
     ExtinguisherPutOut,
     StairsUp,
     TakePhone,
     Appel,
+    TouchElevator,
     //etc
 }

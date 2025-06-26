@@ -1,16 +1,14 @@
 using UnityEngine;
 
-public class Door : MonoBehaviour
+public class Door : TriggerableByPlayer
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public void OpenDoor()
     {
-        
+        OnTriggeredByPlayer(eMonitoredAction.OpenDoor);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void CloseDoor()
     {
-        
+        OnTriggeredByPlayer(eMonitoredAction.CloseDoor);
     }
 }

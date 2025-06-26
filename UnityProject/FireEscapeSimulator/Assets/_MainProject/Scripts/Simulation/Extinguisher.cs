@@ -4,7 +4,7 @@ public class Extinguisher : TriggerableByPlayer
 {
     public void TrapExtinguisher()
     {
-        OnTriggeredByPlayer(eMonitoredAction.Extinguisher);
+        OnTriggeredByPlayer(eMonitoredAction.ExtinguisherTake);
     }
 
     public void PutOutTheFire()

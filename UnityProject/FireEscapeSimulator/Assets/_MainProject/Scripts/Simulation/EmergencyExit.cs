@@ -1,16 +1,9 @@
 using UnityEngine;
 
-public class EmergencyExit : MonoBehaviour
+public class EmergencyExit : TriggerableByPlayer
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public void EntryEmergnecyExit()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        OnTriggeredByPlayer(eMonitoredAction.FinishLine);
     }
 }
