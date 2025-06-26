@@ -5,8 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57306a0e-e791-4839-83d7-46ad4265f074" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/_MainProject/Scenes/Sandboxes/Shawn.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_MainProject/Scenes/Sandboxes/Shawn.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_MainProject/Scripts/Scoring/ShowingInformation.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_MainProject/Scripts/Scoring/ShowingInformation.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/Scripts/Scoring/ScoreEndingShower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MainProject/Scripts/Scoring/ScoreEndingShower.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FireEscapeSimulator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FireEscapeSimulator/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_MainProject/Scenes/Sandboxes/Shawn.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MainProject/Scenes/Sandboxes/Shawn.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FireEscapeSimulator_BurstDebugInformation_DoNotShip/tempburstlibs/arm64-v8a/lib_burst_generated.txt" beforeDir="false" afterPath="$PROJECT_DIR$/FireEscapeSimulator_BurstDebugInformation_DoNotShip/tempburstlibs/arm64-v8a/lib_burst_generated.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FireEscapeSimulator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FireEscapeSimulator/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/Scenes/Sandboxes/Shawn.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MainProject/Scenes/Sandboxes/Shawn.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FireEscapeSimulator_BurstDebugInformation_DoNotShip/tempburstlibs/arm64-v8a/lib_burst_generated.txt" beforeDir="false" afterPath="$PROJECT_DIR$/FireEscapeSimulator_BurstDebugInformation_DoNotShip/tempburstlibs/arm64-v8a/lib_burst_generated.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FireEscapeSimulator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FireEscapeSimulator/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" afterDir="false" />
@@ -35,6 +53,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/Scoring&quot;,
     &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -42,6 +61,17 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "feature/CanvasWorker",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -103,6 +133,10 @@
       <workItem from="1750418981457" duration="689000" />
       <workItem from="1750683531783" duration="3053000" />
       <workItem from="1750746520138" duration="127000" />
+      <workItem from="1750748259317" duration="5966000" />
+      <workItem from="1750683531783" duration="1618000" />
+      <workItem from="1750748259317" duration="2659000" />
+      <workItem from="1750683531783" duration="1618000" />
       <workItem from="1750748259317" duration="2659000" />
     </task>
     <servers />
