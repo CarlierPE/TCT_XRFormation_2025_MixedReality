@@ -33,7 +33,7 @@ public class PictoStep : TutorialStep
 
     private void pictoHidden()
     {
-        OnStepCompleted?.Invoke();
+        OnStepCompleted?.Invoke(true);
     }
 
     private void pictoConfirmed()

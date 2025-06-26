@@ -30,6 +30,6 @@ public class GuideSpawnStep : TutorialStep
 
     private void OnGuideSpawned()
     {
-        OnStepCompleted?.Invoke();
+        OnStepCompleted?.Invoke(true);
     }
 }

@@ -9,6 +9,8 @@ public class TutorialManager : MonoBehaviour
     [SerializeField] private List<TutorialStep>_tutorialStep  = new();
     private int _currentStepIndex;
     public UnityEvent OnLastStepCompleted;
+    public UnityEvent OnTutorialFailed;
+
     public void StartTutorial()
     {
         _currentStepIndex = 0;
@@ -31,18 +33,25 @@ public class TutorialManager : MonoBehaviour
 
         }
     }
-    public void OnCurrentStepcompleted()
+    public void OnCurrentStepcompleted(bool success)
     {
-        _currentStepIndex++;
-        if (_currentStepIndex < _tutorialStep.Count)
+        if (success)
         {
-            Debug.Log("index : " +  _currentStepIndex);
-            
-            _tutorialStep[_currentStepIndex].StartStep();
+            _currentStepIndex++;
+            if (_currentStepIndex < _tutorialStep.Count)
+            {
+                Debug.Log("index : " + _currentStepIndex);
+
+                _tutorialStep[_currentStepIndex].StartStep();
+            }
+            else
+            {
+                OnLastStepCompleted?.Invoke();
+            }
         }
         else
         {
-            OnLastStepCompleted?.Invoke();    
+            OnTutorialFailed?.Invoke();
         }
     }
 }
