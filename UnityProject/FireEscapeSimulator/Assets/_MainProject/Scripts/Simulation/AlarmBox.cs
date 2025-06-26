@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class AlarmBox : TriggerableByPlayer
 {
+    private readonly EmergencyLamp _lamp = new ();
+    [SerializeField] GameObject _prefab;
     public void OpenAlarmBox()
     {
         // Logic to open the alarm box
@@ -11,12 +13,14 @@ public class AlarmBox : TriggerableByPlayer
     }
 
     public void PressButtonAlarmBox()
-    {
+    { 
+        eMonitoredAction action = eMonitoredAction.PressAlarmButton;
         // Logic to press the button on the alarm box
-        OnTriggeredByPlayer(eMonitoredAction.PressAlarmButton);
+        OnTriggeredByPlayer(action);
         // You can add more functionality here, such as triggering an event or sound
-        GameObject prefab = GetComponent<GameObject>();
-        prefab.SetActive(false);
+        
+        _prefab.SetActive(false);
+        _lamp.RecivedSignal(action);
     }
 
 }

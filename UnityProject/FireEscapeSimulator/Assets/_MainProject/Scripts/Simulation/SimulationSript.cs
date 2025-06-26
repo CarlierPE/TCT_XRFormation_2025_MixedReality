@@ -18,6 +18,8 @@ public class SimulationSript : MonoBehaviour
     ScoreEndingShower _scoreGame;
     FireInstancate _fireInstancate;
 
+    TriggerableByPlayer _triggerableByPlayer;
+
     float _startGame;
     float _timePause;
     bool _isPaused;

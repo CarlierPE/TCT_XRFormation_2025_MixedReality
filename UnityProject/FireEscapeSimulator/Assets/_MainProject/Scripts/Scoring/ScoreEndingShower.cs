@@ -11,9 +11,8 @@ public class ScoreEndingShower : MonoBehaviour
     private int _totalscore = 0;
     private SaveOnFile saveOnFile = new();
     private GameDebriefing _player;
-    private List<ScoreLog> historicActions = new();
 
-    private IScoreAction _scoreAction = new ();
+    private readonly ScoreAction _scoreAction = new ();
 
 
     public void InitScore()
@@ -30,17 +29,16 @@ public class ScoreEndingShower : MonoBehaviour
         saveOnFile = new();
         saveOnFile.InitBased();
 
-        _player = new GameDebriefing();
+        _player = new();
     
         _totalscore = 0;
 
-        _player = new GameDebriefing();
-        historicActions.Clear();
+        _player = new();
     }
 
     public void SaveActionScore(eMonitoredAction action, float timeAction)
     {
-        ScoreLog log = new ScoreLog
+        ScoreLog log = new()
         {
             timeAction = timeAction,
             action = action,
@@ -54,13 +52,12 @@ public class ScoreEndingShower : MonoBehaviour
             log.scoreValid = score;
         }
 
-        historicActions.Add(log);
+        _player.scoreLogs.Add(log);
 
         if (action == eMonitoredAction.FinishLine)
         {
             _player.timeGame = timeAction;
             _player.scoreEnd = _totalscore;
-            _player.scoreLogs = historicActions;
 
             ShowEndScreen();
         }
