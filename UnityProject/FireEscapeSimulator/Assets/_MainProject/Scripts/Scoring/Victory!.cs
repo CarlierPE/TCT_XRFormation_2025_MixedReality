@@ -6,14 +6,11 @@ using UnityEngine;
 public class Victory : TriggerableByPlayer
 {
     public ScoreEndingShower TheEndingShower;
-    private float _endTime;
 
     void OnTriggerEnter(Collider other)
     {
         base.OnTriggeredByPlayer(eMonitoredAction.FinishLine);
-        TheEndingShower.ShowEndScreen(_endTime);
+        TheEndingShower.ShowEndScreen();
     }
 
-    public void SetTime(float time)
-    { _endTime = time; }
 }

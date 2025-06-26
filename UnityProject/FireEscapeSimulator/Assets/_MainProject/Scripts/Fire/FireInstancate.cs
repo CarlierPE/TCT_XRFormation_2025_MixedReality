@@ -17,12 +17,7 @@ public class FireInstancate : MonoBehaviour
     {
         _fireCount = _firePrefab.Count;
     }
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
+    
     // Update is called once per frame
     void Update()
     {
@@ -105,7 +100,7 @@ public class FireInstancate : MonoBehaviour
         _fireCount = _firePrefab.Count;
     }
 
-    public void SetInterval(int interval)
+    public void SetInterval(float interval)
     {
         _spawnInterval = interval;
     }

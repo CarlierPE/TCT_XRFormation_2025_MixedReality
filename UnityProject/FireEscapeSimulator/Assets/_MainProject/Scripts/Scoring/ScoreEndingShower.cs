@@ -6,13 +6,12 @@ using UnityEngine.InputSystem;
 public class ScoreEndingShower : MonoBehaviour
 {
 
-    const float _maxTime = 10f;
     public static ScoreEndingShower Instance;
-    private List<ScoreLog> historicActions = new();
 
     private int _totalscore = 0;
     private SaveOnFile saveOnFile = new();
     private GameDebriefing _player;
+    private List<ScoreLog> historicActions = new();
 
     private Dictionary<eMonitoredAction, int> actionScores = new ()
      {
@@ -42,32 +41,39 @@ public class ScoreEndingShower : MonoBehaviour
         _player = new GameDebriefing();
     
         _totalscore = 0;
-        historicActions.Clear();
 
-        _player = new GameDebriefing(); 
+        _player = new GameDebriefing();
+        historicActions.Clear();
     }
 
-    public void SaveActionScore(ScoreLog action, float elapsedTime)
+    public void SaveActionScore(eMonitoredAction action, float timeAction)
     {
-        if (actionScores.TryGetValue(action.action, out int score))
+        ScoreLog log = new ScoreLog
+        {
+            timeAction = timeAction,
+            action = action,
+            scoreValid = 0 // Will be updated below
+        };
+        if (actionScores.TryGetValue(action, out int score))
         {
             _totalscore += score;
+            log.scoreValid = score;
         }
 
-        historicActions.Add(action);
+        historicActions.Add(log);
 
-        if (action.action == eMonitoredAction.FinishLine || elapsedTime == _maxTime)
+        if (action == eMonitoredAction.FinishLine)
         {
-            ShowEndScreen(elapsedTime);
+            _player.timeGame = timeAction;
+            _player.scoreEnd = _totalscore;
+            _player.scoreLogs = historicActions;
+
+            ShowEndScreen();
         }
     }
 
-    public void ShowEndScreen(float elapsedTime)
+    public void ShowEndScreen()
     {
-        _player.startGame = elapsedTime;
-        _player.scoreEnd = _totalscore;
-        _player.scoreLogs = new List<ScoreLog>(historicActions);
-
         saveOnFile.SaveDocument(_player);
     }
 
@@ -88,11 +94,9 @@ public class ScoreEndingShower : MonoBehaviour
 
         foreach (var item in historiq)
         {
-            history += $"Temps du parcours : {item.startGame:F3}, Score final : {item.scoreEnd}\n";
+            history += $"Temps du parcours : {item.timeGame:F3}, Score final : {item.scoreEnd}\n";
         }
 
         return history;
     }
 }
-    
-
