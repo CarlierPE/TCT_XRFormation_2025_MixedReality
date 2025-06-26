@@ -13,7 +13,7 @@ public class ScoreEndingShower : MonoBehaviour
     private GameDebriefing _player;
     private List<ScoreLog> historicActions = new();
 
-    private IScoreAction _scoreAction = new IScoreAction();
+    //private IScoreAction _scoreAction = new IScoreAction();
 
     public void InitScore()
     {
@@ -46,11 +46,11 @@ public class ScoreEndingShower : MonoBehaviour
             scoreValid = 0 // Will be updated below
         };
 
-        if (_scoreAction.tableScoreAction.TryGetValue(action, out int score))
-        {
-            _totalscore += score;
-            log.scoreValid = score;
-        }
+        //if (_scoreAction.tableScoreAction.TryGetValue(action, out int score))
+        //{
+        //    _totalscore += score;
+        //    log.scoreValid = score;
+        //}
 
         historicActions.Add(log);
 
