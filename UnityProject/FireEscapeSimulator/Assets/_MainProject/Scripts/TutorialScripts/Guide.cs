@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 
 public class Guide : MonoBehaviour
 {
@@ -12,6 +13,9 @@ public class Guide : MonoBehaviour
     [SerializeField] Transform _pictoContainer;
     private TutorialPicto _currentPicto;
 
+    public UnityEvent OnSpawnComplete;
+    public UnityEvent OnPictoHidden;
+
     private void Update()
     {
         if (_currentPicto == null)
@@ -22,6 +26,11 @@ public class Guide : MonoBehaviour
     public void Spawn(Vector3 spawnPosition, Transform lookAtTarget)
     {
         //se positionne à la position en regardant à lookattarget et joue son animation de spawn
+        transform.position = spawnPosition;
+        transform.LookAt(lookAtTarget, Vector3.up);
+        //jouer animation ici
+        //...
+        OnSpawnComplete?.Invoke();
     }
 
     public void ShowPanel(TutorialPicto picto)
@@ -33,7 +42,10 @@ public class Guide : MonoBehaviour
     public void HideCurrentPanel()
     {
         //jouer l'animation pour cacher le picto
+        //...
+        _currentPicto.gameObject.SetActive(false);
         _currentPicto = null;
+        OnPictoHidden?.Invoke();
     }
 
     //Just to have an idea of which animations we will have...
