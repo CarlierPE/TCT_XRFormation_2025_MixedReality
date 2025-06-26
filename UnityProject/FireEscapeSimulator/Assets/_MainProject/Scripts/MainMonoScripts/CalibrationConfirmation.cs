@@ -10,7 +10,11 @@ using UnityEngine.Events;
  * */
 public class CalibrationConfirmation : MonoBehaviour
 {
+    [SerializeField] GameObject _visualHelp;
+    [SerializeField] CanvasFollowCamera _UI;
+    [HideInInspector]
     public UnityEvent OnCalibrationValidated;
+    [HideInInspector]
     public UnityEvent OnCalibrationFailed;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

@@ -13,7 +13,9 @@ public class Tutorial : MonoBehaviour
 {
     [SerializeField] TutorialManager _tutorialManager;
 
+    [HideInInspector]
     public UnityEvent OnTutorialValidated;
+    [HideInInspector]
     public UnityEvent OnTutorialFailed;
     [SerializeField] GameObject _tutorialEnvironment;
 

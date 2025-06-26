@@ -10,6 +10,7 @@ using UnityEngine.Events;
  * */
 public class AfterTutorial : MonoBehaviour
 {
+    [HideInInspector]
     public UnityEvent OnTutorialEnded;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

@@ -8,7 +8,9 @@ public class TutorialManager : MonoBehaviour
 {
     [SerializeField] private List<TutorialStep>_tutorialStep  = new();
     private int _currentStepIndex;
+    [HideInInspector]
     public UnityEvent OnLastStepCompleted;
+    [HideInInspector]
     public UnityEvent OnTutorialFailed;
 
     public void StartTutorial()
