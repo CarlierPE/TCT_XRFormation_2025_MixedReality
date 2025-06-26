@@ -4,20 +4,18 @@ using UnityEngine.Events;
 
 public class SphereMovement : MonoBehaviour
 {
-    public UnityEvent _onPathCompleted;
-    public UnityEvent _onPathWait;
-    public UnityEvent _onPathContinue;
+    public UnityEvent OnPathCompleted;
+    public UnityEvent OnPathWait;
+    public UnityEvent OnPathContinue;
     [SerializeField] private List<Transform> _transformList = new();
     [SerializeField] private float _speed = 5f;
     [SerializeField] private GuideProvider _guideProvider;
     [SerializeField] private Transform _follower;
     [SerializeField] private float _distanceFollower = 3f;
-    [SerializeField] private Transform firstCube;
     private bool _firstStart = false;
     private int _currentWaypointIndex = 0;
     private Guide _guide;
     private bool fini = false;
-    private bool firstpos = true;
     private void Start()
     {
         _guide = _guideProvider.GetGuide();
@@ -59,7 +57,7 @@ public class SphereMovement : MonoBehaviour
                 if (_currentWaypointIndex >= _transformList.Count)
                 {
                     fini = true;
-                    _onPathCompleted?.Invoke();
+                    OnPathCompleted?.Invoke();
                     return;
                 }
 
@@ -86,19 +84,19 @@ public class SphereMovement : MonoBehaviour
         _guide.transform.rotation = Quaternion.RotateTowards(
             _guide.transform.rotation, rot, 360f * Time.deltaTime
         );
-        _onPathWait?.Invoke();
+        OnPathWait?.Invoke();
     }
 
     public void StarteAction()
     {
         _firstStart = true;
-        _onPathContinue?.Invoke();
+        OnPathContinue?.Invoke();
     }
 
     public void BreakAction()
     {
         _firstStart = false;
-        _onPathWait?.Invoke();
+        OnPathWait?.Invoke();
         ToLookPlayer();
     }
 
