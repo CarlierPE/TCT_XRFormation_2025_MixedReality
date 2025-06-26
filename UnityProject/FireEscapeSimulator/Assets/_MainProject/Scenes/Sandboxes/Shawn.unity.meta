@@ -1,10 +1,50 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:UnityProject/FireEscapeSimulator/Assets/Resources/PerformanceTestRunInfo.json.meta
+guid: 56178f9b4c30aa945a958e8b67b93ae7
+guid: 71d29acf351c27d41a904952e6a71067
+TextScriptImporter:
+<<<<<<<< HEAD:UnityProject/FireEscapeSimulator/Assets/_MainProject/Scenes/Sandboxes/Sandbox_Baptiste.unity.meta
+guid: dfbfeeee368d9d54bab5555c28099256
+<<<<<<<< HEAD:UnityProject/FireEscapeSimulator/Assets/_MainProject/Scenes/Sandboxes/Shawn.unity.meta
+guid: bbc5ff96b21ef87478121188850737c5
+========
+guid: e0aec291e7c69e948ab9146fe5801c64
+>>>>>>>> 182fca0 (ShawnSceneAdd):UnityProject/FireEscapeSimulator/Assets/_MainProject/Scenes/Sandboxes/Shawn.unity.meta
+<<<<<<<< HEAD:UnityProject/FireEscapeSimulator/Assets/_MainProject/Scenes/Sandboxes/Shawn.unity.meta
+guid: 06111de21c6d7014fbb78302bfbcc7ef
+guid: bbc5ff96b21ef87478121188850737c5
+guid: 56178f9b4c30aa945a958e8b67b93ae7
+guid: 71d29acf351c27d41a904952e6a71067
+TextScriptImporter:
+guid: bbc5ff96b21ef87478121188850737c5
+========
+guid: e0aec291e7c69e948ab9146fe5801c64
+DefaultImporter:
+>>>>>>>> 182fca0 (ShawnSceneAdd):UnityProject/FireEscapeSimulator/Assets/_MainProject/Scenes/Sandboxes/Shawn.unity.meta
+<<<<<<<< HEAD:UnityProject/FireEscapeSimulator/Assets/_MainProject/Scenes/Sandboxes/Shawn.unity.meta
+guid: bbc5ff96b21ef87478121188850737c5
+========
+guid: e0aec291e7c69e948ab9146fe5801c64
+>>>>>>>> 182fca0 (ShawnSceneAdd):UnityProject/FireEscapeSimulator/Assets/_MainProject/Scenes/Sandboxes/Shawn.unity.meta
 <<<<<<<< HEAD:UnityProject/FireEscapeSimulator/Assets/_MainProject/Scenes/Sandboxes/Shawn.unity.meta
 guid: 06111de21c6d7014fbb78302bfbcc7ef
 ========
 guid: cc07c510c258b79489a74a1be089ed8b
 folderAsset: yes
 >>>>>>>> 33e5eac25445333b40947c749cd57bbe02d0128b:UnityProject/FireEscapeSimulator/Assets/InteractionSDK.meta
+guid: 06111de21c6d7014fbb78302bfbcc7ef
+<<<<<<<< HEAD:UnityProject/FireEscapeSimulator/Assets/_MainProject/Scenes/Sandboxes/Sandbox_Baptiste.unity.meta
+guid: dfbfeeee368d9d54bab5555c28099256
+guid: bbc5ff96b21ef87478121188850737c5
+guid: cc07c510c258b79489a74a1be089ed8b
+folderAsset: yes
+>>>>>>>> 33e5eac25445333b40947c749cd57bbe02d0128b:UnityProject/FireEscapeSimulator/Assets/InteractionSDK.meta
+<<<<<<<< HEAD:UnityProject/FireEscapeSimulator/Assets/_MainProject/Scenes/Sandboxes/Sandbox_Baptiste.unity.meta
+guid: dfbfeeee368d9d54bab5555c28099256
+guid: bbc5ff96b21ef87478121188850737c5
+========
+guid: e0aec291e7c69e948ab9146fe5801c64
+>>>>>>>> 182fca0 (ShawnSceneAdd):UnityProject/FireEscapeSimulator/Assets/_MainProject/Scenes/Sandboxes/Shawn.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
