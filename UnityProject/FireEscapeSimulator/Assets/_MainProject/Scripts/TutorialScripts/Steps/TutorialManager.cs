@@ -2,12 +2,13 @@ using System.Collections.Generic;
 using JetBrains.Annotations;
 using Meta.WitAi.Events;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class TutorialManager : MonoBehaviour
 {
     [SerializeField] private List<TutorialStep>_tutorialStep  = new();
     private int _currentStepIndex;
-    public StepFinish StepFinish;
+    public UnityEvent OnLastStepCompleted;
     public void StartTutorial()
     {
         _currentStepIndex = 0;
@@ -41,7 +42,7 @@ public class TutorialManager : MonoBehaviour
         }
         else
         {
-            StepFinish?.finish();    
+            OnLastStepCompleted?.Invoke();    
         }
     }
 }

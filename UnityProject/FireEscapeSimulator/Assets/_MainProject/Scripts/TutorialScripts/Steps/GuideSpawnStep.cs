@@ -1,21 +1,35 @@
+using System;
 using UnityEngine;
 
 public class GuideSpawnStep : TutorialStep
 {
+    [SerializeField] Transform _playerTransform;
+    [SerializeField] GuideProvider _guideProvider;
+
+    private Guide _guide;
     public override void StartStep()
     {
-        throw new System.NotImplementedException();
+        _guide.Spawn(_playerTransform.position + _playerTransform.forward + _playerTransform.right * -0.5f, _playerTransform);        
     }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private void Awake()
     {
-        
+        _guide = _guideProvider.GetGuide();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnEnable()
     {
-        
+        _guide.OnSpawnComplete.AddListener(OnGuideSpawned);
+    }
+
+    private void OnDisable()
+    {
+        _guide.OnSpawnComplete.RemoveListener(OnGuideSpawned);
+
+    }
+
+    private void OnGuideSpawned()
+    {
+        OnStepCompleted?.Invoke();
     }
 }
