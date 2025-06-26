@@ -22,12 +22,12 @@ public class SphereMovement : MonoBehaviour
     {
         _guide = _guideProvider.GetGuide();
         _guide.gameObject.SetActive(true);
-        if (firstCube != null)
-        {
-            _guide.transform.position = firstCube.position;
-            _currentWaypointIndex = 0;
+        //if (firstCube != null)
+        //{
+        //    _guide.transform.position = firstCube.position;
+        //    _currentWaypointIndex = 0;
 
-        }
+        //}
 
     }
 
