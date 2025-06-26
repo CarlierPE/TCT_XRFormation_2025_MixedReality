@@ -5,7 +5,7 @@ using UnityEngine;
 [Serializable]
 public class GameDebriefing
 {
-    public float startGame;
+    public float timeGame;
     public int scoreEnd;
     public List<ScoreLog> scoreLogs;
 }
