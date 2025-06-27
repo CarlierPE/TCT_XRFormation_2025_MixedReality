@@ -12,10 +12,21 @@ public class CalibrationConfirmation : MonoBehaviour
 {
     public UnityEvent OnCalibrationValidated;
     public UnityEvent OnCalibrationFailed;
+    [SerializeField] GameObject _confirmationIndicator;
+    [SerializeField] GameObject _confirmationUI;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         
+    }
+
+    private void OnEnable()
+    {
+        _confirmationIndicator?.SetActive(true);
+    }
+    private void OnDisable()
+    {
+        _confirmationIndicator?.SetActive(false);
     }
 
     // Update is called once per frame
