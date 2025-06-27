@@ -1,67 +1,76 @@
+using System.Collections.Generic;
+using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.UI;
-using System.Collections;
-using System.Collections.Generic;
 
-public class SlideshowWithImageList : MonoBehaviour
+
+[System.Serializable]
+public class ImageWithTextMultiLanguage
 {
-    public List<RawImage> imageList; // Assigne dans l’Inspector
-    public float interval = 2f;
-    public float fadeDuration = 0.5f;
+    public Texture2D texture;
+    public string m_idTextMultiLanguage;
+    public string m_defaultTextForDebug;
+}
+
+public class animationDiaporama : MonoBehaviour
+{
+    [Header("Images UI")]
+    public RawImage displayImage;                 // L'image dans l'UI
+    public RectTransform imageContainer;          // Le RectTransform du RawImage
+    public RectTransform buttonRect;              // Pour adapter la taille du bouton
+    public List<Texture2D> texturePaths;             // Chemins vers les images dans Resources/
+
+    [Header("Objets à activer/désactiver")]
+    public List<GameObject> objectsToCycle;       // Liste des GameObjects à afficher un par un
 
     private int currentIndex = 0;
 
     void Start()
     {
-        // Masquer toutes les images sauf la première
-        for (int i = 0; i < imageList.Count; i++)
-        {
-            SetAlpha(imageList[i], i == 0 ? 1f : 0f);
-        }
-
-        if (imageList.Count > 1)
-            StartCoroutine(PlaySlideshow());
+        ShowCurrent();
+    }
+    [ContextMenu("Next")]
+    public void Next()
+    {
+        currentIndex = (currentIndex + 1) % Mathf.Max(texturePaths.Count, objectsToCycle.Count);
+        ShowCurrent();
     }
 
-    IEnumerator PlaySlideshow()
+    void ShowCurrent()
     {
-        while (true)
+        // === 1. Affichage de l'image ===
+        if (texturePaths.Count > 0 && currentIndex < texturePaths.Count)
         {
-            RawImage currentImage = imageList[currentIndex];
-            int nextIndex = (currentIndex + 1) % imageList.Count;
-            RawImage nextImage = imageList[nextIndex];
+            
+            Texture2D tex = texturePaths[currentIndex];
 
-            // Fade out current
-            yield return StartCoroutine(FadeImage(currentImage, 1f, 0f, fadeDuration));
+            if (tex != null)
+            {
+                displayImage.texture = tex;
 
-            // Fade in next
-            yield return StartCoroutine(FadeImage(nextImage, 0f, 1f, fadeDuration));
+                float imageWidth = tex.width;
+                float imageHeight = tex.height;
+                float ratio = imageWidth / imageHeight;
 
-            currentIndex = nextIndex;
+                float baseHeight = 300f;
+                float width = baseHeight * ratio;
 
-            yield return new WaitForSeconds(interval);
+                Vector2 newSize = new Vector2(width, baseHeight);
+
+                imageContainer.sizeDelta = newSize;
+                if (buttonRect != null)
+                    buttonRect.sizeDelta = newSize;
+            }
+            else
+            {
+                Debug.LogWarning("Image non trouvée : " + texturePaths[currentIndex]);
+            }
         }
-    }
 
-    IEnumerator FadeImage(RawImage img, float from, float to, float duration)
-    {
-        float elapsed = 0f;
-        Color c = img.color;
-        while (elapsed < duration)
+        // === 2. Activation d'un seul GameObject ===
+        for (int i = 0; i < objectsToCycle.Count; i++)
         {
-            c.a = Mathf.Lerp(from, to, elapsed / duration);
-            img.color = c;
-            elapsed += Time.deltaTime;
-            yield return null;
+            objectsToCycle[i].SetActive(i == currentIndex);
         }
-        c.a = to;
-        img.color = c;
-    }
-
-    void SetAlpha(RawImage img, float alpha)
-    {
-        Color c = img.color;
-        c.a = alpha;
-        img.color = c;
     }
 }

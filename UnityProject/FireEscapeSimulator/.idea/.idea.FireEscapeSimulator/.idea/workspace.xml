@@ -6,7 +6,59 @@
   <component name="ChangeListManager">
     <list default="true" id="57306a0e-e791-4839-83d7-46ad4265f074" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FireEscapeSimulator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FireEscapeSimulator/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/New Folder.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Extinctor_01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Extinctor_01.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Extinctor_01A.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Extinctor_01A.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Extinctor_01B.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Extinctor_01B.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Extinctor_01C.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Extinctor_01C.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Extinctor_01D.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Extinctor_01D.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Fire_Alarm_01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Fire_Alarm_01.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Fire_Alarm_01A.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Fire_Alarm_01A.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Fire_Alarm_01B.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Fire_Alarm_01B.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Fire_Door_01A.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Fire_Door_01A.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Fire_Door_01B.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Fire_Door_01B.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Fire_Door_01C.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Fire_Door_01C.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Fire_Door_01D.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Fire_Door_01D.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Fire_Exit_01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Fire_Exit_01.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Fire_Exit_02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Fire_Exit_02.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Meettng_Point_01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Meettng_Point_01.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Phone_01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Phone_01.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Phone_01A.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Phone_01A.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/Prefabs/P_FloorMap.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_MainProject/Scripts/animationDiaporama.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MainProject/Scripts/animationDiaporama.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/backupFireSimulator.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/backupFireSimulator.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/png CanvasImage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/png CanvasImage/Commencer le Tuto.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/png CanvasImage/Commencer le Tuto.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/png CanvasImage/ControlerImage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/png CanvasImage/ControlerImage.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/png CanvasImage/Rewind Button.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/png CanvasImage/Rewind Button.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/png CanvasImage/TutorielCompris.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/png CanvasImage/TutorielCompris.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/png CanvasImage/simulation.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/png CanvasImage/simulation.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +70,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/844019a3a067481c8d9cb70c7a2ba4471df600/d5/764630e2/GameObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ListGameObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_MainProject/Scripts/Scoring/ShowingInformation.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -104,6 +157,8 @@
       <workItem from="1750748259317" duration="5966000" />
       <workItem from="1750938118587" duration="5075000" />
       <workItem from="1750945664855" duration="3000" />
+      <workItem from="1751007311049" duration="6775000" />
+      <workItem from="1751024726324" duration="2334000" />
     </task>
     <servers />
   </component>
