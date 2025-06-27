@@ -5,30 +5,17 @@ using UnityEngine.InputSystem;
 
 public class ScoreEndingShower : MonoBehaviour
 {
-    
+
     public static ScoreEndingShower Instance;
-    private List<ScoreLog> historicActions = new();
 
-    private float timeStarted;
-
-    bool isStartGame;
-    bool isfinishGame;
     private int _totalscore = 0;
     private SaveOnFile saveOnFile = new();
     private GameDebriefing _player;
+    private List<ScoreLog> historicActions = new();
 
-    private Dictionary<eMonitoredAction, int> actionScores = new Dictionary<eMonitoredAction, int>()
-     {
-         { eMonitoredAction.OpenAlarmBox, 0 },
-         { eMonitoredAction.PressAlarmButton, 300 },
-         { eMonitoredAction.WalkIntoFire, -150 }, 
-         { eMonitoredAction.CloseDoor, 20 },
-         { eMonitoredAction.OpenDoor, -10 },
-         { eMonitoredAction.FinishLine, 2500 },
-         // etc.
-     };
+    //private IScoreAction _scoreAction = new IScoreAction();
 
-    private void Awake()
+    public void InitScore()
     {
         if (Instance == null)
         {
@@ -39,61 +26,46 @@ public class ScoreEndingShower : MonoBehaviour
             Destroy(gameObject);
         }
 
-        saveOnFile = new SaveOnFile();
+        saveOnFile = new();
         saveOnFile.InitBased();
 
         _player = new GameDebriefing();
-    }
-
-    private void Start()
-    {
-        
-    }
-
-    private void Update()
-    {
-        
-    }
-
-    public void StartGame()
-    {
-        isStartGame = true;
-        isfinishGame = false;
-        timeStarted = Time.time;
+    
         _totalscore = 0;
+
+        _player = new GameDebriefing();
         historicActions.Clear();
-
-        _player = new GameDebriefing(); 
     }
 
-    private void EndGame()
+    public void SaveActionScore(eMonitoredAction action, float timeAction)
     {
-        isStartGame = false;
-        isfinishGame = true;
-        ShowEndScreen();
-    }
-
-    public void SaveActionScore(ScoreLog action)
-    {
-        if (actionScores.TryGetValue(action.action, out int score))
+        ScoreLog log = new ScoreLog
         {
-            _totalscore += score;
-        }
+            timeAction = timeAction,
+            action = action,
+            scoreValid = 0 // Will be updated below
+        };
 
-        historicActions.Add(action);
+        //if (_scoreAction.tableScoreAction.TryGetValue(action, out int score))
+        //{
+        //    _totalscore += score;
+        //    log.scoreValid = score;
+        //}
 
-        if (action.action == eMonitoredAction.FinishLine)
+        historicActions.Add(log);
+
+        if (action == eMonitoredAction.FinishLine)
         {
-            EndGame();
+            _player.timeGame = timeAction;
+            _player.scoreEnd = _totalscore;
+            _player.scoreLogs = historicActions;
+
+            ShowEndScreen();
         }
     }
 
     public void ShowEndScreen()
     {
-        _player.startGame = Time.time - timeStarted;
-        _player.scoreEnd = _totalscore;
-        _player.scoreLogs = new List<ScoreLog>(historicActions);
-
         saveOnFile.SaveDocument(_player);
     }
 
@@ -114,11 +86,9 @@ public class ScoreEndingShower : MonoBehaviour
 
         foreach (var item in historiq)
         {
-            history += $"Temps du parcours : {item.startGame:F3}, Score final : {item.scoreEnd}\n";
+            history += $"Temps du parcours : {item.timeGame:F3}, Score final : {item.scoreEnd}\n";
         }
 
         return history;
     }
 }
-    
-

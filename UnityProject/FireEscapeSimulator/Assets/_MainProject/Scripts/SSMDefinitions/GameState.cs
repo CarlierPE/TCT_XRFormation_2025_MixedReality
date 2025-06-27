@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace FireSim.SSM
 {
-    public abstract class GameState
+    public abstract class GameState : MonoBehaviour
     {
         public abstract eGameStateID ID { get; }
 

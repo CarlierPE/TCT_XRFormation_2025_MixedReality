@@ -5,60 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57306a0e-e791-4839-83d7-46ad4265f074" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/_MainProject/Scenes/Sandboxes/Shawn.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_MainProject/Scenes/Sandboxes/Shawn.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_MainProject/Scripts/Scoring/ShowingInformation.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_MainProject/Scripts/Scoring/ShowingInformation.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/Scripts/Scoring/ScoreEndingShower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MainProject/Scripts/Scoring/ScoreEndingShower.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FireEscapeSimulator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FireEscapeSimulator/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/New Folder.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Extinctor_01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Extinctor_01.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Extinctor_01A.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Extinctor_01A.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Extinctor_01B.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Extinctor_01B.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Extinctor_01C.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Extinctor_01C.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Extinctor_01D.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Extinctor_01D.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Fire_Alarm_01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Fire_Alarm_01.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Fire_Alarm_01A.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Fire_Alarm_01A.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Fire_Alarm_01B.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Fire_Alarm_01B.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Fire_Door_01A.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Fire_Door_01A.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Fire_Door_01B.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Fire_Door_01B.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Fire_Door_01C.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Fire_Door_01C.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Fire_Door_01D.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Fire_Door_01D.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Fire_Exit_01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Fire_Exit_01.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Fire_Exit_02.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Fire_Exit_02.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Meettng_Point_01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Meettng_Point_01.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Phone_01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Phone_01.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Phone_01A.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/png/T_Phone_01A.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/Prefabs/P_FloorMap.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/Scripts/animationDiaporama.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MainProject/Scripts/animationDiaporama.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/backupFireSimulator.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/backupFireSimulator.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/png CanvasImage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/png CanvasImage/Commencer le Tuto.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/png CanvasImage/Commencer le Tuto.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/png CanvasImage/ControlerImage.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/png CanvasImage/ControlerImage.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/png CanvasImage/Rewind Button.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/png CanvasImage/Rewind Button.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/png CanvasImage/TutorielCompris.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/png CanvasImage/TutorielCompris.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/png CanvasImage/simulation.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/png CanvasImage/simulation.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/Scenes/Sandboxes/Shawn.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MainProject/Scenes/Sandboxes/Shawn.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FireEscapeSimulator_BurstDebugInformation_DoNotShip/tempburstlibs/arm64-v8a/lib_burst_generated.txt" beforeDir="false" afterPath="$PROJECT_DIR$/FireEscapeSimulator_BurstDebugInformation_DoNotShip/tempburstlibs/arm64-v8a/lib_burst_generated.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FireEscapeSimulator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FireEscapeSimulator/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/Scenes/Sandboxes/Shawn.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MainProject/Scenes/Sandboxes/Shawn.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FireEscapeSimulator_BurstDebugInformation_DoNotShip/tempburstlibs/arm64-v8a/lib_burst_generated.txt" beforeDir="false" afterPath="$PROJECT_DIR$/FireEscapeSimulator_BurstDebugInformation_DoNotShip/tempburstlibs/arm64-v8a/lib_burst_generated.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FireEscapeSimulator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FireEscapeSimulator/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,8 +38,6 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/844019a3a067481c8d9cb70c7a2ba4471df600/d5/764630e2/GameObject.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/ListGameObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_MainProject/Scripts/Scoring/ShowingInformation.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -86,13 +53,25 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/CANVASµ&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/Scoring&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "feature/CanvasWorker",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -155,10 +134,10 @@
       <workItem from="1750683531783" duration="3053000" />
       <workItem from="1750746520138" duration="127000" />
       <workItem from="1750748259317" duration="5966000" />
-      <workItem from="1750938118587" duration="5075000" />
-      <workItem from="1750945664855" duration="3000" />
-      <workItem from="1751007311049" duration="6775000" />
-      <workItem from="1751024726324" duration="2334000" />
+      <workItem from="1750683531783" duration="1618000" />
+      <workItem from="1750748259317" duration="2659000" />
+      <workItem from="1750683531783" duration="1618000" />
+      <workItem from="1750748259317" duration="2659000" />
     </task>
     <servers />
   </component>

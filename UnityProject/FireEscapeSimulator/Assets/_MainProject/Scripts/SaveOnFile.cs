@@ -47,7 +47,7 @@ public class SaveOnFile : MonoBehaviour
         {
             _numFile = 1;
         }
-        
+
         _rootPathToSave = GenerateFileName();
     }
 
@@ -66,13 +66,18 @@ public class SaveOnFile : MonoBehaviour
             return;
         }
 
-        _rootPathToSave = GenerateFileName();
-
         string json = JsonUtility.ToJson(saveFile, true);
+
+        if (File.Exists(_rootPathToSave))
+        {
+            _numFile++;
+            _rootPathToSave = GenerateFileName();
+        }
 
         File.WriteAllText(_rootPathToSave, json);
 
-        _numFile++; // prêt pour la prochaine sauvegarde
+        _numFile++; // prÃªt pour la prochaine sauvegarde
+        _rootPathToSave = GenerateFileName();
     }
 
     private void LoadAllFiles()
