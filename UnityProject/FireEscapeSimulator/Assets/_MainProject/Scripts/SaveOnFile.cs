@@ -20,11 +20,11 @@ public class SaveOnFile : MonoBehaviour
     private int _numFile = 1;
     private int _fileCount = 0;
 
-    private List<GameDebriefing> _gameDebriefings;
+    private readonly List<GameDebriefing> _gameDebriefings;
 
     public void InitBased()
     {
-        _gameDebriefings = new List<GameDebriefing>();
+        _gameDebriefings.Clear();
 
         _currentDate = DateTime.Now.ToString("yyyy-MM-dd");
         _folderName = _currentDate.Replace("-", "_");

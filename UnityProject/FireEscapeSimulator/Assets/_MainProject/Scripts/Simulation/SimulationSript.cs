@@ -62,7 +62,7 @@ public class SimulationSript : MonoBehaviour
         {
             StartSimulation();
         }
-        
+
     }
 
     public void StartSimulation()
@@ -74,8 +74,8 @@ public class SimulationSript : MonoBehaviour
         _startGame = Time.time; // Reset the start time when the simulation starts
     }
 
-     public void PauseSimulation()
-    {        
+    public void PauseSimulation()
+    {
         _isPaused = !_isPaused;
         if (_isPaused)
         {
@@ -97,7 +97,7 @@ public class SimulationSript : MonoBehaviour
     {
         if (_isPaused)
         {
-            _timePause = Time.time - _timePause; 
+            _timePause = Time.time - _timePause;
         }
 
         float elapsedTime = Time.time - _startGame - _timePause;
@@ -111,12 +111,21 @@ public class SimulationSript : MonoBehaviour
 
     }
 
-    public void UpdateScoreSenario(eMonitoredAction action)
+    private void UpdateScoreSenario(eMonitoredAction action)
     {
         float timeAction = Time.time - _startGame - _timePause;
 
-        _scoreGame.SaveActionScore(action,timeAction);
+        _scoreGame.SaveActionScore(action, timeAction);
     }
 
-    
+    public void OnTriggerScore(eMonitoredAction action)
+    {
+        if (_triggerableByPlayer != null)
+        {
+            UpdateScoreSenario(action);
+        }
+
+    }
+
+
 }
