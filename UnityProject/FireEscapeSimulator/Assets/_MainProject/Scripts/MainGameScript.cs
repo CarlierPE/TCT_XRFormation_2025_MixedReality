@@ -67,7 +67,22 @@ public class MainGameScript : MonoBehaviour
 
     private void OnDisable()
     {
+        _startingScript.OnSessionStart.RemoveListener(OnGameStarted);
+
         _calibrationScript.OnCalibration.RemoveListener(OnCalibrated);
+        _confirmCalibrationScript.OnCalibrationValidated.RemoveListener(OnCalibrationConfirmed);
+        _confirmCalibrationScript.OnCalibrationFailed.RemoveListener(OnCalibrationInvalidated);
+
+        _beforeTutorialScript.OnTutorialStarting.RemoveListener(OnTutorialStarting);
+        _tutorialScript.OnTutorialValidated.RemoveListener(OnTutorialEnded);
+        _tutorialScript.OnTutorialFailed.RemoveListener(OnTutorialRepeat);
+        _afterTutorialScript.OnTutorialEnded.RemoveListener(OnTutorialEnded);
+
+        _beforeSimulationScript.OnSimulationStarting.RemoveListener(OnSimulationStarting);
+        _simulationScript.OnSimulationEnding.RemoveListener(OnSimulationEnding);
+        _afterSimulationScript.OnSimulationEnded.RemoveListener(OnSimulationEnded);
+
+        _debriefingScript.OnDebriefingExited.RemoveListener(OnGameReset);
     }
 
     private void Update()

@@ -1,9 +1,10 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class FireInstancate : MonoBehaviour
 {
-    [SerializeField] GameObject[] _firePrefab; // Reference to the fire prefab
+    [SerializeField] List<GameObject> _firePrefab; // Reference to the fire prefab
     [SerializeField] float _spawnInterval = 5f; // Time interval between spawns
 
     private float _nextSpawnTime; // Time when the next fire will be spawned
@@ -14,7 +15,7 @@ public class FireInstancate : MonoBehaviour
 
     void Awake()
     {
-        _fireCount = _firePrefab.Length;
+        _fireCount = _firePrefab.Count;
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -93,5 +94,19 @@ public class FireInstancate : MonoBehaviour
     public void PauseFire()
     {         
         _isFireActive = false; // Set the fire active flag to false to pause fire spawning
+    }
+
+    public void InstantieFire(List<GameObject> fires)
+    {
+        _firePrefab.Clear();
+
+        _firePrefab = fires;
+
+        _fireCount = _firePrefab.Count;
+    }
+
+    public void SetInterval(int interval)
+    {
+        _spawnInterval = interval;
     }
 }
