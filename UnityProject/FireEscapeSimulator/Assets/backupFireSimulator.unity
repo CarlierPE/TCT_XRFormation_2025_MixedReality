@@ -14627,13 +14627,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 184bbeb9fcd4fe14f838394d67b8261c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  imageList:
-  - {fileID: 433891109}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  interval: 6
-  fadeDuration: 0.5
+  displayImage: {fileID: 0}
+  imageContainer: {fileID: 0}
+  buttonRect: {fileID: 0}
+  texturePaths: []
+  objectsToCycle: []
 --- !u!114 &2062748918
 MonoBehaviour:
   m_ObjectHideFlags: 0
