@@ -492,7 +492,7 @@
                 {
                     "name": "",
                     "id": "fda4248f-4f56-4f57-91e9-08335136857f",
-                    "path": "<XRController>{RightHand}/{PrimaryButton}",
+                    "path": "<XRController>{RightHand}/{TriggerButton}",
                     "interactions": "",
                     "processors": "",
                     "groups": ";XR",
