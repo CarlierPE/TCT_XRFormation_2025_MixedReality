@@ -6,7 +6,7 @@ public class TEST_TestStep : TutorialStep
     public override void StartStep()
     {
         Debug.Log("TestStep has started");
-        OnStepCompleted?.Invoke(true);
+        OnStepCompleted?.Invoke();
         Debug.Log("TestStep has fired its event");
     }
 
