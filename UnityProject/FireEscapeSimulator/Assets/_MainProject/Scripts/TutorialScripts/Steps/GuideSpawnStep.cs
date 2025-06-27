@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 
+[Obsolete("ne pas utiliser on spawnera le guide dans le before_tutorial", true)]
 public class GuideSpawnStep : TutorialStep
 {
     [SerializeField] Transform _playerTransform;
@@ -30,6 +31,6 @@ public class GuideSpawnStep : TutorialStep
 
     private void OnGuideSpawned()
     {
-        OnStepCompleted?.Invoke();
+        OnStepCompleted?.Invoke(true);
     }
 }

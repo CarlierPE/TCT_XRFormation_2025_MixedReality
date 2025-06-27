@@ -7,5 +7,8 @@ public abstract class TutorialStep : MonoBehaviour
     public abstract void StartStep();
 
     // Événement à déclencher quand l’étape est finie
-    public UnityEvent OnStepCompleted;
+    //le bool indique true si la step est un "succès" false si la step est un "échec"
+    //ce qui veut dire qu'il faut recommencer le tuto
+    [HideInInspector]
+    public UnityEvent<bool> OnStepCompleted;
 }
