@@ -15,15 +15,15 @@ public class Tutorial : MonoBehaviour
 
     [HideInInspector]
     public UnityEvent OnTutorialValidated;
-    [HideInInspector]
-    public UnityEvent OnTutorialFailed;
+    //[HideInInspector]
+    //public UnityEvent OnTutorialFailed;
     [SerializeField] GameObject _tutorialEnvironment;
 
     private void OnEnable()
     {
         _tutorialEnvironment.SetActive(true);
         _tutorialManager.OnLastStepCompleted.AddListener(CompleteTutorial);
-        _tutorialManager.OnTutorialFailed.AddListener(FailTutorial);
+        //_tutorialManager.OnTutorialFailed.AddListener(FailTutorial);
         _tutorialManager.StartTutorial();
     }
 
@@ -31,13 +31,13 @@ public class Tutorial : MonoBehaviour
     {
         _tutorialEnvironment.SetActive(false);
         _tutorialManager.OnLastStepCompleted.RemoveListener(CompleteTutorial);
-        _tutorialManager.OnTutorialFailed.RemoveListener(FailTutorial);
+        //_tutorialManager.OnTutorialFailed.RemoveListener(FailTutorial);
     }
 
-    private void FailTutorial()
-    {
-        OnTutorialFailed?.Invoke();
-    }
+    //private void FailTutorial()
+    //{
+    //    OnTutorialFailed?.Invoke();
+    //}
 
     private void CompleteTutorial()
     {
