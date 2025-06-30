@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="240f6067-6e66-437c-8e77-96865c3eb161" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.FireEscapeSimulator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FireEscapeSimulator/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/Scripts/animationDiaporama.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MainProject/Scripts/animationDiaporama.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/backupFireSimulator.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/backupFireSimulator.unity" afterDir="false" />
-    </list>
+    <list default="true" id="240f6067-6e66-437c-8e77-96865c3eb161" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -90,7 +85,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1751275216191</updated>
-      <workItem from="1751275218430" duration="2549000" />
+      <workItem from="1751275218430" duration="3153000" />
     </task>
     <servers />
   </component>
