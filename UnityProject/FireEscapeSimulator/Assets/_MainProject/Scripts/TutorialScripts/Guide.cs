@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;
 
+[RequireComponent(typeof(Animator))]
 public class Guide : MonoBehaviour
 {
     /*
@@ -12,10 +13,16 @@ public class Guide : MonoBehaviour
 
     [SerializeField] Transform _pictoContainer;
     private TutorialPicto _currentPicto;
-
+    private Animator _anim;
     public UnityEvent OnSpawnComplete;
     public UnityEvent OnPictoHidden;
-
+    private SphereMovement _sphere; 
+    private void Start()
+    {
+       
+        _anim = GetComponent<Animator>();
+        
+    }
     private void Update()
     {
         if (_currentPicto == null)
@@ -49,9 +56,17 @@ public class Guide : MonoBehaviour
     }
 
     //Just to have an idea of which animations we will have...
-    public void PlayGoForwardAnimation() { }
+    public void PlayGoForwardAnimation()
+    {
+        _anim.SetBool("Begin", true);    
+    
+    }
     public void PlayGoBackwardAnimation() { }
-    public void PlayIdleAnimation() { }
+    public void PlayIdleAnimation() 
+    {
+        _anim.SetBool("Begin", false);
+       
+    }
     public void PlayTurnLeftAnimation() { }
     public void PlayTurnRightAnimation() { }
 }
