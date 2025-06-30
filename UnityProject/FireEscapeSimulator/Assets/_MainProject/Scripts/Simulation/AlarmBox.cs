@@ -5,7 +5,7 @@ public class AlarmBox : TriggerableByPlayer
 {
     private readonly EmergencyLamp _lamp = new ();
     [SerializeField] GameObject _prefab;
-    private SimulationSript _simulation;
+    private readonly SimulationSript _simulation;
     public void OpenAlarmBox()
     {
         eMonitoredAction action = eMonitoredAction.OpenAlarmBox;
@@ -33,8 +33,7 @@ public class AlarmBox : TriggerableByPlayer
         // This method can be used to handle actions triggered by the player
         // For example, you can log the action or trigger other events
 
-
-        
+        _simulation.OnTriggerScore(action);
         _lamp.RecivedSignal(action);
     }
 

@@ -2,12 +2,19 @@ using UnityEngine;
 
 public class Stairs : TriggerableByPlayer
 {
+
+    private readonly SimulationSript _simulation;
+    private eMonitoredAction _action;
     public void UpStair()
     {
-        OnTriggeredByPlayer(eMonitoredAction.StairsUp);
+        _action = eMonitoredAction.StairsUp;
+        OnTriggeredByPlayer(_action);
+        _simulation.OnTriggerScore(_action);
     }
     public void DownStair()
     {
-        OnTriggeredByPlayer(eMonitoredAction.FinishLine);
+        _action = eMonitoredAction.FinishLine;
+        OnTriggeredByPlayer(_action);
+        _simulation.OnTriggerScore(_action);
     }
 }

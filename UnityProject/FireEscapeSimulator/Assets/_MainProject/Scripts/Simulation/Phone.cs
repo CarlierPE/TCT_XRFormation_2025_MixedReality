@@ -2,12 +2,19 @@ using UnityEngine;
 
 public class Phone : TriggerableByPlayer
 {
+    private readonly SimulationSript _simulation;
+    private eMonitoredAction _action;
+
     public void TakePhone()
     {
-        OnTriggeredByPlayer(eMonitoredAction.TakePhone);
+        _action = eMonitoredAction.TakePhone;
+        OnTriggeredByPlayer(_action);
+        _simulation.OnTriggerScore(_action);
     }
     public void Appel()
     {
-        OnTriggeredByPlayer(eMonitoredAction.Appel);
+        _action = eMonitoredAction.Appel;
+        OnTriggeredByPlayer(_action);
+        _simulation.OnTriggerScore(_action);
     }
 }

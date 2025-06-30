@@ -2,8 +2,11 @@ using UnityEngine;
 
 public class EmergencyExit : TriggerableByPlayer
 {
+    private readonly SimulationSript _simulation;
     public void EntryEmergnecyExit()
     {
-        OnTriggeredByPlayer(eMonitoredAction.FinishLine);
+        eMonitoredAction action = eMonitoredAction.FinishLine;
+        OnTriggeredByPlayer(action);
+        _simulation.OnTriggerScore(action);
     }
 }
