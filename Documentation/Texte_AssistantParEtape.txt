@@ -1,0 +1,44 @@
+(Apparition de l'assistant) : 
+"Bonjour et bienvenue dans FireEscapeSimulator ! Nous allons voir ensemble la marche à suivre en cas d'incendie afin de rester en sécurité. Êtes-vous prêt ?"
+
+(vers panneau d'évacuation) :
+"Ceci est un panneau d'évacuation, il montre la direction vers la sortie de secours la plus proche."
+
+(vers porte de secours) :
+"Voici une porte coupe-feu, n'oubliez pas de les fermer ainsi que les fenêtres afin d'éviter que le feu ne se propage."
+
+(bouton d'alarme) :
+"Poussez fortement sur ce bouton pour faire retentir l'alarme et prévenir les personnes alentour du danger."
+
+(vers lance à incendie) :
+"Ceci est une lance à incendie, c'est un élément primordial aux pompiers, elle permet de projeter de l'eau ou de la mousse pour neutraliser les flammes."
+
+(vers téléphone) :
+"Dés que vous êtes hors de danger, prévenez immédiatement les pompiers en appelant le 112. Donnez des indications claires et précises."
+
+(vers éclairage de sécurité) :
+"Ces éclairages de sécurité servent à indiquer les voies de secours en cas d'incident provoquant l'obscurité."
+
+(vers ascenseur) :
+"Il est absolument interdit de prendre l'ascenseur en cas d'incendie ! Cela augmenterait la propagation du feu, pourrait bloquer les occupants et les exposer à de nombreux dangers."
+
+(Extincteur) :
+"L'extincteur sert à éteindre un départ d'incendie, utilisez-le sur la base des flammes pour limiter la propagation. Ne l'utilisez pas si le feu est déjà hors de contrôle."
+
+(Issues de secours) :
+"Les issues de secours sont généralement des escaliers menant au rez-de-chaussée, ne montez jamais aux étages, l'air frais se trouve proche du sol."
+
+(toujours près des issues de secours) :
+"Nous avons maintenant vu tous les éléments essentiels destinés à limiter les risques en cas d'incendie. Avez-vous bien tout compris ?"
+
+(Si l'utilisateur répond NON) :
+"Très bien, alors retournons au début afin de revoir ensemble tous ces éléments." (RETOURNER A L'ETAPE DU PANNEAU D'EVACUATION)
+
+(Si l'utilisateur répond OUI) :
+"Très bien, allons boire un café ensemble pour nous détendre."
+
+(une fois arrivés dans la pièce AVANT la cuisine) :
+"HO ! J'ai presque oublié. Le plus important en cas d'incendie est surtout de garder son calme et ne pas céder à la panique."
+
+(dans la cuisine, quand l'utilisateur a vu le feu) :
+"
