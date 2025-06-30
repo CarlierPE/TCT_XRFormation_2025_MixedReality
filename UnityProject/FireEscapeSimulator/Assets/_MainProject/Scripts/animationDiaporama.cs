@@ -52,7 +52,7 @@ public class animationDiaporama : MonoBehaviour
                 float imageHeight = tex.height;
                 float ratio = imageWidth / imageHeight;
 
-                float baseHeight = 300f;
+                float baseHeight = 500f;
                 float width = baseHeight * ratio;
 
                 Vector2 newSize = new Vector2(width, baseHeight);
@@ -74,3 +74,8 @@ public class animationDiaporama : MonoBehaviour
         }
     }
 }
+
+//void Update()
+//{
+    //if 
+//}
