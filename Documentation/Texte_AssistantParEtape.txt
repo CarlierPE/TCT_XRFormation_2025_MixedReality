@@ -1,8 +1,8 @@
 (Apparition de l'assistant) : 
-"Bonjour et bienvenue dans FireEscapeSimulator ! Nous allons voir ensemble la marche à suivre en cas d'incendie afin de rester en sécurité. Êtes-vous prêt ?"
+"Bonjour et bienvenue dans FireEscapeSimulator ! Je serai votre assistant lors de cette simulation. Nous allons voir ensemble la marche à suivre en cas d'incendie afin de rester en sécurité. Êtes-vous prêt à commencer ?"
 
 (vers panneau d'évacuation) :
-"Ceci est un panneau d'évacuation, il montre la direction vers la sortie de secours la plus proche."
+"Ceci est un panneau d'évacuation, il montre la direction de la sortie de secours la plus proche."
 
 (vers porte de secours) :
 "Voici une porte coupe-feu, n'oubliez pas de les fermer ainsi que les fenêtres afin d'éviter que le feu ne se propage."
@@ -10,17 +10,17 @@
 (bouton d'alarme) :
 "Poussez fortement sur ce bouton pour faire retentir l'alarme et prévenir les personnes alentour du danger."
 
-(vers lance à incendie) :
-"Ceci est une lance à incendie, c'est un élément primordial aux pompiers, elle permet de projeter de l'eau ou de la mousse pour neutraliser les flammes."
+(vers la lance à incendie) :
+"Ceci est une lance à incendie, c'est un élément primordial aux pompiers qui permet de projeter de l'eau ou de la mousse pour neutraliser les flammes."
 
 (vers téléphone) :
 "Dés que vous êtes hors de danger, prévenez immédiatement les pompiers en appelant le 112. Donnez des indications claires et précises."
 
 (vers éclairage de sécurité) :
-"Ces éclairages de sécurité servent à indiquer les voies de secours en cas d'incident provoquant l'obscurité."
+"Ces éclairages de sécurité servent à s'orienter et à indiquer les voies de secours en cas d'incident provoquant l'obscurité."
 
 (vers ascenseur) :
-"Il est absolument interdit de prendre l'ascenseur en cas d'incendie ! Cela augmenterait la propagation du feu, pourrait bloquer les occupants et les exposer à de nombreux dangers."
+"Il est absolument interdit de prendre l'ascenseur en cas d'incendie ! Cela augmenterait la propagation du feu, pourrait bloquer les occupants et les exposer aux dangers de l'incendie."
 
 (Extincteur) :
 "L'extincteur sert à éteindre un départ d'incendie, utilisez-le sur la base des flammes pour limiter la propagation. Ne l'utilisez pas si le feu est déjà hors de contrôle."
@@ -35,10 +35,16 @@
 "Très bien, alors retournons au début afin de revoir ensemble tous ces éléments." (RETOURNER A L'ETAPE DU PANNEAU D'EVACUATION)
 
 (Si l'utilisateur répond OUI) :
-"Très bien, allons boire un café ensemble pour nous détendre."
+"Très bien, alors nous pouvons aller boire un café ensemble pour nous détendre."
 
 (une fois arrivés dans la pièce AVANT la cuisine) :
-"HO ! J'ai presque oublié. Le plus important en cas d'incendie est surtout de garder son calme et ne pas céder à la panique."
+"HO ! J'ai presque oublié. Le plus important en cas d'incendie est surtout de garder son calme et de ne pas céder à la panique."
 
 (dans la cuisine, quand l'utilisateur a vu le feu) :
-"
+"Ho non un incendie ! Je compte sur vous pour gérer la situation !"
+
+(Une fois l'utilisateur arrivé à la zone d'évacuation) :
+"Félicitation ! Vous avez réussi à vous évacuer sans prendre de risque. voyons ensemble un résumé de votre parcours."
+
+(Si l'utilisateur se trompe et que la simulation s'arrête) :
+"Ho non, ce n'était pas la marche à suivre. Vous vous seriez exposé à de grands dangers. Voyons ensemble un résumé de votre parcours."
