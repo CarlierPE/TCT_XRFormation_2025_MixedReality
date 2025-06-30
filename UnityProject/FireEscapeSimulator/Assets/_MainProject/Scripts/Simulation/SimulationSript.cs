@@ -9,11 +9,6 @@ public class SimulationSript : MonoBehaviour
 
     [SerializeField] List<GameObject> _fires;
     [SerializeField] float _timeExpension;
-    [SerializeField] GameObject _prefabExtincteur;
-    [SerializeField] GameObject _prefabAlarm;
-    [SerializeField] List<GameObject> _noEntry;
-    [SerializeField] List<GameObject> _prefabDoor;
-    [SerializeField] GameObject _prefabPhone;
 
     ScoreEndingShower _scoreGame;
     FireInstancate _fireInstancate;
