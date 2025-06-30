@@ -3,7 +3,8 @@ using UnityEngine.Events;
 
 public abstract class TriggerableByPlayer : MonoBehaviour
 {
-    [SerializeField] UnityEvent<eMonitoredAction> Triggered;
+    [HideInInspector]
+    public UnityEvent<eMonitoredAction> Triggered;
 
     protected void OnTriggeredByPlayer(eMonitoredAction action)
     {

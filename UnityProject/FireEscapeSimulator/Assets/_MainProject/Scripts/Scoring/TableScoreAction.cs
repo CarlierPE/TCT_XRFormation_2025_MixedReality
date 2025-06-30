@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ScoreAction
+public static class ScoreAction
 {
-    public Dictionary<eMonitoredAction, int> tableScoreAction = new ()
+    public static Dictionary<eMonitoredAction, int> tableScoreAction = new ()
     {
         { eMonitoredAction.OpenAlarmBox, 0 },
         { eMonitoredAction.PressAlarmButton, 300 },

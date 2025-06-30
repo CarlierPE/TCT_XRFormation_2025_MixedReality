@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic; // Assuming you are using TextMeshPro for UI text display
 using System.IO;
 using UnityEngine;
-
+[Obsolete("on n'utilise pas pour le moment")]
 public class SaveOnFile : MonoBehaviour
 {
     private const string _extension = ".json";
@@ -20,11 +20,11 @@ public class SaveOnFile : MonoBehaviour
     private int _numFile = 1;
     private int _fileCount = 0;
 
-    private readonly List<GameDebriefing> _gameDebriefings;
+    //private readonly List<GameDebriefing> _gameDebriefings;
 
     public void InitBased()
     {
-        _gameDebriefings.Clear();
+        //_gameDebriefings.Clear();
 
         _currentDate = DateTime.Now.ToString("yyyy-MM-dd");
         _folderName = _currentDate.Replace("-", "_");
@@ -82,7 +82,7 @@ public class SaveOnFile : MonoBehaviour
 
     private void LoadAllFiles()
     {
-        _gameDebriefings.Clear();
+        //_gameDebriefings.Clear();
 
         string[] fichiersJson = Directory.GetFiles(_PathCreatedFolder, "*.json");
 
@@ -95,16 +95,16 @@ public class SaveOnFile : MonoBehaviour
 
                 if (data != null)
                 {
-                    _gameDebriefings.Add(data);
+                    //_gameDebriefings.Add(data);
                 }
             }
         }
     }
 
-    public List<GameDebriefing> GetAllDebriefings()
-    {
-        LoadAllFiles();
+    //public List<GameDebriefing> GetAllDebriefings()
+    //{
+    //    LoadAllFiles();
 
-        return _gameDebriefings;
-    }
+    //    return _gameDebriefings;
+    //}
 }
