@@ -1,8 +1,9 @@
 using NUnit.Framework;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-
+[Obsolete("classe de test ne pas utiliser dans la scène finale")]
 public class SimulationSript : MonoBehaviour
 {
     const float _maxTime = 10f;
@@ -15,10 +16,10 @@ public class SimulationSript : MonoBehaviour
     [SerializeField] List<GameObject> _prefabDoor;
     [SerializeField] GameObject _prefabPhone;
 
-    ScoreEndingShower _scoreGame;
+    ScoreManager _scoreGame;
     FireInstancate _fireInstancate;
 
-    TriggerableByPlayer _triggerableByPlayer;
+    //TriggerableByPlayer _triggerableByPlayer;
 
     float _startGame;
     float _timePause;
@@ -115,15 +116,16 @@ public class SimulationSript : MonoBehaviour
     {
         float timeAction = Time.time - _startGame - _timePause;
 
-        _scoreGame.SaveActionScore(action, timeAction);
+        //_scoreGame.SaveActionScore(action, timeAction);
     }
 
+    [Obsolete("ne jamais utiliser, tout est géré par events", true)]
     public void OnTriggerScore(eMonitoredAction action)
     {
-        if (_triggerableByPlayer != null)
-        {
-            UpdateScoreSenario(action);
-        }
+        //if (_triggerableByPlayer != null)
+        //{
+        //    UpdateScoreSenario(action);
+        //}
 
     }
 

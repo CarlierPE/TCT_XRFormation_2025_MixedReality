@@ -5,12 +5,11 @@ using UnityEngine;
 
 public class Victory : TriggerableByPlayer
 {
-    public ScoreEndingShower TheEndingShower;
+    public ScoreManager TheEndingShower;
 
     void OnTriggerEnter(Collider other)
     {
         base.OnTriggeredByPlayer(eMonitoredAction.FinishLine);
-        TheEndingShower.ShowEndScreen();
     }
 
 }
