@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 using System.Linq;
 
 public class ScoreManager : MonoBehaviour
-{
+{ 
 
     static ScoreManager _instance;
 
