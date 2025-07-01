@@ -1,5 +1,10 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:UnityProject/FireEscapeSimulator/Assets/_MainProject/Scripts/Fire.meta
+guid: 20953599f1b2a2b4f837634d6f223855
+folderAsset: yes
+========
 guid: 1f4f206729c54d444a63f8a48dd74b14
+>>>>>>>> 136588666a2859a4af5650d8ab3ee13dd0bcd624:UnityProject/FireEscapeSimulator/Assets/Demo Tchad.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
