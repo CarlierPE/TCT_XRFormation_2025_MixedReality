@@ -1,5 +1,12 @@
 {
   "dependencies": {
+    "be.tchadevers.uiandfxmr": {
+      "version": "https://github.com/TchadEvers/XR_PROJET_MR_VFX_UI.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "7f9d39cea20a63dce25dbeed36b0ddeef6f9a2e2"
+    },
     "be.technocite.openbrushmeasure": {
       "version": "https://github.com/EloiStree/2025_05_20_MeasureOfTechnociteWithQuest3.git",
       "depth": 0,
