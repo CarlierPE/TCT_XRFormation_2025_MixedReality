@@ -1,9 +1,9 @@
+using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PE_TestScript : TriggerableByPlayer
 {
-
     //for debugging purposes - fires the event every 5 sec
     void Update()
     {
