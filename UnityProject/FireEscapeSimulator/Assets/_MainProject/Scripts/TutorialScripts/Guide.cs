@@ -56,17 +56,31 @@ public class Guide : MonoBehaviour
     }
 
     //Just to have an idea of which animations we will have...
+    public void PlayBeginControl()
+    {
+        _anim.SetBool("Idle", false);
+        _anim.SetBool("Depart", true);
+
+    }
     public void PlayGoForwardAnimation()
     {
-        _anim.SetBool("Begin", true);    
-    
+        
+
     }
     public void PlayGoBackwardAnimation() { }
     public void PlayIdleAnimation() 
     {
-        _anim.SetBool("Begin", false);
-       
+        _anim.SetBool("Idle", true);
+        _anim.SetBool("Depart", false);
+
     }
     public void PlayTurnLeftAnimation() { }
     public void PlayTurnRightAnimation() { }
+
+    public void WayEndAnimation()
+    {
+        
+        _anim.SetBool("Open", true);
+        Debug.Log("C'est vraiment finiiiiii");
+    }
 }

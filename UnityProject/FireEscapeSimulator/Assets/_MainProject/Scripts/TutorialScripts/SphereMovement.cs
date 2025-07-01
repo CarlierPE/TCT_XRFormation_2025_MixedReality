@@ -16,12 +16,12 @@ public class SphereMovement : MonoBehaviour
     private int _currentWaypointIndex = 0;
     private Guide _guide;
     private bool fini = false;
-    public Animator _anim;
+   
     private void Start()
     {
         _guide = _guideProvider.GetGuide();
         _guide.gameObject.SetActive(true);
-        _anim = GetComponent<Animator>();
+       
         //if (firstCube != null)
         //{
         //    _guide.transform.position = firstCube.position;
@@ -39,7 +39,7 @@ public class SphereMovement : MonoBehaviour
         if (fini || distance >= _distanceFollower)
         {
             ToLookPlayer();
-
+            _guide.PlayIdleAnimation();
             return;
         }
 
@@ -59,8 +59,11 @@ public class SphereMovement : MonoBehaviour
                 if (_currentWaypointIndex >= _transformList.Count)
                 {
                     fini = true;
+                    _guide.WayEndAnimation();
                     OnPathCompleted?.Invoke();
+                    Debug.Log("c'est finiiiiiiiiii");
                     return;
+               
                 }
 
 
@@ -91,8 +94,11 @@ public class SphereMovement : MonoBehaviour
 
     public void StarteAction()
     {
+        
         _firstStart = true;
         OnPathContinue?.Invoke();
+        _guide.PlayBeginControl();
+
     }
 
     public void BreakAction()
@@ -100,7 +106,7 @@ public class SphereMovement : MonoBehaviour
         _firstStart = false;
         OnPathWait?.Invoke();
         ToLookPlayer();
-        _anim.SetAnime   
+        _guide.PlayIdleAnimation();
     }
 
     private void OnDrawGizmos()
