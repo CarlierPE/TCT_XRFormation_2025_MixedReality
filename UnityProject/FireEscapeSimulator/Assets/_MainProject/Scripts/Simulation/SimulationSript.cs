@@ -36,7 +36,7 @@ public class SimulationSript : MonoBehaviour
             {
                 fire.SetActive(false);
             }
-            _fireInstancate.InstantieFire(_fires);
+            //_fireInstancate.InstantieFire(_fires);
         }
         if (_timeExpension == 0)
         {
@@ -103,7 +103,7 @@ public class SimulationSript : MonoBehaviour
             _timeExpension = _timeExpension - (elapsedTime / 0.2f); // Ensure time expansion is within a reasonable range
         }
 
-        _fireInstancate.SetInterval(_timeExpension);
+        //_fireInstancate.SetInterval(_timeExpension);
 
     }
 
