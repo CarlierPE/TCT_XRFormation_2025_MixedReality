@@ -1,26 +1,34 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 
 public class SphereMovement : MonoBehaviour
 {
-    public UnityEvent _onPathCompleted;
-
-    [SerializeField] private List<Transform> _transformList = new();
+    public UnityEvent OnPathCompleted;
+    public UnityEvent OnPathWait;
+    public UnityEvent OnPathContinue;
+    [SerializeField] private List<Trajets> _transformList = new();
     [SerializeField] private float _speed = 5f;
     [SerializeField] private GuideProvider _guideProvider;
     [SerializeField] private Transform _follower;
     [SerializeField] private float _distanceFollower = 3f;
-
+    private Guide _guide;
+    
     private bool _firstStart = false;
     private int _currentWaypointIndex = 0;
-    private Guide _guide;
     private bool fini = false;
-
     private void Start()
     {
         _guide = _guideProvider.GetGuide();
         _guide.gameObject.SetActive(true);
+        //if (firstCube != null)
+        //{
+        //    _guide.transform.position = firstCube.position;
+        //    _currentWaypointIndex = 0;
+
+        //}
+       _guide.PlayIdleAnimation();
     }
 
     private void Update()
@@ -31,32 +39,40 @@ public class SphereMovement : MonoBehaviour
         if (fini || distance >= _distanceFollower)
         {
             ToLookPlayer();
+            _guide.PlayGoForwardAnimation(); 
+            
             return;
         }
 
         // Mode "suivi de waypoints"
         if (!_firstStart) return;
 
-        if (_currentWaypointIndex < _transformList.Count)
-        {
-            Transform target = _transformList[_currentWaypointIndex];
-            _guide.transform.position = Vector3.MoveTowards(
-                _guide.transform.position, target.position, _speed * Time.deltaTime
-            );
+        //if (_currentWaypointIndex < _transformList.Count)
+        //{
+        //    Transform target = _transformList[_currentWaypointIndex];
+        //    _guide.transform.position = Vector3.MoveTowards(
+        //        _guide.transform.position, target.position, _speed * Time.deltaTime
+        //    );
 
-            if (Vector3.Distance(_guide.transform.position, target.position) < 0.1f)
-            {
-                _currentWaypointIndex++;
-                if (_currentWaypointIndex >= _transformList.Count)
-                {
-                    fini = true;
-                    _onPathCompleted?.Invoke();
-                    return;
-                }
-            }
+        //    if (Vector3.Distance(_guide.transform.position, target.position) < 0.1f)
+        //    {
+        //        _currentWaypointIndex++;
+        //        if (_currentWaypointIndex >= _transformList.Count)
+        //        {
+        //            fini = true;
+                    
+        //            OnPathCompleted?.Invoke();
+        //            return;
+        //        }
 
-            RotateTowards(target.position);
-        }
+
+        //    }
+
+
+        //    RotateTowards(target.position);
+
+
+        //}
     }
 
     private void ToLookPlayer()
@@ -72,16 +88,27 @@ public class SphereMovement : MonoBehaviour
         _guide.transform.rotation = Quaternion.RotateTowards(
             _guide.transform.rotation, rot, 360f * Time.deltaTime
         );
+        OnPathWait?.Invoke();
     }
 
     public void StarteAction()
     {
         _firstStart = true;
+
+        _guide.PlayGoForwardAnimation();
+        OnPathContinue?.Invoke();
+
     }
+
+   
+
+   
 
     public void BreakAction()
     {
         _firstStart = false;
+        OnPathWait?.Invoke();
+        ToLookPlayer();
     }
 
     private void OnDrawGizmos()
@@ -90,8 +117,8 @@ public class SphereMovement : MonoBehaviour
         Gizmos.color = Color.green;
         for (int i = 0; i < _transformList.Count - 1; i++)
         {
-            if (_transformList[i] != null && _transformList[i + 1] != null)
-                Gizmos.DrawLine(_transformList[i].position, _transformList[i + 1].position);
+            //if (_transformList[i] != null && _transformList[i + 1] != null)
+            //    Gizmos.DrawLine(_transformList[i].position, _transformList[i + 1].position);
         }
     }
 }

@@ -15,6 +15,7 @@ using UnityEngine.InputSystem;
 [RequireComponent(typeof(AnchorBasedRelocator))]
 public class Calibration : MonoBehaviour
 {
+    [HideInInspector]
     public UnityEvent OnCalibration;
 
     private AnchorBasedRelocator _relocator;
