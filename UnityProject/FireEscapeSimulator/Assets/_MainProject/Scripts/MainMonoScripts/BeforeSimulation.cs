@@ -7,6 +7,7 @@ using UnityEngine.Events;
  * */
 public class BeforeSimulation : MonoBehaviour
 {
+    [HideInInspector]
     public UnityEvent OnSimulationStarting;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
