@@ -1,34 +1,23 @@
-using System.Media;
-using Unity.Profiling;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class StartAlarmDetector : MonoBehaviour
 {
 
     [SerializeField] GameObject _fire;
-    [SerializeField] AudioSource[] _alarm;
+    public List<AudioSource> _alarm;
 
     [SerializeField]private float _timeStartAlarm;
+
     private float _timeWaiting;
-    private eMonitoredAction _action1;
-    private eMonitoredAction _action2;
-    private eMonitoredAction _action3;
     private bool _soundIsPlaying;
 
     private void Awake()
     {
         _timeStartAlarm = 1f;
         _timeWaiting = 0;
-        _action1 = eMonitoredAction.FinishLine;
-        _action2 = eMonitoredAction.WalkIntoFire;
-        _action3 = eMonitoredAction.StairsUp;
     }
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
+    
     // Update is called once per frame
     void Update()
     {
@@ -59,13 +48,42 @@ public class StartAlarmDetector : MonoBehaviour
                     item.Stop();
                 }
                 _soundIsPlaying= false;
-                StartAlarmBox.StartSound();
             }
 
             _timeWaiting = 0;
         }
 
 
+    }
+
+    public void StartSound()
+    {
+        Debug.Log("entrer dans start sound");
+        if (_alarm == null)
+        {
+            Debug.Log("entrer dans le if car _alarm est null");
+            return;
+        }
+        Debug.Log("nombre d'element est " + _alarm.Count);
+        foreach (var item in _alarm)
+        {
+            item.Play();
+        }
+    }
+
+    public  void StopSound()
+    {
+        Debug.Log("entrer dans stop sound");
+        if (_alarm == null)
+        {
+            Debug.Log("entrer dans le if car _alarm est null");
+            return;
+        }
+        Debug.Log("nombre d'element est " + _alarm.Count);
+        foreach (var item in _alarm)
+        {
+            item.Stop();
+        }
     }
 
 }

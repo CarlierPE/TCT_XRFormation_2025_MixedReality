@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class FireInstancate : MonoBehaviour
 {
+    [SerializeField] GameObject _startSoundFIre;
     [SerializeField] List<GameObject> _firePrefab; // Reference to the fire prefab
     [SerializeField] AudioSource _startFire; 
     [SerializeField] AudioSource[] _audio; //Reference to audio for fire
@@ -50,12 +51,15 @@ public class FireInstancate : MonoBehaviour
             return;
         }
 
-        if (_spawnCount == 0)
-            _startFire.Play();
+        //if (_spawnCount == 0)
+        //{
+            //_StartSoundFire.SetActive(true);
+            //_startFire.Play();
+        //}
 
         _firePrefab[_spawnCount].SetActive(true); // Activate the fire prefab at the current spawn count
 
-        _audio[_spawnCount].Play();
+        //_audio[_spawnCount].Play();
 
         _spawnCount++; // Increment the spawn count
         _nextSpawnTime = _nextSpawnTime + _spawnInterval; // Update the next spawn time  
@@ -86,11 +90,12 @@ public class FireInstancate : MonoBehaviour
         {
             fire.SetActive(false); // Deactivate all fire prefabs
         }
-        foreach (var item in _audio)
-        {
-            item.Stop();
-        }
-        _startFire.Stop();
+
+        //foreach (var item in _audio)
+        //{
+        //    item.Stop();
+        //}
+        //_startFire.Stop();
     }
 
     public void PauseFire()
