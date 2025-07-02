@@ -38,10 +38,11 @@ public class TutorialManager : MonoBehaviour
     }
     public void OnCurrentStepcompleted()
     {
-            _currentStepIndex++;
+        Debug.Log($"Step {_currentStepIndex} completed");
+
+        _currentStepIndex++;
             if (_currentStepIndex < _tutorialStep.Count)
             {
-                Debug.Log("index : " + _currentStepIndex);
 
                 _tutorialStep[_currentStepIndex].StartStep();
             }
