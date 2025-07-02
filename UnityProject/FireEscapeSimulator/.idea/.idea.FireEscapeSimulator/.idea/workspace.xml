@@ -5,21 +5,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="240f6067-6e66-437c-8e77-96865c3eb161" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.FireEscapeSimulator/.idea/indexLayout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FireEscapeSimulator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FireEscapeSimulator/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ButtonBroadCoaster.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ButtonBroadCoaster.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OculusRuntimeSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OculusRuntimeSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XR/Settings/OpenXR Package Settings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XR/Settings/OpenXR Package Settings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/Scripts/animationDiaporama.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MainProject/Scripts/animationDiaporama.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/fondText/Fond_1 (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/fondText/Fond_1 (1).png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/fondText/Fond_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/fondText/Fond_2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/fondText/Fond_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/ImageUI/Ui/fondText/Fond_3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/Scripts/AutomaticCanvas/TextAutoOnFondCanvas.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/Scripts/AutomaticCanvas/TextAutoOnFondCanvas.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/Scripts/CanvasFollowCamera.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/Scripts/CanvasFollowCamera.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/Scripts/animationDiaporama.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/Scripts/animationDiaporama.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/backupFireSimulator.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/backupFireSimulator.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/fire escape.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fire escape.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DpaMonitoringSettings">
+    <option name="firstShow" value="false" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.meta.xr.sdk.interaction@e52ba4dfd787/Runtime/Scripts/Unity/PointableCanvasModule.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -31,6 +52,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Attach to Unity Editor.Attach to Unity Editor &amp; Play.executor&quot;: &quot;Debug&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;feature/CANVASµ&quot;,
@@ -103,6 +125,9 @@
       <updated>1751275216191</updated>
       <workItem from="1751275218430" duration="3153000" />
       <workItem from="1751290890163" duration="2828000" />
+      <workItem from="1751353497416" duration="19164000" />
+      <workItem from="1751439645737" duration="269000" />
+      <workItem from="1751439952408" duration="4844000" />
     </task>
     <servers />
   </component>
