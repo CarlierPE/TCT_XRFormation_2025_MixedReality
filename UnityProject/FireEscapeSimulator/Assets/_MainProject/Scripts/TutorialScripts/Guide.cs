@@ -44,29 +44,36 @@ public class Guide : MonoBehaviour
     {
         //jouer l'animation du casque qui s'ouvre et montrer le picto
         _currentPicto = picto;
+        _anim.SetBool("Open", true);
     }
 
     public void HideCurrentPanel()
     {
         //jouer l'animation pour cacher le picto
         //...
+        _anim.SetBool("Open", false);
         _currentPicto.gameObject.SetActive(false);
         _currentPicto = null;
         OnPictoHidden?.Invoke();
     }
 
     //Just to have an idea of which animations we will have...
+   
     public void PlayGoForwardAnimation()
     {
-        _anim.SetBool("Begin", true);    
-    
+        _anim.SetBool("Run",true);
+        
+        
     }
     public void PlayGoBackwardAnimation() { }
     public void PlayIdleAnimation() 
     {
-        _anim.SetBool("Begin", false);
-       
+        
+        _anim.SetBool("Run",false);
+
     }
     public void PlayTurnLeftAnimation() { }
     public void PlayTurnRightAnimation() { }
+
+    
 }
