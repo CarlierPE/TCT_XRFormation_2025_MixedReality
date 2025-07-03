@@ -9,27 +9,12 @@ public class SphereMovement : MonoBehaviour
     public UnityEvent OnPathContinue;
     [SerializeField] private List<Transform> _transformList = new();
     [SerializeField] private float _speed = 5f;
-    [SerializeField] private GuideProvider _guideProvider;
     [SerializeField] private Transform _follower;
     [SerializeField] private float _distanceFollower = 3f;
     private bool _firstStart = false;
     private int _currentWaypointIndex = 0;
-    private Guide _guide;
+    [SerializeField] private Guide _guide;
     private bool fini = false;
-    private float speed = 0f;
-    private void Start()
-    {
-        _guide = _guideProvider.GetGuide();
-        _guide.gameObject.SetActive(true);
-       
-        //if (firstCube != null)
-        //{
-        //    _guide.transform.position = firstCube.position;
-        //    _currentWaypointIndex = 0;
-
-        //}
-
-    }
 
     private void Update()
     {
@@ -42,17 +27,13 @@ public class SphereMovement : MonoBehaviour
             ToLookPlayer();
            
             return;
-            speed = 0f;
-
         }
 
         // Mode "suivi de waypoints"
         if (!_firstStart) return;
 
         if (_currentWaypointIndex < _transformList.Count)
-        {
-            speed = 1;
-            
+        {            
             Transform target = _transformList[_currentWaypointIndex];
             _guide.transform.position = Vector3.MoveTowards(
             _guide.transform.position, target.position, _speed * Time.deltaTime

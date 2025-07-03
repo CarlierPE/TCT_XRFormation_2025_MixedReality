@@ -16,7 +16,6 @@ public class Guide : MonoBehaviour
     private Animator _anim;
     public UnityEvent OnSpawnComplete;
     public UnityEvent OnPictoHidden;
-    private SphereMovement _sphere; 
     private void Start()
     {
        
@@ -27,17 +26,23 @@ public class Guide : MonoBehaviour
     {
         if (_currentPicto == null)
             return;
-        _currentPicto.transform.position = _pictoContainer.position;
-        _currentPicto.transform.rotation = _pictoContainer.rotation;
+        _currentPicto.transform.SetPositionAndRotation(_pictoContainer.position, _pictoContainer.rotation);
     }
     public void Spawn(Vector3 spawnPosition, Transform lookAtTarget)
     {
         //se positionne à la position en regardant à lookattarget et joue son animation de spawn
         transform.position = spawnPosition;
         transform.LookAt(lookAtTarget, Vector3.up);
+        gameObject.SetActive(true);
         //jouer animation ici
         //...
         OnSpawnComplete?.Invoke();
+    }
+
+    public void UnSpawn()
+    {
+        //jouer animation éventuelle
+        gameObject.SetActive(false);
     }
 
     public void ShowPanel(TutorialPicto picto)
