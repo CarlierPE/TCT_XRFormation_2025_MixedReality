@@ -55,7 +55,7 @@ public class MainGameScript : MonoBehaviour
 
         _beforeTutorialScript.OnTutorialStarting.AddListener(OnTutorialStarting);
         _tutorialScript.OnTutorialValidated.AddListener(OnTutorialEnded);
-        _tutorialScript.OnTutorialFailed.AddListener(OnTutorialRepeat);
+        //_tutorialScript.OnTutorialFailed.AddListener(OnTutorialRepeat);
         _afterTutorialScript.OnTutorialEnded.AddListener(OnTutorialEnded);
 
         _beforeSimulationScript.OnSimulationStarting.AddListener(OnSimulationStarting);
@@ -75,7 +75,7 @@ public class MainGameScript : MonoBehaviour
 
         _beforeTutorialScript.OnTutorialStarting.RemoveListener(OnTutorialStarting);
         _tutorialScript.OnTutorialValidated.RemoveListener(OnTutorialEnded);
-        _tutorialScript.OnTutorialFailed.RemoveListener(OnTutorialRepeat);
+        //_tutorialScript.OnTutorialFailed.RemoveListener(OnTutorialRepeat);
         _afterTutorialScript.OnTutorialEnded.RemoveListener(OnTutorialEnded);
 
         _beforeSimulationScript.OnSimulationStarting.RemoveListener(OnSimulationStarting);
