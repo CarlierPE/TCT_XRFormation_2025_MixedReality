@@ -21,7 +21,7 @@ public class Tutorial : MonoBehaviour
 
     private void OnEnable()
     {
-        _tutorialEnvironment.SetActive(true);
+        _tutorialEnvironment?.SetActive(true);
         _tutorialManager.OnLastStepCompleted.AddListener(CompleteTutorial);
         //_tutorialManager.OnTutorialFailed.AddListener(FailTutorial);
         _tutorialManager.StartTutorial();
@@ -29,7 +29,7 @@ public class Tutorial : MonoBehaviour
 
     private void OnDisable()
     {
-        _tutorialEnvironment.SetActive(false);
+        _tutorialEnvironment?.SetActive(false);
         _tutorialManager.OnLastStepCompleted.RemoveListener(CompleteTutorial);
         //_tutorialManager.OnTutorialFailed.RemoveListener(FailTutorial);
     }
