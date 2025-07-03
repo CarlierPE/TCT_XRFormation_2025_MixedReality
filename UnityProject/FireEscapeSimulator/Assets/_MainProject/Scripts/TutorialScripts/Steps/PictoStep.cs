@@ -19,6 +19,7 @@ public class PictoStep : TutorialStep
             PathCompleted();
             return;
         }
+        _path.gameObject.SetActive(true);
         _path.StarteAction();
     }
 
@@ -35,6 +36,9 @@ public class PictoStep : TutorialStep
     {
         if(_highlight != null)
             _highlight.SetActive(false);
+        if (_path != null)
+            _path.gameObject.SetActive(false);
+
         OnStepCompleted?.Invoke();
     }
 

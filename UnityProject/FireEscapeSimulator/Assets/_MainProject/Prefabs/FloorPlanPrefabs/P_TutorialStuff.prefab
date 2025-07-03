@@ -45,6 +45,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ItemHighlights
       objectReference: {fileID: 0}
+    - target: {fileID: 7588174835422509871, guid: dbe74a35580102e488ea8b0d92746f52, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8961825400052467340, guid: dbe74a35580102e488ea8b0d92746f52, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -157,6 +161,3 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2270768207117254890, guid: 42acb11a17dd087449c56465c01ba94b, type: 3}
   m_PrefabInstance: {fileID: 8761410915177623999}
   m_PrefabAsset: {fileID: 0}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

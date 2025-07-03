@@ -53,6 +53,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: P_Highlighter_Emergency_Exit_Sign
       objectReference: {fileID: 0}
+    - target: {fileID: 7457272392385681111, guid: 30ca2b7566387494fb9c8936c9b303c9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9202550244255946836, guid: 30ca2b7566387494fb9c8936c9b303c9, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.1322044
@@ -126,6 +130,10 @@ PrefabInstance:
     - target: {fileID: 7457272392385681111, guid: 30ca2b7566387494fb9c8936c9b303c9, type: 3}
       propertyPath: m_Name
       value: P_Highlighter_Elevator
+      objectReference: {fileID: 0}
+    - target: {fileID: 7457272392385681111, guid: 30ca2b7566387494fb9c8936c9b303c9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9202550244255946836, guid: 30ca2b7566387494fb9c8936c9b303c9, type: 3}
       propertyPath: m_LocalScale.x
@@ -201,6 +209,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: P_Highlighter_Fire_Hose
       objectReference: {fileID: 0}
+    - target: {fileID: 7457272392385681111, guid: 30ca2b7566387494fb9c8936c9b303c9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9202550244255946836, guid: 30ca2b7566387494fb9c8936c9b303c9, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.3944131
@@ -274,6 +286,10 @@ PrefabInstance:
     - target: {fileID: 7457272392385681111, guid: 30ca2b7566387494fb9c8936c9b303c9, type: 3}
       propertyPath: m_Name
       value: P_Highlighter_Phone
+      objectReference: {fileID: 0}
+    - target: {fileID: 7457272392385681111, guid: 30ca2b7566387494fb9c8936c9b303c9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9202550244255946836, guid: 30ca2b7566387494fb9c8936c9b303c9, type: 3}
       propertyPath: m_LocalScale.x
@@ -349,6 +365,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: P_Highlighter_Emergency_Door_Graph
       objectReference: {fileID: 0}
+    - target: {fileID: 7457272392385681111, guid: 30ca2b7566387494fb9c8936c9b303c9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9202550244255946836, guid: 30ca2b7566387494fb9c8936c9b303c9, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.37245
@@ -422,6 +442,10 @@ PrefabInstance:
     - target: {fileID: 7457272392385681111, guid: 30ca2b7566387494fb9c8936c9b303c9, type: 3}
       propertyPath: m_Name
       value: P_Highlighter_Extinguisher
+      objectReference: {fileID: 0}
+    - target: {fileID: 7457272392385681111, guid: 30ca2b7566387494fb9c8936c9b303c9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9202550244255946836, guid: 30ca2b7566387494fb9c8936c9b303c9, type: 3}
       propertyPath: m_LocalScale.x
@@ -497,6 +521,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: P_Highlighter_Stairs_up
       objectReference: {fileID: 0}
+    - target: {fileID: 7457272392385681111, guid: 30ca2b7566387494fb9c8936c9b303c9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9202550244255946836, guid: 30ca2b7566387494fb9c8936c9b303c9, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.5544983
@@ -570,6 +598,10 @@ PrefabInstance:
     - target: {fileID: 7457272392385681111, guid: 30ca2b7566387494fb9c8936c9b303c9, type: 3}
       propertyPath: m_Name
       value: P_Highlighter_Emergency_Lamp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7457272392385681111, guid: 30ca2b7566387494fb9c8936c9b303c9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9202550244255946836, guid: 30ca2b7566387494fb9c8936c9b303c9, type: 3}
       propertyPath: m_LocalScale.x
@@ -645,6 +677,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: P_Highlighter_AlarmBox
       objectReference: {fileID: 0}
+    - target: {fileID: 7457272392385681111, guid: 30ca2b7566387494fb9c8936c9b303c9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9202550244255946836, guid: 30ca2b7566387494fb9c8936c9b303c9, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.051295396
@@ -718,6 +754,10 @@ PrefabInstance:
     - target: {fileID: 7457272392385681111, guid: 30ca2b7566387494fb9c8936c9b303c9, type: 3}
       propertyPath: m_Name
       value: P_Highlighter_Stairs_Down
+      objectReference: {fileID: 0}
+    - target: {fileID: 7457272392385681111, guid: 30ca2b7566387494fb9c8936c9b303c9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9202550244255946836, guid: 30ca2b7566387494fb9c8936c9b303c9, type: 3}
       propertyPath: m_LocalScale.x
