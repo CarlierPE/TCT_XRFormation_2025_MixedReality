@@ -17,6 +17,6 @@ public class Debriefing : MonoBehaviour
     private void OnEnable()
     {
         //TODO - afficher l'UI etc
-        OnDebriefingExited?.Invoke();
+        OnDebriefingExited.Invoke();
     }
 }

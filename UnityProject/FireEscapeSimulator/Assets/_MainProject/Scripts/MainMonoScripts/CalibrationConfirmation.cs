@@ -33,11 +33,11 @@ public class CalibrationConfirmation : MonoBehaviour
 
     private void ValidateCalibration()
     {
-        OnCalibrationValidated?.Invoke();
+        OnCalibrationValidated.Invoke();
     }
 
     private void FailCalibration()
     {
-        OnCalibrationFailed?.Invoke();
+        OnCalibrationFailed.Invoke();
     }
 }

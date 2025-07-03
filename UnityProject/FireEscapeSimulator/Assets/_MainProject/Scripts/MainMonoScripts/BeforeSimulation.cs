@@ -13,6 +13,6 @@ public class BeforeSimulation : MonoBehaviour
     private void OnEnable()
     {
         //ENORME TODO ici
-        OnSimulationStarting?.Invoke();
+        OnSimulationStarting.Invoke();
     }
 }

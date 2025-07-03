@@ -13,6 +13,6 @@ public class AfterSimulation : MonoBehaviour
     private void OnEnable()
     {
         //TODO - TBD
-        OnSimulationEnded?.Invoke();
+        OnSimulationEnded.Invoke();
     }
 }

@@ -33,7 +33,7 @@ public class Tutorial : MonoBehaviour
 
     private void CompleteTutorial()
     {
-        //TODO _guide.PlayDespawnAnimation();
-        OnTutorialValidated?.Invoke();
+        _guide.UnSpawn();
+        OnTutorialValidated.Invoke();
     }
 }

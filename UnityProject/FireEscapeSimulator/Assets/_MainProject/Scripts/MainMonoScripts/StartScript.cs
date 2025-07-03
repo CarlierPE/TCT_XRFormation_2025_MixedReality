@@ -22,7 +22,7 @@ public class StartScript : MonoBehaviour
 
     private void StartSession()
     {
-        OnSessionStart?.Invoke();
+        OnSessionStart.Invoke();
     }
     
     private void OnDisable()

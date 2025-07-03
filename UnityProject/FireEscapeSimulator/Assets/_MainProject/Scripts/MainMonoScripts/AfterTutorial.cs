@@ -14,6 +14,6 @@ public class AfterTutorial : MonoBehaviour
     public UnityEvent OnTutorialEnded;
     private void OnEnable()
     {
-        OnTutorialEnded?.Invoke();
+        OnTutorialEnded.Invoke();
     }
 }

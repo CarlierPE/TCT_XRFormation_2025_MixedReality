@@ -17,6 +17,6 @@ public class Simulation : MonoBehaviour
     private void OnEnable()
     {
         //TODO - tout
-        OnSimulationEnding?.Invoke();
+        OnSimulationEnding.Invoke();
     }
 }
