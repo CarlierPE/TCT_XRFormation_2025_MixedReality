@@ -6,8 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="240f6067-6e66-437c-8e77-96865c3eb161" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FireEscapeSimulator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FireEscapeSimulator/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/Prefabs/UI/CalibrationConfirmation.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MainProject/Prefabs/UI/CalibrationConfirmation.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/Prefabs/UI/StartingCanvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MainProject/Prefabs/UI/StartingCanvas.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/Prefabs/UI/CanvasEntier.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MainProject/Prefabs/UI/CanvasEntier.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/Prefabs/UI/Script/TextAutoOnFondCanvas.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MainProject/Prefabs/UI/Script/TextAutoOnFondCanvas.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/Prefabs/UI/Script/animationDiaporama.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MainProject/Prefabs/UI/Script/animationDiaporama.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/Prefabs/UI/UI PNG/Template_Right_FullBgNoButton.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MainProject/Prefabs/UI/UI PNG/Template_Right_FullBgNoButton.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/backupFireSimulator.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/backupFireSimulator.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/fire escape.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fire escape.unity" afterDir="false" />
     </list>
@@ -24,6 +27,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.meta.xr.sdk.interaction@e52ba4dfd787/Runtime/Scripts/Unity/PointableCanvasModule.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@f3fac7af1578/Runtime/UGUI/UI/Core/Layout/LayoutElement.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -114,7 +118,7 @@
       <workItem from="1751353497416" duration="19164000" />
       <workItem from="1751439645737" duration="269000" />
       <workItem from="1751439952408" duration="4844000" />
-      <workItem from="1751528684761" duration="1764000" />
+      <workItem from="1751528684761" duration="5486000" />
     </task>
     <servers />
   </component>
