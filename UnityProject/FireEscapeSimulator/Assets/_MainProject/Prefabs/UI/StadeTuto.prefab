@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 579702858702279911}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
@@ -86,8 +86,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 184bbeb9fcd4fe14f838394d67b8261c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  autoPlay: 1
+  changeInterval: 3
   displayImage: {fileID: 0}
   imageContainer: {fileID: 0}
+  maxContainerSize: {fileID: 0}
   texturePaths:
   - {fileID: 2800000, guid: c823e669bc121dc43913c21b1cd9239d, type: 3}
   - {fileID: 2800000, guid: 0b68a7364bdff6d4e8593884723df498, type: 3}
@@ -165,8 +168,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 184bbeb9fcd4fe14f838394d67b8261c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  autoPlay: 1
+  changeInterval: 3
   displayImage: {fileID: 0}
   imageContainer: {fileID: 0}
+  maxContainerSize: {fileID: 0}
   texturePaths:
   - {fileID: 0}
   objectsToCycle:
@@ -242,8 +248,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 184bbeb9fcd4fe14f838394d67b8261c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  autoPlay: 1
+  changeInterval: 3
   displayImage: {fileID: 0}
   imageContainer: {fileID: 0}
+  maxContainerSize: {fileID: 0}
   texturePaths:
   - {fileID: 2800000, guid: 101664085d0040348b4971bd15c60c83, type: 3}
   - {fileID: 2800000, guid: dee60b1aba97bf14aae904e17efb7669, type: 3}
@@ -294,7 +303,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3149751007498557457
 Transform:
   m_ObjectHideFlags: 0
@@ -322,11 +331,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 184bbeb9fcd4fe14f838394d67b8261c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  autoPlay: 1
+  changeInterval: 1
   displayImage: {fileID: 0}
   imageContainer: {fileID: 0}
+  maxContainerSize: {fileID: 0}
   texturePaths:
-  - {fileID: 2800000, guid: 871298bbc67e85e49ab6411d31f04035, type: 3}
   - {fileID: 2800000, guid: ac946219ba57e20498e9c4868961461f, type: 3}
+  - {fileID: 2800000, guid: 871298bbc67e85e49ab6411d31f04035, type: 3}
   objectsToCycle:
   - {fileID: 2741690341026141596}
 --- !u!114 &2561209366234319849
@@ -393,8 +405,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 184bbeb9fcd4fe14f838394d67b8261c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  autoPlay: 1
+  changeInterval: 3
   displayImage: {fileID: 0}
   imageContainer: {fileID: 0}
+  maxContainerSize: {fileID: 0}
   texturePaths:
   - {fileID: 0}
   objectsToCycle:
@@ -470,8 +485,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 184bbeb9fcd4fe14f838394d67b8261c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  autoPlay: 1
+  changeInterval: 3
   displayImage: {fileID: 0}
   imageContainer: {fileID: 0}
+  maxContainerSize: {fileID: 0}
   texturePaths:
   - {fileID: 0}
   objectsToCycle:
@@ -547,8 +565,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 184bbeb9fcd4fe14f838394d67b8261c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  autoPlay: 1
+  changeInterval: 3
   displayImage: {fileID: 0}
   imageContainer: {fileID: 0}
+  maxContainerSize: {fileID: 0}
   texturePaths:
   - {fileID: 0}
   objectsToCycle:
@@ -624,8 +645,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 184bbeb9fcd4fe14f838394d67b8261c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  autoPlay: 1
+  changeInterval: 3
   displayImage: {fileID: 0}
   imageContainer: {fileID: 0}
+  maxContainerSize: {fileID: 0}
   texturePaths:
   - {fileID: 2800000, guid: 1a5f6bda9ef104f4eb020a470f5ae3df, type: 3}
   - {fileID: 2800000, guid: 5d7b55a17bb706c43bd8dc1e7c8f6c7f, type: 3}
@@ -702,8 +726,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 184bbeb9fcd4fe14f838394d67b8261c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  autoPlay: 1
+  changeInterval: 3
   displayImage: {fileID: 0}
   imageContainer: {fileID: 0}
+  maxContainerSize: {fileID: 0}
   texturePaths:
   - {fileID: 2800000, guid: 024de9f9174d3844a979c8021cbacf04, type: 3}
   - {fileID: 2800000, guid: 28c3990ef8705e5468807c5f0115e067, type: 3}
