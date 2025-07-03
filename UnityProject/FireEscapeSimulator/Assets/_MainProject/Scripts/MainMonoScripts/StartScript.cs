@@ -8,17 +8,26 @@ using UnityEngine.Events;
  */
 public class StartScript : MonoBehaviour
 {
+    [SerializeField] GameObject _ui;
+    
+
     [HideInInspector]
     public UnityEvent OnSessionStart;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+
+    private void OnEnable()
     {
-        
+        //TODO event "click" de l'ui add
+        _ui.SetActive(true);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void StartSession()
     {
-        
+        OnSessionStart.Invoke();
+    }
+    
+    private void OnDisable()
+    {
+        //TODO event click de l'ui remove
+        _ui.SetActive(false);
     }
 }

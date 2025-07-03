@@ -259,6 +259,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Occlusion
       objectReference: {fileID: 0}
+    - target: {fileID: 2300092151462521020, guid: 5f15df90a89a04b48813b0110ecc1e11, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5724613032157682265, guid: 5f15df90a89a04b48813b0110ecc1e11, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

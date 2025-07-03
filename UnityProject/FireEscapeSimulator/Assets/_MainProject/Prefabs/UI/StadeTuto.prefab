@@ -1,0 +1,796 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &579702858702279911
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4779656034458709209}
+  m_Layer: 0
+  m_Name: StadeTuto
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4779656034458709209
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579702858702279911}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children:
+  - {fileID: 3149751007498557457}
+  - {fileID: 1594130228671639126}
+  - {fileID: 1974651376216947613}
+  - {fileID: 406651003245638357}
+  - {fileID: 8129652035254528600}
+  - {fileID: 2957890843791371708}
+  - {fileID: 8469345139481253924}
+  - {fileID: 2085168502020173922}
+  - {fileID: 537276959428864223}
+  - {fileID: 5497260233708059522}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1263045711652785982
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 537276959428864223}
+  - component: {fileID: 6955282444265230169}
+  - component: {fileID: 7741982573264241920}
+  m_Layer: 0
+  m_Name: extincteur$
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &537276959428864223
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263045711652785982}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 4779656034458709209}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6955282444265230169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263045711652785982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 184bbeb9fcd4fe14f838394d67b8261c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoPlay: 1
+  changeInterval: 3
+  displayImage: {fileID: 0}
+  imageContainer: {fileID: 0}
+  maxContainerSize: {fileID: 0}
+  texturePaths:
+  - {fileID: 2800000, guid: c823e669bc121dc43913c21b1cd9239d, type: 3}
+  - {fileID: 2800000, guid: 0b68a7364bdff6d4e8593884723df498, type: 3}
+  - {fileID: 2800000, guid: 834abe80e5aeeee48aeb16f3a1402be9, type: 3}
+  - {fileID: 2800000, guid: 3977ab838c6fadc468f0b5bb115772dd, type: 3}
+  - {fileID: 2800000, guid: 3f3f027cb6ab25c479a014f02b140910, type: 3}
+  objectsToCycle: []
+--- !u!114 &7741982573264241920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263045711652785982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectsToCycle:
+  - {fileID: 0}
+  displayText: {fileID: 0}
+  canvas: {fileID: 0}
+  textContents:
+  - "Ceci est un panneau d'\xE9vacuation, il montre la direction de la sortie de
+    secours la plus proche"
+  - "Bonjour et bienvenue dans FireEscapeSimulator ! Je serai votre assistant lors
+    de cette simulation. Nous allons voir ensemble la marche \xE0 suivre en cas d'incendie
+    afin de r\xE9ussir \xE0 \xE9vacuer et pr\xE9venir en tout s\xE9curit\xE9. \xCAtes-vous
+    pr\xEAt \xE0 commencer"
+  - "Ceci est un panneau d'\xE9vacuation, il montre la direction de la sortie de
+    secours la plus proche"
+--- !u!1 &1605001227334432218
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2957890843791371708}
+  - component: {fileID: 2490763061763603747}
+  - component: {fileID: 1226342828346997407}
+  m_Layer: 0
+  m_Name: "Lumi\xE8re"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &2957890843791371708
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1605001227334432218}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 4779656034458709209}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2490763061763603747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1605001227334432218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 184bbeb9fcd4fe14f838394d67b8261c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoPlay: 1
+  changeInterval: 3
+  displayImage: {fileID: 0}
+  imageContainer: {fileID: 0}
+  maxContainerSize: {fileID: 0}
+  texturePaths:
+  - {fileID: 0}
+  objectsToCycle:
+  - {fileID: 0}
+  - {fileID: 0}
+--- !u!114 &1226342828346997407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1605001227334432218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectsToCycle:
+  - {fileID: 0}
+  displayText: {fileID: 0}
+  canvas: {fileID: 0}
+  textContents:
+  - "Ceci est un panneau d'\xE9vacuation, il montre la direction de la sortie de
+    secours la plus proche"
+  - "Bonjour et bienvenue dans FireEscapeSimulator ! Je serai votre assistant lors
+    de cette simulation. Nous allons voir ensemble la marche \xE0 suivre en cas d'incendie
+    afin de r\xE9ussir \xE0 \xE9vacuer et pr\xE9venir en tout s\xE9curit\xE9. \xCAtes-vous
+    pr\xEAt \xE0 commencer"
+  - "Ceci est un panneau d'\xE9vacuation, il montre la direction de la sortie de
+    secours la plus proche"
+--- !u!1 &2037691967761874643
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1594130228671639126}
+  - component: {fileID: 1440775680691222291}
+  - component: {fileID: 8469661745480815938}
+  m_Layer: 0
+  m_Name: PorteDeSecours
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1594130228671639126
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2037691967761874643}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 4779656034458709209}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1440775680691222291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2037691967761874643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 184bbeb9fcd4fe14f838394d67b8261c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoPlay: 1
+  changeInterval: 3
+  displayImage: {fileID: 0}
+  imageContainer: {fileID: 0}
+  maxContainerSize: {fileID: 0}
+  texturePaths:
+  - {fileID: 2800000, guid: 101664085d0040348b4971bd15c60c83, type: 3}
+  - {fileID: 2800000, guid: dee60b1aba97bf14aae904e17efb7669, type: 3}
+  - {fileID: 2800000, guid: 514dc67a767f83046a3ed0dcdd82114e, type: 3}
+  - {fileID: 2800000, guid: 2520d0cf96029c94ea93fb0041300d95, type: 3}
+  objectsToCycle:
+  - {fileID: 0}
+  - {fileID: 0}
+--- !u!114 &8469661745480815938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2037691967761874643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectsToCycle:
+  - {fileID: 0}
+  displayText: {fileID: 0}
+  canvas: {fileID: 0}
+  textContents:
+  - "Ceci est un panneau d'\xE9vacuation, il montre la direction de la sortie de
+    secours la plus proche"
+  - "Bonjour et bienvenue dans FireEscapeSimulator ! Je serai votre assistant lors
+    de cette simulation. Nous allons voir ensemble la marche \xE0 suivre en cas d'incendie
+    afin de r\xE9ussir \xE0 \xE9vacuer et pr\xE9venir en tout s\xE9curit\xE9. \xCAtes-vous
+    pr\xEAt \xE0 commencer"
+  - "Ceci est un panneau d'\xE9vacuation, il montre la direction de la sortie de
+    secours la plus proche"
+--- !u!1 &2741690341026141596
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3149751007498557457}
+  - component: {fileID: 3003372755202156615}
+  - component: {fileID: 2561209366234319849}
+  m_Layer: 0
+  m_Name: Issue de secours
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &3149751007498557457
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2741690341026141596}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 4779656034458709209}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3003372755202156615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2741690341026141596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 184bbeb9fcd4fe14f838394d67b8261c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoPlay: 1
+  changeInterval: 1
+  displayImage: {fileID: 0}
+  imageContainer: {fileID: 0}
+  maxContainerSize: {fileID: 0}
+  texturePaths:
+  - {fileID: 2800000, guid: ac946219ba57e20498e9c4868961461f, type: 3}
+  - {fileID: 2800000, guid: 871298bbc67e85e49ab6411d31f04035, type: 3}
+  objectsToCycle:
+  - {fileID: 2741690341026141596}
+--- !u!114 &2561209366234319849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2741690341026141596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectsToCycle:
+  - {fileID: 0}
+  displayText: {fileID: 0}
+  canvas: {fileID: 0}
+  textContents:
+  - "Ceci est un panneau d'\xE9vacuation, il montre la direction de la sortie de
+    secours la plus proche"
+--- !u!1 &3283782696849422163
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2085168502020173922}
+  - component: {fileID: 5522606138589112813}
+  - component: {fileID: 8655823270767389670}
+  m_Layer: 0
+  m_Name: Ascenceur
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &2085168502020173922
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3283782696849422163}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 4779656034458709209}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5522606138589112813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3283782696849422163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 184bbeb9fcd4fe14f838394d67b8261c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoPlay: 1
+  changeInterval: 3
+  displayImage: {fileID: 0}
+  imageContainer: {fileID: 0}
+  maxContainerSize: {fileID: 0}
+  texturePaths:
+  - {fileID: 0}
+  objectsToCycle:
+  - {fileID: 0}
+  - {fileID: 0}
+--- !u!114 &8655823270767389670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3283782696849422163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectsToCycle:
+  - {fileID: 0}
+  displayText: {fileID: 0}
+  canvas: {fileID: 0}
+  textContents:
+  - "Ceci est un panneau d'\xE9vacuation, il montre la direction de la sortie de
+    secours la plus proche"
+  - "Bonjour et bienvenue dans FireEscapeSimulator ! Je serai votre assistant lors
+    de cette simulation. Nous allons voir ensemble la marche \xE0 suivre en cas d'incendie
+    afin de r\xE9ussir \xE0 \xE9vacuer et pr\xE9venir en tout s\xE9curit\xE9. \xCAtes-vous
+    pr\xEAt \xE0 commencer"
+  - "Ceci est un panneau d'\xE9vacuation, il montre la direction de la sortie de
+    secours la plus proche"
+--- !u!1 &3418460974007654773
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 406651003245638357}
+  - component: {fileID: 9068887908796665854}
+  - component: {fileID: 2817804362515136911}
+  m_Layer: 0
+  m_Name: tuyauxDePompiers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &406651003245638357
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3418460974007654773}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 4779656034458709209}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9068887908796665854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3418460974007654773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 184bbeb9fcd4fe14f838394d67b8261c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoPlay: 1
+  changeInterval: 3
+  displayImage: {fileID: 0}
+  imageContainer: {fileID: 0}
+  maxContainerSize: {fileID: 0}
+  texturePaths:
+  - {fileID: 0}
+  objectsToCycle:
+  - {fileID: 0}
+  - {fileID: 0}
+--- !u!114 &2817804362515136911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3418460974007654773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectsToCycle:
+  - {fileID: 0}
+  displayText: {fileID: 0}
+  canvas: {fileID: 0}
+  textContents:
+  - "Ceci est un panneau d'\xE9vacuation, il montre la direction de la sortie de
+    secours la plus proche"
+  - "Bonjour et bienvenue dans FireEscapeSimulator ! Je serai votre assistant lors
+    de cette simulation. Nous allons voir ensemble la marche \xE0 suivre en cas d'incendie
+    afin de r\xE9ussir \xE0 \xE9vacuer et pr\xE9venir en tout s\xE9curit\xE9. \xCAtes-vous
+    pr\xEAt \xE0 commencer"
+  - "Ceci est un panneau d'\xE9vacuation, il montre la direction de la sortie de
+    secours la plus proche"
+--- !u!1 &3851652837393583665
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8469345139481253924}
+  - component: {fileID: 982057646987781753}
+  - component: {fileID: 3591623091492035339}
+  m_Layer: 0
+  m_Name: "r\xE8gle"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &8469345139481253924
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3851652837393583665}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 4779656034458709209}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &982057646987781753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3851652837393583665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 184bbeb9fcd4fe14f838394d67b8261c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoPlay: 1
+  changeInterval: 3
+  displayImage: {fileID: 0}
+  imageContainer: {fileID: 0}
+  maxContainerSize: {fileID: 0}
+  texturePaths:
+  - {fileID: 0}
+  objectsToCycle:
+  - {fileID: 0}
+  - {fileID: 0}
+--- !u!114 &3591623091492035339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3851652837393583665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectsToCycle:
+  - {fileID: 0}
+  displayText: {fileID: 0}
+  canvas: {fileID: 0}
+  textContents:
+  - "Ceci est un panneau d'\xE9vacuation, il montre la direction de la sortie de
+    secours la plus proche"
+  - "Bonjour et bienvenue dans FireEscapeSimulator ! Je serai votre assistant lors
+    de cette simulation. Nous allons voir ensemble la marche \xE0 suivre en cas d'incendie
+    afin de r\xE9ussir \xE0 \xE9vacuer et pr\xE9venir en tout s\xE9curit\xE9. \xCAtes-vous
+    pr\xEAt \xE0 commencer"
+  - "Ceci est un panneau d'\xE9vacuation, il montre la direction de la sortie de
+    secours la plus proche"
+--- !u!1 &5688462387169483448
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8129652035254528600}
+  - component: {fileID: 5262398859165431267}
+  - component: {fileID: 7517174337173555971}
+  m_Layer: 0
+  m_Name: "t\xE9l\xE9phone"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &8129652035254528600
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5688462387169483448}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 4779656034458709209}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5262398859165431267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5688462387169483448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 184bbeb9fcd4fe14f838394d67b8261c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoPlay: 1
+  changeInterval: 3
+  displayImage: {fileID: 0}
+  imageContainer: {fileID: 0}
+  maxContainerSize: {fileID: 0}
+  texturePaths:
+  - {fileID: 2800000, guid: 1a5f6bda9ef104f4eb020a470f5ae3df, type: 3}
+  - {fileID: 2800000, guid: 5d7b55a17bb706c43bd8dc1e7c8f6c7f, type: 3}
+  objectsToCycle:
+  - {fileID: 0}
+  - {fileID: 0}
+--- !u!114 &7517174337173555971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5688462387169483448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectsToCycle:
+  - {fileID: 0}
+  displayText: {fileID: 0}
+  canvas: {fileID: 0}
+  textContents:
+  - "Ceci est un panneau d'\xE9vacuation, il montre la direction de la sortie de
+    secours la plus proche"
+  - "Bonjour et bienvenue dans FireEscapeSimulator ! Je serai votre assistant lors
+    de cette simulation. Nous allons voir ensemble la marche \xE0 suivre en cas d'incendie
+    afin de r\xE9ussir \xE0 \xE9vacuer et pr\xE9venir en tout s\xE9curit\xE9. \xCAtes-vous
+    pr\xEAt \xE0 commencer"
+  - "Ceci est un panneau d'\xE9vacuation, il montre la direction de la sortie de
+    secours la plus proche"
+--- !u!1 &6759783852052906140
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1974651376216947613}
+  - component: {fileID: 5428999239146293789}
+  - component: {fileID: 2170510584085285613}
+  m_Layer: 0
+  m_Name: Alarme
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1974651376216947613
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6759783852052906140}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 4779656034458709209}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5428999239146293789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6759783852052906140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 184bbeb9fcd4fe14f838394d67b8261c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoPlay: 1
+  changeInterval: 3
+  displayImage: {fileID: 0}
+  imageContainer: {fileID: 0}
+  maxContainerSize: {fileID: 0}
+  texturePaths:
+  - {fileID: 2800000, guid: 024de9f9174d3844a979c8021cbacf04, type: 3}
+  - {fileID: 2800000, guid: 28c3990ef8705e5468807c5f0115e067, type: 3}
+  - {fileID: 2800000, guid: cfd1351ea7e20ea438c080a8d6d7671b, type: 3}
+  objectsToCycle:
+  - {fileID: 0}
+  - {fileID: 0}
+--- !u!114 &2170510584085285613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6759783852052906140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectsToCycle:
+  - {fileID: 0}
+  displayText: {fileID: 0}
+  canvas: {fileID: 0}
+  textContents:
+  - "Ceci est un panneau d'\xE9vacuation, il montre la direction de la sortie de
+    secours la plus proche"
+  - "Bonjour et bienvenue dans FireEscapeSimulator ! Je serai votre assistant lors
+    de cette simulation. Nous allons voir ensemble la marche \xE0 suivre en cas d'incendie
+    afin de r\xE9ussir \xE0 \xE9vacuer et pr\xE9venir en tout s\xE9curit\xE9. \xCAtes-vous
+    pr\xEAt \xE0 commencer"
+  - "Ceci est un panneau d'\xE9vacuation, il montre la direction de la sortie de
+    secours la plus proche"
+--- !u!1 &7025037063489134796
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5497260233708059522}
+  m_Layer: 0
+  m_Name: Spawned
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5497260233708059522
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7025037063489134796}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4779656034458709209}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

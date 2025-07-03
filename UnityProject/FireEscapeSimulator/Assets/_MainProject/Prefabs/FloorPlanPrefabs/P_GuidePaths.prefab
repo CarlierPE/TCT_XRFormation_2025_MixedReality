@@ -140,7 +140,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4315870465166672593
 Transform:
   m_ObjectHideFlags: 0
@@ -185,9 +185,9 @@ MonoBehaviour:
   - {fileID: 1867048242177019697}
   - {fileID: 6189252998838266437}
   _speed: 5
-  _guideProvider: {fileID: 0}
   _follower: {fileID: 0}
-  _distanceFollower: 3
+  _distanceFollower: 2.5
+  _guide: {fileID: 0}
 --- !u!1 &1124645092884490388
 GameObject:
   m_ObjectHideFlags: 0
@@ -328,7 +328,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &991897199236943624
 Transform:
   m_ObjectHideFlags: 0
@@ -375,9 +375,9 @@ MonoBehaviour:
   - {fileID: 1980141407711071505}
   - {fileID: 7259437681037077528}
   _speed: 5
-  _guideProvider: {fileID: 0}
   _follower: {fileID: 0}
-  _distanceFollower: 3
+  _distanceFollower: 2.5
+  _guide: {fileID: 0}
 --- !u!1 &1838825041671696615
 GameObject:
   m_ObjectHideFlags: 0
@@ -487,7 +487,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5155118277730155000
 Transform:
   m_ObjectHideFlags: 0
@@ -530,9 +530,9 @@ MonoBehaviour:
   - {fileID: 489795274793129366}
   - {fileID: 3317250719063086214}
   _speed: 5
-  _guideProvider: {fileID: 0}
   _follower: {fileID: 0}
-  _distanceFollower: 3
+  _distanceFollower: 2.5
+  _guide: {fileID: 0}
 --- !u!1 &3020508079733948261
 GameObject:
   m_ObjectHideFlags: 0
@@ -549,7 +549,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3284420784653870051
 Transform:
   m_ObjectHideFlags: 0
@@ -592,9 +592,9 @@ MonoBehaviour:
   - {fileID: 4516302404588656307}
   - {fileID: 3404305958883677985}
   _speed: 5
-  _guideProvider: {fileID: 0}
   _follower: {fileID: 0}
-  _distanceFollower: 3
+  _distanceFollower: 2.5
+  _guide: {fileID: 0}
 --- !u!1 &3407991105755676213
 GameObject:
   m_ObjectHideFlags: 0
@@ -642,7 +642,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &803698453836031162
 Transform:
   m_ObjectHideFlags: 0
@@ -685,9 +685,9 @@ MonoBehaviour:
   - {fileID: 459479732277633485}
   - {fileID: 718225577338951329}
   _speed: 5
-  _guideProvider: {fileID: 0}
   _follower: {fileID: 0}
-  _distanceFollower: 3
+  _distanceFollower: 2.5
+  _guide: {fileID: 0}
 --- !u!1 &3504933312799455062
 GameObject:
   m_ObjectHideFlags: 0
@@ -699,12 +699,12 @@ GameObject:
   - component: {fileID: 8470254851045984935}
   - component: {fileID: 8189442887305090319}
   m_Layer: 0
-  m_Name: FireHorsePath
+  m_Name: FireHosePath
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8470254851045984935
 Transform:
   m_ObjectHideFlags: 0
@@ -749,9 +749,9 @@ MonoBehaviour:
   - {fileID: 9179600471838249510}
   - {fileID: 545838937844886313}
   _speed: 5
-  _guideProvider: {fileID: 0}
   _follower: {fileID: 0}
-  _distanceFollower: 3
+  _distanceFollower: 2.5
+  _guide: {fileID: 0}
 --- !u!1 &4438756361312786672
 GameObject:
   m_ObjectHideFlags: 0
@@ -933,7 +933,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5104581552822686717
 Transform:
   m_ObjectHideFlags: 0
@@ -978,9 +978,9 @@ MonoBehaviour:
   - {fileID: 2068373860602746463}
   - {fileID: 8152871677392284941}
   _speed: 5
-  _guideProvider: {fileID: 0}
   _follower: {fileID: 0}
-  _distanceFollower: 3
+  _distanceFollower: 2.5
+  _guide: {fileID: 0}
 --- !u!1 &5804037685484874384
 GameObject:
   m_ObjectHideFlags: 0
@@ -1121,7 +1121,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3069932479211767001
 Transform:
   m_ObjectHideFlags: 0
@@ -1164,9 +1164,9 @@ MonoBehaviour:
   - {fileID: 6618982880751123924}
   - {fileID: 8089134835610513396}
   _speed: 5
-  _guideProvider: {fileID: 0}
   _follower: {fileID: 0}
-  _distanceFollower: 3
+  _distanceFollower: 2.5
+  _guide: {fileID: 0}
 --- !u!1 &7335358438295426692
 GameObject:
   m_ObjectHideFlags: 0
@@ -1245,7 +1245,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &943379018767890384
 Transform:
   m_ObjectHideFlags: 0
@@ -1288,9 +1288,9 @@ MonoBehaviour:
   - {fileID: 5649745151968788191}
   - {fileID: 8723191509558962893}
   _speed: 5
-  _guideProvider: {fileID: 0}
   _follower: {fileID: 0}
-  _distanceFollower: 3
+  _distanceFollower: 2.5
+  _guide: {fileID: 0}
 --- !u!1 &7675099056927210556
 GameObject:
   m_ObjectHideFlags: 0
@@ -1369,7 +1369,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &628245025757329575
 Transform:
   m_ObjectHideFlags: 0
@@ -1414,9 +1414,9 @@ MonoBehaviour:
   - {fileID: 302058058850785888}
   - {fileID: 1659042411789994386}
   _speed: 5
-  _guideProvider: {fileID: 0}
   _follower: {fileID: 0}
-  _distanceFollower: 3
+  _distanceFollower: 2.5
+  _guide: {fileID: 0}
 --- !u!1 &8964768275453382377
 GameObject:
   m_ObjectHideFlags: 0
