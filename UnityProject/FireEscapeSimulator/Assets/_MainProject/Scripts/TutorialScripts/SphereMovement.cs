@@ -16,7 +16,7 @@ public class SphereMovement : MonoBehaviour
     private int _currentWaypointIndex = 0;
     private Guide _guide;
     private bool fini = false;
-   
+    private float speed = 0f;
     private void Start()
     {
         _guide = _guideProvider.GetGuide();
@@ -38,9 +38,12 @@ public class SphereMovement : MonoBehaviour
         // Mode "regard" : une fois la fin atteinte, ou si le follower est trop loin
         if (fini || distance >= _distanceFollower)
         {
-            ToLookPlayer();
             _guide.PlayIdleAnimation();
+            ToLookPlayer();
+           
             return;
+            speed = 0f;
+
         }
 
         // Mode "suivi de waypoints"
@@ -48,22 +51,25 @@ public class SphereMovement : MonoBehaviour
 
         if (_currentWaypointIndex < _transformList.Count)
         {
+            speed = 1;
+            
             Transform target = _transformList[_currentWaypointIndex];
             _guide.transform.position = Vector3.MoveTowards(
-                _guide.transform.position, target.position, _speed * Time.deltaTime
+            _guide.transform.position, target.position, _speed * Time.deltaTime
             );
-
+            _guide.PlayGoForwardAnimation();
             if (Vector3.Distance(_guide.transform.position, target.position) < 0.1f)
             {
                 _currentWaypointIndex++;
                 if (_currentWaypointIndex >= _transformList.Count)
                 {
                     fini = true;
-                    _guide.WayEndAnimation();
+                    
                     OnPathCompleted?.Invoke();
+
                     Debug.Log("c'est finiiiiiiiiii");
                     return;
-               
+
                 }
 
 
@@ -76,6 +82,7 @@ public class SphereMovement : MonoBehaviour
         }
     }
 
+    
     private void ToLookPlayer()
     {
         RotateTowards(_follower.position);
@@ -97,7 +104,7 @@ public class SphereMovement : MonoBehaviour
         
         _firstStart = true;
         OnPathContinue?.Invoke();
-        _guide.PlayBeginControl();
+        _guide.PlayGoForwardAnimation();
 
     }
 
