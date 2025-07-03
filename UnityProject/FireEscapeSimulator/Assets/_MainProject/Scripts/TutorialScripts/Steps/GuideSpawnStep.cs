@@ -10,11 +10,6 @@ public class GuideSpawnStep : TutorialStep
         _guide.Spawn(_playerTransform.position + _playerTransform.forward + _playerTransform.right * -0.5f, _playerTransform);        
     }
 
-    private void Awake()
-    {
-        
-    }
-
     private void OnEnable()
     {
         _guide.OnSpawnComplete.AddListener(OnGuideSpawned);
