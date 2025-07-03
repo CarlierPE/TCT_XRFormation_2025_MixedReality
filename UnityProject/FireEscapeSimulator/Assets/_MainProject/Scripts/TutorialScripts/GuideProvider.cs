@@ -1,5 +1,7 @@
+using System;
 using UnityEngine;
 
+[Obsolete("mauvaise idée, on va mettre un guide dans la scène et y aller de façon plus classique")]
 public class GuideProvider : MonoBehaviour
 {
     [SerializeField] Guide _guidePrefab;
