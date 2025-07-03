@@ -9,6 +9,7 @@ using UnityEngine.Events;
 public class StartScript : MonoBehaviour
 {
     [SerializeField] GameObject _ui;
+    
 
     [HideInInspector]
     public UnityEvent OnSessionStart;

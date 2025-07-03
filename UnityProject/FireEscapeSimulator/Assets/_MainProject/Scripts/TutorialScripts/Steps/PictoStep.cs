@@ -7,28 +7,27 @@ using UnityEngine;
 
 public class PictoStep : TutorialStep
 {
-    [SerializeField] GuideProvider _guideProvider;
-    private Guide _guide;
+    [SerializeField] Guide _guide;
 
     [SerializeField] SphereMovement _path;
     [SerializeField] GameObject _highlight;
     [SerializeField] TutorialPicto _picto;
     public override void StartStep()
     {
-        _path.StarteAction();
+        if (_path == null)
+        {
+            pathCompleted();
+            return;
+        }
+        _path?.StarteAction();
     }
 
-
-    private void Awake()
-    {
-        _guide = _guideProvider.GetGuide();
-    }
 
     private void OnEnable()
     {
         _guide.OnPictoHidden.AddListener(pictoHidden);
-        _path.OnPathCompleted.AddListener(pathCompleted);
-        _picto.OnUserConfirmation.AddListener(pictoConfirmed);
+        _path?.OnPathCompleted.AddListener(pathCompleted);
+        _picto?.OnUserConfirmation.AddListener(pictoConfirmed);
     }
 
     private void pictoHidden()
@@ -40,14 +39,15 @@ public class PictoStep : TutorialStep
     private void pictoConfirmed()
     {
         _guide.HideCurrentPanel();
+        _highlight?.SetActive(false);
     }
 
 
     private void OnDisable()
     {
         _guide.OnPictoHidden.RemoveListener(pictoHidden);
-        _path.OnPathCompleted.RemoveListener(pathCompleted);
-        _picto.OnUserConfirmation.RemoveListener(pictoConfirmed);
+        _path?.OnPathCompleted.RemoveListener(pathCompleted);
+        _picto?.OnUserConfirmation.RemoveListener(pictoConfirmed);
     }
 
     private void pathCompleted()

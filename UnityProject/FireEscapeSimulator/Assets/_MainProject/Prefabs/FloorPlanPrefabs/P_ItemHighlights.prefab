@@ -199,7 +199,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7457272392385681111, guid: 30ca2b7566387494fb9c8936c9b303c9, type: 3}
       propertyPath: m_Name
-      value: P_Highlighter_Fire_Horse
+      value: P_Highlighter_Fire_Hose
       objectReference: {fileID: 0}
     - target: {fileID: 9202550244255946836, guid: 30ca2b7566387494fb9c8936c9b303c9, type: 3}
       propertyPath: m_LocalScale.x

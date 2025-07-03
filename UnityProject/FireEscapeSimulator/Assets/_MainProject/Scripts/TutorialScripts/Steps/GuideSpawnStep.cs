@@ -4,9 +4,7 @@ using UnityEngine;
 public class GuideSpawnStep : TutorialStep
 {
     [SerializeField] Transform _playerTransform;
-    [SerializeField] GuideProvider _guideProvider;
-
-    private Guide _guide;
+    [SerializeField] Guide _guide;
     public override void StartStep()
     {
         _guide.Spawn(_playerTransform.position + _playerTransform.forward + _playerTransform.right * -0.5f, _playerTransform);        
@@ -14,7 +12,7 @@ public class GuideSpawnStep : TutorialStep
 
     private void Awake()
     {
-        _guide = _guideProvider.GetGuide();
+        
     }
 
     private void OnEnable()

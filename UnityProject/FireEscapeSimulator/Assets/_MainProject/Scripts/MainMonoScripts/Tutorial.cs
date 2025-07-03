@@ -12,18 +12,16 @@ using UnityEngine.Events;
 public class Tutorial : MonoBehaviour
 {
     [SerializeField] TutorialManager _tutorialManager;
+    [SerializeField] Guide _guide;
 
     [HideInInspector]
     public UnityEvent OnTutorialValidated;
-    //[HideInInspector]
-    //public UnityEvent OnTutorialFailed;
     [SerializeField] GameObject _tutorialEnvironment;
 
     private void OnEnable()
     {
         _tutorialEnvironment?.SetActive(true);
         _tutorialManager.OnLastStepCompleted.AddListener(CompleteTutorial);
-        //_tutorialManager.OnTutorialFailed.AddListener(FailTutorial);
         _tutorialManager.StartTutorial();
     }
 
@@ -31,16 +29,11 @@ public class Tutorial : MonoBehaviour
     {
         _tutorialEnvironment?.SetActive(false);
         _tutorialManager.OnLastStepCompleted.RemoveListener(CompleteTutorial);
-        //_tutorialManager.OnTutorialFailed.RemoveListener(FailTutorial);
     }
-
-    //private void FailTutorial()
-    //{
-    //    OnTutorialFailed?.Invoke();
-    //}
 
     private void CompleteTutorial()
     {
+        //TODO _guide.PlayDespawnAnimation();
         OnTutorialValidated?.Invoke();
     }
 }
