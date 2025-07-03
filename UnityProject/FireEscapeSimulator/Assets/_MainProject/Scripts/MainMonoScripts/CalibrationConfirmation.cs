@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 /*
  * Ce script demande à l'utilisateur si la pièce est calibrée correctement.
@@ -12,6 +13,10 @@ public class CalibrationConfirmation : MonoBehaviour
 {
     [SerializeField] GameObject _visualHelp;
     [SerializeField] GameObject _UI;
+    [SerializeField] Button _okButton;
+    [SerializeField] Button _cancelButton;
+
+
     [HideInInspector]
     public UnityEvent OnCalibrationValidated;
     [HideInInspector]
@@ -19,14 +24,16 @@ public class CalibrationConfirmation : MonoBehaviour
 
     private void OnEnable()
     {
-        //TODO - 2 events de l'UI add
+        _okButton.onClick.AddListener(ValidateCalibration);
+        _cancelButton.onClick.AddListener(FailCalibration);
         _visualHelp.SetActive(true);
         _UI.SetActive(true);
     }
 
     private void OnDisable()
     {
-        //TODO - 2 events de l'UI remove
+        _okButton.onClick.RemoveListener(ValidateCalibration);
+        _cancelButton.onClick.RemoveListener(FailCalibration);
         _visualHelp.SetActive(false);
         _UI.SetActive(false);
     }
