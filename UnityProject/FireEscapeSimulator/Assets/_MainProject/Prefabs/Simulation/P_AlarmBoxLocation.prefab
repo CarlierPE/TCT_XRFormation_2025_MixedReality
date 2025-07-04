@@ -1,0 +1,411 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &249193279862757938
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1585923982917313312}
+  m_Layer: 0
+  m_Name: P_AlarmBoxLocation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1585923982917313312
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 249193279862757938}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1139159358240504233}
+  - {fileID: 9021699267931197901}
+  - {fileID: 2612286012714451032}
+  - {fileID: 7677956603484388925}
+  - {fileID: 8799307299121715012}
+  - {fileID: 1970592924433234579}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &379667385149929845
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1585923982917313312}
+    m_Modifications:
+    - target: {fileID: 2379146556473915693, guid: 813e438931a3b92498437245bd406b82, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.576
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379146556473915693, guid: 813e438931a3b92498437245bd406b82, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379146556473915693, guid: 813e438931a3b92498437245bd406b82, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379146556473915693, guid: 813e438931a3b92498437245bd406b82, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379146556473915693, guid: 813e438931a3b92498437245bd406b82, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379146556473915693, guid: 813e438931a3b92498437245bd406b82, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379146556473915693, guid: 813e438931a3b92498437245bd406b82, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379146556473915693, guid: 813e438931a3b92498437245bd406b82, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379146556473915693, guid: 813e438931a3b92498437245bd406b82, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379146556473915693, guid: 813e438931a3b92498437245bd406b82, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3048863952840221591, guid: 813e438931a3b92498437245bd406b82, type: 3}
+      propertyPath: m_Name
+      value: PRE_AlarmButton Commun 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 813e438931a3b92498437245bd406b82, type: 3}
+--- !u!4 &2612286012714451032 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2379146556473915693, guid: 813e438931a3b92498437245bd406b82, type: 3}
+  m_PrefabInstance: {fileID: 379667385149929845}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3371918860126257284
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1585923982917313312}
+    m_Modifications:
+    - target: {fileID: 2379146556473915693, guid: 813e438931a3b92498437245bd406b82, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379146556473915693, guid: 813e438931a3b92498437245bd406b82, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379146556473915693, guid: 813e438931a3b92498437245bd406b82, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379146556473915693, guid: 813e438931a3b92498437245bd406b82, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379146556473915693, guid: 813e438931a3b92498437245bd406b82, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379146556473915693, guid: 813e438931a3b92498437245bd406b82, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379146556473915693, guid: 813e438931a3b92498437245bd406b82, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379146556473915693, guid: 813e438931a3b92498437245bd406b82, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379146556473915693, guid: 813e438931a3b92498437245bd406b82, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379146556473915693, guid: 813e438931a3b92498437245bd406b82, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3048863952840221591, guid: 813e438931a3b92498437245bd406b82, type: 3}
+      propertyPath: m_Name
+      value: PRE_AlarmButton room 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 813e438931a3b92498437245bd406b82, type: 3}
+--- !u!4 &1139159358240504233 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2379146556473915693, guid: 813e438931a3b92498437245bd406b82, type: 3}
+  m_PrefabInstance: {fileID: 3371918860126257284}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4205410849558692798
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1585923982917313312}
+    m_Modifications:
+    - target: {fileID: 2379146556473915693, guid: 813e438931a3b92498437245bd406b82, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 8.825
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379146556473915693, guid: 813e438931a3b92498437245bd406b82, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379146556473915693, guid: 813e438931a3b92498437245bd406b82, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379146556473915693, guid: 813e438931a3b92498437245bd406b82, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379146556473915693, guid: 813e438931a3b92498437245bd406b82, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379146556473915693, guid: 813e438931a3b92498437245bd406b82, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379146556473915693, guid: 813e438931a3b92498437245bd406b82, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379146556473915693, guid: 813e438931a3b92498437245bd406b82, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379146556473915693, guid: 813e438931a3b92498437245bd406b82, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379146556473915693, guid: 813e438931a3b92498437245bd406b82, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3048863952840221591, guid: 813e438931a3b92498437245bd406b82, type: 3}
+      propertyPath: m_Name
+      value: PRE_AlarmButton (5)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 813e438931a3b92498437245bd406b82, type: 3}
+--- !u!4 &1970592924433234579 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2379146556473915693, guid: 813e438931a3b92498437245bd406b82, type: 3}
+  m_PrefabInstance: {fileID: 4205410849558692798}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5443156407949297424
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1585923982917313312}
+    m_Modifications:
+    - target: {fileID: 2379146556473915693, guid: 813e438931a3b92498437245bd406b82, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379146556473915693, guid: 813e438931a3b92498437245bd406b82, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379146556473915693, guid: 813e438931a3b92498437245bd406b82, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379146556473915693, guid: 813e438931a3b92498437245bd406b82, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379146556473915693, guid: 813e438931a3b92498437245bd406b82, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379146556473915693, guid: 813e438931a3b92498437245bd406b82, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379146556473915693, guid: 813e438931a3b92498437245bd406b82, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379146556473915693, guid: 813e438931a3b92498437245bd406b82, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379146556473915693, guid: 813e438931a3b92498437245bd406b82, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379146556473915693, guid: 813e438931a3b92498437245bd406b82, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3048863952840221591, guid: 813e438931a3b92498437245bd406b82, type: 3}
+      propertyPath: m_Name
+      value: PRE_AlarmButton Commun 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 813e438931a3b92498437245bd406b82, type: 3}
+--- !u!4 &7677956603484388925 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2379146556473915693, guid: 813e438931a3b92498437245bd406b82, type: 3}
+  m_PrefabInstance: {fileID: 5443156407949297424}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6564285002435948137
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1585923982917313312}
+    m_Modifications:
+    - target: {fileID: 2379146556473915693, guid: 813e438931a3b92498437245bd406b82, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.904
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379146556473915693, guid: 813e438931a3b92498437245bd406b82, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379146556473915693, guid: 813e438931a3b92498437245bd406b82, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 21.072
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379146556473915693, guid: 813e438931a3b92498437245bd406b82, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379146556473915693, guid: 813e438931a3b92498437245bd406b82, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379146556473915693, guid: 813e438931a3b92498437245bd406b82, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379146556473915693, guid: 813e438931a3b92498437245bd406b82, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379146556473915693, guid: 813e438931a3b92498437245bd406b82, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379146556473915693, guid: 813e438931a3b92498437245bd406b82, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379146556473915693, guid: 813e438931a3b92498437245bd406b82, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3048863952840221591, guid: 813e438931a3b92498437245bd406b82, type: 3}
+      propertyPath: m_Name
+      value: PRE_AlarmButton Stair
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 813e438931a3b92498437245bd406b82, type: 3}
+--- !u!4 &8799307299121715012 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2379146556473915693, guid: 813e438931a3b92498437245bd406b82, type: 3}
+  m_PrefabInstance: {fileID: 6564285002435948137}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6645042143759460576
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1585923982917313312}
+    m_Modifications:
+    - target: {fileID: 2379146556473915693, guid: 813e438931a3b92498437245bd406b82, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.934
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379146556473915693, guid: 813e438931a3b92498437245bd406b82, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379146556473915693, guid: 813e438931a3b92498437245bd406b82, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379146556473915693, guid: 813e438931a3b92498437245bd406b82, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379146556473915693, guid: 813e438931a3b92498437245bd406b82, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379146556473915693, guid: 813e438931a3b92498437245bd406b82, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379146556473915693, guid: 813e438931a3b92498437245bd406b82, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379146556473915693, guid: 813e438931a3b92498437245bd406b82, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379146556473915693, guid: 813e438931a3b92498437245bd406b82, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379146556473915693, guid: 813e438931a3b92498437245bd406b82, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3048863952840221591, guid: 813e438931a3b92498437245bd406b82, type: 3}
+      propertyPath: m_Name
+      value: PRE_AlarmButton room 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 813e438931a3b92498437245bd406b82, type: 3}
+--- !u!4 &9021699267931197901 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2379146556473915693, guid: 813e438931a3b92498437245bd406b82, type: 3}
+  m_PrefabInstance: {fileID: 6645042143759460576}
+  m_PrefabAsset: {fileID: 0}
