@@ -13821,9 +13821,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 469878124}
     - target: {fileID: 143599879631268795, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
+      propertyPath: _picto
+      value: 
+      objectReference: {fileID: 1401477799674069214}
+    - target: {fileID: 143599879631268795, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
       propertyPath: _highlight
       value: 
       objectReference: {fileID: 624432942}
+    - target: {fileID: 143599879631268795, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
+      propertyPath: _confirmButton
+      value: 
+      objectReference: {fileID: 9077220278647330711}
     - target: {fileID: 503399503791576520, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
       propertyPath: _path
       value: 
@@ -13833,9 +13841,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 469878124}
     - target: {fileID: 503399503791576520, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
+      propertyPath: _picto
+      value: 
+      objectReference: {fileID: 1401477799674069218}
+    - target: {fileID: 503399503791576520, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
       propertyPath: _highlight
       value: 
       objectReference: {fileID: 624432946}
+    - target: {fileID: 503399503791576520, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
+      propertyPath: _confirmButton
+      value: 
+      objectReference: {fileID: 9077220278647330711}
     - target: {fileID: 561235627572032097, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
       propertyPath: _path
       value: 
@@ -13845,9 +13861,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 469878124}
     - target: {fileID: 561235627572032097, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
+      propertyPath: _picto
+      value: 
+      objectReference: {fileID: 1401477799674069213}
+    - target: {fileID: 561235627572032097, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
       propertyPath: _highlight
       value: 
       objectReference: {fileID: 624432941}
+    - target: {fileID: 561235627572032097, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
+      propertyPath: _confirmButton
+      value: 
+      objectReference: {fileID: 9077220278647330711}
     - target: {fileID: 566696848444635143, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -13877,9 +13901,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 469878124}
     - target: {fileID: 1377247656991872090, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
+      propertyPath: _picto
+      value: 
+      objectReference: {fileID: 1401477799674069212}
+    - target: {fileID: 1377247656991872090, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
       propertyPath: _highlight
       value: 
       objectReference: {fileID: 624432940}
+    - target: {fileID: 1377247656991872090, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
+      propertyPath: _confirmButton
+      value: 
+      objectReference: {fileID: 9077220278647330711}
     - target: {fileID: 1436109155102717369, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
       propertyPath: _prefabToRelocate
       value: 
@@ -13901,9 +13933,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 469878124}
     - target: {fileID: 2172665420477953368, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
+      propertyPath: _picto
+      value: 
+      objectReference: {fileID: 1401477799674069216}
+    - target: {fileID: 2172665420477953368, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
       propertyPath: _highlight
       value: 
       objectReference: {fileID: 624432944}
+    - target: {fileID: 2172665420477953368, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
+      propertyPath: _confirmButton
+      value: 
+      objectReference: {fileID: 9077220278647330711}
     - target: {fileID: 2363081971213629697, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
       propertyPath: _guideProvider
       value: 
@@ -13924,6 +13964,14 @@ PrefabInstance:
       propertyPath: _guide
       value: 
       objectReference: {fileID: 469878124}
+    - target: {fileID: 2520376429145995636, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
+      propertyPath: _picto
+      value: 
+      objectReference: {fileID: 1401477799674069211}
+    - target: {fileID: 2520376429145995636, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
+      propertyPath: _confirmButton
+      value: 
+      objectReference: {fileID: 9077220278647330711}
     - target: {fileID: 3211973101509518886, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -13981,9 +14029,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 469878124}
     - target: {fileID: 3729321785762056116, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
+      propertyPath: _picto
+      value: 
+      objectReference: {fileID: 1401477799674069211}
+    - target: {fileID: 3729321785762056116, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
       propertyPath: _highlight
       value: 
       objectReference: {fileID: 624432938}
+    - target: {fileID: 3729321785762056116, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
+      propertyPath: _confirmButton
+      value: 
+      objectReference: {fileID: 9077220278647330711}
     - target: {fileID: 3976579970348048060, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
       propertyPath: _tutorialStep.Array.size
       value: 11
@@ -14017,9 +14073,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 469878124}
     - target: {fileID: 4512839958459398633, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
+      propertyPath: _picto
+      value: 
+      objectReference: {fileID: 1401477799674069217}
+    - target: {fileID: 4512839958459398633, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
       propertyPath: _highlight
       value: 
       objectReference: {fileID: 624432945}
+    - target: {fileID: 4512839958459398633, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
+      propertyPath: _confirmButton
+      value: 
+      objectReference: {fileID: 9077220278647330711}
     - target: {fileID: 4642201221952128758, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -14117,9 +14181,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 469878124}
     - target: {fileID: 7954013522434786334, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
+      propertyPath: _picto
+      value: 
+      objectReference: {fileID: 1401477799674069211}
+    - target: {fileID: 7954013522434786334, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
       propertyPath: _highlight
       value: 
       objectReference: {fileID: 624432939}
+    - target: {fileID: 7954013522434786334, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
+      propertyPath: _confirmButton
+      value: 
+      objectReference: {fileID: 9077220278647330711}
     - target: {fileID: 8141209547546837923, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -14133,9 +14205,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 469878124}
     - target: {fileID: 8267310937581995254, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
+      propertyPath: _picto
+      value: 
+      objectReference: {fileID: 1401477799674069215}
+    - target: {fileID: 8267310937581995254, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
       propertyPath: _highlight
       value: 
       objectReference: {fileID: 624432943}
+    - target: {fileID: 8267310937581995254, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
+      propertyPath: _confirmButton
+      value: 
+      objectReference: {fileID: 9077220278647330711}
     - target: {fileID: 8354693635422514119, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -14157,9 +14237,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 469878124}
     - target: {fileID: 8724058270593256991, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
+      propertyPath: _picto
+      value: 
+      objectReference: {fileID: 1401477799674069219}
+    - target: {fileID: 8724058270593256991, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
       propertyPath: _highlight
       value: 
       objectReference: {fileID: 624432947}
+    - target: {fileID: 8724058270593256991, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
+      propertyPath: _confirmButton
+      value: 
+      objectReference: {fileID: 9077220278647330711}
     - target: {fileID: 8833055366669889761, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
       propertyPath: _guide
       value: 
@@ -14371,7 +14459,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2741690341026141596, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2817804362515136911, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       propertyPath: canvas
@@ -14409,6 +14497,10 @@ PrefabInstance:
       propertyPath: buttonToShow
       value: 
       objectReference: {fileID: 3027428748715577513}
+    - target: {fileID: 3851652837393583665, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4779656034458709209, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -14509,6 +14601,10 @@ PrefabInstance:
       propertyPath: maxContainerSize
       value: 
       objectReference: {fileID: 3027428748715577514}
+    - target: {fileID: 7025037063489134796, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7517174337173555971, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       propertyPath: canvas
       value: 
@@ -14585,6 +14681,51 @@ GameObject:
 --- !u!4 &1401477799674069210 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4779656034458709209, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+  m_PrefabInstance: {fileID: 1401477799674069208}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1401477799674069211 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3851652837393583665, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+  m_PrefabInstance: {fileID: 1401477799674069208}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1401477799674069212 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1263045711652785982, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+  m_PrefabInstance: {fileID: 1401477799674069208}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1401477799674069213 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3283782696849422163, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+  m_PrefabInstance: {fileID: 1401477799674069208}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1401477799674069214 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1605001227334432218, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+  m_PrefabInstance: {fileID: 1401477799674069208}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1401477799674069215 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5688462387169483448, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+  m_PrefabInstance: {fileID: 1401477799674069208}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1401477799674069216 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3418460974007654773, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+  m_PrefabInstance: {fileID: 1401477799674069208}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1401477799674069217 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6759783852052906140, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+  m_PrefabInstance: {fileID: 1401477799674069208}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1401477799674069218 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2037691967761874643, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+  m_PrefabInstance: {fileID: 1401477799674069208}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1401477799674069219 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2741690341026141596, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
   m_PrefabInstance: {fileID: 1401477799674069208}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3027428748715577504
