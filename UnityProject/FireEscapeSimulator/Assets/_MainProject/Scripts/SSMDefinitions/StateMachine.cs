@@ -6,7 +6,7 @@ namespace FireSim.SSM
 {
     public class StateMachine
     {
-        private Dictionary<eGameStateID, GameState> _states = new();
+        private readonly Dictionary<eGameStateID, GameState> _states = new();
         private GameState _currentState;
 
         public eGameStateID CurrentStateID => _currentState?.ID ?? default;

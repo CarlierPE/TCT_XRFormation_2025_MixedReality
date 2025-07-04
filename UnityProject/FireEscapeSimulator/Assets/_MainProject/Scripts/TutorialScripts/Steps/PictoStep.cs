@@ -7,37 +7,42 @@ using UnityEngine;
 
 public class PictoStep : TutorialStep
 {
-    [SerializeField] GuideProvider _guideProvider;
-    private Guide _guide;
+    [SerializeField] Guide _guide;
 
     [SerializeField] SphereMovement _path;
     [SerializeField] GameObject _highlight;
     [SerializeField] TutorialPicto _picto;
     public override void StartStep()
     {
+        if (_path == null)
+        {
+            PathCompleted();
+            return;
+        }
+        _path.gameObject.SetActive(true);
         _path.StarteAction();
     }
 
 
-    private void Awake()
-    {
-        _guide = _guideProvider.GetGuide();
-    }
-
     private void OnEnable()
     {
-        _guide.OnPictoHidden.AddListener(pictoHidden);
-        _path.OnPathCompleted.AddListener(pathCompleted);
-        _picto.OnUserConfirmation.AddListener(pictoConfirmed);
+        _guide.OnPictoHidden.AddListener(PictoHidden);
+        _picto.OnUserConfirmation.AddListener(PictoConfirmed);
+        if(_path != null )
+            _path.OnPathCompleted.AddListener(PathCompleted);
     }
 
-    private void pictoHidden()
+    private void PictoHidden()
     {
-        _highlight?.SetActive(false);
+        if(_highlight != null)
+            _highlight.SetActive(false);
+        if (_path != null)
+            _path.gameObject.SetActive(false);
+
         OnStepCompleted?.Invoke();
     }
 
-    private void pictoConfirmed()
+    private void PictoConfirmed()
     {
         _guide.HideCurrentPanel();
     }
@@ -45,20 +50,17 @@ public class PictoStep : TutorialStep
 
     private void OnDisable()
     {
-        _guide.OnPictoHidden.RemoveListener(pictoHidden);
-        _path.OnPathCompleted.RemoveListener(pathCompleted);
-        _picto.OnUserConfirmation.RemoveListener(pictoConfirmed);
+        _guide.OnPictoHidden.RemoveListener(PictoHidden);
+        _picto.OnUserConfirmation.RemoveListener(PictoConfirmed);
+        if (_path != null )
+            _path.OnPathCompleted.RemoveListener(PathCompleted);
     }
 
-    private void pathCompleted()
+    private void PathCompleted()
     {
-        _highlight?.SetActive(true);
+        if(_highlight != null)
+            _highlight.SetActive(true);
         _guide.ShowPanel(_picto);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 }

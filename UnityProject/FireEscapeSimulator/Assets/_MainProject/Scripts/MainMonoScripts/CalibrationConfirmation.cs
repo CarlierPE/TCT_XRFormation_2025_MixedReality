@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 /*
  * Ce script demande à l'utilisateur si la pièce est calibrée correctement.
@@ -11,20 +12,39 @@ using UnityEngine.Events;
 public class CalibrationConfirmation : MonoBehaviour
 {
     [SerializeField] GameObject _visualHelp;
-    [SerializeField] CanvasFollowCamera _UI;
+    [SerializeField] GameObject _UI;
+    [SerializeField] Button _okButton;
+    [SerializeField] Button _cancelButton;
+
+
     [HideInInspector]
     public UnityEvent OnCalibrationValidated;
     [HideInInspector]
     public UnityEvent OnCalibrationFailed;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+
+    private void OnEnable()
     {
-        
+        _okButton.onClick.AddListener(ValidateCalibration);
+        _cancelButton.onClick.AddListener(FailCalibration);
+        _visualHelp.SetActive(true);
+        _UI.SetActive(true);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnDisable()
     {
-        
+        _okButton.onClick.RemoveListener(ValidateCalibration);
+        _cancelButton.onClick.RemoveListener(FailCalibration);
+        _visualHelp.SetActive(false);
+        _UI.SetActive(false);
+    }
+
+    private void ValidateCalibration()
+    {
+        OnCalibrationValidated.Invoke();
+    }
+
+    private void FailCalibration()
+    {
+        OnCalibrationFailed.Invoke();
     }
 }

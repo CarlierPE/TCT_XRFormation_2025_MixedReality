@@ -40,7 +40,7 @@ public class Calibration : MonoBehaviour
     }
 
     private Pose AnchorPose =>
-        new Pose(
+        new(
             new Vector3(_camTransform.position.x, 0f, _camTransform.position.z),
             Quaternion.Euler(0f, _camTransform.rotation.eulerAngles.y, 0f)
             );
@@ -48,7 +48,7 @@ public class Calibration : MonoBehaviour
     {
         
         _relocator.Relocate(AnchorPose);
-        OnCalibration?.Invoke();
+        OnCalibration.Invoke();
     }
 
     private void OnDisable()
