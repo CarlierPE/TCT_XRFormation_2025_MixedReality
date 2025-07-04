@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -10,17 +11,29 @@ using UnityEngine.Events;
  */
 public class Tutorial : MonoBehaviour
 {
+    [SerializeField] TutorialManager _tutorialManager;
+    [SerializeField] Guide _guide;
+
+    [HideInInspector]
     public UnityEvent OnTutorialValidated;
-    public UnityEvent OnTutorialFailed;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] GameObject _tutorialEnvironment;
+
+    private void OnEnable()
     {
-        
+        _tutorialEnvironment.SetActive(true);
+        _tutorialManager.OnLastStepCompleted.AddListener(CompleteTutorial);
+        _tutorialManager.StartTutorial();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnDisable()
     {
-        
+        _tutorialEnvironment.SetActive(false);
+        _tutorialManager.OnLastStepCompleted.RemoveListener(CompleteTutorial);
+    }
+
+    private void CompleteTutorial()
+    {
+        _guide.UnSpawn();
+        OnTutorialValidated.Invoke();
     }
 }

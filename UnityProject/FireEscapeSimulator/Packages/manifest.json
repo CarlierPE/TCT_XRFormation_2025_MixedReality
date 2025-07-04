@@ -1,11 +1,13 @@
 {
   "dependencies": {
+    "be.tchadevers.uiandfxmr": "https://github.com/TchadEvers/XR_PROJET_MR_VFX_UI.git",
     "be.technocite.openbrushmeasure": "https://github.com/EloiStree/2025_05_20_MeasureOfTechnociteWithQuest3.git",
     "com.kyrylokuzyk.primetween": "file:../Assets/Plugins/PrimeTween/internal/com.kyrylokuzyk.primetween.tgz",
     "com.meta.xr.sdk.all": "77.0.0",
+    "com.unity.2d.sprite": "1.0.0",
     "com.unity.ai.navigation": "2.0.6",
     "com.unity.collab-proxy": "2.8.2",
-    "com.unity.ide.rider": "3.0.31",
+    "com.unity.ide.rider": "3.0.36",
     "com.unity.ide.visualstudio": "2.0.22",
     "com.unity.inputsystem": "1.14.0",
     "com.unity.multiplayer.center": "1.0.0",

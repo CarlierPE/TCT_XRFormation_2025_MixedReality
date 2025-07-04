@@ -7,16 +7,16 @@ using UnityEngine.Events;
  */
 public class BeforeTutorial : MonoBehaviour
 {
+    [HideInInspector]
     public UnityEvent OnTutorialStarting;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    [SerializeField] GameObject _occlusion;
+    [SerializeField] Guide _guide;
+    [SerializeField] Transform _guideDefaultLocation;
 
-    // Update is called once per frame
-    void Update()
+    private void OnEnable()
     {
-        
+        _occlusion.SetActive(true);
+        _guide.transform.position = _guideDefaultLocation.position;
+        OnTutorialStarting.Invoke();
     }
 }
