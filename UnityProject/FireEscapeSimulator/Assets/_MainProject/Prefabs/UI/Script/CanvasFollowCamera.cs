@@ -4,17 +4,18 @@ public class CanvasFollowCamera : MonoBehaviour
 {
     public Camera mainCamera;
     public GameObject canvasObject;
-    public Vector3 offset = new Vector3(0, 0, 2f);
+    [SerializeField] Vector3 offset = new Vector3(0, 0, 1f);
 
     void Start()
     {
         if (mainCamera == null)
             mainCamera = Camera.main;
+        canvasObject.transform.position = mainCamera.transform.position + mainCamera.transform.rotation * offset;
+        canvasObject.transform.rotation = mainCamera.transform.rotation;
     }
 
     void Update()
     {
-        // Suivre la caméra seulement si le canvas est désactivé
         if (canvasObject != null && !canvasObject.activeSelf)
         {
             canvasObject.transform.position = mainCamera.transform.position + mainCamera.transform.rotation * offset;
