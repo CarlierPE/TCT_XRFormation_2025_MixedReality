@@ -6,7 +6,7 @@ public class DemoStep : TutorialStep
     [SerializeField] GameObject _itemToToggle;
     [SerializeField] float _timeToWait;
 
-    public override void StartStep()
+    protected override void DoStep()
     {
         StartCoroutine(ToggleDelayed());
     }

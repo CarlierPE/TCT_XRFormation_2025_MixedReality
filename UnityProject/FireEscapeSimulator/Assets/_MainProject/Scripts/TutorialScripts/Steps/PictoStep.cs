@@ -13,8 +13,9 @@ public class PictoStep : TutorialStep
     [SerializeField] SphereMovement _path;
     [SerializeField] GameObject _highlight;
     [SerializeField] GameObject _picto;
-    [SerializeField] ButtonBroadcaster _confirmButton;
-    public override void StartStep()
+    //[SerializeField] ButtonBroadcaster _confirmButton;
+    [SerializeField] Button _confirmButton;
+    protected override void DoStep()
     {
         if (_path == null)
         {
@@ -29,7 +30,7 @@ public class PictoStep : TutorialStep
     private void OnEnable()
     {
         _guide.OnPictoHidden.AddListener(PictoHidden);
-        _confirmButton.onButtonPressed.AddListener(PictoConfirmed);
+        _confirmButton.onClick.AddListener(PictoConfirmed);
         if(_path != null )
             _path.OnPathCompleted.AddListener(PathCompleted);
     }
@@ -53,7 +54,7 @@ public class PictoStep : TutorialStep
     private void OnDisable()
     {
         _guide.OnPictoHidden.RemoveListener(PictoHidden);
-        _confirmButton.onButtonPressed.RemoveListener(PictoConfirmed);
+        _confirmButton.onClick.RemoveListener(PictoConfirmed);
         if (_path != null )
             _path.OnPathCompleted.RemoveListener(PathCompleted);
     }

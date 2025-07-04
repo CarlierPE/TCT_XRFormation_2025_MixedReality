@@ -5,7 +5,7 @@ public class GuideSpawnStep : TutorialStep
 {
     [SerializeField] Transform _playerTransform;
     [SerializeField] Guide _guide;
-    public override void StartStep()
+    protected override void DoStep()
     {
         _guide.Spawn(_playerTransform.position + _playerTransform.forward + _playerTransform.right * -0.5f, _playerTransform);        
     }

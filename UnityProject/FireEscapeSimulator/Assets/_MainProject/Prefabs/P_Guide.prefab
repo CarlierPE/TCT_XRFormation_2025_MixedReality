@@ -49,9 +49,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7844553169969053032, guid: 1dba88446e74f0d45a136d80e6f9b92d, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: -689393269123128739, guid: 06dac3f568729354db31ff08f0baa3d7, type: 3}
+    - target: {fileID: -7844553169969053032, guid: 1dba88446e74f0d45a136d80e6f9b92d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 9fdd43887e9096942b2f29e0f3b7c99d, type: 2}
+    - target: {fileID: -3647283481951705586, guid: 1dba88446e74f0d45a136d80e6f9b92d, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: -6973919184799549957, guid: 06dac3f568729354db31ff08f0baa3d7, type: 3}
     - target: {fileID: -3647283481951705586, guid: 1dba88446e74f0d45a136d80e6f9b92d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -60,6 +68,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: P_Guide
       objectReference: {fileID: 0}
+    - target: {fileID: 3197023066378311117, guid: 1dba88446e74f0d45a136d80e6f9b92d, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: -2927672812342532497, guid: 06dac3f568729354db31ff08f0baa3d7, type: 3}
     - target: {fileID: 3197023066378311117, guid: 1dba88446e74f0d45a136d80e6f9b92d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -114,7 +126,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fad0292b7e7d5784583b12a5ecdc8261, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _pictoContainer: {fileID: 0}
   OnSpawnComplete:
     m_PersistentCalls:
       m_Calls: []

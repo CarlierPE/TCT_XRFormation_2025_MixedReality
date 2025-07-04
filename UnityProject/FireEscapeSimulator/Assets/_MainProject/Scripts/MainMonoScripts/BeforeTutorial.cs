@@ -16,7 +16,7 @@ public class BeforeTutorial : MonoBehaviour
     private void OnEnable()
     {
         _occlusion.SetActive(true);
-        OnTutorialStarting.Invoke();
         _guide.transform.position = _guideDefaultLocation.position;
+        OnTutorialStarting.Invoke();
     }
 }

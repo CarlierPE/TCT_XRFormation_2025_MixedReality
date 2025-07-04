@@ -11,7 +11,6 @@ public class Guide : MonoBehaviour
      * 
      */
 
-    [SerializeField] Transform _pictoContainer;
     private GameObject _currentPicto;
     private Animator _anim;
     public UnityEvent OnSpawnComplete;
@@ -22,12 +21,12 @@ public class Guide : MonoBehaviour
         _anim = GetComponent<Animator>();
         
     }
-    private void Update()
-    {
-        if (_currentPicto == null)
-            return;
-        _currentPicto.transform.SetPositionAndRotation(_pictoContainer.position, _pictoContainer.rotation);
-    }
+    //private void Update()
+    //{
+    //    if (_currentPicto == null)
+    //        return;
+    //    _currentPicto.transform.SetPositionAndRotation(_pictoContainer.position, _pictoContainer.rotation);
+    //}
     public void Spawn(Vector3 spawnPosition, Transform lookAtTarget)
     {
         //se positionne à la position en regardant à lookattarget et joue son animation de spawn

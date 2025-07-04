@@ -71,7 +71,8 @@ public class SphereMovement : MonoBehaviour
 
     private void RotateTowards(Vector3 destination)
     {
-        Vector3 dir = (destination - _guide.transform.position).normalized;
+        Vector3 dir = (destination - _guide.transform.position);
+        dir.y = 0; 
         if (dir.sqrMagnitude < 0.0001f) return;
         Quaternion rot = Quaternion.LookRotation(dir, Vector3.up);
         _guide.transform.rotation = Quaternion.RotateTowards(
