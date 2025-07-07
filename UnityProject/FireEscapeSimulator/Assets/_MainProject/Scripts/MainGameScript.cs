@@ -40,9 +40,13 @@ public class MainGameScript : MonoBehaviour
                 .AddState(new BeforeSimulationState(_beforeSimulationScript))
                 .AddState(new SimulationState(_simulationScript))
                 .AddState(new AfterSimulationState(_afterSimulationScript))
-                .AddState(new DebriefingState(_debriefingScript))
-                .SetInitialState(eGameStateID.Started);
+                .AddState(new DebriefingState(_debriefingScript));
 
+    }
+
+    private void Start()
+    {
+        _stateMachine.SetInitialState(eGameStateID.Started);
     }
 
     private void OnEnable()
