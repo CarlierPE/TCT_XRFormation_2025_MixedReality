@@ -971,7 +971,7 @@ PrefabInstance:
     - target: {fileID: 1392509080198994899, guid: ddebed8da42994a4b81bc65990bcab27, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 14798537261704620}
+      objectReference: {fileID: 1606033455254686523}
     - target: {fileID: 1392509080198994899, guid: ddebed8da42994a4b81bc65990bcab27, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: SendMessage
@@ -1425,6 +1425,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: StadeTuto (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 667662594221385048, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 8052860308392303817}
+    - target: {fileID: 667662594221385048, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: displayText
+      value: 
+      objectReference: {fileID: 857579768001180419}
     - target: {fileID: 982057646987781753, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       propertyPath: displayImage
       value: 
@@ -1437,6 +1445,14 @@ PrefabInstance:
       propertyPath: maxContainerSize
       value: 
       objectReference: {fileID: 7642383711460616958}
+    - target: {fileID: 1101878550339834399, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 8052860308392303817}
+    - target: {fileID: 1101878550339834399, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: displayText
+      value: 
+      objectReference: {fileID: 857579768001180419}
     - target: {fileID: 1226342828346997407, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       propertyPath: canvas
       value: 
@@ -1449,19 +1465,14 @@ PrefabInstance:
       propertyPath: buttonToShow
       value: 
       objectReference: {fileID: 2164158483700881158}
-    - target: {fileID: 1226342828346997407, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: changeInterval
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1226342828346997407, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: textContents.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1226342828346997407, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: 'textContents.Array.data[0]'
-      value: "Ces \xE9clairages de s\xE9curit\xE9 servent \xE0 s'orienter et \xE0
-        indiquer les voies de secours en cas d'incident provoquant l'obscurit\xE9."
-      objectReference: {fileID: 0}
+    - target: {fileID: 1404464661469119540, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 8052860308392303817}
+    - target: {fileID: 1404464661469119540, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: displayText
+      value: 
+      objectReference: {fileID: 857579768001180419}
     - target: {fileID: 1440775680691222291, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       propertyPath: displayImage
       value: 
@@ -1474,6 +1485,14 @@ PrefabInstance:
       propertyPath: maxContainerSize
       value: 
       objectReference: {fileID: 7642383711460616958}
+    - target: {fileID: 1854118554565977174, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 8052860308392303817}
+    - target: {fileID: 1854118554565977174, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: displayText
+      value: 
+      objectReference: {fileID: 857579768001180419}
     - target: {fileID: 2170510584085285613, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       propertyPath: canvas
       value: 
@@ -1486,45 +1505,6 @@ PrefabInstance:
       propertyPath: buttonToShow
       value: 
       objectReference: {fileID: 2164158483700881158}
-    - target: {fileID: 2170510584085285613, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: changeInterval
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 2170510584085285613, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: textContents.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2170510584085285613, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: 'textContents.Array.data[0]'
-      value: "Elle sert principalement \xE0 d\xE9tecter un d\xE9but d'incendie et
-        \xE0 avertir rapidement les occupants d'un b\xE2timent afin qu'ils puissent
-        \xE9vacuer en toute s\xE9curit\xE9."
-      objectReference: {fileID: 0}
-    - target: {fileID: 2170510584085285613, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: 'textContents.Array.data[1]'
-      value: " Elle joue un r\xF4le crucial dans la pr\xE9vention des incendies et
-        la protection des vies et des biens. "
-      objectReference: {fileID: 0}
-    - target: {fileID: 2170510584085285613, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: 'textContents.Array.data[2]'
-      value: "Celle-ci doit toujours \xEAtre d\xE9clench\xE9e en priorit\xE9 en cas
-        d\u2019incendie pour pouvoir pr\xE9venir tout le monde rapidement. De plus,
-        dans ce b\xE2timent, celle-ci est li\xE9e aux d\xE9tecteurs de fum\xE9e et
-        au num\xE9ro des pompiers."
-      objectReference: {fileID: 0}
-    - target: {fileID: 2170510584085285613, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: 'textContents.Array.data[3]'
-      value: "Dans d\u2019autres b\xE2timents, elle pourrait permettre de d\xE9verrouiller
-        les issues de secours. Ainsi, \xE0 cause de toutes ces variables possibles,
-        l\u2019alarme doit toujours \xEAtre manuellement d\xE9clench\xE9e, et tu
-        dois appeler les pompiers d\xE8s que ta vie n\u2019est plus en danger. "
-      objectReference: {fileID: 0}
-    - target: {fileID: 2170510584085285613, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: 'textContents.Array.data[4]'
-      value: "Une caract\xE9ristique importante des alarmes incendie est le voyant
-        lumineux, qui fournit des informations cruciales sur l'\xE9tat et le fonctionnement
-        de l'alarme."
-      objectReference: {fileID: 0}
     - target: {fileID: 2490763061763603747, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       propertyPath: displayImage
       value: 
@@ -1537,6 +1517,14 @@ PrefabInstance:
       propertyPath: maxContainerSize
       value: 
       objectReference: {fileID: 7642383711460616958}
+    - target: {fileID: 2496372569268666532, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 8052860308392303817}
+    - target: {fileID: 2496372569268666532, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: displayText
+      value: 
+      objectReference: {fileID: 857579768001180419}
     - target: {fileID: 2561209366234319849, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       propertyPath: canvas
       value: 
@@ -1549,39 +1537,6 @@ PrefabInstance:
       propertyPath: buttonToShow
       value: 
       objectReference: {fileID: 2164158483700881158}
-    - target: {fileID: 2561209366234319849, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: changeInterval
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2561209366234319849, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: textContents.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2561209366234319849, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: 'textContents.Array.data[0]'
-      value: "Ceci est un panneau d'\xE9vacuation, il montre la direction de la sortie
-        de secours la plus proche"
-      objectReference: {fileID: 0}
-    - target: {fileID: 2561209366234319849, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: 'textContents.Array.data[1]'
-      value: "Suis moi, on va rejoindre la sortie de secours tout droit o\xF9 on
-        va retrouver le prochain \xE9l\xE9ment : une porte coupe-feu. "
-      objectReference: {fileID: 0}
-    - target: {fileID: 2561209366234319849, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: 'textContents.Array.data[2]'
-      value: "Enfin, plus loin, tu retrouves l\u2019alarme incendie. Celle-ci doit
-        toujours \xEAtre d\xE9clench\xE9e en priorit\xE9 en cas d\u2019incendie pour
-        pouvoir pr\xE9venir tout le monde rapidement. De plus, dans ce b\xE2timent,
-        celle-ci est li\xE9e aux d\xE9tecteurs de fum\xE9e et au num\xE9ro des pompiers.
-        M\xEAme dans d\u2019autres b\xE2timents, elle permet de d\xE9verrouiller
-        les issues de secours. Ainsi, \xE0 cause de toutes ces variables possibles,
-        l\u2019alarme doit toujours \xEAtre manuellement d\xE9clench\xE9e, et tu
-        dois appeler les pompiers d\xE8s que ta vie n\u2019est plus en danger. "
-      objectReference: {fileID: 0}
-    - target: {fileID: 2741690341026141596, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2817804362515136911, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       propertyPath: canvas
       value: 
@@ -1594,26 +1549,18 @@ PrefabInstance:
       propertyPath: buttonToShow
       value: 
       objectReference: {fileID: 2164158483700881158}
-    - target: {fileID: 2817804362515136911, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: changeInterval
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2817804362515136911, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: 'textContents.Array.data[0]'
-      value: "Les tuyaux d'incendie servent principalement \xE0 acheminer l'eau,
-        ou d'autres agents extincteurs, sous pression vers les foyers d'incendie
-        pour les \xE9teindre."
-      objectReference: {fileID: 0}
-    - target: {fileID: 2817804362515136911, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: 'textContents.Array.data[1]'
-      value: " Ils sont un \xE9l\xE9ment essentiel de la lutte contre l'incendie,
-        permettant aux pompiers d'atteindre et de ma\xEEtriser le feu \xE0 distance. "
-      objectReference: {fileID: 0}
-    - target: {fileID: 2817804362515136911, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: 'textContents.Array.data[2]'
-      value: "Les tuyaux d'incendie sont con\xE7us pour acheminer de grandes quantit\xE9s
-        d'eau, ou parfois des mousses, vers le lieu de l'incendie. "
-      objectReference: {fileID: 0}
+    - target: {fileID: 2977150780997978353, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 8052860308392303817}
+    - target: {fileID: 2977150780997978353, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: displayText
+      value: 
+      objectReference: {fileID: 8746363622871845489}
+    - target: {fileID: 2977150780997978353, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: buttonToShow
+      value: 
+      objectReference: {fileID: 2164158483700881158}
     - target: {fileID: 3003372755202156615, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       propertyPath: displayImage
       value: 
@@ -1638,55 +1585,14 @@ PrefabInstance:
       propertyPath: buttonToShow
       value: 
       objectReference: {fileID: 2164158483700881158}
-    - target: {fileID: 3591623091492035339, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: changeInterval
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3591623091492035339, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: textContents.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3591623091492035339, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: objectsToCycle.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 3591623091492035339, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: 'textContents.Array.data[0]'
-      value: "Veuillez lire les r\xE8gles."
-      objectReference: {fileID: 0}
-    - target: {fileID: 3591623091492035339, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: 'textContents.Array.data[1]'
-      value: "n'oubliez pas qu'apr\xE8s \xEAtre sorti, dites aux pompier o\xF9 se
-        situe le d\xE9but d'incendie"
-      objectReference: {fileID: 0}
-    - target: {fileID: 3591623091492035339, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: 'objectsToCycle.Array.data[0]'
+    - target: {fileID: 3889714419246971879, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: canvas
       value: 
-      objectReference: {fileID: 6614817583201909970}
-    - target: {fileID: 3591623091492035339, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: 'objectsToCycle.Array.data[1]'
+      objectReference: {fileID: 8052860308392303817}
+    - target: {fileID: 3889714419246971879, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: displayText
       value: 
-      objectReference: {fileID: 6614817583201909970}
-    - target: {fileID: 3591623091492035339, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: 'objectsToCycle.Array.data[2]'
-      value: 
-      objectReference: {fileID: 6614817583201909970}
-    - target: {fileID: 3591623091492035339, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: 'objectsToCycle.Array.data[3]'
-      value: 
-      objectReference: {fileID: 6614817583201909970}
-    - target: {fileID: 4779656034458709209, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4779656034458709209, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4779656034458709209, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 857579768001180419}
     - target: {fileID: 4779656034458709209, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.3531
@@ -1763,6 +1669,22 @@ PrefabInstance:
       propertyPath: maxContainerSize
       value: 
       objectReference: {fileID: 7642383711460616958}
+    - target: {fileID: 6103700380591891339, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 8052860308392303817}
+    - target: {fileID: 6103700380591891339, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: displayText
+      value: 
+      objectReference: {fileID: 857579768001180419}
+    - target: {fileID: 6108616259358439270, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 8052860308392303817}
+    - target: {fileID: 6108616259358439270, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: displayText
+      value: 
+      objectReference: {fileID: 857579768001180419}
     - target: {fileID: 6955282444265230169, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       propertyPath: displayImage
       value: 
@@ -1775,6 +1697,14 @@ PrefabInstance:
       propertyPath: maxContainerSize
       value: 
       objectReference: {fileID: 7642383711460616958}
+    - target: {fileID: 7019222533331319716, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 8052860308392303817}
+    - target: {fileID: 7019222533331319716, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: displayText
+      value: 
+      objectReference: {fileID: 857579768001180419}
     - target: {fileID: 7517174337173555971, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       propertyPath: canvas
       value: 
@@ -1787,19 +1717,6 @@ PrefabInstance:
       propertyPath: buttonToShow
       value: 
       objectReference: {fileID: 2164158483700881158}
-    - target: {fileID: 7517174337173555971, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: changeInterval
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7517174337173555971, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: textContents.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7517174337173555971, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: 'textContents.Array.data[0]'
-      value: "D\xE8s que vous \xEAtes hors de danger, pr\xE9venez imm\xE9diatement
-        les pompiers en appelant le 112. Donnez des indications claires et pr\xE9cises."
-      objectReference: {fileID: 0}
     - target: {fileID: 7741982573264241920, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       propertyPath: canvas
       value: 
@@ -1812,22 +1729,14 @@ PrefabInstance:
       propertyPath: buttonToShow
       value: 
       objectReference: {fileID: 2164158483700881158}
-    - target: {fileID: 7741982573264241920, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: changeInterval
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 7741982573264241920, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: 'textContents.Array.data[0]'
+    - target: {fileID: 8078452199380288882, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: canvas
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7741982573264241920, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: 'textContents.Array.data[1]'
+      objectReference: {fileID: 8052860308392303817}
+    - target: {fileID: 8078452199380288882, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: displayText
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7741982573264241920, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: 'textContents.Array.data[2]'
-      value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 857579768001180419}
     - target: {fileID: 8469661745480815938, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       propertyPath: canvas
       value: 
@@ -1840,42 +1749,6 @@ PrefabInstance:
       propertyPath: buttonToShow
       value: 
       objectReference: {fileID: 2164158483700881158}
-    - target: {fileID: 8469661745480815938, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: changeInterval
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 8469661745480815938, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: textContents.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 8469661745480815938, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: 'textContents.Array.data[0]'
-      value: " Son installation est obligatoire dans les b\xE2timents destin\xE9s
-        au public, les immeubles d\u2019habitation, les b\xE2timents industriels.
-        Donc, si tu vois que le b\xE2timent dans lequel tu vis ou travailles n\u2019en
-        poss\xE8de pas en Belgique, tu contactes les pompiers de Bruxelles au 02
-        208 84 30. Elles doivent \xEAtre toujours plac\xE9es afin de compartimenter
-        les b\xE2timents et aux issues de secours pour les garder praticables."
-      objectReference: {fileID: 0}
-    - target: {fileID: 8469661745480815938, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: 'textContents.Array.data[1]'
-      value: "Celle-ci sert principalement \xE0 \xE9viter la propagation du feu et
-        la fum\xE9e de se r\xE9pandre. Ainsi lors d'un incendie n'oublie pas de les
-        refermer et de les laisser ferm\xE9es."
-      objectReference: {fileID: 0}
-    - target: {fileID: 8469661745480815938, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: 'textContents.Array.data[2]'
-      value: "ll permet de compartimenter les espaces, de prot\xE9ger les voies d'\xE9vacuation
-        et de donner plus de temps aux occupants pour quitter les lieux en toute
-        s\xE9curit\xE9 et aux services de secours pour intervenir. "
-      objectReference: {fileID: 0}
-    - target: {fileID: 8469661745480815938, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: 'textContents.Array.data[3]'
-      value: "Enfin, tu retrouveras sur le c\xF4t\xE9 de la porte des informations
-        telles que la dur\xE9e \xE0 laquelle elle r\xE9siste \xE0 un feu sous forme
-        d\u2019un DI \u2013 le temps de r\xE9sistance \u2013 ainsi qu\u2019un num\xE9ro
-        de secours, ici celui des pompiers de Bruxelles. "
-      objectReference: {fileID: 0}
     - target: {fileID: 8655823270767389670, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       propertyPath: canvas
       value: 
@@ -1888,22 +1761,10 @@ PrefabInstance:
       propertyPath: buttonToShow
       value: 
       objectReference: {fileID: 2164158483700881158}
-    - target: {fileID: 8655823270767389670, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: changeInterval
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8655823270767389670, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: 'textContents.Array.data[0]'
+    - target: {fileID: 8716324251736537560, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: onButtonPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8655823270767389670, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: 'textContents.Array.data[1]'
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8655823270767389670, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: 'textContents.Array.data[2]'
-      value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 4944082924756138312}
     - target: {fileID: 9068887908796665854, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       propertyPath: displayImage
       value: 
@@ -1919,381 +1780,21 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 579702858702279911, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 14798537261704620}
-    - targetCorrespondingSourceObject: {fileID: 7025037063489134796, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 4663983715326152784}
-    - targetCorrespondingSourceObject: {fileID: 7025037063489134796, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2807150859880495169}
-    - targetCorrespondingSourceObject: {fileID: 7025037063489134796, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 310519008746915309}
-    - targetCorrespondingSourceObject: {fileID: 2741690341026141596, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 9169043578399262145}
-    - targetCorrespondingSourceObject: {fileID: 2037691967761874643, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 4658293082119255731}
-    - targetCorrespondingSourceObject: {fileID: 6759783852052906140, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 3112819525226382071}
-    - targetCorrespondingSourceObject: {fileID: 3418460974007654773, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 5722457621992678035}
-    - targetCorrespondingSourceObject: {fileID: 5688462387169483448, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 6138731134720627802}
-    - targetCorrespondingSourceObject: {fileID: 1605001227334432218, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 5573041765683709430}
-    - targetCorrespondingSourceObject: {fileID: 3851652837393583665, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 3866600964744505980}
-    - targetCorrespondingSourceObject: {fileID: 3283782696849422163, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 3006621910729722758}
-    - targetCorrespondingSourceObject: {fileID: 1263045711652785982, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 4629991352194633316}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
---- !u!1 &1135661026956579375 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7025037063489134796, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+--- !u!114 &1606033455254686523 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8716324251736537560, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
   m_PrefabInstance: {fileID: 7980198575440769763}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &4663983715326152784
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1135661026956579375}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  autoPlay: 1
-  changeInterval: 10
-  objectsToCycle: []
-  displayText: {fileID: 8746363622871845489}
-  canvas: {fileID: 8052860308392303817}
-  textContents:
-  - "Bonjour et bienvenue dans FireEscapeSimulator ! Je serai votre assistant lors
-    de cette simulation. Nous allons voir ensemble la marche \xE0 suivre en cas d'incendie
-    afin de r\xE9ussir \xE0 \xE9vacuer et pr\xE9venir en tout s\xE9curit\xE9. \xCAtes-vous
-    pr\xEAt \xE0 commencer ?"
-  - "Mais avant toute explication de la proc\xE9dure, je vais d'abord vous faire
-    de la pr\xE9vention et vous expliquer les diff\xE9rentes marches \xE0 suivre
-    pour \xE9viter qu\u2019un incendie survienne dans votre lieu de travail ou \xE0
-    la maison. "
-  - "Maintenant commen\xE7ons l'explication des diff\xE9rentes proc\xE9dure d'\xE9vacuation
-    d'abord tourne toi et regarde en haut \xE0 gauche tu verra un panneaux d'\xE9vacuation
-    celui si t'indiquera toujours la direction vers la sortie de secourt peut importe
-    le pays except\xE9 les \xE9tats unis"
-  buttonToShow: {fileID: 2164158483700881158}
---- !u!114 &2807150859880495169
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1135661026956579375}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  autoPlay: 0
-  changeInterval: 3
-  objectsToCycle: []
-  displayText: {fileID: 857579768001180419}
-  canvas: {fileID: 8052860308392303817}
-  textContents:
-  - Commencement tuto
-  buttonToShow: {fileID: 0}
---- !u!114 &310519008746915309
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1135661026956579375}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 184bbeb9fcd4fe14f838394d67b8261c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  autoPlay: 0
-  changeInterval: 3
-  displayImage: {fileID: 0}
-  imageContainer: {fileID: 0}
-  maxContainerSize: {fileID: 0}
-  texturePaths: []
-  objectsToCycle: []
---- !u!1 &2327840069950498907 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5688462387169483448, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-  m_PrefabInstance: {fileID: 7980198575440769763}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &6138731134720627802
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2327840069950498907}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  autoPlay: 0
-  changeInterval: 3
-  objectsToCycle: []
-  displayText: {fileID: 857579768001180419}
-  canvas: {fileID: 8052860308392303817}
-  textContents:
-  - "T\xE9l\xE9phone"
-  buttonToShow: {fileID: 0}
---- !u!4 &3236930914282839610 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4779656034458709209, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-  m_PrefabInstance: {fileID: 7980198575440769763}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &3706690968174506623 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6759783852052906140, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-  m_PrefabInstance: {fileID: 7980198575440769763}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &3112819525226382071
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3706690968174506623}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  autoPlay: 1
-  changeInterval: 3
-  objectsToCycle: []
-  displayText: {fileID: 857579768001180419}
-  canvas: {fileID: 8052860308392303817}
-  textContents:
-  - Alarme
-  buttonToShow: {fileID: 0}
---- !u!1 &4742163371824688022 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3418460974007654773, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-  m_PrefabInstance: {fileID: 7980198575440769763}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &5722457621992678035
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4742163371824688022}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  autoPlay: 1
-  changeInterval: 3
-  objectsToCycle: []
-  displayText: {fileID: 857579768001180419}
-  canvas: {fileID: 8052860308392303817}
-  textContents:
-  - Tuyaux de pompier
-  buttonToShow: {fileID: 0}
---- !u!1 &4840536874578675120 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3283782696849422163, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-  m_PrefabInstance: {fileID: 7980198575440769763}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &3006621910729722758
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4840536874578675120}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  autoPlay: 1
-  changeInterval: 3
-  objectsToCycle: []
-  displayText: {fileID: 857579768001180419}
-  canvas: {fileID: 8052860308392303817}
-  textContents:
-  - Ascenceur
-  buttonToShow: {fileID: 0}
---- !u!1 &5238579737055602559 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2741690341026141596, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-  m_PrefabInstance: {fileID: 7980198575440769763}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &9169043578399262145
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5238579737055602559}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  autoPlay: 0
-  changeInterval: 3
-  objectsToCycle: []
-  displayText: {fileID: 857579768001180419}
-  canvas: {fileID: 8052860308392303817}
-  textContents:
-  - Issue de secours
-  buttonToShow: {fileID: 0}
---- !u!1 &6614817583201909970 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3851652837393583665, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-  m_PrefabInstance: {fileID: 7980198575440769763}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &3866600964744505980
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6614817583201909970}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  autoPlay: 0
-  changeInterval: 3
-  objectsToCycle: []
-  displayText: {fileID: 857579768001180419}
-  canvas: {fileID: 8052860308392303817}
-  textContents:
-  - "R\xE8gles"
-  buttonToShow: {fileID: 0}
---- !u!1 &7400778679384794628 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 579702858702279911, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-  m_PrefabInstance: {fileID: 7980198575440769763}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &14798537261704620
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7400778679384794628}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1ba8b94014934df488156ea61f26049d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onButtonPressed:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 4944082924756138312}
-        m_TargetAssemblyTypeName: UnityEngine.Component, UnityEngine
-        m_MethodName: SendMessage
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Passer a la suite
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!1 &8284382916111584304 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2037691967761874643, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+--- !u!4 &3236930914282839610 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4779656034458709209, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
   m_PrefabInstance: {fileID: 7980198575440769763}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &4658293082119255731
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8284382916111584304}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  autoPlay: 0
-  changeInterval: 3
-  objectsToCycle: []
-  displayText: {fileID: 857579768001180419}
-  canvas: {fileID: 8052860308392303817}
-  textContents:
-  - Porte Coupe-feu
-  buttonToShow: {fileID: 0}
---- !u!1 &8717069257997551417 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1605001227334432218, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-  m_PrefabInstance: {fileID: 7980198575440769763}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &5573041765683709430
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8717069257997551417}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  autoPlay: 0
-  changeInterval: 3
-  objectsToCycle: []
-  displayText: {fileID: 857579768001180419}
-  canvas: {fileID: 8052860308392303817}
-  textContents:
-  - "Lumi\xE8re"
-  buttonToShow: {fileID: 0}
---- !u!1 &9167183903723404765 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1263045711652785982, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-  m_PrefabInstance: {fileID: 7980198575440769763}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &4629991352194633316
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9167183903723404765}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  autoPlay: 1
-  changeInterval: 3
-  objectsToCycle: []
-  displayText: {fileID: 857579768001180419}
-  canvas: {fileID: 8052860308392303817}
-  textContents:
-  - Extincteur
-  buttonToShow: {fileID: 0}

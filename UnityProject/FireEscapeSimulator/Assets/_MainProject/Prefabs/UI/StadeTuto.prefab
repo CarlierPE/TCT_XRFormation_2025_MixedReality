@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4779656034458709209}
+  - component: {fileID: 8716324251736537560}
   m_Layer: 0
   m_Name: StadeTuto
   m_TagString: Untagged
@@ -41,6 +42,33 @@ Transform:
   - {fileID: 537276959428864223}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8716324251736537560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579702858702279911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ba8b94014934df488156ea61f26049d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onButtonPressed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.Component, UnityEngine
+        m_MethodName: SendMessage
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Passer a la suite
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1263045711652785982
 GameObject:
   m_ObjectHideFlags: 0
@@ -52,6 +80,7 @@ GameObject:
   - component: {fileID: 537276959428864223}
   - component: {fileID: 6955282444265230169}
   - component: {fileID: 7741982573264241920}
+  - component: {fileID: 2496372569268666532}
   m_Layer: 0
   m_Name: extincteur$
   m_TagString: Untagged
@@ -111,20 +140,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   autoPlay: 1
-  changeInterval: 3
+  changeInterval: 10
   objectsToCycle:
   - {fileID: 0}
   displayText: {fileID: 0}
   canvas: {fileID: 0}
   textContents:
-  - "Ceci est un panneau d'\xE9vacuation, il montre la direction de la sortie de
-    secours la plus proche"
-  - "Bonjour et bienvenue dans FireEscapeSimulator ! Je serai votre assistant lors
-    de cette simulation. Nous allons voir ensemble la marche \xE0 suivre en cas d'incendie
-    afin de r\xE9ussir \xE0 \xE9vacuer et pr\xE9venir en tout s\xE9curit\xE9. \xCAtes-vous
-    pr\xEAt \xE0 commencer"
-  - "Ceci est un panneau d'\xE9vacuation, il montre la direction de la sortie de
-    secours la plus proche"
+  - 
+  - 
+  - 
+  buttonToShow: {fileID: 0}
+--- !u!114 &2496372569268666532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263045711652785982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoPlay: 1
+  changeInterval: 3
+  objectsToCycle: []
+  displayText: {fileID: 0}
+  canvas: {fileID: 0}
+  textContents:
+  - Extincteur
   buttonToShow: {fileID: 0}
 --- !u!1 &1605001227334432218
 GameObject:
@@ -137,6 +181,7 @@ GameObject:
   - component: {fileID: 2957890843791371708}
   - component: {fileID: 2490763061763603747}
   - component: {fileID: 1226342828346997407}
+  - component: {fileID: 7019222533331319716}
   m_Layer: 0
   m_Name: "Lumi\xE8re"
   m_TagString: Untagged
@@ -194,20 +239,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   autoPlay: 1
-  changeInterval: 3
+  changeInterval: 5
   objectsToCycle:
   - {fileID: 0}
   displayText: {fileID: 0}
   canvas: {fileID: 0}
   textContents:
-  - "Ceci est un panneau d'\xE9vacuation, il montre la direction de la sortie de
-    secours la plus proche"
-  - "Bonjour et bienvenue dans FireEscapeSimulator ! Je serai votre assistant lors
-    de cette simulation. Nous allons voir ensemble la marche \xE0 suivre en cas d'incendie
-    afin de r\xE9ussir \xE0 \xE9vacuer et pr\xE9venir en tout s\xE9curit\xE9. \xCAtes-vous
-    pr\xEAt \xE0 commencer"
-  - "Ceci est un panneau d'\xE9vacuation, il montre la direction de la sortie de
-    secours la plus proche"
+  - "Ces \xE9clairages de s\xE9curit\xE9 servent \xE0 s'orienter et \xE0 indiquer
+    les voies de secours en cas d'incident provoquant l'obscurit\xE9."
+  buttonToShow: {fileID: 0}
+--- !u!114 &7019222533331319716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1605001227334432218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoPlay: 0
+  changeInterval: 3
+  objectsToCycle: []
+  displayText: {fileID: 0}
+  canvas: {fileID: 0}
+  textContents:
+  - "Lumi\xE8re"
   buttonToShow: {fileID: 0}
 --- !u!1 &2037691967761874643
 GameObject:
@@ -220,6 +279,7 @@ GameObject:
   - component: {fileID: 1594130228671639126}
   - component: {fileID: 1440775680691222291}
   - component: {fileID: 8469661745480815938}
+  - component: {fileID: 8078452199380288882}
   m_Layer: 0
   m_Name: PorteDeSecours
   m_TagString: Untagged
@@ -280,20 +340,48 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   autoPlay: 1
-  changeInterval: 3
+  changeInterval: 12
   objectsToCycle:
   - {fileID: 0}
   displayText: {fileID: 0}
   canvas: {fileID: 0}
   textContents:
-  - "Ceci est un panneau d'\xE9vacuation, il montre la direction de la sortie de
-    secours la plus proche"
-  - "Bonjour et bienvenue dans FireEscapeSimulator ! Je serai votre assistant lors
-    de cette simulation. Nous allons voir ensemble la marche \xE0 suivre en cas d'incendie
-    afin de r\xE9ussir \xE0 \xE9vacuer et pr\xE9venir en tout s\xE9curit\xE9. \xCAtes-vous
-    pr\xEAt \xE0 commencer"
-  - "Ceci est un panneau d'\xE9vacuation, il montre la direction de la sortie de
-    secours la plus proche"
+  - " Son installation est obligatoire dans les b\xE2timents destin\xE9s au public,
+    les immeubles d\u2019habitation, les b\xE2timents industriels. Donc, si tu vois
+    que le b\xE2timent dans lequel tu vis ou travailles n\u2019en poss\xE8de pas
+    en Belgique, tu contactes les pompiers de Bruxelles au 02 208 84 30. Elles doivent
+    \xEAtre toujours plac\xE9es afin de compartimenter les b\xE2timents et aux issues
+    de secours pour les garder praticables."
+  - "Celle-ci sert principalement \xE0 \xE9viter la propagation du feu et la fum\xE9e
+    de se r\xE9pandre. Ainsi lors d'un incendie n'oublie pas de les refermer et de
+    les laisser ferm\xE9es."
+  - "ll permet de compartimenter les espaces, de prot\xE9ger les voies d'\xE9vacuation
+    et de donner plus de temps aux occupants pour quitter les lieux en toute s\xE9curit\xE9
+    et aux services de secours pour intervenir. "
+  - "Enfin, tu retrouveras sur le c\xF4t\xE9 de la porte des informations telles
+    que la dur\xE9e \xE0 laquelle elle r\xE9siste \xE0 un feu sous forme d\u2019un
+    DI \u2013 le temps de r\xE9sistance \u2013 ainsi qu\u2019un num\xE9ro de secours,
+    ici celui des pompiers de Bruxelles. "
+  buttonToShow: {fileID: 0}
+--- !u!114 &8078452199380288882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2037691967761874643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoPlay: 0
+  changeInterval: 3
+  objectsToCycle: []
+  displayText: {fileID: 0}
+  canvas: {fileID: 0}
+  textContents:
+  - Porte Coupe-feu
   buttonToShow: {fileID: 0}
 --- !u!1 &2741690341026141596
 GameObject:
@@ -306,6 +394,7 @@ GameObject:
   - component: {fileID: 3149751007498557457}
   - component: {fileID: 3003372755202156615}
   - component: {fileID: 2561209366234319849}
+  - component: {fileID: 1854118554565977174}
   m_Layer: 0
   m_Name: Issue de secours
   m_TagString: Untagged
@@ -363,7 +452,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   autoPlay: 1
-  changeInterval: 3
+  changeInterval: 10
   objectsToCycle:
   - {fileID: 0}
   displayText: {fileID: 0}
@@ -371,6 +460,28 @@ MonoBehaviour:
   textContents:
   - "Ceci est un panneau d'\xE9vacuation, il montre la direction de la sortie de
     secours la plus proche"
+  - "Suis moi, on va rejoindre la sortie de secours tout droit o\xF9 on va retrouver
+    le prochain \xE9l\xE9ment : une porte coupe-feu. "
+  buttonToShow: {fileID: 0}
+--- !u!114 &1854118554565977174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2741690341026141596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoPlay: 0
+  changeInterval: 3
+  objectsToCycle: []
+  displayText: {fileID: 0}
+  canvas: {fileID: 0}
+  textContents:
+  - Issue de secours
   buttonToShow: {fileID: 0}
 --- !u!1 &3283782696849422163
 GameObject:
@@ -383,6 +494,7 @@ GameObject:
   - component: {fileID: 2085168502020173922}
   - component: {fileID: 5522606138589112813}
   - component: {fileID: 8655823270767389670}
+  - component: {fileID: 3889714419246971879}
   m_Layer: 0
   m_Name: Ascenceur
   m_TagString: Untagged
@@ -440,20 +552,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   autoPlay: 1
-  changeInterval: 3
+  changeInterval: 10
   objectsToCycle:
   - {fileID: 0}
   displayText: {fileID: 0}
   canvas: {fileID: 0}
   textContents:
-  - "Ceci est un panneau d'\xE9vacuation, il montre la direction de la sortie de
-    secours la plus proche"
-  - "Bonjour et bienvenue dans FireEscapeSimulator ! Je serai votre assistant lors
-    de cette simulation. Nous allons voir ensemble la marche \xE0 suivre en cas d'incendie
-    afin de r\xE9ussir \xE0 \xE9vacuer et pr\xE9venir en tout s\xE9curit\xE9. \xCAtes-vous
-    pr\xEAt \xE0 commencer"
-  - "Ceci est un panneau d'\xE9vacuation, il montre la direction de la sortie de
-    secours la plus proche"
+  - 
+  - 
+  - 
+  buttonToShow: {fileID: 0}
+--- !u!114 &3889714419246971879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3283782696849422163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoPlay: 1
+  changeInterval: 3
+  objectsToCycle: []
+  displayText: {fileID: 0}
+  canvas: {fileID: 0}
+  textContents:
+  - Ascenceur
   buttonToShow: {fileID: 0}
 --- !u!1 &3418460974007654773
 GameObject:
@@ -466,6 +593,7 @@ GameObject:
   - component: {fileID: 406651003245638357}
   - component: {fileID: 9068887908796665854}
   - component: {fileID: 2817804362515136911}
+  - component: {fileID: 667662594221385048}
   m_Layer: 0
   m_Name: tuyauxDePompiers
   m_TagString: Untagged
@@ -523,20 +651,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   autoPlay: 1
-  changeInterval: 3
+  changeInterval: 10
   objectsToCycle:
   - {fileID: 0}
   displayText: {fileID: 0}
   canvas: {fileID: 0}
   textContents:
-  - "Ceci est un panneau d'\xE9vacuation, il montre la direction de la sortie de
-    secours la plus proche"
-  - "Bonjour et bienvenue dans FireEscapeSimulator ! Je serai votre assistant lors
-    de cette simulation. Nous allons voir ensemble la marche \xE0 suivre en cas d'incendie
-    afin de r\xE9ussir \xE0 \xE9vacuer et pr\xE9venir en tout s\xE9curit\xE9. \xCAtes-vous
-    pr\xEAt \xE0 commencer"
-  - "Ceci est un panneau d'\xE9vacuation, il montre la direction de la sortie de
-    secours la plus proche"
+  - "Les tuyaux d'incendie servent principalement \xE0 acheminer l'eau, ou d'autres
+    agents extincteurs, sous pression vers les foyers d'incendie pour les \xE9teindre."
+  - " Ils sont un \xE9l\xE9ment essentiel de la lutte contre l'incendie, permettant
+    aux pompiers d'atteindre et de ma\xEEtriser le feu \xE0 distance. "
+  - "Les tuyaux d'incendie sont con\xE7us pour acheminer de grandes quantit\xE9s
+    d'eau, ou parfois des mousses, vers le lieu de l'incendie. "
+  buttonToShow: {fileID: 0}
+--- !u!114 &667662594221385048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3418460974007654773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoPlay: 1
+  changeInterval: 3
+  objectsToCycle: []
+  displayText: {fileID: 0}
+  canvas: {fileID: 0}
+  textContents:
+  - Tuyaux de pompier
   buttonToShow: {fileID: 0}
 --- !u!1 &3851652837393583665
 GameObject:
@@ -549,6 +695,7 @@ GameObject:
   - component: {fileID: 8469345139481253924}
   - component: {fileID: 982057646987781753}
   - component: {fileID: 3591623091492035339}
+  - component: {fileID: 1404464661469119540}
   m_Layer: 0
   m_Name: "r\xE8gle"
   m_TagString: Untagged
@@ -606,20 +753,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   autoPlay: 1
-  changeInterval: 3
+  changeInterval: 10
   objectsToCycle:
-  - {fileID: 0}
+  - {fileID: 3851652837393583665}
+  - {fileID: 3851652837393583665}
+  - {fileID: 3851652837393583665}
+  - {fileID: 3851652837393583665}
   displayText: {fileID: 0}
   canvas: {fileID: 0}
   textContents:
-  - "Ceci est un panneau d'\xE9vacuation, il montre la direction de la sortie de
-    secours la plus proche"
-  - "Bonjour et bienvenue dans FireEscapeSimulator ! Je serai votre assistant lors
-    de cette simulation. Nous allons voir ensemble la marche \xE0 suivre en cas d'incendie
-    afin de r\xE9ussir \xE0 \xE9vacuer et pr\xE9venir en tout s\xE9curit\xE9. \xCAtes-vous
-    pr\xEAt \xE0 commencer"
-  - "Ceci est un panneau d'\xE9vacuation, il montre la direction de la sortie de
-    secours la plus proche"
+  - "Veuillez lire les r\xE8gles."
+  - "n'oubliez pas qu'apr\xE8s \xEAtre sorti, dites aux pompier o\xF9 se situe le
+    d\xE9but d'incendie"
+  buttonToShow: {fileID: 0}
+--- !u!114 &1404464661469119540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3851652837393583665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoPlay: 0
+  changeInterval: 3
+  objectsToCycle: []
+  displayText: {fileID: 0}
+  canvas: {fileID: 0}
+  textContents:
+  - "R\xE8gles"
   buttonToShow: {fileID: 0}
 --- !u!1 &5688462387169483448
 GameObject:
@@ -632,6 +797,7 @@ GameObject:
   - component: {fileID: 8129652035254528600}
   - component: {fileID: 5262398859165431267}
   - component: {fileID: 7517174337173555971}
+  - component: {fileID: 6103700380591891339}
   m_Layer: 0
   m_Name: "t\xE9l\xE9phone"
   m_TagString: Untagged
@@ -690,20 +856,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   autoPlay: 1
-  changeInterval: 3
+  changeInterval: 5
   objectsToCycle:
   - {fileID: 0}
   displayText: {fileID: 0}
   canvas: {fileID: 0}
   textContents:
-  - "Ceci est un panneau d'\xE9vacuation, il montre la direction de la sortie de
-    secours la plus proche"
-  - "Bonjour et bienvenue dans FireEscapeSimulator ! Je serai votre assistant lors
-    de cette simulation. Nous allons voir ensemble la marche \xE0 suivre en cas d'incendie
-    afin de r\xE9ussir \xE0 \xE9vacuer et pr\xE9venir en tout s\xE9curit\xE9. \xCAtes-vous
-    pr\xEAt \xE0 commencer"
-  - "Ceci est un panneau d'\xE9vacuation, il montre la direction de la sortie de
-    secours la plus proche"
+  - "D\xE8s que vous \xEAtes hors de danger, pr\xE9venez imm\xE9diatement les pompiers
+    en appelant le 112. Donnez des indications claires et pr\xE9cises."
+  buttonToShow: {fileID: 0}
+--- !u!114 &6103700380591891339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5688462387169483448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoPlay: 0
+  changeInterval: 3
+  objectsToCycle: []
+  displayText: {fileID: 0}
+  canvas: {fileID: 0}
+  textContents:
+  - "T\xE9l\xE9phone"
   buttonToShow: {fileID: 0}
 --- !u!1 &6759783852052906140
 GameObject:
@@ -716,6 +896,7 @@ GameObject:
   - component: {fileID: 1974651376216947613}
   - component: {fileID: 5428999239146293789}
   - component: {fileID: 2170510584085285613}
+  - component: {fileID: 1101878550339834399}
   m_Layer: 0
   m_Name: Alarme
   m_TagString: Untagged
@@ -775,20 +956,47 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   autoPlay: 1
-  changeInterval: 3
+  changeInterval: 12
   objectsToCycle:
   - {fileID: 0}
   displayText: {fileID: 0}
   canvas: {fileID: 0}
   textContents:
-  - "Ceci est un panneau d'\xE9vacuation, il montre la direction de la sortie de
-    secours la plus proche"
-  - "Bonjour et bienvenue dans FireEscapeSimulator ! Je serai votre assistant lors
-    de cette simulation. Nous allons voir ensemble la marche \xE0 suivre en cas d'incendie
-    afin de r\xE9ussir \xE0 \xE9vacuer et pr\xE9venir en tout s\xE9curit\xE9. \xCAtes-vous
-    pr\xEAt \xE0 commencer"
-  - "Ceci est un panneau d'\xE9vacuation, il montre la direction de la sortie de
-    secours la plus proche"
+  - "Elle sert principalement \xE0 d\xE9tecter un d\xE9but d'incendie et \xE0 avertir
+    rapidement les occupants d'un b\xE2timent afin qu'ils puissent \xE9vacuer en
+    toute s\xE9curit\xE9."
+  - " Elle joue un r\xF4le crucial dans la pr\xE9vention des incendies et la protection
+    des vies et des biens. "
+  - "Celle-ci doit toujours \xEAtre d\xE9clench\xE9e en priorit\xE9 en cas d\u2019incendie
+    pour pouvoir pr\xE9venir tout le monde rapidement. De plus, dans ce b\xE2timent,
+    celle-ci est li\xE9e aux d\xE9tecteurs de fum\xE9e et au num\xE9ro des pompiers."
+  - "Dans d\u2019autres b\xE2timents, elle pourrait permettre de d\xE9verrouiller
+    les issues de secours. Ainsi, \xE0 cause de toutes ces variables possibles, l\u2019alarme
+    doit toujours \xEAtre manuellement d\xE9clench\xE9e, et tu dois appeler les pompiers
+    d\xE8s que ta vie n\u2019est plus en danger. "
+  - "Une caract\xE9ristique importante des alarmes incendie est le voyant lumineux,
+    qui fournit des informations cruciales sur l'\xE9tat et le fonctionnement de
+    l'alarme."
+  buttonToShow: {fileID: 0}
+--- !u!114 &1101878550339834399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6759783852052906140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoPlay: 1
+  changeInterval: 3
+  objectsToCycle: []
+  displayText: {fileID: 0}
+  canvas: {fileID: 0}
+  textContents:
+  - Alarme
   buttonToShow: {fileID: 0}
 --- !u!1 &7025037063489134796
 GameObject:
@@ -799,6 +1007,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5497260233708059522}
+  - component: {fileID: 2977150780997978353}
+  - component: {fileID: 6108616259358439270}
+  - component: {fileID: 3383566351586585668}
   m_Layer: 0
   m_Name: Spawned
   m_TagString: Untagged
@@ -821,3 +1032,73 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4779656034458709209}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2977150780997978353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7025037063489134796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoPlay: 1
+  changeInterval: 10
+  objectsToCycle: []
+  displayText: {fileID: 0}
+  canvas: {fileID: 0}
+  textContents:
+  - "Bonjour et bienvenue dans FireEscapeSimulator ! Je serai votre assistant lors
+    de cette simulation. Nous allons voir ensemble la marche \xE0 suivre en cas d'incendie
+    afin de r\xE9ussir \xE0 \xE9vacuer et pr\xE9venir en tout s\xE9curit\xE9. \xCAtes-vous
+    pr\xEAt \xE0 commencer ?"
+  - "Mais avant toute explication de la proc\xE9dure, je vais d'abord vous faire
+    de la pr\xE9vention et vous expliquer les diff\xE9rentes marches \xE0 suivre
+    pour \xE9viter qu\u2019un incendie survienne dans votre lieu de travail ou \xE0
+    la maison. "
+  - "Maintenant commen\xE7ons l'explication des diff\xE9rentes proc\xE9dure d'\xE9vacuation
+    d'abord tourne toi et regarde en haut \xE0 gauche tu verra un panneaux d'\xE9vacuation
+    celui si t'indiquera toujours la direction vers la sortie de secourt peut importe
+    le pays except\xE9 les \xE9tats unis"
+  buttonToShow: {fileID: 0}
+--- !u!114 &6108616259358439270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7025037063489134796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoPlay: 0
+  changeInterval: 3
+  objectsToCycle: []
+  displayText: {fileID: 0}
+  canvas: {fileID: 0}
+  textContents:
+  - Commencement tuto
+  buttonToShow: {fileID: 0}
+--- !u!114 &3383566351586585668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7025037063489134796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 184bbeb9fcd4fe14f838394d67b8261c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoPlay: 0
+  changeInterval: 3
+  displayImage: {fileID: 0}
+  imageContainer: {fileID: 0}
+  maxContainerSize: {fileID: 0}
+  texturePaths: []
+  objectsToCycle: []
