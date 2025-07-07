@@ -54,7 +54,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: ecb629d039ee40546b21dccd2d2e6c8d, type: 2}
     - target: {fileID: 919132149155446097, guid: a0446dbca0a40614897b96fe9d7b7f51, type: 3}
       propertyPath: m_Name
-      value: MES_AlarmButton
+      value: PRE_AlarmButton
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
