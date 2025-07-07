@@ -926,7 +926,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 659789500178946409, guid: ddebed8da42994a4b81bc65990bcab27, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 370
+      value: 430
       objectReference: {fileID: 0}
     - target: {fileID: 659789500178946409, guid: ddebed8da42994a4b81bc65990bcab27, type: 3}
       propertyPath: m_SizeDelta.y
@@ -950,7 +950,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 659789500178946409, guid: ddebed8da42994a4b81bc65990bcab27, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -225
+      value: -205
       objectReference: {fileID: 0}
     - target: {fileID: 1392509080198994899, guid: ddebed8da42994a4b81bc65990bcab27, type: 3}
       propertyPath: m_Colors.m_PressedColor.b
@@ -1018,7 +1018,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1822667922441609511, guid: ddebed8da42994a4b81bc65990bcab27, type: 3}
       propertyPath: m_Padding.m_Top
-      value: 100
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 1822667922441609511, guid: ddebed8da42994a4b81bc65990bcab27, type: 3}
       propertyPath: m_ChildAlignment
@@ -1026,7 +1026,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1822667922441609511, guid: ddebed8da42994a4b81bc65990bcab27, type: 3}
       propertyPath: m_Padding.m_Left
-      value: 40
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1822667922441609511, guid: ddebed8da42994a4b81bc65990bcab27, type: 3}
       propertyPath: m_ChildScaleWidth
@@ -1034,7 +1034,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1822667922441609511, guid: ddebed8da42994a4b81bc65990bcab27, type: 3}
       propertyPath: m_Padding.m_Right
-      value: 40
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1822667922441609511, guid: ddebed8da42994a4b81bc65990bcab27, type: 3}
       propertyPath: m_ChildScaleHeight
@@ -1042,7 +1042,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1822667922441609511, guid: ddebed8da42994a4b81bc65990bcab27, type: 3}
       propertyPath: m_Padding.m_Bottom
-      value: 120
+      value: 85
       objectReference: {fileID: 0}
     - target: {fileID: 1822667922441609511, guid: ddebed8da42994a4b81bc65990bcab27, type: 3}
       propertyPath: m_ChildControlWidth
@@ -1179,6 +1179,10 @@ PrefabInstance:
     - target: {fileID: 4449826801631021157, guid: ddebed8da42994a4b81bc65990bcab27, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -33.057
+      objectReference: {fileID: 0}
+    - target: {fileID: 4621700964000591154, guid: ddebed8da42994a4b81bc65990bcab27, type: 3}
+      propertyPath: m_BlockingMask.m_Bits
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5119214181526100760, guid: ddebed8da42994a4b81bc65990bcab27, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1426,6 +1430,10 @@ PrefabInstance:
       value: StadeTuto (1)
       objectReference: {fileID: 0}
     - target: {fileID: 982057646987781753, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: autoPlay
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 982057646987781753, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       propertyPath: displayImage
       value: 
       objectReference: {fileID: 8170823482315119211}
@@ -1437,6 +1445,10 @@ PrefabInstance:
       propertyPath: maxContainerSize
       value: 
       objectReference: {fileID: 7642383711460616958}
+    - target: {fileID: 982057646987781753, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: 'texturePaths.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2800000, guid: 741e990581e65c24badba881e2dd83fb, type: 3}
     - target: {fileID: 1226342828346997407, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       propertyPath: canvas
       value: 
@@ -1526,6 +1538,10 @@ PrefabInstance:
         de l'alarme."
       objectReference: {fileID: 0}
     - target: {fileID: 2490763061763603747, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: autoPlay
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2490763061763603747, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       propertyPath: displayImage
       value: 
       objectReference: {fileID: 8170823482315119211}
@@ -1537,6 +1553,10 @@ PrefabInstance:
       propertyPath: maxContainerSize
       value: 
       objectReference: {fileID: 7642383711460616958}
+    - target: {fileID: 2490763061763603747, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: 'texturePaths.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2800000, guid: 1c6d13ee576f4b94aa8ddd4c443ed6cc, type: 3}
     - target: {fileID: 2561209366234319849, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       propertyPath: canvas
       value: 
@@ -1640,7 +1660,7 @@ PrefabInstance:
       objectReference: {fileID: 2164158483700881158}
     - target: {fileID: 3591623091492035339, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       propertyPath: changeInterval
-      value: 10
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 3591623091492035339, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       propertyPath: textContents.Array.size
@@ -1648,7 +1668,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3591623091492035339, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       propertyPath: objectsToCycle.Array.size
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3591623091492035339, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       propertyPath: 'textContents.Array.data[0]'
@@ -1739,6 +1759,14 @@ PrefabInstance:
       propertyPath: maxContainerSize
       value: 
       objectReference: {fileID: 7642383711460616958}
+    - target: {fileID: 5262398859165431267, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: 'texturePaths.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2800000, guid: 71d7f8fb371af944ebe9e317daaa376f, type: 3}
+    - target: {fileID: 5262398859165431267, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: 'texturePaths.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2800000, guid: 0a6061db165cf1a42bb90dd20de2c421, type: 3}
     - target: {fileID: 5428999239146293789, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       propertyPath: displayImage
       value: 
@@ -1752,6 +1780,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 7642383711460616958}
     - target: {fileID: 5522606138589112813, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: autoPlay
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522606138589112813, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       propertyPath: displayImage
       value: 
       objectReference: {fileID: 8170823482315119211}
@@ -1763,6 +1795,10 @@ PrefabInstance:
       propertyPath: maxContainerSize
       value: 
       objectReference: {fileID: 7642383711460616958}
+    - target: {fileID: 5522606138589112813, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: 'texturePaths.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2800000, guid: ab546f67aad236447982f8118031d43b, type: 3}
     - target: {fileID: 6955282444265230169, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       propertyPath: displayImage
       value: 
@@ -1775,6 +1811,10 @@ PrefabInstance:
       propertyPath: maxContainerSize
       value: 
       objectReference: {fileID: 7642383711460616958}
+    - target: {fileID: 7025037063489134796, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7517174337173555971, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       propertyPath: canvas
       value: 
@@ -1817,12 +1857,18 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7741982573264241920, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: textContents.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7741982573264241920, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       propertyPath: 'textContents.Array.data[0]'
-      value: 
+      value: Un extincteur est un appareil de lutte contre l'incendie
       objectReference: {fileID: 0}
     - target: {fileID: 7741982573264241920, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       propertyPath: 'textContents.Array.data[1]'
-      value: 
+      value: "L'extincteur sert \xE0 \xE9teindre un d\xE9part d'incendie, utilisez-le
+        sur la base des flammes pour limiter la propagation. Ne l'utilisez pas si
+        le feu est d\xE9j\xE0 hors de contr\xF4le."
       objectReference: {fileID: 0}
     - target: {fileID: 7741982573264241920, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       propertyPath: 'textContents.Array.data[2]'
@@ -1842,7 +1888,7 @@ PrefabInstance:
       objectReference: {fileID: 2164158483700881158}
     - target: {fileID: 8469661745480815938, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       propertyPath: changeInterval
-      value: 12
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8469661745480815938, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       propertyPath: textContents.Array.size
@@ -1890,19 +1936,29 @@ PrefabInstance:
       objectReference: {fileID: 2164158483700881158}
     - target: {fileID: 8655823270767389670, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       propertyPath: changeInterval
-      value: 10
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655823270767389670, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: textContents.Array.size
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8655823270767389670, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       propertyPath: 'textContents.Array.data[0]'
-      value: 
+      value: 'ne surtout pas prendre l''ascenseur par-ce que '
       objectReference: {fileID: 0}
     - target: {fileID: 8655823270767389670, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       propertyPath: 'textContents.Array.data[1]'
-      value: 
+      value: "un ascenseur peut se retrouver bloqu\xE9 si l'alimentation est coup\xE9e."
       objectReference: {fileID: 0}
     - target: {fileID: 8655823270767389670, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       propertyPath: 'textContents.Array.data[2]'
-      value: 
+      value: "D\xE9gagement de fum\xE9e : la cabine peut devenir une zone dangereuse
+        en raison de l'inhalation de fum\xE9es toxiques."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655823270767389670, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: 'textContents.Array.data[3]'
+      value: "Propagation des flammes : certaines cages d'ascenseurs peuvent faciliter
+        la propagation du feu entre les \xE9tages."
       objectReference: {fileID: 0}
     - target: {fileID: 9068887908796665854, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       propertyPath: displayImage
@@ -1916,6 +1972,38 @@ PrefabInstance:
       propertyPath: maxContainerSize
       value: 
       objectReference: {fileID: 7642383711460616958}
+    - target: {fileID: 9068887908796665854, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: texturePaths.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 9068887908796665854, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: 'texturePaths.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2800000, guid: 30ee6df56fe5ded4a864a779a44bd70d, type: 3}
+    - target: {fileID: 9068887908796665854, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: 'texturePaths.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2800000, guid: c3e952b1012b8d64ba2679cd0b520127, type: 3}
+    - target: {fileID: 9068887908796665854, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: 'texturePaths.Array.data[2]'
+      value: 
+      objectReference: {fileID: 2800000, guid: 281562e9d42ac0942bdda25e6de3213a, type: 3}
+    - target: {fileID: 9068887908796665854, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: 'texturePaths.Array.data[3]'
+      value: 
+      objectReference: {fileID: 2800000, guid: 5f29f68e060c8d04aac087df43047c7f, type: 3}
+    - target: {fileID: 9068887908796665854, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: 'texturePaths.Array.data[4]'
+      value: 
+      objectReference: {fileID: 2800000, guid: 1e24903f55b69d34b81419f8bd2c3559, type: 3}
+    - target: {fileID: 9068887908796665854, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: 'texturePaths.Array.data[5]'
+      value: 
+      objectReference: {fileID: 2800000, guid: 0a372a8efe599c447a87141f512bafc5, type: 3}
+    - target: {fileID: 9068887908796665854, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: 'texturePaths.Array.data[6]'
+      value: 
+      objectReference: {fileID: 2800000, guid: b891bf4a4ca6d0f4bacf4ff39d394c30, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2030,9 +2118,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   autoPlay: 0
   changeInterval: 3
-  displayImage: {fileID: 0}
-  imageContainer: {fileID: 0}
-  maxContainerSize: {fileID: 0}
+  displayImage: {fileID: 8170823482315119211}
+  imageContainer: {fileID: 1005797526316859526}
+  maxContainerSize: {fileID: 7642383711460616958}
   texturePaths: []
   objectsToCycle: []
 --- !u!1 &2327840069950498907 stripped

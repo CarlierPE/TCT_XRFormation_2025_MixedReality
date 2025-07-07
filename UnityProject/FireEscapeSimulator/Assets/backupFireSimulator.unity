@@ -5643,6 +5643,20 @@ PrefabInstance:
       propertyPath: maxContainerSize
       value: 
       objectReference: {fileID: 280347622}
+    - target: {fileID: 418360272367368163, guid: f2dee62d4240abf4687bcb31c6c58de6, type: 3}
+      propertyPath: textContents.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 418360272367368163, guid: f2dee62d4240abf4687bcb31c6c58de6, type: 3}
+      propertyPath: 'textContents.Array.data[0]'
+      value: Un extincteur est un appareil de lutte contre l'incendie
+      objectReference: {fileID: 0}
+    - target: {fileID: 418360272367368163, guid: f2dee62d4240abf4687bcb31c6c58de6, type: 3}
+      propertyPath: 'textContents.Array.data[1]'
+      value: "L'extincteur sert \xE0 \xE9teindre un d\xE9part d'incendie, utilisez-le
+        sur la base des flammes pour limiter la propagation. Ne l'utilisez pas si
+        le feu est d\xE9j\xE0 hors de contr\xF4le."
+      objectReference: {fileID: 0}
     - target: {fileID: 715231770133348840, guid: f2dee62d4240abf4687bcb31c6c58de6, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.8505274
@@ -5683,8 +5697,138 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1135661026956579375, guid: f2dee62d4240abf4687bcb31c6c58de6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1397371336871951645, guid: f2dee62d4240abf4687bcb31c6c58de6, type: 3}
+      propertyPath: texturePaths.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1397371336871951645, guid: f2dee62d4240abf4687bcb31c6c58de6, type: 3}
+      propertyPath: 'texturePaths.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2800000, guid: 30ee6df56fe5ded4a864a779a44bd70d, type: 3}
+    - target: {fileID: 1397371336871951645, guid: f2dee62d4240abf4687bcb31c6c58de6, type: 3}
+      propertyPath: 'texturePaths.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2800000, guid: c3e952b1012b8d64ba2679cd0b520127, type: 3}
+    - target: {fileID: 1397371336871951645, guid: f2dee62d4240abf4687bcb31c6c58de6, type: 3}
+      propertyPath: 'texturePaths.Array.data[2]'
+      value: 
+      objectReference: {fileID: 2800000, guid: 281562e9d42ac0942bdda25e6de3213a, type: 3}
+    - target: {fileID: 1397371336871951645, guid: f2dee62d4240abf4687bcb31c6c58de6, type: 3}
+      propertyPath: 'texturePaths.Array.data[3]'
+      value: 
+      objectReference: {fileID: 2800000, guid: 5f29f68e060c8d04aac087df43047c7f, type: 3}
+    - target: {fileID: 1397371336871951645, guid: f2dee62d4240abf4687bcb31c6c58de6, type: 3}
+      propertyPath: 'texturePaths.Array.data[4]'
+      value: 
+      objectReference: {fileID: 2800000, guid: 1e24903f55b69d34b81419f8bd2c3559, type: 3}
+    - target: {fileID: 1397371336871951645, guid: f2dee62d4240abf4687bcb31c6c58de6, type: 3}
+      propertyPath: 'texturePaths.Array.data[5]'
+      value: 
+      objectReference: {fileID: 2800000, guid: 0a372a8efe599c447a87141f512bafc5, type: 3}
+    - target: {fileID: 1397371336871951645, guid: f2dee62d4240abf4687bcb31c6c58de6, type: 3}
+      propertyPath: 'texturePaths.Array.data[6]'
+      value: 
+      objectReference: {fileID: 2800000, guid: b891bf4a4ca6d0f4bacf4ff39d394c30, type: 3}
+    - target: {fileID: 1630572676087011589, guid: f2dee62d4240abf4687bcb31c6c58de6, type: 3}
+      propertyPath: changeInterval
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1630572676087011589, guid: f2dee62d4240abf4687bcb31c6c58de6, type: 3}
+      propertyPath: textContents.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1630572676087011589, guid: f2dee62d4240abf4687bcb31c6c58de6, type: 3}
+      propertyPath: 'textContents.Array.data[0]'
+      value: 'ne surtout pas prendre l''ascenseur par-ce que '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1630572676087011589, guid: f2dee62d4240abf4687bcb31c6c58de6, type: 3}
+      propertyPath: 'textContents.Array.data[1]'
+      value: "un ascenseur peut se retrouver bloqu\xE9 si l'alimentation est coup\xE9e."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1630572676087011589, guid: f2dee62d4240abf4687bcb31c6c58de6, type: 3}
+      propertyPath: 'textContents.Array.data[2]'
+      value: "D\xE9gagement de fum\xE9e : la cabine peut devenir une zone dangereuse
+        en raison de l'inhalation de fum\xE9es toxiques."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1630572676087011589, guid: f2dee62d4240abf4687bcb31c6c58de6, type: 3}
+      propertyPath: 'textContents.Array.data[3]'
+      value: "Propagation des flammes : certaines cages d'ascenseurs peuvent faciliter
+        la propagation du feu entre les \xE9tages."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1723842998677557161, guid: f2dee62d4240abf4687bcb31c6c58de6, type: 3}
+      propertyPath: m_BlockingMask.m_Bits
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1960495381081024417, guid: f2dee62d4240abf4687bcb31c6c58de6, type: 3}
+      propertyPath: changeInterval
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2327840069950498907, guid: f2dee62d4240abf4687bcb31c6c58de6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2457665048668494606, guid: f2dee62d4240abf4687bcb31c6c58de6, type: 3}
+      propertyPath: autoPlay
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2457665048668494606, guid: f2dee62d4240abf4687bcb31c6c58de6, type: 3}
+      propertyPath: 'texturePaths.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2800000, guid: ab546f67aad236447982f8118031d43b, type: 3}
+    - target: {fileID: 2862204359402342144, guid: f2dee62d4240abf4687bcb31c6c58de6, type: 3}
+      propertyPath: 'texturePaths.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2800000, guid: 71d7f8fb371af944ebe9e317daaa376f, type: 3}
+    - target: {fileID: 2862204359402342144, guid: f2dee62d4240abf4687bcb31c6c58de6, type: 3}
+      propertyPath: 'texturePaths.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2800000, guid: 0a6061db165cf1a42bb90dd20de2c421, type: 3}
+    - target: {fileID: 3706690968174506623, guid: f2dee62d4240abf4687bcb31c6c58de6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4742163371824688022, guid: f2dee62d4240abf4687bcb31c6c58de6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4840536874578675120, guid: f2dee62d4240abf4687bcb31c6c58de6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4864126339278180746, guid: f2dee62d4240abf4687bcb31c6c58de6, type: 3}
       propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5489795157596098496, guid: f2dee62d4240abf4687bcb31c6c58de6, type: 3}
+      propertyPath: autoPlay
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5489795157596098496, guid: f2dee62d4240abf4687bcb31c6c58de6, type: 3}
+      propertyPath: 'texturePaths.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2800000, guid: 1c6d13ee576f4b94aa8ddd4c443ed6cc, type: 3}
+    - target: {fileID: 5657836462579385276, guid: f2dee62d4240abf4687bcb31c6c58de6, type: 3}
+      propertyPath: m_Padding.m_Top
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 5657836462579385276, guid: f2dee62d4240abf4687bcb31c6c58de6, type: 3}
+      propertyPath: m_Padding.m_Left
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5657836462579385276, guid: f2dee62d4240abf4687bcb31c6c58de6, type: 3}
+      propertyPath: m_Padding.m_Right
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5657836462579385276, guid: f2dee62d4240abf4687bcb31c6c58de6, type: 3}
+      propertyPath: m_Padding.m_Bottom
+      value: 85
+      objectReference: {fileID: 0}
+    - target: {fileID: 6614817583201909970, guid: f2dee62d4240abf4687bcb31c6c58de6, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6838660606692654066, guid: f2dee62d4240abf4687bcb31c6c58de6, type: 3}
@@ -5697,7 +5841,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6838660606692654066, guid: f2dee62d4240abf4687bcb31c6c58de6, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 370
+      value: 430
       objectReference: {fileID: 0}
     - target: {fileID: 6838660606692654066, guid: f2dee62d4240abf4687bcb31c6c58de6, type: 3}
       propertyPath: m_SizeDelta.y
@@ -5709,14 +5853,42 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6838660606692654066, guid: f2dee62d4240abf4687bcb31c6c58de6, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -225
+      value: -205
       objectReference: {fileID: 0}
+    - target: {fileID: 6874567255376570856, guid: f2dee62d4240abf4687bcb31c6c58de6, type: 3}
+      propertyPath: changeInterval
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6874567255376570856, guid: f2dee62d4240abf4687bcb31c6c58de6, type: 3}
+      propertyPath: objectsToCycle.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7142608303897449626, guid: f2dee62d4240abf4687bcb31c6c58de6, type: 3}
+      propertyPath: autoPlay
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7142608303897449626, guid: f2dee62d4240abf4687bcb31c6c58de6, type: 3}
+      propertyPath: 'texturePaths.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2800000, guid: 741e990581e65c24badba881e2dd83fb, type: 3}
     - target: {fileID: 7564707874408290390, guid: f2dee62d4240abf4687bcb31c6c58de6, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7564707874408290390, guid: f2dee62d4240abf4687bcb31c6c58de6, type: 3}
       propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8284382916111584304, guid: f2dee62d4240abf4687bcb31c6c58de6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8717069257997551417, guid: f2dee62d4240abf4687bcb31c6c58de6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9167183903723404765, guid: f2dee62d4240abf4687bcb31c6c58de6, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -11847,6 +12019,10 @@ PrefabInstance:
     - target: {fileID: 7695273299575786698, guid: 7406ed3fa65b3ee45823f4844f201039, type: 3}
       propertyPath: m_Name
       value: StartingCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 7695273299575786698, guid: 7406ed3fa65b3ee45823f4844f201039, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7892256320507878747, guid: 7406ed3fa65b3ee45823f4844f201039, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
