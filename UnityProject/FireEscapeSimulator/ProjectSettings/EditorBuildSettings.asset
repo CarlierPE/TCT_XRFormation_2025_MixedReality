@@ -20,9 +20,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/_MainProject/Scenes/Sandboxes/SandBox_Seb_HighLight.unity
     guid: 1ea79ad35f142834cb1c71b7d1dfe85d
-  - enabled: 1
+  - enabled: 0
     path: Assets/backupFireSimulator.unity
     guid: bef31e5aea0d18140804319913df8d22
+  - enabled: 1
+    path: Assets/_MainProject/Scenes/Sandboxes/Sandbox_sounds_Seb.unity
+    guid: 9af4dde4e4159bc46b54960aac3b691e
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 15e558c5dfe264d4e8e4d162795b1d9f, type: 2}
