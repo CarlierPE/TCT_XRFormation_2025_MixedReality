@@ -6,15 +6,13 @@ using UnityEngine.UI; // pour le bouton
 
 public class textUpdateOnCanvas : MonoBehaviour
 {
-    [Header("GifMaker")]
-    public bool autoPlay = true;
+    [Header("GifMaker")] public bool autoPlay = true;
     public float changeInterval = 3f;
 
     [Header("Objets à activer/désactiver")]
     public List<GameObject> objectsToCycle;
 
-    [Header("Texte UI")]
-    public TextMeshProUGUI displayText;
+    [Header("Texte UI")] public TextMeshProUGUI displayText;
     public Canvas canvas;
     public List<string> textContents;
 
@@ -52,14 +50,15 @@ public class textUpdateOnCanvas : MonoBehaviour
 
     private IEnumerator AutoNextCoroutine()
     {
-        while (autoNextCount < 1)
+        int maxCount = Mathf.Max(textContents.Count, objectsToCycle.Count);
+
+        while (autoNextCount < maxCount)
         {
             yield return new WaitForSeconds(changeInterval);
             Next();
             autoNextCount++;
         }
 
-        
         if (buttonToShow != null)
             buttonToShow.SetActive(true);
     }
