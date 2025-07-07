@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class FireInstancate : MonoBehaviour
 {
+    [SerializeField] GameObject _startSimultion;
     [SerializeField] GameObject _startSoundFIre;
     [SerializeField] List<GameObject> _firePrefab; // Reference to the fire prefab
-    [SerializeField] AudioSource _startFire; 
+    [SerializeField] AudioSource _startFire;
     [SerializeField] AudioSource[] _audio; //Reference to audio for fire
     [SerializeField] float _spawnInterval = 5f; // Time interval between spawns
 
@@ -15,10 +16,13 @@ public class FireInstancate : MonoBehaviour
     private int _fireCount; // Counter for the number of fires spawned
     private int _spawnCount = 0;
     private bool _isFireMax = false; // Flag to check if the maximum number of fires has been reached
+    private Camera _camera;
 
     void Awake()
     {
+        DisableAllFirePrefab();
         _fireCount = _firePrefab.Count;
+        _camera = Camera.main;
     }
 
     // Update is called once per frame
@@ -28,6 +32,14 @@ public class FireInstancate : MonoBehaviour
         {
             if (_isFireMax) return; // If the maximum number of fires has been reached, do not spawn more fires
             NextFire(); // Call the SpawnFire method if fire is active
+        }
+
+        if (!_isFireActive)
+        {
+            if (_startFire.transform.position.x == _camera.transform.position.x && _startFire.transform.position.x == _camera.transform.position.x)
+            {
+                StartFire();
+            }
         }
     }
 
@@ -77,6 +89,7 @@ public class FireInstancate : MonoBehaviour
         if (_isFireActive)
         {
             DisableAllFirePrefab(); // Deactivate all fire prefabs
+            DisableAllSounds(); // Deactivate all sounds
             _nextSpawnTime = 0; // Reset the next spawn time
             _isFireActive = false; // Set the fire active flag to false
             _isFireMax = false; // Reset the maximum fire flag
@@ -90,7 +103,10 @@ public class FireInstancate : MonoBehaviour
         {
             fire.SetActive(false); // Deactivate all fire prefabs
         }
+    }
 
+    private void DisableAllSounds()
+    {
         foreach (var item in _audio)
         {
             item.Stop();

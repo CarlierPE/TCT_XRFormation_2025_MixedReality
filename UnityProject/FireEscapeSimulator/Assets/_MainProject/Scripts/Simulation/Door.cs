@@ -2,11 +2,11 @@ using UnityEngine;
 
 public class Door : TriggerableByPlayer
 {
-    private eMonitoredAction _action;
-
-    public void CloseDoor()
+    [SerializeField] private GameObject _door;
+    
+    private void OnTriggerEnter(Collider other)
     {
-        _action = eMonitoredAction.CloseDoor;
-        OnTriggeredByPlayer(_action);
+        _door.SetActive(true);
+        OnTriggeredByPlayer(eMonitoredAction.CloseDoor);
     }
 }

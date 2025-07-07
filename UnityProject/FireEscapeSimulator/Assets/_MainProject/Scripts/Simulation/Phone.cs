@@ -2,16 +2,8 @@ using UnityEngine;
 
 public class Phone : TriggerableByPlayer
 {
-    private eMonitoredAction _action;
-
-    public void TakePhone()
+    private void OnTriggerEnter(Collider other)
     {
-        _action = eMonitoredAction.TakePhone;
-        OnTriggeredByPlayer(_action);
-    }
-    public void Appel()
-    {
-        _action = eMonitoredAction.Appel;
-        OnTriggeredByPlayer(_action);
+        OnTriggeredByPlayer(eMonitoredAction.Appel);
     }
 }

@@ -2,12 +2,8 @@ using UnityEngine;
 
 public class StairsDown : TriggerableByPlayer
 {
-
-    private eMonitoredAction _action;
-
-    public void DownStair()
+    private void OnTriggerEnter(Collider other)
     {
-        _action = eMonitoredAction.FinishLine;
-        OnTriggeredByPlayer(_action);
+        OnTriggeredByPlayer(eMonitoredAction.FinishLine);
     }
 }

@@ -2,11 +2,8 @@ using UnityEngine;
 
 public class StairsUp : TriggerableByPlayer
 {
-
-    private eMonitoredAction _action;
-    public void UpStair()
+    private void OnTriggerEnter(Collider other)
     {
-        _action = eMonitoredAction.StairsUp;
-        OnTriggeredByPlayer(_action);
+        OnTriggeredByPlayer(eMonitoredAction.StairsUp);
     }
 }

@@ -10,9 +10,9 @@ public class SimulationSript : MonoBehaviour
 
     [SerializeField] List<GameObject> _fires;
     [SerializeField] float _timeExpension;
+    [SerializeField]FireInstancate _fireInstancate;
 
     ScoreManager _scoreGame;
-    FireInstancate _fireInstancate;
 
     //TriggerableByPlayer _triggerableByPlayer;
 

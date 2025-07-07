@@ -2,9 +2,8 @@ using UnityEngine;
 
 public class EmergencyExit : TriggerableByPlayer
 {
-    public void EntryEmergnecyExit()
+    private void OnTriggerEnter(Collider other)
     {
-        eMonitoredAction action = eMonitoredAction.FinishLine;
-        OnTriggeredByPlayer(action);
+        OnTriggeredByPlayer(eMonitoredAction.FinishLine);
     }
 }

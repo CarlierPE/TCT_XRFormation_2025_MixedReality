@@ -2,10 +2,8 @@ using UnityEngine;
 
 public class Elevator : TriggerableByPlayer
 {
-
-    public void TouchElevator()
+    private void OnTriggerEnter(Collider other)
     {
-        eMonitoredAction action = eMonitoredAction.TouchElevator;
-        OnTriggeredByPlayer(action);
+        OnTriggeredByPlayer(eMonitoredAction.TouchElevator);
     }
 }
