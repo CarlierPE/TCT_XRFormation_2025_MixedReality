@@ -950,7 +950,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 659789500178946409, guid: ddebed8da42994a4b81bc65990bcab27, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -287
+      value: -225
       objectReference: {fileID: 0}
     - target: {fileID: 1392509080198994899, guid: ddebed8da42994a4b81bc65990bcab27, type: 3}
       propertyPath: m_Colors.m_PressedColor.b
@@ -1018,7 +1018,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1822667922441609511, guid: ddebed8da42994a4b81bc65990bcab27, type: 3}
       propertyPath: m_Padding.m_Top
-      value: 162
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 1822667922441609511, guid: ddebed8da42994a4b81bc65990bcab27, type: 3}
       propertyPath: m_ChildAlignment
@@ -1451,7 +1451,16 @@ PrefabInstance:
       objectReference: {fileID: 2164158483700881158}
     - target: {fileID: 1226342828346997407, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       propertyPath: changeInterval
-      value: 10
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1226342828346997407, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: textContents.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1226342828346997407, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: 'textContents.Array.data[0]'
+      value: "Ces \xE9clairages de s\xE9curit\xE9 servent \xE0 s'orienter et \xE0
+        indiquer les voies de secours en cas d'incident provoquant l'obscurit\xE9."
       objectReference: {fileID: 0}
     - target: {fileID: 1440775680691222291, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       propertyPath: displayImage
@@ -1479,11 +1488,11 @@ PrefabInstance:
       objectReference: {fileID: 2164158483700881158}
     - target: {fileID: 2170510584085285613, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       propertyPath: changeInterval
-      value: 10
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 2170510584085285613, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       propertyPath: textContents.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2170510584085285613, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       propertyPath: 'textContents.Array.data[0]'
@@ -1509,6 +1518,12 @@ PrefabInstance:
         les issues de secours. Ainsi, \xE0 cause de toutes ces variables possibles,
         l\u2019alarme doit toujours \xEAtre manuellement d\xE9clench\xE9e, et tu
         dois appeler les pompiers d\xE8s que ta vie n\u2019est plus en danger. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 2170510584085285613, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: 'textContents.Array.data[4]'
+      value: "Une caract\xE9ristique importante des alarmes incendie est le voyant
+        lumineux, qui fournit des informations cruciales sur l'\xE9tat et le fonctionnement
+        de l'alarme."
       objectReference: {fileID: 0}
     - target: {fileID: 2490763061763603747, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       propertyPath: displayImage
@@ -1594,6 +1609,11 @@ PrefabInstance:
       value: " Ils sont un \xE9l\xE9ment essentiel de la lutte contre l'incendie,
         permettant aux pompiers d'atteindre et de ma\xEEtriser le feu \xE0 distance. "
       objectReference: {fileID: 0}
+    - target: {fileID: 2817804362515136911, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: 'textContents.Array.data[2]'
+      value: "Les tuyaux d'incendie sont con\xE7us pour acheminer de grandes quantit\xE9s
+        d'eau, ou parfois des mousses, vers le lieu de l'incendie. "
+      objectReference: {fileID: 0}
     - target: {fileID: 3003372755202156615, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       propertyPath: displayImage
       value: 
@@ -1622,6 +1642,39 @@ PrefabInstance:
       propertyPath: changeInterval
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 3591623091492035339, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: textContents.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3591623091492035339, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: objectsToCycle.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3591623091492035339, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: 'textContents.Array.data[0]'
+      value: "Veuillez lire les r\xE8gles."
+      objectReference: {fileID: 0}
+    - target: {fileID: 3591623091492035339, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: 'textContents.Array.data[1]'
+      value: "n'oubliez pas qu'apr\xE8s \xEAtre sorti, dites aux pompier o\xF9 se
+        situe le d\xE9but d'incendie"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3591623091492035339, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: 'objectsToCycle.Array.data[0]'
+      value: 
+      objectReference: {fileID: 6614817583201909970}
+    - target: {fileID: 3591623091492035339, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: 'objectsToCycle.Array.data[1]'
+      value: 
+      objectReference: {fileID: 6614817583201909970}
+    - target: {fileID: 3591623091492035339, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: 'objectsToCycle.Array.data[2]'
+      value: 
+      objectReference: {fileID: 6614817583201909970}
+    - target: {fileID: 3591623091492035339, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: 'objectsToCycle.Array.data[3]'
+      value: 
+      objectReference: {fileID: 6614817583201909970}
     - target: {fileID: 4779656034458709209, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -1736,7 +1789,16 @@ PrefabInstance:
       objectReference: {fileID: 2164158483700881158}
     - target: {fileID: 7517174337173555971, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       propertyPath: changeInterval
-      value: 10
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7517174337173555971, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: textContents.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7517174337173555971, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: 'textContents.Array.data[0]'
+      value: "D\xE8s que vous \xEAtes hors de danger, pr\xE9venez imm\xE9diatement
+        les pompiers en appelant le 112. Donnez des indications claires et pr\xE9cises."
       objectReference: {fileID: 0}
     - target: {fileID: 7741982573264241920, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       propertyPath: canvas
@@ -1754,6 +1816,18 @@ PrefabInstance:
       propertyPath: changeInterval
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 7741982573264241920, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: 'textContents.Array.data[0]'
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7741982573264241920, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: 'textContents.Array.data[1]'
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7741982573264241920, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: 'textContents.Array.data[2]'
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8469661745480815938, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       propertyPath: canvas
       value: 
@@ -1768,7 +1842,7 @@ PrefabInstance:
       objectReference: {fileID: 2164158483700881158}
     - target: {fileID: 8469661745480815938, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       propertyPath: changeInterval
-      value: 10
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 8469661745480815938, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       propertyPath: textContents.Array.size
@@ -1817,6 +1891,18 @@ PrefabInstance:
     - target: {fileID: 8655823270767389670, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       propertyPath: changeInterval
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655823270767389670, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: 'textContents.Array.data[0]'
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655823270767389670, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: 'textContents.Array.data[1]'
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655823270767389670, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: 'textContents.Array.data[2]'
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 9068887908796665854, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       propertyPath: displayImage
