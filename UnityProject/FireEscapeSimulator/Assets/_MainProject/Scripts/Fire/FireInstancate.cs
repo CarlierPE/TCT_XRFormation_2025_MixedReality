@@ -16,13 +16,12 @@ public class FireInstancate : MonoBehaviour
     private int _fireCount; // Counter for the number of fires spawned
     private int _spawnCount = 0;
     private bool _isFireMax = false; // Flag to check if the maximum number of fires has been reached
-    private Camera _camera;
-
+    Vector3 positionStart;
     void Awake()
     {
         DisableAllFirePrefab();
         _fireCount = _firePrefab.Count;
-        _camera = Camera.main;
+        positionStart = _startFire.transform.position;
     }
 
     // Update is called once per frame
@@ -32,14 +31,6 @@ public class FireInstancate : MonoBehaviour
         {
             if (_isFireMax) return; // If the maximum number of fires has been reached, do not spawn more fires
             NextFire(); // Call the SpawnFire method if fire is active
-        }
-
-        if (!_isFireActive)
-        {
-            if (_startFire.transform.position.x == _camera.transform.position.x && _startFire.transform.position.x == _camera.transform.position.x)
-            {
-                StartFire();
-            }
         }
     }
 
@@ -116,6 +107,6 @@ public class FireInstancate : MonoBehaviour
 
     public void PauseFire()
     {
-        _isFireActive = false; // Set the fire active flag to false to pause fire spawning
+        _isFireActive = !_isFireActive; // Set the fire active flag for pause fire spawningto false or true for resume to fire spawning
     }
 }
