@@ -29,6 +29,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
+  - {fileID: 5497260233708059522}
   - {fileID: 3149751007498557457}
   - {fileID: 1594130228671639126}
   - {fileID: 1974651376216947613}
@@ -38,7 +39,6 @@ Transform:
   - {fileID: 8469345139481253924}
   - {fileID: 2085168502020173922}
   - {fileID: 537276959428864223}
-  - {fileID: 5497260233708059522}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1263045711652785982
@@ -110,6 +110,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  autoPlay: 1
+  changeInterval: 3
   objectsToCycle:
   - {fileID: 0}
   displayText: {fileID: 0}
@@ -123,6 +125,7 @@ MonoBehaviour:
     pr\xEAt \xE0 commencer"
   - "Ceci est un panneau d'\xE9vacuation, il montre la direction de la sortie de
     secours la plus proche"
+  buttonToShow: {fileID: 0}
 --- !u!1 &1605001227334432218
 GameObject:
   m_ObjectHideFlags: 0
@@ -190,6 +193,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  autoPlay: 1
+  changeInterval: 3
   objectsToCycle:
   - {fileID: 0}
   displayText: {fileID: 0}
@@ -203,6 +208,7 @@ MonoBehaviour:
     pr\xEAt \xE0 commencer"
   - "Ceci est un panneau d'\xE9vacuation, il montre la direction de la sortie de
     secours la plus proche"
+  buttonToShow: {fileID: 0}
 --- !u!1 &2037691967761874643
 GameObject:
   m_ObjectHideFlags: 0
@@ -273,6 +279,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  autoPlay: 1
+  changeInterval: 3
   objectsToCycle:
   - {fileID: 0}
   displayText: {fileID: 0}
@@ -286,6 +294,7 @@ MonoBehaviour:
     pr\xEAt \xE0 commencer"
   - "Ceci est un panneau d'\xE9vacuation, il montre la direction de la sortie de
     secours la plus proche"
+  buttonToShow: {fileID: 0}
 --- !u!1 &2741690341026141596
 GameObject:
   m_ObjectHideFlags: 0
@@ -353,6 +362,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  autoPlay: 1
+  changeInterval: 3
   objectsToCycle:
   - {fileID: 0}
   displayText: {fileID: 0}
@@ -360,6 +371,7 @@ MonoBehaviour:
   textContents:
   - "Ceci est un panneau d'\xE9vacuation, il montre la direction de la sortie de
     secours la plus proche"
+  buttonToShow: {fileID: 0}
 --- !u!1 &3283782696849422163
 GameObject:
   m_ObjectHideFlags: 0
@@ -427,6 +439,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  autoPlay: 1
+  changeInterval: 3
   objectsToCycle:
   - {fileID: 0}
   displayText: {fileID: 0}
@@ -440,6 +454,7 @@ MonoBehaviour:
     pr\xEAt \xE0 commencer"
   - "Ceci est un panneau d'\xE9vacuation, il montre la direction de la sortie de
     secours la plus proche"
+  buttonToShow: {fileID: 0}
 --- !u!1 &3418460974007654773
 GameObject:
   m_ObjectHideFlags: 0
@@ -507,6 +522,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  autoPlay: 1
+  changeInterval: 3
   objectsToCycle:
   - {fileID: 0}
   displayText: {fileID: 0}
@@ -520,6 +537,7 @@ MonoBehaviour:
     pr\xEAt \xE0 commencer"
   - "Ceci est un panneau d'\xE9vacuation, il montre la direction de la sortie de
     secours la plus proche"
+  buttonToShow: {fileID: 0}
 --- !u!1 &3851652837393583665
 GameObject:
   m_ObjectHideFlags: 0
@@ -587,6 +605,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  autoPlay: 1
+  changeInterval: 3
   objectsToCycle:
   - {fileID: 0}
   displayText: {fileID: 0}
@@ -600,6 +620,7 @@ MonoBehaviour:
     pr\xEAt \xE0 commencer"
   - "Ceci est un panneau d'\xE9vacuation, il montre la direction de la sortie de
     secours la plus proche"
+  buttonToShow: {fileID: 0}
 --- !u!1 &5688462387169483448
 GameObject:
   m_ObjectHideFlags: 0
@@ -668,6 +689,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  autoPlay: 1
+  changeInterval: 3
   objectsToCycle:
   - {fileID: 0}
   displayText: {fileID: 0}
@@ -681,6 +704,7 @@ MonoBehaviour:
     pr\xEAt \xE0 commencer"
   - "Ceci est un panneau d'\xE9vacuation, il montre la direction de la sortie de
     secours la plus proche"
+  buttonToShow: {fileID: 0}
 --- !u!1 &6759783852052906140
 GameObject:
   m_ObjectHideFlags: 0
@@ -750,6 +774,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  autoPlay: 1
+  changeInterval: 3
   objectsToCycle:
   - {fileID: 0}
   displayText: {fileID: 0}
@@ -763,6 +789,7 @@ MonoBehaviour:
     pr\xEAt \xE0 commencer"
   - "Ceci est un panneau d'\xE9vacuation, il montre la direction de la sortie de
     secours la plus proche"
+  buttonToShow: {fileID: 0}
 --- !u!1 &7025037063489134796
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,8 +11,7 @@ public class Guide : MonoBehaviour
      * 
      */
 
-    [SerializeField] Transform _pictoContainer;
-    private TutorialPicto _currentPicto;
+    private GameObject _currentPicto;
     private Animator _anim;
     public UnityEvent OnSpawnComplete;
     public UnityEvent OnPictoHidden;
@@ -22,12 +21,12 @@ public class Guide : MonoBehaviour
         _anim = GetComponent<Animator>();
         
     }
-    private void Update()
-    {
-        if (_currentPicto == null)
-            return;
-        _currentPicto.transform.SetPositionAndRotation(_pictoContainer.position, _pictoContainer.rotation);
-    }
+    //private void Update()
+    //{
+    //    if (_currentPicto == null)
+    //        return;
+    //    _currentPicto.transform.SetPositionAndRotation(_pictoContainer.position, _pictoContainer.rotation);
+    //}
     public void Spawn(Vector3 spawnPosition, Transform lookAtTarget)
     {
         //se positionne à la position en regardant à lookattarget et joue son animation de spawn
@@ -45,11 +44,12 @@ public class Guide : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    public void ShowPanel(TutorialPicto picto)
+    public void ShowPanel(GameObject picto)
     {
         //jouer l'animation du casque qui s'ouvre et montrer le picto
         _currentPicto = picto;
         _anim.SetBool("Open", true);
+        _currentPicto.SetActive(true);
     }
 
     public void HideCurrentPanel()
@@ -57,7 +57,7 @@ public class Guide : MonoBehaviour
         //jouer l'animation pour cacher le picto
         //...
         _anim.SetBool("Open", false);
-        _currentPicto.gameObject.SetActive(false);
+        _currentPicto.SetActive(false);
         _currentPicto = null;
         OnPictoHidden?.Invoke();
     }

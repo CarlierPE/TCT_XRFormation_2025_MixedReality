@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.Events;
-
+using UnityEngine.UI;
 /*
  *  Le but de ce script est d'afficher l'UI du tout premier menu quand on ouvre l'application
  *  L'UI doit disposer d'un bouton start
@@ -9,14 +9,14 @@ using UnityEngine.Events;
 public class StartScript : MonoBehaviour
 {
     [SerializeField] GameObject _ui;
-    
+    [SerializeField] Button _startButton;
 
     [HideInInspector]
     public UnityEvent OnSessionStart;
 
     private void OnEnable()
     {
-        //TODO event "click" de l'ui add
+        _startButton.onClick.AddListener(StartSession);
         _ui.SetActive(true);
     }
 
@@ -27,7 +27,8 @@ public class StartScript : MonoBehaviour
     
     private void OnDisable()
     {
-        //TODO event click de l'ui remove
         _ui.SetActive(false);
+        _startButton.onClick.RemoveListener(StartSession);
+
     }
 }
