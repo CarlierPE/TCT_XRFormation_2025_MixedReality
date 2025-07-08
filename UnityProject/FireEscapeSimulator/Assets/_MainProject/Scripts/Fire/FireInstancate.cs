@@ -32,17 +32,6 @@ public class FireInstancate : MonoBehaviour
             if (_isFireMax) return; // If the maximum number of fires has been reached, do not spawn more fires
             NextFire(); // Call the SpawnFire method if fire is active
         }
-
-        if (!_isFireActive)
-        {
-             
-            Vector3 positionCamera = Camera.main.transform.position;
-            positionCamera.y = 0;
-            if (positionCamera.x >= positionStart.x && positionCamera.y <= positionStart.y)
-            {
-                StartFire();
-            }
-        }
     }
 
     public void StartFire()
@@ -118,6 +107,6 @@ public class FireInstancate : MonoBehaviour
 
     public void PauseFire()
     {
-        _isFireActive = false; // Set the fire active flag to false to pause fire spawning
+        _isFireActive = !_isFireActive; // Set the fire active flag for pause fire spawningto false or true for resume to fire spawning
     }
 }
