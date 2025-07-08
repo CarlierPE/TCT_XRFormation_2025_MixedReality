@@ -14,5 +14,6 @@ public enum eMonitoredAction
     TakePhone,
     Appel,
     TouchElevator,
+    EnterKitchen,
     //etc
 }

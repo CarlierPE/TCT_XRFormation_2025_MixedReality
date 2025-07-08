@@ -13,10 +13,27 @@ public class Simulation : MonoBehaviour
 {
     [HideInInspector]
     public UnityEvent OnSimulationEnding;
+    [SerializeField] ScoreManager _scoreManager;
+    [SerializeField] DoorManager _doorManager;
 
     private void OnEnable()
     {
-        //TODO - tout
+        _scoreManager.OnGameIsFinished.AddListener(EndGame);
+        _doorManager.gameObject.SetActive(true);
+        _doorManager.ResetDoors();
+        _scoreManager.InitScore();
+        _scoreManager.StartScoreSystem();
+    }
+
+    private void OnDisable()
+    {
+        _scoreManager.OnGameIsFinished.RemoveListener(EndGame);
+        _doorManager.gameObject.SetActive(false);
+        _scoreManager.StopScoreSystem();
+    }
+
+    private void EndGame()
+    {
         OnSimulationEnding.Invoke();
     }
 }
