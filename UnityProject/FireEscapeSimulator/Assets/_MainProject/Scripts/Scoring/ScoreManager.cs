@@ -3,6 +3,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.InputSystem;
 using System.Linq;
+using UnityEngine.Events;
 
 public class ScoreManager : MonoBehaviour
 { 
@@ -17,6 +18,8 @@ public class ScoreManager : MonoBehaviour
     public int Score => _totalscore;
     public IEnumerable<ScoreLog> ScoreLogs => _logs.AsEnumerable();
 
+    public UnityEvent OnGameIsFinished;
+
     private void Awake()
     {
         if(_instance != null && _instance != this)
@@ -26,6 +29,16 @@ public class ScoreManager : MonoBehaviour
         }    
 
         _instance = this;
+    }
+
+    public void StartScoreSystem()
+    {
+        //TODO
+    }
+
+    public void StopScoreSystem()
+    {
+        //TODO
     }
 
     private void OnEnable()
