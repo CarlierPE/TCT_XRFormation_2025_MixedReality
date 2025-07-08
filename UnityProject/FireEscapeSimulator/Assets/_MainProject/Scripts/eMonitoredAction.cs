@@ -15,6 +15,6 @@ public enum eMonitoredAction
     Appel,
     TouchElevator,
     EnterKitchen,
-    TimerOut
+    TimerOut,
     //etc
 }
