@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7355140857378581695}
   - component: {fileID: 5840650528088906644}
   - component: {fileID: 4333536408747734408}
-  - component: {fileID: 8703968970678006367}
+  - component: {fileID: 6546484070995388827}
   m_Layer: 0
   m_Name: Sphere_elevator_to_kitchen
   m_TagString: Untagged
@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 3170885687640590161}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.89, y: 1, z: 20.313}
+  m_LocalPosition: {x: -0.7255, y: 1.2, z: 20.4338}
   m_LocalScale: {x: 0.2487, y: 0.2487, z: 0.2487}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -109,7 +109,7 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &8703968970678006367
+--- !u!114 &6546484070995388827
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -118,9 +118,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 3170885687640590161}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e8ffc6cc0430d24983b98bde1e99871, type: 3}
+  m_Script: {fileID: 11500000, guid: 1165a364dd05955488405c4572b5cead, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Triggered:
+    m_PersistentCalls:
+      m_Calls: []
   _door: {fileID: 1887696690918900589}
 --- !u!1 &5095269406389495988
 GameObject:
@@ -134,7 +137,7 @@ GameObject:
   - component: {fileID: 5934322808911836816}
   - component: {fileID: 6117074316997109588}
   - component: {fileID: 288581741969116470}
-  - component: {fileID: 5737460071845752489}
+  - component: {fileID: 3336837674935112831}
   m_Layer: 0
   m_Name: Sphere_commun_to_elevator
   m_TagString: Untagged
@@ -151,7 +154,7 @@ Transform:
   m_GameObject: {fileID: 5095269406389495988}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.489, y: 1.24, z: 20.169}
+  m_LocalPosition: {x: -3.3116, y: 1.2, z: 20.4}
   m_LocalScale: {x: 0.26, y: 0.26, z: 0.26}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -231,7 +234,7 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5737460071845752489
+--- !u!114 &3336837674935112831
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -240,9 +243,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 5095269406389495988}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e8ffc6cc0430d24983b98bde1e99871, type: 3}
+  m_Script: {fileID: 11500000, guid: 1165a364dd05955488405c4572b5cead, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Triggered:
+    m_PersistentCalls:
+      m_Calls: []
   _door: {fileID: 3243194918019975643}
 --- !u!1 &7731172001117935149
 GameObject:
@@ -256,7 +262,7 @@ GameObject:
   - component: {fileID: 2693702840749701897}
   - component: {fileID: 6681207188439123561}
   - component: {fileID: 4313254842746775276}
-  - component: {fileID: 6364844839877475781}
+  - component: {fileID: 3311802569264144611}
   m_Layer: 0
   m_Name: Sphere_stairs_to_kichen
   m_TagString: Untagged
@@ -273,7 +279,7 @@ Transform:
   m_GameObject: {fileID: 7731172001117935149}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.243, y: 1, z: 19.779}
+  m_LocalPosition: {x: 5.421, y: 1.2, z: 20.4}
   m_LocalScale: {x: 0.21, y: 0.21, z: 0.21}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -353,7 +359,7 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6364844839877475781
+--- !u!114 &3311802569264144611
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -362,9 +368,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 7731172001117935149}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e8ffc6cc0430d24983b98bde1e99871, type: 3}
+  m_Script: {fileID: 11500000, guid: 1165a364dd05955488405c4572b5cead, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Triggered:
+    m_PersistentCalls:
+      m_Calls: []
   _door: {fileID: 2196180453697429526}
 --- !u!1 &7956090266240668529
 GameObject:
@@ -435,7 +444,7 @@ GameObject:
   - component: {fileID: 2361884864722131124}
   - component: {fileID: 1340708314047448955}
   - component: {fileID: 3361701042346013649}
-  - component: {fileID: 4463174940920362220}
+  - component: {fileID: 8901289203119070029}
   m_Layer: 0
   m_Name: Sphere_commun_to_emergency_exit
   m_TagString: Untagged
@@ -452,7 +461,7 @@ Transform:
   m_GameObject: {fileID: 8838915070686577203}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.108, y: 1.24, z: 19.991}
+  m_LocalPosition: {x: -14.9521, y: 1.2, z: 20.4}
   m_LocalScale: {x: 0.24, y: 0.24, z: 0.24}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -532,7 +541,7 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &4463174940920362220
+--- !u!114 &8901289203119070029
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -541,9 +550,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 8838915070686577203}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e8ffc6cc0430d24983b98bde1e99871, type: 3}
+  m_Script: {fileID: 11500000, guid: 1165a364dd05955488405c4572b5cead, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Triggered:
+    m_PersistentCalls:
+      m_Calls: []
   _door: {fileID: 7559586983511911308}
 --- !u!1001 &3797540983389778032
 PrefabInstance:
