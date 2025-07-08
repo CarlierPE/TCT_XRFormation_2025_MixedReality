@@ -1,12 +1,16 @@
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 
 public class ScoreManager : MonoBehaviour
 {
-
+    public TextMeshProUGUI textScore;
+    public TextMeshProUGUI textDebriefing;
+    public TextMeshProUGUI textTime;
     static ScoreManager _instance;
 
     private int _totalscore = 0;
@@ -24,29 +28,61 @@ public class ScoreManager : MonoBehaviour
 
     private GameDebriefing _gameDebriefing;
 
+    private bool _isPlaying;
+    float timerAction;
+
     private void Awake()
     {
+        Debug.Log("entrer dans le Away");
         if (_instance != null && _instance != this)
         {
             Destroy(gameObject);
+            Debug.Log("detruit l'instance");
+
             return;
         }
 
         _instance = this;
         _gameDebriefing = new GameDebriefing();
+        
+        textScore.text = "";
 
+        InitScore();
+    }
+
+    private void Update()
+    {
+
+        Debug.Log("entrer dans le Update");
+        if (_isPlaying)
+        {
+            timerAction = Time.time - _timer;
+
+            textTime.text = "Time : " + timerAction;
+            ;
+
+            if (timerAction >= timeMax) 
+            {
+                _isPlaying = false;
+                OnActionTriggered(eMonitoredAction.TimerOut);
+            }
+        }
     }
 
     public void StartScoreSystem()
     {
-        //TODO
+
+        Debug.Log("entrer dans le start timer");
         _timer = Time.time;
+        _isPlaying = true;
     }
 
     public void StopScoreSystem()
     {
-        //TODO
+
+        Debug.Log("entrer dans le stop timer");
         _timer = Time.time - _timer;
+        _isPlaying = false;
     }
 
     private void OnEnable()
@@ -59,22 +95,24 @@ public class ScoreManager : MonoBehaviour
 
     private void OnDisable()
     {
+        Debug.Log("entrer dans le OnDisable");
         foreach (var triggerable in _triggerables)
         {
             triggerable.Triggered.RemoveListener(OnActionTriggered);
         }
     }
+
     public void InitScore()
     {
+        Debug.Log("entrer dans le init");
         _totalscore = 0;
         StartScoreSystem();
     }
 
     private void OnActionTriggered(eMonitoredAction action)
     {
-        //TODO -> appeler le save action avec le bon timer
 
-        float timerAction;
+        Debug.Log("entrer dans le On Action Triggered");
 
         if (ScoreAction.tableScoreAction.TryGetValue(action, out int score))
         {
@@ -102,15 +140,17 @@ public class ScoreManager : MonoBehaviour
     private void SaveActionScore(eMonitoredAction action, int score, float time)
     {
         
-            _totalscore += score;
-            ScoreLog log = new()
-            {
-                timeAction = time,
-                action = action,
-                scoreValid = score
-            };
+        _totalscore += score;
+        ScoreLog log = new()
+        {
+            timeAction = time,
+            action = action,
+            scoreValid = score
+        };
 
-            _logs.Add(log);
+        _logs.Add(log);
+
+        textScore.text += ReadScorLog(log);
     }
 
     private void SaveFinalScore(float time)
@@ -119,12 +159,17 @@ public class ScoreManager : MonoBehaviour
         _gameDebriefing.scoreEnd = _totalscore;
         _gameDebriefing.scoreLogs = _logs;
 
+        textDebriefing.text += ReadingDebriefing();
         //SaveOnDocument(_gameDebriefing);
+    }
+    public string ReadScorLog(ScoreLog log)
+    {
+        return $"point : {log.scoreValid} | temps : {log.timeAction} | action : {log.action} \n ";
     }
 
     public string ReadingDebriefing()
     {
-        string debriefing= $"Votre temps de simulation est : {_gameDebriefing.timeGame}, et le total des points est : {_gameDebriefing.scoreEnd}\n\n";
+        string debriefing = $"\nVotre temps de simulation est : {_gameDebriefing.timeGame}, et le total des points est : {_gameDebriefing.scoreEnd}\n\n";
 
         debriefing += "voici les points en detail avec le temps et l'action realiser : \n";
 
