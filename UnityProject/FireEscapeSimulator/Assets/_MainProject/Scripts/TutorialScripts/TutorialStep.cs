@@ -5,10 +5,12 @@ public abstract class TutorialStep : MonoBehaviour
 {
     // Appelé pour démarrer l’étape
     protected abstract void DoStep();
+    protected virtual void OnUpdate() { }
     private bool _canStart;
 
     private void Update()
     {
+        OnUpdate();
         if (!_canStart) return;
         _canStart = false;
         DoStep();

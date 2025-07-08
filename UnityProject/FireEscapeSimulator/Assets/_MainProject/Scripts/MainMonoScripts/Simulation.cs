@@ -15,18 +15,27 @@ public class Simulation : MonoBehaviour
     public UnityEvent OnSimulationEnding;
     [SerializeField] ScoreManager _scoreManager;
     [SerializeField] DoorManager _doorManager;
+    [SerializeField] FireInstancate _fireManager;
 
     private void OnEnable()
     {
+        //TODO:
+        /*
+         * reset le feu et le déclencher
+         * 
+         */
         _scoreManager.OnGameIsFinished.AddListener(EndGame);
         _doorManager.gameObject.SetActive(true);
         _doorManager.ResetDoors();
         _scoreManager.InitScore();
         _scoreManager.StartScoreSystem();
+        _fireManager.ResetFire();
+        _fireManager.StartFire();
     }
 
     private void OnDisable()
     {
+        _fireManager.ResetFire();
         _scoreManager.OnGameIsFinished.RemoveListener(EndGame);
         _doorManager.gameObject.SetActive(false);
         _scoreManager.StopScoreSystem();

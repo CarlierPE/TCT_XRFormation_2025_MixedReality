@@ -13,7 +13,9 @@ public class Guide : MonoBehaviour
 
     private GameObject _currentPicto;
     private Animator _anim;
+    [HideInInspector]
     public UnityEvent OnSpawnComplete;
+    [HideInInspector]
     public UnityEvent OnPictoHidden;
     private void Start()
     {
@@ -27,15 +29,14 @@ public class Guide : MonoBehaviour
     //        return;
     //    _currentPicto.transform.SetPositionAndRotation(_pictoContainer.position, _pictoContainer.rotation);
     //}
-    public void Spawn(Vector3 spawnPosition, Transform lookAtTarget)
+    public void Spawn(Transform lookAtTarget)
     {
         //se positionne à la position en regardant à lookattarget et joue son animation de spawn
-        transform.position = spawnPosition;
         transform.LookAt(lookAtTarget, Vector3.up);
         gameObject.SetActive(true);
         //jouer animation ici
         //...
-        OnSpawnComplete?.Invoke();
+        OnSpawnComplete.Invoke();
     }
 
     public void UnSpawn()
