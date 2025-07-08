@@ -83,30 +83,18 @@ public class ScoreManager : MonoBehaviour
             if (action == eMonitoredAction.FinishLine)
             {
                 StopScoreSystem();
-                timerAction = _timer;
-                SaveFianlScore(action, score, timerAction);
+                SaveActionScore(action, score, timerAction);
+                SaveFinalScore(timerAction);
             }
-            else if(action == eMonitoredAction.WalkIntoFire)
+            else if(action == eMonitoredAction.WalkIntoFire || action == eMonitoredAction.TimerOut)
             {
                 StopScoreSystem();
-                timerAction = _timer;
                 score = -_totalscore;
-                SaveFianlScore(action, score, timerAction);
-            }
-            else if(timerAction >= timeMax)
-            {
-                StopScoreSystem();
-                timerAction = _timer;
-                score = -_totalscore;
-                action = eMonitoredAction.TimerOut;
-                SaveFianlScore(action, score, timerAction);
-
+                SaveActionScore(action, score, timerAction);
+                SaveFinalScore(timerAction);
             }
             else
-            {
                 SaveActionScore(action, score, timerAction);
-            }
-
         }
 
     }
@@ -125,10 +113,8 @@ public class ScoreManager : MonoBehaviour
             _logs.Add(log);
     }
 
-    private void SaveFianlScore(eMonitoredAction action, int score, float time)
+    private void SaveFinalScore(float time)
     {
-        SaveActionScore(action, score, time);
-
         _gameDebriefing.timeGame = time;
         _gameDebriefing.scoreEnd = _totalscore;
         _gameDebriefing.scoreLogs = _logs;
