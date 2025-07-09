@@ -1,9 +1,12 @@
 using UnityEngine;
 
-public abstract class Way: MonoBehaviour
-
+namespace TcT.FireSim
 {
-    public float _speed = 5f;
+    public abstract class Way : MonoBehaviour
 
-    public abstract Vector3 GetNextTargetPosition(Vector3 currentPosition, float deltaTime);
+    {
+        public float _speed = 5f;
+
+        public abstract Vector3 GetNextTargetPosition(Vector3 currentPosition, float deltaTime);
+    }
 }

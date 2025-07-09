@@ -1,9 +1,12 @@
 using UnityEngine;
 
-public class OpenAlarmBox : TriggerableByPlayer
+namespace TcT.FireSim
 {
-    private void OnTriggerEnter(Collider other)
+    public class OpenAlarmBox : TriggerableByPlayer
     {
-        OnTriggeredByPlayer(eMonitoredAction.OpenAlarmBox);
+        private void OnTriggerEnter(Collider other)
+        {
+            OnTriggeredByPlayer(eMonitoredAction.OpenAlarmBox);
+        }
     }
 }

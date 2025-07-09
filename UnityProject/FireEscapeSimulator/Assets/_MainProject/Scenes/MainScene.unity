@@ -5366,6 +5366,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1567284259}
     m_Modifications:
+    - target: {fileID: 3155247031335979998, guid: b85c846dc885bc44996c81a29e0cc7d3, type: 3}
+      propertyPath: m_IncludeLayers.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 5792627211067052117, guid: b85c846dc885bc44996c81a29e0cc7d3, type: 3}
       propertyPath: m_Name
       value: Sphere Triggerer XR

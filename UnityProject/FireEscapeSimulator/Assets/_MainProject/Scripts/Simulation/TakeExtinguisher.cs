@@ -1,7 +1,10 @@
-public class TakeExtinguisher : TriggerableByPlayer
+namespace TcT.FireSim
 {
-    public void TrapExtinguisher()
+    public class TakeExtinguisher : TriggerableByPlayer
     {
-        OnTriggeredByPlayer(eMonitoredAction.ExtinguisherTake);
+        public void TrapExtinguisher()
+        {
+            OnTriggeredByPlayer(eMonitoredAction.ExtinguisherTake);
+        }
     }
 }

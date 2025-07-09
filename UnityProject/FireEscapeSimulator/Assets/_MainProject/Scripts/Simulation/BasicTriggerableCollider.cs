@@ -1,12 +1,15 @@
 using UnityEngine;
 
-[RequireComponent(typeof(Collider))]
-public class BasicTriggerableCollider : TriggerableByPlayer
+namespace TcT.FireSim
 {
-    [SerializeField] eMonitoredAction _actionType;
-
-    private void OnTriggerEnter(Collider other)
+    [RequireComponent(typeof(Collider))]
+    public class BasicTriggerableCollider : TriggerableByPlayer
     {
-        base.OnTriggeredByPlayer(_actionType);
+        [SerializeField] eMonitoredAction _actionType;
+
+        private void OnTriggerEnter(Collider other)
+        {
+            OnTriggeredByPlayer(_actionType);
+        }
     }
 }

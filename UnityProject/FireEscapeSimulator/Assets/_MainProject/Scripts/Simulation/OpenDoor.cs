@@ -1,9 +1,12 @@
 using UnityEngine;
 
-public class OpenDoor : TriggerableByPlayer
+namespace TcT.FireSim
 {
-    private void OnTriggerEnter(Collider other)
+    public class OpenDoor : TriggerableByPlayer
     {
-        OnTriggeredByPlayer(eMonitoredAction.OpenDoor);
+        private void OnTriggerEnter(Collider other)
+        {
+            OnTriggeredByPlayer(eMonitoredAction.OpenDoor);
+        }
     }
 }

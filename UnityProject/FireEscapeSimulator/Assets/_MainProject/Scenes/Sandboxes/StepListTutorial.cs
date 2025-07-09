@@ -1,15 +1,18 @@
 using UnityEngine;
 
-public class StepListTutorial : MonoBehaviour
+namespace TcT.FireSim
 {
-    
-    public void OnEnable()
+    public class StepListTutorial : MonoBehaviour
     {
-                
+
+        public void OnEnable()
+        {
+
+        }
+        public void OnDisable()
+        {
+
+        }
+
     }
-    public void OnDisable()
-    {
-        
-    }
-    
 }

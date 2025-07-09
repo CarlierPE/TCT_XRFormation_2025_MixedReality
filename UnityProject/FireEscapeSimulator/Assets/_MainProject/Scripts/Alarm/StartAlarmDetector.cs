@@ -1,89 +1,92 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StartAlarmDetector : MonoBehaviour
+namespace TcT.FireSim
 {
-
-    [SerializeField] GameObject _fire;
-    public List<AudioSource> _alarm;
-
-    [SerializeField]private float _timeStartAlarm;
-
-    private float _timeWaiting;
-    private bool _soundIsPlaying;
-
-    private void Awake()
+    public class StartAlarmDetector : MonoBehaviour
     {
-        _timeStartAlarm = 1f;
-        _timeWaiting = 0;
-    }
-    
-    // Update is called once per frame
-    void Update()
-    {
-        if (_fire.activeSelf)
+
+        [SerializeField] GameObject _fire;
+        public List<AudioSource> _alarm;
+
+        [SerializeField] private float _timeStartAlarm;
+
+        private float _timeWaiting;
+        private bool _soundIsPlaying;
+
+        private void Awake()
         {
-            if (_soundIsPlaying)
-                return;
+            _timeStartAlarm = 1f;
+            _timeWaiting = 0;
+        }
 
-            if (_timeWaiting > _timeStartAlarm)
+        // Update is called once per frame
+        void Update()
+        {
+            if (_fire.activeSelf)
             {
-                _soundIsPlaying = true;
-                foreach (var item in _alarm)
+                if (_soundIsPlaying)
+                    return;
+
+                if (_timeWaiting > _timeStartAlarm)
                 {
-                    item.Play();
+                    _soundIsPlaying = true;
+                    foreach (var item in _alarm)
+                    {
+                        item.Play();
+                    }
+                }
+                else
+                {
+                    _timeWaiting += Time.deltaTime;
                 }
             }
             else
             {
-                _timeWaiting += Time.deltaTime;
-            }
-        }
-        else
-        {
-            if (_soundIsPlaying)
-            {
-                foreach (var item in _alarm)
+                if (_soundIsPlaying)
                 {
-                    item.Stop();
+                    foreach (var item in _alarm)
+                    {
+                        item.Stop();
+                    }
+                    _soundIsPlaying = false;
                 }
-                _soundIsPlaying= false;
+
+                _timeWaiting = 0;
             }
 
-            _timeWaiting = 0;
+
         }
 
+        public void StartSound()
+        {
+            Debug.Log("entrer dans start sound");
+            if (_alarm == null)
+            {
+                Debug.Log("entrer dans le if car _alarm est null");
+                return;
+            }
+            Debug.Log("nombre d'element est " + _alarm.Count);
+            foreach (var item in _alarm)
+            {
+                item.Play();
+            }
+        }
+
+        public void StopSound()
+        {
+            Debug.Log("entrer dans stop sound");
+            if (_alarm == null)
+            {
+                Debug.Log("entrer dans le if car _alarm est null");
+                return;
+            }
+            Debug.Log("nombre d'element est " + _alarm.Count);
+            foreach (var item in _alarm)
+            {
+                item.Stop();
+            }
+        }
 
     }
-
-    public void StartSound()
-    {
-        Debug.Log("entrer dans start sound");
-        if (_alarm == null)
-        {
-            Debug.Log("entrer dans le if car _alarm est null");
-            return;
-        }
-        Debug.Log("nombre d'element est " + _alarm.Count);
-        foreach (var item in _alarm)
-        {
-            item.Play();
-        }
-    }
-
-    public  void StopSound()
-    {
-        Debug.Log("entrer dans stop sound");
-        if (_alarm == null)
-        {
-            Debug.Log("entrer dans le if car _alarm est null");
-            return;
-        }
-        Debug.Log("nombre d'element est " + _alarm.Count);
-        foreach (var item in _alarm)
-        {
-            item.Stop();
-        }
-    }
-
 }
