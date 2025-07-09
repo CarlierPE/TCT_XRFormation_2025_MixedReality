@@ -1,15 +1,18 @@
 using UnityEngine;
 
-public class lookDirectionObject : MonoBehaviour
+namespace TcT.FireSim
 {
-    [SerializeField] private Transform fireMan;
-    
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Update()
+    public class lookDirectionObject : MonoBehaviour
     {
-        fireMan.transform.LookAt(fireMan.transform.position, fireMan.transform.forward);
-    }
+        [SerializeField] private Transform fireMan;
 
-    // Update is called once per frame
-    
+        // Start is called once before the first execution of Update after the MonoBehaviour is created
+        void Update()
+        {
+            fireMan.transform.LookAt(fireMan.transform.position, fireMan.transform.forward);
+        }
+
+        // Update is called once per frame
+
+    }
 }

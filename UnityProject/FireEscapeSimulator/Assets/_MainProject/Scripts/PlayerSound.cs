@@ -9,7 +9,6 @@ namespace TcT.FireSim
         public AudioSource heartSound;
         public AudioSource respiationSound;
         public AudioSource respirationDifficultSound;
-        public AudioSource WalkingInFire;
 
         private float _timeStart;
         private float _timeElpase;
@@ -42,12 +41,6 @@ namespace TcT.FireSim
                 respiationSound.Play();
             else if (_timeElpase < Max && _timeElpase > 7.5f)
                 respirationDifficultSound.Play();
-        }
-
-        public void OnWalkinginFire()
-        {
-            WalkingInFire.Play();
-
         }
     }
 }

@@ -1,6 +1,9 @@
 using UnityEngine;
 
-public class ShowingInformation : MonoBehaviour
+namespace TcT.FireSim
 {
-    [SerializeField] private CanvasGroup Information;
+    public class ShowingInformation : MonoBehaviour
+    {
+        [SerializeField] private CanvasGroup Information;
+    }
 }

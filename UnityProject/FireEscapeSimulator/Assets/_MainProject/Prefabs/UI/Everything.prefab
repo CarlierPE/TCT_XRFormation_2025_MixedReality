@@ -912,7 +912,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5316328061569742237, guid: ddebed8da42994a4b81bc65990bcab27, type: 3}
       propertyPath: m_Name
-      value: Buttons
+      value: BttonNextStade
       objectReference: {fileID: 0}
     - target: {fileID: 6517896653575780146, guid: ddebed8da42994a4b81bc65990bcab27, type: 3}
       propertyPath: m_text
@@ -1916,6 +1916,24 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7025037063489134796, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 310519008746915309}
+    - targetCorrespondingSourceObject: {fileID: 6759783852052906140, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3112819525226382071}
+    - targetCorrespondingSourceObject: {fileID: 5688462387169483448, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6138731134720627802}
+    - targetCorrespondingSourceObject: {fileID: 1605001227334432218, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5573041765683709430}
+    - targetCorrespondingSourceObject: {fileID: 3851652837393583665, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3866600964744505980}
+    - targetCorrespondingSourceObject: {fileID: 3283782696849422163, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3006621910729722758}
+    - targetCorrespondingSourceObject: {fileID: 1263045711652785982, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4629991352194633316}
   m_SourcePrefab: {fileID: 100100000, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
 --- !u!1 &1135661026956579375 stripped
 GameObject:
@@ -1952,7 +1970,7 @@ MonoBehaviour:
     d'abord tourne toi et regarde en haut \xE0 gauche tu verra un panneaux d'\xE9vacuation
     celui si t'indiquera toujours la direction vers la sortie de secourt peut importe
     le pays except\xE9 les \xE9tats unis"
-  buttonToShow: {fileID: 0}
+  buttonToShow: {fileID: 2164158483700881158}
   manualNextButton: {fileID: 3140616050945387545}
   manualNextButton0: {fileID: 3559593763211620694}
 --- !u!114 &2807150859880495169
@@ -1994,19 +2012,121 @@ MonoBehaviour:
   displayImage: {fileID: 8170823482315119211}
   imageContainer: {fileID: 1005797526316859526}
   maxContainerSize: {fileID: 7642383711460616958}
-  texturePaths:
-  - {fileID: 2800000, guid: 29113bc696601bd488299f2a18b1ed9f, type: 3}
+  texturePaths: []
   objectsToCycle: []
+--- !u!1 &2327840069950498907 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5688462387169483448, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+  m_PrefabInstance: {fileID: 7980198575440769763}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6138731134720627802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2327840069950498907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoPlay: 0
+  changeInterval: 3
+  objectsToCycle: []
+  displayText: {fileID: 857579768001180419}
+  canvas: {fileID: 8052860308392303817}
+  textContents:
+  - "T\xE9l\xE9phone"
+  buttonToShow: {fileID: 0}
+  manualNextButton: {fileID: 0}
+  manualNextButton0: {fileID: 0}
 --- !u!4 &3236930914282839610 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4779656034458709209, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
   m_PrefabInstance: {fileID: 7980198575440769763}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &3706690968174506623 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6759783852052906140, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+  m_PrefabInstance: {fileID: 7980198575440769763}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3112819525226382071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3706690968174506623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoPlay: 1
+  changeInterval: 3
+  objectsToCycle: []
+  displayText: {fileID: 857579768001180419}
+  canvas: {fileID: 8052860308392303817}
+  textContents:
+  - Alarme
+  buttonToShow: {fileID: 0}
+  manualNextButton: {fileID: 0}
+  manualNextButton0: {fileID: 0}
+--- !u!1 &4840536874578675120 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3283782696849422163, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+  m_PrefabInstance: {fileID: 7980198575440769763}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3006621910729722758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4840536874578675120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoPlay: 1
+  changeInterval: 3
+  objectsToCycle: []
+  displayText: {fileID: 857579768001180419}
+  canvas: {fileID: 8052860308392303817}
+  textContents:
+  - Ascenceur
+  buttonToShow: {fileID: 0}
+  manualNextButton: {fileID: 0}
+  manualNextButton0: {fileID: 0}
 --- !u!1 &6614817583201909970 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3851652837393583665, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
   m_PrefabInstance: {fileID: 7980198575440769763}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &3866600964744505980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6614817583201909970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoPlay: 0
+  changeInterval: 3
+  objectsToCycle: []
+  displayText: {fileID: 857579768001180419}
+  canvas: {fileID: 8052860308392303817}
+  textContents:
+  - "R\xE8gles"
+  buttonToShow: {fileID: 0}
+  manualNextButton: {fileID: 0}
+  manualNextButton0: {fileID: 0}
 --- !u!1 &7400778679384794628 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 579702858702279911, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
@@ -2039,3 +2159,57 @@ MonoBehaviour:
           m_StringArgument: Passer a la suite
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &8717069257997551417 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1605001227334432218, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+  m_PrefabInstance: {fileID: 7980198575440769763}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5573041765683709430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8717069257997551417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoPlay: 0
+  changeInterval: 3
+  objectsToCycle: []
+  displayText: {fileID: 857579768001180419}
+  canvas: {fileID: 8052860308392303817}
+  textContents:
+  - "Lumi\xE8re"
+  buttonToShow: {fileID: 0}
+  manualNextButton: {fileID: 0}
+  manualNextButton0: {fileID: 0}
+--- !u!1 &9167183903723404765 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1263045711652785982, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+  m_PrefabInstance: {fileID: 7980198575440769763}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4629991352194633316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9167183903723404765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoPlay: 1
+  changeInterval: 3
+  objectsToCycle: []
+  displayText: {fileID: 857579768001180419}
+  canvas: {fileID: 8052860308392303817}
+  textContents:
+  - Extincteur
+  buttonToShow: {fileID: 0}
+  manualNextButton: {fileID: 0}
+  manualNextButton0: {fileID: 0}
