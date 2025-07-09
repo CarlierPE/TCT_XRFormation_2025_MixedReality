@@ -1,37 +1,40 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PressButton : MonoBehaviour
+namespace TcT.FireSim
 {
-    public List<AudioSource> _audio;
-    
-    [SerializeField] private StartAlarmBox _box;
-    public void OnPress()
+    public class PressButton : MonoBehaviour
     {
-        
-        if (_box == null)
-            return;
-        foreach (var item in _audio)
-        {
-            item.Play();
-        }
-        _box.StartSound();
-    }
+        public List<AudioSource> _audio;
 
-    public void StartSound()
-    {
-        Debug.Log("entrer dans start foud");
-        if (_audio == null)
+        [SerializeField] private StartAlarmBox _box;
+        public void OnPress()
         {
-            Debug.Log("entrer dans le if car _ausio est null");
-            return;
+
+            if (_box == null)
+                return;
+            foreach (var item in _audio)
+            {
+                item.Play();
+            }
+            _box.StartSound();
         }
 
-        Debug.Log("nombre d'element est de " + _audio.Count);
-        foreach (var item in _audio)
+        public void StartSound()
         {
-            item.Play();
+            Debug.Log("entrer dans start foud");
+            if (_audio == null)
+            {
+                Debug.Log("entrer dans le if car _ausio est null");
+                return;
+            }
+
+            Debug.Log("nombre d'element est de " + _audio.Count);
+            foreach (var item in _audio)
+            {
+                item.Play();
+            }
+            _box.StartSound();
         }
-        _box.StartSound();
     }
 }
