@@ -8,9 +8,8 @@ using UnityEngine.Events;
 
 public class ScoreManager : MonoBehaviour
 {
-    public TextMeshProUGUI textScore;
-    public TextMeshProUGUI textDebriefing;
-    public TextMeshProUGUI textTime;
+    [SerializeField] private TextMeshProUGUI _textDebriefing;
+
     static ScoreManager _instance;
 
     private int _totalscore = 0;
@@ -45,7 +44,6 @@ public class ScoreManager : MonoBehaviour
         _instance = this;
         _gameDebriefing = new GameDebriefing();
         
-        textScore.text = "";
 
         InitScore();
     }
@@ -58,9 +56,6 @@ public class ScoreManager : MonoBehaviour
         {
             timerAction = Time.time - _timer;
 
-            textTime.text = "Time : " + timerAction;
-            ;
-
             if (timerAction >= timeMax) 
             {
                 _isPlaying = false;
@@ -71,16 +66,12 @@ public class ScoreManager : MonoBehaviour
 
     public void StartScoreSystem()
     {
-
-        Debug.Log("entrer dans le start timer");
         _timer = Time.time;
         _isPlaying = true;
     }
 
     public void StopScoreSystem()
     {
-
-        Debug.Log("entrer dans le stop timer");
         _timer = Time.time - _timer;
         _isPlaying = false;
     }
@@ -95,7 +86,6 @@ public class ScoreManager : MonoBehaviour
 
     private void OnDisable()
     {
-        Debug.Log("entrer dans le OnDisable");
         foreach (var triggerable in _triggerables)
         {
             triggerable.Triggered.RemoveListener(OnActionTriggered);
@@ -104,16 +94,12 @@ public class ScoreManager : MonoBehaviour
 
     public void InitScore()
     {
-        Debug.Log("entrer dans le init");
         _totalscore = 0;
         StartScoreSystem();
     }
 
     private void OnActionTriggered(eMonitoredAction action)
     {
-
-        Debug.Log("entrer dans le On Action Triggered");
-
         if (ScoreAction.tableScoreAction.TryGetValue(action, out int score))
         {
             timerAction = Time.time - _timer;
@@ -150,7 +136,6 @@ public class ScoreManager : MonoBehaviour
 
         _logs.Add(log);
 
-        textScore.text += ReadScorLog(log);
     }
 
     private void SaveFinalScore(float time)
@@ -159,14 +144,11 @@ public class ScoreManager : MonoBehaviour
         _gameDebriefing.scoreEnd = _totalscore;
         _gameDebriefing.scoreLogs = _logs;
 
-        textDebriefing.text += ReadingDebriefing();
+        _textDebriefing.text += ReadingDebriefing();
+
         //SaveOnDocument(_gameDebriefing);
     }
-    public string ReadScorLog(ScoreLog log)
-    {
-        return $"point : {log.scoreValid} | temps : {log.timeAction} | action : {log.action} \n ";
-    }
-
+    
     public string ReadingDebriefing()
     {
         string debriefing = $"\nVotre temps de simulation est : {_gameDebriefing.timeGame}, et le total des points est : {_gameDebriefing.scoreEnd}\n\n";
