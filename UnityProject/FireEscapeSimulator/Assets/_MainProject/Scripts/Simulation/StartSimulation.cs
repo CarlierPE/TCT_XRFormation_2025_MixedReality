@@ -1,9 +1,12 @@
 using UnityEngine;
 
-public class StartSimulation : TriggerableByPlayer
+namespace TcT.FireSim
 {
-    private void OnTriggerEnter(Collider other)
+    public class StartSimulation : TriggerableByPlayer
     {
-        OnTriggeredByPlayer(eMonitoredAction.EnterKitchen);
+        private void OnTriggerEnter(Collider other)
+        {
+            OnTriggeredByPlayer(eMonitoredAction.EnterKitchen);
+        }
     }
 }
