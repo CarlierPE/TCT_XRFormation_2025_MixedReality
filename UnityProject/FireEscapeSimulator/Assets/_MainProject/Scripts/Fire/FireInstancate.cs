@@ -77,15 +77,12 @@ public class FireInstancate : MonoBehaviour
 
     public void ResetFire()
     {
-        if (_isFireActive)
-        {
-            DisableAllFirePrefab(); // Deactivate all fire prefabs
-            DisableAllSounds(); // Deactivate all sounds
-            _nextSpawnTime = 0; // Reset the next spawn time
-            _isFireActive = false; // Set the fire active flag to false
-            _isFireMax = false; // Reset the maximum fire flag
-            _spawnCount = 0; // Reset the spawn count
-        }
+        DisableAllFirePrefab(); // Deactivate all fire prefabs
+        DisableAllSounds(); // Deactivate all sounds
+        _nextSpawnTime = 0; // Reset the next spawn time
+        _isFireActive = false; // Set the fire active flag to false
+        _isFireMax = false; // Reset the maximum fire flag
+        _spawnCount = 0; // Reset the spawn count
     }
 
     private void DisableAllFirePrefab()
