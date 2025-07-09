@@ -9,6 +9,7 @@ namespace TcT.FireSim
         public AudioSource heartSound;
         public AudioSource respiationSound;
         public AudioSource respirationDifficultSound;
+        
 
         private float _timeStart;
         private float _timeElpase;
@@ -42,5 +43,6 @@ namespace TcT.FireSim
             else if (_timeElpase < Max && _timeElpase > 7.5f)
                 respirationDifficultSound.Play();
         }
+
     }
 }
