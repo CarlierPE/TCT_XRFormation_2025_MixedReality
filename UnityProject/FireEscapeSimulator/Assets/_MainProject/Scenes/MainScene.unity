@@ -2561,11 +2561,6 @@ Transform:
   - {fileID: 20366074}
   m_Father: {fileID: 58348846}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &388085922 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7287163358809189533, guid: df941a1a80813b941b85358feeaf2618, type: 3}
-  m_PrefabInstance: {fileID: 469878122}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &388085923
 Transform:
   m_ObjectHideFlags: 0
@@ -3198,41 +3193,30 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 3767233127591458959, guid: df941a1a80813b941b85358feeaf2618, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 7956423323714336295, guid: df941a1a80813b941b85358feeaf2618, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5891556087929655132}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7287163358809189533, guid: df941a1a80813b941b85358feeaf2618, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 469878126}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df941a1a80813b941b85358feeaf2618, type: 3}
 --- !u!4 &469878123 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7956423323714336295, guid: df941a1a80813b941b85358feeaf2618, type: 3}
   m_PrefabInstance: {fileID: 469878122}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &469878126
+--- !u!114 &469878124 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 3767233127591458959, guid: df941a1a80813b941b85358feeaf2618, type: 3}
+  m_PrefabInstance: {fileID: 469878122}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 388085922}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fad0292b7e7d5784583b12a5ecdc8261, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnSpawnComplete:
-    m_PersistentCalls:
-      m_Calls: []
-  OnPictoHidden:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!4 &471700161 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2963835137753332656, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
@@ -4424,7 +4408,7 @@ PrefabInstance:
     - target: {fileID: 3925481353605925401, guid: 0ba5044bc1ccf034780cd55a5c227cbb, type: 3}
       propertyPath: _guide
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 469878124}
     - target: {fileID: 3925481353605925401, guid: 0ba5044bc1ccf034780cd55a5c227cbb, type: 3}
       propertyPath: _speed
       value: 1
@@ -4456,7 +4440,7 @@ PrefabInstance:
     - target: {fileID: 4142286427768161784, guid: 0ba5044bc1ccf034780cd55a5c227cbb, type: 3}
       propertyPath: _guide
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 469878124}
     - target: {fileID: 4142286427768161784, guid: 0ba5044bc1ccf034780cd55a5c227cbb, type: 3}
       propertyPath: _speed
       value: 1
@@ -4480,7 +4464,7 @@ PrefabInstance:
     - target: {fileID: 4293821337807037717, guid: 0ba5044bc1ccf034780cd55a5c227cbb, type: 3}
       propertyPath: _guide
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 469878124}
     - target: {fileID: 4293821337807037717, guid: 0ba5044bc1ccf034780cd55a5c227cbb, type: 3}
       propertyPath: _speed
       value: 1
@@ -4512,7 +4496,7 @@ PrefabInstance:
     - target: {fileID: 4940430829027888111, guid: 0ba5044bc1ccf034780cd55a5c227cbb, type: 3}
       propertyPath: _guide
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 469878124}
     - target: {fileID: 4940430829027888111, guid: 0ba5044bc1ccf034780cd55a5c227cbb, type: 3}
       propertyPath: _speed
       value: 1
@@ -4568,7 +4552,7 @@ PrefabInstance:
     - target: {fileID: 5810750973642068861, guid: 0ba5044bc1ccf034780cd55a5c227cbb, type: 3}
       propertyPath: _guide
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 469878124}
     - target: {fileID: 5810750973642068861, guid: 0ba5044bc1ccf034780cd55a5c227cbb, type: 3}
       propertyPath: _speed
       value: 1
@@ -4612,7 +4596,7 @@ PrefabInstance:
     - target: {fileID: 6488442675468451701, guid: 0ba5044bc1ccf034780cd55a5c227cbb, type: 3}
       propertyPath: _guide
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 469878124}
     - target: {fileID: 6488442675468451701, guid: 0ba5044bc1ccf034780cd55a5c227cbb, type: 3}
       propertyPath: _speed
       value: 1
@@ -4656,7 +4640,7 @@ PrefabInstance:
     - target: {fileID: 7274053273964697724, guid: 0ba5044bc1ccf034780cd55a5c227cbb, type: 3}
       propertyPath: _guide
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 469878124}
     - target: {fileID: 7274053273964697724, guid: 0ba5044bc1ccf034780cd55a5c227cbb, type: 3}
       propertyPath: _speed
       value: 1
@@ -4684,7 +4668,7 @@ PrefabInstance:
     - target: {fileID: 7734334869977117251, guid: 0ba5044bc1ccf034780cd55a5c227cbb, type: 3}
       propertyPath: _guide
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 469878124}
     - target: {fileID: 7734334869977117251, guid: 0ba5044bc1ccf034780cd55a5c227cbb, type: 3}
       propertyPath: _speed
       value: 1
@@ -4760,7 +4744,7 @@ PrefabInstance:
     - target: {fileID: 8209448097555383643, guid: 0ba5044bc1ccf034780cd55a5c227cbb, type: 3}
       propertyPath: _guide
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 469878124}
     - target: {fileID: 8209448097555383643, guid: 0ba5044bc1ccf034780cd55a5c227cbb, type: 3}
       propertyPath: _speed
       value: 1
@@ -4780,7 +4764,7 @@ PrefabInstance:
     - target: {fileID: 8745821880419481011, guid: 0ba5044bc1ccf034780cd55a5c227cbb, type: 3}
       propertyPath: _guide
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 469878124}
     - target: {fileID: 8745821880419481011, guid: 0ba5044bc1ccf034780cd55a5c227cbb, type: 3}
       propertyPath: _speed
       value: 1
@@ -14245,7 +14229,7 @@ PrefabInstance:
     - target: {fileID: 143599879631268795, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
       propertyPath: _guide
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 469878124}
     - target: {fileID: 143599879631268795, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
       propertyPath: _picto
       value: 
@@ -14265,7 +14249,7 @@ PrefabInstance:
     - target: {fileID: 503399503791576520, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
       propertyPath: _guide
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 469878124}
     - target: {fileID: 503399503791576520, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
       propertyPath: _picto
       value: 
@@ -14285,7 +14269,7 @@ PrefabInstance:
     - target: {fileID: 561235627572032097, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
       propertyPath: _guide
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 469878124}
     - target: {fileID: 561235627572032097, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
       propertyPath: _picto
       value: 
@@ -14309,7 +14293,7 @@ PrefabInstance:
     - target: {fileID: 961354579509417774, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
       propertyPath: _guide
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 469878124}
     - target: {fileID: 961354579509417774, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
       propertyPath: _tutorialEnvironment
       value: 
@@ -14325,7 +14309,7 @@ PrefabInstance:
     - target: {fileID: 1377247656991872090, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
       propertyPath: _guide
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 469878124}
     - target: {fileID: 1377247656991872090, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
       propertyPath: _picto
       value: 
@@ -14361,7 +14345,7 @@ PrefabInstance:
     - target: {fileID: 2172665420477953368, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
       propertyPath: _guide
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 469878124}
     - target: {fileID: 2172665420477953368, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
       propertyPath: _picto
       value: 
@@ -14405,7 +14389,7 @@ PrefabInstance:
     - target: {fileID: 2520376429145995636, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
       propertyPath: _guide
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 469878124}
     - target: {fileID: 2520376429145995636, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
       propertyPath: _picto
       value: 
@@ -14469,7 +14453,7 @@ PrefabInstance:
     - target: {fileID: 3729321785762056116, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
       propertyPath: _guide
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 469878124}
     - target: {fileID: 3729321785762056116, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
       propertyPath: _picto
       value: 
@@ -14541,7 +14525,7 @@ PrefabInstance:
     - target: {fileID: 4512839958459398633, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
       propertyPath: _guide
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 469878124}
     - target: {fileID: 4512839958459398633, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
       propertyPath: _picto
       value: 
@@ -14649,7 +14633,7 @@ PrefabInstance:
     - target: {fileID: 7954013522434786334, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
       propertyPath: _guide
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 469878124}
     - target: {fileID: 7954013522434786334, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
       propertyPath: _picto
       value: 
@@ -14673,7 +14657,7 @@ PrefabInstance:
     - target: {fileID: 8267310937581995254, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
       propertyPath: _guide
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 469878124}
     - target: {fileID: 8267310937581995254, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
       propertyPath: _picto
       value: 
@@ -14705,7 +14689,7 @@ PrefabInstance:
     - target: {fileID: 8724058270593256991, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
       propertyPath: _guide
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 469878124}
     - target: {fileID: 8724058270593256991, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
       propertyPath: _picto
       value: 
@@ -14721,7 +14705,7 @@ PrefabInstance:
     - target: {fileID: 8833055366669889761, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
       propertyPath: _guide
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 469878124}
     - target: {fileID: 8833055366669889761, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
       propertyPath: _occlusion
       value: 
@@ -14733,7 +14717,7 @@ PrefabInstance:
     - target: {fileID: 9139215901495865212, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
       propertyPath: _guide
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 469878124}
     - target: {fileID: 9139215901495865212, guid: 0f02d98d85928454daf38bc795eaef60, type: 3}
       propertyPath: _picto
       value: 
@@ -14918,6 +14902,8 @@ MonoBehaviour:
   textContents:
   - Commencement tuto
   buttonToShow: {fileID: 0}
+  manualNextButton: {fileID: 0}
+  manualNextButton0: {fileID: 0}
 --- !u!1 &2564710105282095441
 GameObject:
   m_ObjectHideFlags: 0
@@ -14957,6 +14943,8 @@ MonoBehaviour:
   textContents:
   - Alarme
   buttonToShow: {fileID: 0}
+  manualNextButton: {fileID: 0}
+  manualNextButton0: {fileID: 0}
 --- !u!224 &3317762191688568109
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14996,6 +14984,8 @@ MonoBehaviour:
   textContents:
   - Ascenceur
   buttonToShow: {fileID: 0}
+  manualNextButton: {fileID: 0}
+  manualNextButton0: {fileID: 0}
 --- !u!114 &3721143737460230076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15016,6 +15006,8 @@ MonoBehaviour:
   textContents:
   - "R\xE8gles"
   buttonToShow: {fileID: 0}
+  manualNextButton: {fileID: 0}
+  manualNextButton0: {fileID: 0}
 --- !u!1 &4333157572216318001
 GameObject:
   m_ObjectHideFlags: 0
@@ -15055,6 +15047,8 @@ MonoBehaviour:
   textContents:
   - Extincteur
   buttonToShow: {fileID: 0}
+  manualNextButton: {fileID: 0}
+  manualNextButton0: {fileID: 0}
 --- !u!114 &5072641808621642583
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15091,6 +15085,8 @@ MonoBehaviour:
   textContents:
   - Porte Coupe-feu
   buttonToShow: {fileID: 0}
+  manualNextButton: {fileID: 0}
+  manualNextButton0: {fileID: 0}
 --- !u!114 &5094989474274950544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15122,6 +15118,8 @@ MonoBehaviour:
     celui si t'indiquera toujours la direction vers la sortie de secourt peut importe
     le pays except\xE9 les \xE9tats unis"
   buttonToShow: {fileID: 5891556087929655140}
+  manualNextButton: {fileID: 0}
+  manualNextButton0: {fileID: 0}
 --- !u!114 &5289061561554587475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15142,6 +15140,8 @@ MonoBehaviour:
   textContents:
   - Tuyaux de pompier
   buttonToShow: {fileID: 0}
+  manualNextButton: {fileID: 0}
+  manualNextButton0: {fileID: 0}
 --- !u!114 &5430125510368012342
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15162,6 +15162,8 @@ MonoBehaviour:
   textContents:
   - "Lumi\xE8re"
   buttonToShow: {fileID: 0}
+  manualNextButton: {fileID: 0}
+  manualNextButton0: {fileID: 0}
 --- !u!114 &5752647808877516350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15460,6 +15462,8 @@ MonoBehaviour:
   textContents:
   - "T\xE9l\xE9phone"
   buttonToShow: {fileID: 0}
+  manualNextButton: {fileID: 0}
+  manualNextButton0: {fileID: 0}
 --- !u!224 &6043370397510285595
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16359,6 +16363,8 @@ MonoBehaviour:
   textContents:
   - Issue de secours
   buttonToShow: {fileID: 0}
+  manualNextButton: {fileID: 0}
+  manualNextButton0: {fileID: 0}
 --- !u!114 &8791254169094228638
 MonoBehaviour:
   m_ObjectHideFlags: 0
