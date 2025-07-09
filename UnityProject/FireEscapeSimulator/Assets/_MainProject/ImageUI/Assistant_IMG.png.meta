@@ -1,5 +1,9 @@
 fileFormatVersion: 2
-guid: 1f292a72a01a60a44877993db77fbc38
+<<<<<<<< HEAD:UnityProject/FireEscapeSimulator/Assets/_MainProject/ImageUI/Assistant_IMG.png.meta
+guid: 1862bda1923fae846b2ddca5463b8a15
+========
+guid: f9cd1645178758447948a71abae10856
+>>>>>>>> 0ac70c4e933a25a5bb124d99c47eea32bead4267:UnityProject/FireEscapeSimulator/Assets/_MainProject/Materials/Textures/verticalRayTexture.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -82,6 +86,19 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1

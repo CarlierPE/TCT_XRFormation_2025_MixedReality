@@ -38,7 +38,7 @@ public class animationDiaporama : MonoBehaviour
         if (nextIndex >= texturePaths.Count)
         {
             currentIndex = 0;
-            
+
         }
         else
         {
@@ -96,14 +96,14 @@ public class animationDiaporama : MonoBehaviour
             yield return new WaitForSeconds(changeInterval);
             //
             Next();
-            
-           
+
+
         }
     }
 
 
     void OnReachedEnd()
     {
-       
+
     }
 }
