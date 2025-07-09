@@ -31,6 +31,7 @@ namespace TcT.FireSim
             _door.SetActive(false);
             _triggered = false;
             _renderer.enabled = true;
+            _audio.Stop();
         }
     }
 }
