@@ -1,26 +1,22 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace TcT.FireSim
+/*
+ * Ce script va gérer l'affichage du score à l'utilisateur
+ * Càd toutes ses actions, bonnes et mauvaises, son timing, son score final etc...
+ * Possible que cet écran ait besoin du guide ? à confirmer
+ * 
+ * L'utilisateur aura un bouton à disposition "terminer la partie" ou "retour au menu"
+ * Le script doit déclencher un unityevent quand le bouton est cliqué
+ * */
+public class Debriefing : MonoBehaviour
 {
+    [HideInInspector]
+    public UnityEvent OnDebriefingExited;
 
-    /*
-     * Ce script va gérer l'affichage du score à l'utilisateur
-     * Càd toutes ses actions, bonnes et mauvaises, son timing, son score final etc...
-     * Possible que cet écran ait besoin du guide ? à confirmer
-     * 
-     * L'utilisateur aura un bouton à disposition "terminer la partie" ou "retour au menu"
-     * Le script doit déclencher un unityevent quand le bouton est cliqué
-     * */
-    public class Debriefing : MonoBehaviour
+    private void OnEnable()
     {
-        [HideInInspector]
-        public UnityEvent OnDebriefingExited;
-
-        private void OnEnable()
-        {
-            //TODO - afficher l'UI etc
-            OnDebriefingExited.Invoke();
-        }
+        //TODO - afficher l'UI etc
+        OnDebriefingExited.Invoke();
     }
 }

@@ -1,113 +1,110 @@
 using System;
+using System.Collections.Generic; // Assuming you are using TextMeshPro for UI text display
 using System.IO;
 using UnityEngine;
-
-namespace TcT.FireSim
+[Obsolete("on n'utilise pas pour le moment")]
+public class SaveOnFile : MonoBehaviour
 {
-    [Obsolete("on n'utilise pas pour le moment")]
-    public class SaveOnFile : MonoBehaviour
+    private const string _extension = ".json";
+    private const string _prefix = "Player_";
+
+    private string _currentDate;
+    private string _folderName;
+    private string _fileName;
+    private string _fileNumber;
+
+    private string _rootPathSearch;
+    private string _rootPathToSave;
+    private string _PathCreatedFolder;
+
+    private int _numFile = 1;
+    private int _fileCount = 0;
+
+    //private readonly List<GameDebriefing> _gameDebriefings;
+
+    public void InitBased()
     {
-        private const string _extension = ".json";
-        private const string _prefix = "Player_";
+        //_gameDebriefings.Clear();
 
-        private string _currentDate;
-        private string _folderName;
-        private string _fileName;
-        private string _fileNumber;
+        _currentDate = DateTime.Now.ToString("yyyy-MM-dd");
+        _folderName = _currentDate.Replace("-", "_");
+        _rootPathSearch = Application.persistentDataPath;
+        _PathCreatedFolder = Path.Combine(_rootPathSearch, _folderName);
 
-        private string _rootPathSearch;
-        private string _rootPathToSave;
-        private string _PathCreatedFolder;
-
-        private int _numFile = 1;
-        private int _fileCount = 0;
-
-        //private readonly List<GameDebriefing> _gameDebriefings;
-
-        public void InitBased()
+        if (!Directory.Exists(_PathCreatedFolder))
         {
-            //_gameDebriefings.Clear();
+            Directory.CreateDirectory(_PathCreatedFolder);
+        }
 
-            _currentDate = DateTime.Now.ToString("yyyy-MM-dd");
-            _folderName = _currentDate.Replace("-", "_");
-            _rootPathSearch = Application.persistentDataPath;
-            _PathCreatedFolder = Path.Combine(_rootPathSearch, _folderName);
+        string[] fichiers = Directory.GetFiles(_PathCreatedFolder, "*.json");
+        if (fichiers.Length > 0)
+        {
+            _fileCount = fichiers.Length;
+            _numFile = _fileCount + 1;
 
-            if (!Directory.Exists(_PathCreatedFolder))
-            {
-                Directory.CreateDirectory(_PathCreatedFolder);
-            }
+        }
+        else
+        {
+            _numFile = 1;
+        }
 
-            string[] fichiers = Directory.GetFiles(_PathCreatedFolder, "*.json");
-            if (fichiers.Length > 0)
-            {
-                _fileCount = fichiers.Length;
-                _numFile = _fileCount + 1;
+        _rootPathToSave = GenerateFileName();
+    }
 
-            }
-            else
-            {
-                _numFile = 1;
-            }
+    private string GenerateFileName()
+    {
+        _fileNumber = _numFile.ToString("D2");
+        _fileName = $"{_prefix}{_fileNumber}{_extension}";
+        return Path.Combine(_PathCreatedFolder, _fileName);
 
+    }
+
+    public void SaveDocument(GameDebriefing saveFile)
+    {
+        if (saveFile == null)
+        {
+            return;
+        }
+
+        string json = JsonUtility.ToJson(saveFile, true);
+
+        if (File.Exists(_rootPathToSave))
+        {
+            _numFile++;
             _rootPathToSave = GenerateFileName();
         }
 
-        private string GenerateFileName()
+        File.WriteAllText(_rootPathToSave, json);
+
+        _numFile++; // prêt pour la prochaine sauvegarde
+        _rootPathToSave = GenerateFileName();
+    }
+
+    private void LoadAllFiles()
+    {
+        //_gameDebriefings.Clear();
+
+        string[] fichiersJson = Directory.GetFiles(_PathCreatedFolder, "*.json");
+
+        if (fichiersJson.Length > 0)
         {
-            _fileNumber = _numFile.ToString("D2");
-            _fileName = $"{_prefix}{_fileNumber}{_extension}";
-            return Path.Combine(_PathCreatedFolder, _fileName);
-
-        }
-
-        public void SaveDocument(GameDebriefing saveFile)
-        {
-            if (saveFile == null)
+            foreach (string fichier in fichiersJson)
             {
-                return;
-            }
+                string contenu = File.ReadAllText(fichier);
+                GameDebriefing data = JsonUtility.FromJson<GameDebriefing>(contenu);
 
-            string json = JsonUtility.ToJson(saveFile, true);
-
-            if (File.Exists(_rootPathToSave))
-            {
-                _numFile++;
-                _rootPathToSave = GenerateFileName();
-            }
-
-            File.WriteAllText(_rootPathToSave, json);
-
-            _numFile++; // prêt pour la prochaine sauvegarde
-            _rootPathToSave = GenerateFileName();
-        }
-
-        private void LoadAllFiles()
-        {
-            //_gameDebriefings.Clear();
-
-            string[] fichiersJson = Directory.GetFiles(_PathCreatedFolder, "*.json");
-
-            if (fichiersJson.Length > 0)
-            {
-                foreach (string fichier in fichiersJson)
+                if (data != null)
                 {
-                    string contenu = File.ReadAllText(fichier);
-                    GameDebriefing data = JsonUtility.FromJson<GameDebriefing>(contenu);
-
-                    if (data != null)
-                    {
-                        //_gameDebriefings.Add(data);
-                    }
+                    //_gameDebriefings.Add(data);
                 }
             }
         }
-
-        //public List<GameDebriefing> GetAllDebriefings()
-        //{
-        //    LoadAllFiles();
-
-        //    return _gameDebriefings;
-        //}
     }
+
+    //public List<GameDebriefing> GetAllDebriefings()
+    //{
+    //    LoadAllFiles();
+
+    //    return _gameDebriefings;
+    //}
 }

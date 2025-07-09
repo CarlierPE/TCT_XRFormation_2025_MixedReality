@@ -1,6 +1,6 @@
 using System;
 using UnityEngine;
-namespace TcT.FireSim.SSM
+namespace FireSim.SSM
 {
     public abstract class ScriptBasedGameState : GameState
     {
@@ -8,7 +8,7 @@ namespace TcT.FireSim.SSM
 
         public ScriptBasedGameState(MonoBehaviour script)
         {
-            if (script == null) throw new ArgumentNullException(nameof(script));
+            if(script == null) throw new ArgumentNullException(nameof(script));
             _script = script;
             _script.gameObject.SetActive(false);
         }

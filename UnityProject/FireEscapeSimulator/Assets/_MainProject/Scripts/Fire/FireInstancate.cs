@@ -1,112 +1,105 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace TcT.FireSim
+public class FireInstancate : MonoBehaviour
 {
-    public class FireInstancate : MonoBehaviour
+    [SerializeField] GameObject _startSoundFIre;
+    [SerializeField] List<GameObject> _firePrefab; // Reference to the fire prefab
+    [SerializeField] AudioSource _startFire; 
+    [SerializeField] AudioSource[] _audio; //Reference to audio for fire
+    [SerializeField] float _spawnInterval = 5f; // Time interval between spawns
+
+    private float _nextSpawnTime; // Time when the next fire will be spawned
+    private bool _isFireActive; // Flag to check if fire is active
+    private int _fireCount; // Counter for the number of fires spawned
+    private int _spawnCount = 0;
+    private bool _isFireMax = false; // Flag to check if the maximum number of fires has been reached
+
+    void Awake()
     {
-        [SerializeField] GameObject _startSimultion;
-        [SerializeField] GameObject _startSoundFIre;
-        [SerializeField] List<GameObject> _firePrefab; // Reference to the fire prefab
-        [SerializeField] AudioSource _startFire;
-        [SerializeField] AudioSource[] _audio; //Reference to audio for fire
-        [SerializeField] float _spawnInterval = 5f; // Time interval between spawns
+        _fireCount = _firePrefab.Count;
+    }
 
-        private float _nextSpawnTime; // Time when the next fire will be spawned
-        private bool _isFireActive; // Flag to check if fire is active
-        private int _fireCount; // Counter for the number of fires spawned
-        private int _spawnCount = 0;
-        private bool _isFireMax = false; // Flag to check if the maximum number of fires has been reached
-        Vector3 positionStart;
-        void Awake()
+    // Update is called once per frame
+    void Update()
+    {
+        if (_isFireActive)
         {
-            DisableAllFirePrefab();
-            DisableAllSounds();
-            _fireCount = _firePrefab.Count;
-            positionStart = _startFire.transform.position;
+            if (_isFireMax) return; // If the maximum number of fires has been reached, do not spawn more fires
+            NextFire(); // Call the SpawnFire method if fire is active
+        }
+    }
+
+    public void StartFire()
+    {
+        if (_nextSpawnTime is 0) // Check if the next spawn time is not set
+        {
+            _nextSpawnTime = Time.time + _spawnInterval; // Initialize the next spawn time to the current time
         }
 
-        // Update is called once per frame
-        void Update()
+        _isFireActive = true; // Set the fire active flag to true
+    }
+
+    private void NextFire()
+    {
+        if (Time.time < _nextSpawnTime) return; // Check if it's time to spawn the next fire  
+
+        if (_spawnCount >= _fireCount) // Check if all fire prefabs have been spawned
         {
-            if (_isFireActive)
-            {
-                if (_isFireMax) return; // If the maximum number of fires has been reached, do not spawn more fires
-                NextFire(); // Call the SpawnFire method if fire is active
-            }
+            FireMax(); // Stop spawning fires if all have been spawned
+            return;
         }
 
-        public void StartFire()
+        if (_spawnCount == 0)
         {
-            if (_nextSpawnTime is 0) // Check if the next spawn time is not set
-            {
-                _nextSpawnTime = Time.time + _spawnInterval; // Initialize the next spawn time to the current time
-            }
-
-            _isFireActive = true; // Set the fire active flag to true
+            _startSoundFIre.SetActive(true);
+            _startFire.Play();
         }
 
-        private void NextFire()
-        {
-            if (Time.time < _nextSpawnTime) return; // Check if it's time to spawn the next fire  
+        _firePrefab[_spawnCount].SetActive(true); // Activate the fire prefab at the current spawn count
 
-            if (_spawnCount >= _fireCount) // Check if all fire prefabs have been spawned
-            {
-                FireMax(); // Stop spawning fires if all have been spawned
-                return;
-            }
+        _audio[_spawnCount].Play();
 
-            if (_spawnCount == 0)
-            {
-                _startSoundFIre.SetActive(true);
-                _startFire.Play();
-            }
-
-            _firePrefab[_spawnCount].SetActive(true); // Activate the fire prefab at the current spawn count
-
-            _audio[_spawnCount].Play();
-
-            _spawnCount++; // Increment the spawn count
-            _nextSpawnTime = _nextSpawnTime + _spawnInterval; // Update the next spawn time  
+        _spawnCount++; // Increment the spawn count
+        _nextSpawnTime = _nextSpawnTime + _spawnInterval; // Update the next spawn time  
 
 
-        }
+    }
 
-        private void FireMax()
-        {
-            _isFireMax = true; // Set the fire active flag to false
-        }
+    private void FireMax()
+    {
+        _isFireMax = true; // Set the fire active flag to false
+    }
 
-        public void ResetFire()
+    public void ResetFire()
+    {
+        if (_isFireActive)
         {
             DisableAllFirePrefab(); // Deactivate all fire prefabs
-            DisableAllSounds(); // Deactivate all sounds
             _nextSpawnTime = 0; // Reset the next spawn time
             _isFireActive = false; // Set the fire active flag to false
             _isFireMax = false; // Reset the maximum fire flag
             _spawnCount = 0; // Reset the spawn count
         }
+    }
 
-        private void DisableAllFirePrefab()
+    private void DisableAllFirePrefab()
+    {
+        foreach (GameObject fire in _firePrefab)
         {
-            foreach (GameObject fire in _firePrefab)
-            {
-                fire.SetActive(false); // Deactivate all fire prefabs
-            }
+            fire.SetActive(false); // Deactivate all fire prefabs
         }
 
-        private void DisableAllSounds()
+        foreach (var item in _audio)
         {
-            foreach (var item in _audio)
-            {
-                item.Stop();
-            }
-            _startFire.Stop();
+            item.Stop();
         }
+        _startFire.Stop();
+    }
 
-        public void PauseFire()
-        {
-            _isFireActive = !_isFireActive; // Set the fire active flag for pause fire spawningto false or true for resume to fire spawning
-        }
+    public void PauseFire()
+    {
+        _isFireActive = false; // Set the fire active flag to false to pause fire spawning
     }
 }

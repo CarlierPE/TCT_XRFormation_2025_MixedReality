@@ -1,13 +1,10 @@
 using UnityEngine;
 
-namespace TcT.FireSim
+public class FireCollider : TriggerableByPlayer
 {
-    public class FireCollider : TriggerableByPlayer
+    //we only collide with the Player layer
+    private void OnTriggerEnter(Collider other)
     {
-        //we only collide with the Player layer
-        private void OnTriggerEnter(Collider other)
-        {
-            OnTriggeredByPlayer(eMonitoredAction.WalkIntoFire);
-        }
+        OnTriggeredByPlayer(eMonitoredAction.WalkIntoFire);
     }
 }
