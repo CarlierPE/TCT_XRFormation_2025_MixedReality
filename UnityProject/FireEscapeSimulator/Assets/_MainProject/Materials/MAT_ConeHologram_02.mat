@@ -32,6 +32,10 @@ Material:
         m_Texture: {fileID: 2800000, guid: a03f3f421ec439545a3fe1e85a77b791, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_9166b98852604b26a61dd449f9a7f183_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: a9b021bd881b94248b03ed60c974cf22, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _ScanLineTexture:
         m_Texture: {fileID: 2800000, guid: ce06726c361fe1542b3e09d363605ea4, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -56,7 +60,7 @@ Material:
     - _CastShadows: 1
     - _Cull: 2
     - _DstBlend: 10
-    - _FresnelPower: 3.14
+    - _FresnelPower: 1.02
     - _QueueControl: 0
     - _QueueOffset: 0
     - _SrcBlend: 5
@@ -66,8 +70,8 @@ Material:
     - _ZWrite: 0
     - _ZWriteControl: 0
     m_Colors:
-    - _FresnelColor: {r: 5.992157, g: 2.3274426, b: 0, a: 1}
-    - _ScanLineSpeed: {r: 0, g: 0.5, b: 0, a: 0}
+    - _FresnelColor: {r: 1.5157166, g: 0.9538948, b: 0, a: 1}
+    - _ScanLineSpeed: {r: 0, g: 0.8, b: 0, a: 0}
     - _ScanLineTiling: {r: 1, g: 6.52, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
