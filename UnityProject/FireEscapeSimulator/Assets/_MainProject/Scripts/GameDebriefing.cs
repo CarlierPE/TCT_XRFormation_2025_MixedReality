@@ -1,13 +1,11 @@
 using System;
 using System.Collections.Generic;
+using UnityEngine;
 
-namespace TcT.FireSim
+[Serializable]
+public class GameDebriefing
 {
-    [Serializable]
-    public class GameDebriefing
-    {
-        public float timeGame;
-        public int scoreEnd;
-        public List<ScoreLog> scoreLogs;
-    }
+    public float timeGame;
+    public int scoreEnd;
+    public List<ScoreLog> scoreLogs;
 }

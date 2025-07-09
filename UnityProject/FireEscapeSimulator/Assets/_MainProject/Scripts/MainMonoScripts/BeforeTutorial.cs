@@ -1,26 +1,22 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace TcT.FireSim
+/*
+ * Ce script est prévu pour préparer le tutorial, les initialisation ou réinitialisation de ce dont le tutorial a besoin
+ * Il doit avoir un UnityEvent pour signaler qu'il a terminé son travail (même s'il n'a rien à faire)
+ */
+public class BeforeTutorial : MonoBehaviour
 {
+    [HideInInspector]
+    public UnityEvent OnTutorialStarting;
+    [SerializeField] GameObject _occlusion;
+    [SerializeField] Guide _guide;
+    [SerializeField] Transform _guideDefaultLocation;
 
-    /*
-     * Ce script est prévu pour préparer le tutorial, les initialisation ou réinitialisation de ce dont le tutorial a besoin
-     * Il doit avoir un UnityEvent pour signaler qu'il a terminé son travail (même s'il n'a rien à faire)
-     */
-    public class BeforeTutorial : MonoBehaviour
+    private void OnEnable()
     {
-        [HideInInspector]
-        public UnityEvent OnTutorialStarting;
-        [SerializeField] GameObject _occlusion;
-        [SerializeField] Guide _guide;
-        [SerializeField] Transform _guideDefaultLocation;
-
-        private void OnEnable()
-        {
-            _occlusion.SetActive(true);
-            _guide.transform.position = _guideDefaultLocation.position;
-            OnTutorialStarting.Invoke();
-        }
+        _occlusion.SetActive(true);
+        _guide.transform.position = _guideDefaultLocation.position;
+        OnTutorialStarting.Invoke();
     }
 }

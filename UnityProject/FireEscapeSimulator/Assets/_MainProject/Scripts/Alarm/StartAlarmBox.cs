@@ -1,40 +1,37 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace TcT.FireSim
+public class StartAlarmBox : MonoBehaviour 
 {
-    public class StartAlarmBox : MonoBehaviour
+    public List<AudioSource> _alarm;
+
+    public void StartSound()
     {
-        public List<AudioSource> _alarm;
-
-        public void StartSound()
+        Debug.Log("entrer dans start sound");
+        if (_alarm == null)
         {
-            Debug.Log("entrer dans start sound");
-            if (_alarm == null)
-            {
-                Debug.Log("entrer dans le if car _alarm est null");
-                return;
-            }
-            Debug.Log("nombre d'element est " + _alarm.Count);
-            foreach (AudioSource source in _alarm)
-            {
-                source.Play();
-            }
+            Debug.Log("entrer dans le if car _alarm est null");
+            return;
         }
-
-        public void StopSound()
+        Debug.Log("nombre d'element est " +  _alarm.Count);
+        foreach (AudioSource source in _alarm)
         {
-            Debug.Log("entrer dans stop sound");
-            if (_alarm == null)
-            {
-                Debug.Log("entrer dans le if car _alarm est null");
-                return;
-            }
-            Debug.Log("nombre d'element est " + _alarm.Count);
-            foreach (AudioSource source in _alarm)
-            {
-                source.Stop();
-            }
+            source.Play();
+        }
+    }
+
+    public void StopSound()
+    {
+        Debug.Log("entrer dans stop sound");
+        if (_alarm == null)
+        {
+            Debug.Log("entrer dans le if car _alarm est null");
+            return;
+        }
+        Debug.Log("nombre d'element est " + _alarm.Count);
+        foreach (AudioSource source in _alarm)
+        { 
+            source.Stop(); 
         }
     }
 }

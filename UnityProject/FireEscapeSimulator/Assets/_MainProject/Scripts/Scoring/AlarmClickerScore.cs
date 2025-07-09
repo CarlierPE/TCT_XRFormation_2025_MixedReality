@@ -1,15 +1,12 @@
 using UnityEngine;
 
-namespace TcT.FireSim
+public class AlarmClickerScore : TriggerableByPlayer
 {
-    public class AlarmClickerScore : TriggerableByPlayer
+    public AlarmClickerScore TheScore;
+
+
+    void OnTriggerEnter(Collider other)
     {
-        public AlarmClickerScore TheScore;
-
-
-        void OnTriggerEnter(Collider other)
-        {
-            OnTriggeredByPlayer(eMonitoredAction.PressAlarmButton);
-        }
+        base.OnTriggeredByPlayer(eMonitoredAction.PressAlarmButton);
     }
 }

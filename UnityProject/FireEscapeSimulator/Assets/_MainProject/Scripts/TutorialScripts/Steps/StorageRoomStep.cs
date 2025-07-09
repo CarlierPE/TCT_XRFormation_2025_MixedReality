@@ -1,11 +1,10 @@
-namespace TcT.FireSim
-{
-    public class StorageRoomStep : TutorialStep
-    {
-        protected override void DoStep()
-        {
-            throw new System.NotImplementedException();
-        }
+using UnityEngine;
 
+public class StorageRoomStep : TutorialStep
+{
+    protected override void DoStep()
+    {
+        throw new System.NotImplementedException();
     }
+
 }

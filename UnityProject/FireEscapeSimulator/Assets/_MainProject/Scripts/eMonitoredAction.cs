@@ -1,21 +1,18 @@
-namespace TcT.FireSim
+using UnityEngine;
+
+public enum eMonitoredAction
 {
-    public enum eMonitoredAction
-    {
-        OpenAlarmBox,
-        PressAlarmButton,
-        WalkIntoFire,
-        CloseDoor,
-        OpenDoor,
-        FinishLine,
-        ExtinguisherTake,
-        ExtinguisherPutOut,
-        StairsUp,
-        TakePhone,
-        Appel,
-        TouchElevator,
-        EnterKitchen,
-        TimerOut,
-        //etc
-    }
+    OpenAlarmBox,
+    PressAlarmButton,
+    WalkIntoFire,
+    CloseDoor,
+    OpenDoor,
+    FinishLine,
+    ExtinguisherTake,
+    ExtinguisherPutOut,
+    StairsUp,
+    TakePhone,
+    Appel,
+    TouchElevator,
+    //etc
 }

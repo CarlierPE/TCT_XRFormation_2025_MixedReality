@@ -9,7 +9,7 @@ namespace Ldm.Relocator
 
         public void Relocate(Pose poseToRelocateTo)
         {
-            if (_instanceToRelocate == null)
+            if(_instanceToRelocate == null)
             {
                 if (_prefabToRelocate.gameObject.scene.IsValid() && _prefabToRelocate.gameObject.scene.isLoaded)
                     _instanceToRelocate = _prefabToRelocate;

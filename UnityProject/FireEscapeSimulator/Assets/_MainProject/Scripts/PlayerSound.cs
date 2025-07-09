@@ -1,46 +1,43 @@
 using UnityEngine;
 
-namespace TcT.FireSim
+public class PlayerSound : MonoBehaviour
 {
-    public class PlayerSound : MonoBehaviour
+    private const float Max = 15f;
+    public AudioSource touxSound;
+    public AudioSource heartSound;
+    public AudioSource respiationSound;
+    public AudioSource respirationDifficultSound;
+
+    private float _timeStart;
+    private float _timeElpase;
+
+    private void Awake()
     {
-        private const float Max = 15f;
-        public AudioSource touxSound;
-        public AudioSource heartSound;
-        public AudioSource respiationSound;
-        public AudioSource respirationDifficultSound;
+        _timeStart = Time.time;
+    }
 
-        private float _timeStart;
-        private float _timeElpase;
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        
+    }
 
-        private void Awake()
+    // Update is called once per frame
+    void Update()
+    {
+        _timeElpase = Time.time - _timeStart;
+
+        if (_timeElpase == 5f)
         {
-            _timeStart = Time.time;
+            touxSound.Play();
         }
-
-        // Start is called once before the first execution of Update after the MonoBehaviour is created
-        void Start()
+        if (_timeElpase <= Max && _timeElpase > 5f)
         {
-
+            heartSound.Play();
         }
-
-        // Update is called once per frame
-        void Update()
-        {
-            _timeElpase = Time.time - _timeStart;
-
-            if (_timeElpase == 5f)
-            {
-                touxSound.Play();
-            }
-            if (_timeElpase <= Max && _timeElpase > 5f)
-            {
-                heartSound.Play();
-            }
-            if (_timeElpase > 5f && _timeElpase < 7.5f)
-                respiationSound.Play();
-            else if (_timeElpase < Max && _timeElpase > 7.5f)
-                respirationDifficultSound.Play();
-        }
+        if(_timeElpase > 5f && _timeElpase < 7.5f)
+            respiationSound.Play();
+        else if (_timeElpase < Max &&  _timeElpase > 7.5f)
+            respirationDifficultSound.Play();
     }
 }
