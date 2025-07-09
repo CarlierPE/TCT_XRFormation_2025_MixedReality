@@ -1,12 +1,16 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
-public class DoorManager : MonoBehaviour
+namespace TcT.FireSim
 {
-    [SerializeField] List<Door> _doors;
-
-    public void ResetDoors()
+    public class DoorManager : MonoBehaviour
     {
-        _doors.ForEach(d => d.Reset());
+        [SerializeField] List<Door> _doors;
+
+        public void ResetDoors()
+        {
+            _doors.ForEach(d => d.Reset());
+        }
     }
 }

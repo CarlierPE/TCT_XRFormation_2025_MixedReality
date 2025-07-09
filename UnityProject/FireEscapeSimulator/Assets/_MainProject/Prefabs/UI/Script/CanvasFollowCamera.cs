@@ -4,7 +4,7 @@ public class CanvasFollowCamera : MonoBehaviour
 {
     public Camera mainCamera;
     public GameObject canvasObject;
-    [SerializeField] Vector3 offset = new Vector3(0, 0, 1f);
+    [SerializeField] Vector3 offset = new(0, 0, 1f);
 
     void Start()
     {

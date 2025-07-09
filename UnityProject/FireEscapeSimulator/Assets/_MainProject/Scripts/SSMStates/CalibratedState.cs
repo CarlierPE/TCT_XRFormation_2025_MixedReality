@@ -1,14 +1,16 @@
-using System;
-using FireSim.SSM;
+using TcT.FireSim.SSM;
 using UnityEngine;
 
-public class CalibratedState : ScriptBasedGameState
+namespace TcT.FireSim
 {
-    public override eGameStateID ID => eGameStateID.Calibrated;
-    public override bool CanTransitionTo(eGameStateID nextState)
+    public class CalibratedState : ScriptBasedGameState
     {
-        return nextState == eGameStateID.Uncalibrated || nextState == eGameStateID.BeforeTutorial;
-    }
+        public override eGameStateID ID => eGameStateID.Calibrated;
+        public override bool CanTransitionTo(eGameStateID nextState)
+        {
+            return nextState == eGameStateID.Uncalibrated || nextState == eGameStateID.BeforeTutorial;
+        }
 
-    public CalibratedState(MonoBehaviour script) : base(script) { }
+        public CalibratedState(MonoBehaviour script) : base(script) { }
+    }
 }

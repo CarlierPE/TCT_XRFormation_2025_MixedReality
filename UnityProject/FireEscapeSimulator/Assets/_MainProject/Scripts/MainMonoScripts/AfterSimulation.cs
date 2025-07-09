@@ -1,18 +1,22 @@
 using UnityEngine;
 using UnityEngine.Events;
-/*
- * Le but de ce script est le nettoyage éventuel de la scène post simulation
- * Probablement du setactive(false) etc sur tout un tas de choses (le feu déjà) histoire que le casque puisse se reposer
- * Besoin d'un UnityEvent pour signaler que l'étape est terminée.
- * */
-public class AfterSimulation : MonoBehaviour
-{
-    [HideInInspector]
-    public UnityEvent OnSimulationEnded;
 
-    private void OnEnable()
+namespace TcT.FireSim
+{
+    /*
+    * Le but de ce script est le nettoyage éventuel de la scène post simulation
+    * Probablement du setactive(false) etc sur tout un tas de choses (le feu déjà) histoire que le casque puisse se reposer
+    * Besoin d'un UnityEvent pour signaler que l'étape est terminée.
+    * */
+    public class AfterSimulation : MonoBehaviour
     {
-        //TODO - TBD
-        OnSimulationEnded.Invoke();
+        [HideInInspector]
+        public UnityEvent OnSimulationEnded;
+
+        private void OnEnable()
+        {
+            //TODO - TBD
+            OnSimulationEnded.Invoke();
+        }
     }
 }
