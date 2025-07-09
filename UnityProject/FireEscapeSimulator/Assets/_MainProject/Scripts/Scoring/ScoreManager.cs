@@ -7,12 +7,12 @@ using UnityEngine.Events;
 
 namespace TcT.FireSim
 {
+
     public class ScoreManager : MonoBehaviour
-    {
-        public TextMeshProUGUI textScore;
-        public TextMeshProUGUI textDebriefing;
-        public TextMeshProUGUI textTime;
-        static ScoreManager _instance;
+{
+    [SerializeField] private TextMeshProUGUI _textDebriefing;
+
+    static ScoreManager _instance;
 
         private int _totalscore = 0;
 
@@ -43,10 +43,9 @@ namespace TcT.FireSim
                 return;
             }
 
-            _instance = this;
-            _gameDebriefing = new GameDebriefing();
-
-            textScore.text = "";
+        _instance = this;
+        _gameDebriefing = new GameDebriefing();
+        
 
             InitScore();
         }
@@ -59,32 +58,25 @@ namespace TcT.FireSim
             {
                 timerAction = Time.time - _timer;
 
-                textTime.text = "Time : " + timerAction;
-                ;
-
-                if (timerAction >= timeMax)
-                {
-                    _isPlaying = false;
-                    OnActionTriggered(eMonitoredAction.TimerOut);
-                }
+            if (timerAction >= timeMax) 
+            {
+                _isPlaying = false;
+                OnActionTriggered(eMonitoredAction.TimerOut);
             }
         }
+    }
 
-        public void StartScoreSystem()
-        {
+    public void StartScoreSystem()
+    {
+        _timer = Time.time;
+        _isPlaying = true;
+    }
 
-            Debug.Log("entrer dans le start timer");
-            _timer = Time.time;
-            _isPlaying = true;
-        }
-
-        public void StopScoreSystem()
-        {
-
-            Debug.Log("entrer dans le stop timer");
-            _timer = Time.time - _timer;
-            _isPlaying = false;
-        }
+    public void StopScoreSystem()
+    {
+        _timer = Time.time - _timer;
+        _isPlaying = false;
+    }
 
         private void OnEnable()
         {
@@ -94,30 +86,25 @@ namespace TcT.FireSim
             }
         }
 
-        private void OnDisable()
+    private void OnDisable()
+    {
+        foreach (var triggerable in _triggerables)
         {
-            Debug.Log("entrer dans le OnDisable");
-            foreach (var triggerable in _triggerables)
-            {
-                triggerable.Triggered.RemoveListener(OnActionTriggered);
-            }
+            triggerable.Triggered.RemoveListener(OnActionTriggered);
         }
+    }
 
-        public void InitScore()
+    public void InitScore()
+    {
+        _totalscore = 0;
+        StartScoreSystem();
+    }
+
+    private void OnActionTriggered(eMonitoredAction action)
+    {
+        if (ScoreAction.tableScoreAction.TryGetValue(action, out int score))
         {
-            Debug.Log("entrer dans le init");
-            _totalscore = 0;
-            StartScoreSystem();
-        }
-
-        private void OnActionTriggered(eMonitoredAction action)
-        {
-
-            Debug.Log("entrer dans le On Action Triggered");
-
-            if (ScoreAction.tableScoreAction.TryGetValue(action, out int score))
-            {
-                timerAction = Time.time - _timer;
+            timerAction = Time.time - _timer;
 
                 if (action == eMonitoredAction.FinishLine)
                 {
@@ -151,8 +138,7 @@ namespace TcT.FireSim
 
             _logs.Add(log);
 
-            textScore.text += ReadScorLog(log);
-        }
+    }
 
         private void SaveFinalScore(float time)
         {
@@ -160,17 +146,14 @@ namespace TcT.FireSim
             _gameDebriefing.scoreEnd = _totalscore;
             _gameDebriefing.scoreLogs = _logs;
 
-            textDebriefing.text += ReadingDebriefing();
-            //SaveOnDocument(_gameDebriefing);
-        }
-        public string ReadScorLog(ScoreLog log)
-        {
-            return $"point : {log.scoreValid} | temps : {log.timeAction} | action : {log.action} \n ";
-        }
+        _textDebriefing.text += ReadingDebriefing();
 
-        public string ReadingDebriefing()
-        {
-            string debriefing = $"\nVotre temps de simulation est : {_gameDebriefing.timeGame}, et le total des points est : {_gameDebriefing.scoreEnd}\n\n";
+        //SaveOnDocument(_gameDebriefing);
+    }
+    
+    public string ReadingDebriefing()
+    {
+        string debriefing = $"\nVotre temps de simulation est : {_gameDebriefing.timeGame}, et le total des points est : {_gameDebriefing.scoreEnd}\n\n";
 
             debriefing += "voici les points en detail avec le temps et l'action realiser : \n";
 
