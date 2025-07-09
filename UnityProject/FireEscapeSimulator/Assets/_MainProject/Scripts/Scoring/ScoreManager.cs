@@ -1,60 +1,62 @@
 using System;
 using System.Collections.Generic;
-using System.Drawing;
 using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class ScoreManager : MonoBehaviour
+namespace TcT.FireSim
+{
+
+    public class ScoreManager : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI _textDebriefing;
 
     static ScoreManager _instance;
 
-    private int _totalscore = 0;
+        private int _totalscore = 0;
 
-    [SerializeField] List<TriggerableByPlayer> _triggerables = new();
-    private List<ScoreLog> _logs = new();
+        [SerializeField] List<TriggerableByPlayer> _triggerables = new();
+        private List<ScoreLog> _logs = new();
 
-    public int Score => _totalscore;
-    public IEnumerable<ScoreLog> ScoreLogs => _logs.AsEnumerable();
+        public int Score => _totalscore;
+        public IEnumerable<ScoreLog> ScoreLogs => _logs.AsEnumerable();
 
-    public UnityEvent OnGameIsFinished;
+        public UnityEvent OnGameIsFinished;
 
-    private float _timer;
-    public float timeMax;
+        private float _timer;
+        public float timeMax;
 
-    private GameDebriefing _gameDebriefing;
+        private GameDebriefing _gameDebriefing;
 
-    private bool _isPlaying;
-    float timerAction;
+        private bool _isPlaying;
+        float timerAction;
 
-    private void Awake()
-    {
-        Debug.Log("entrer dans le Away");
-        if (_instance != null && _instance != this)
+        private void Awake()
         {
-            Destroy(gameObject);
-            Debug.Log("detruit l'instance");
+            Debug.Log("entrer dans le Away");
+            if (_instance != null && _instance != this)
+            {
+                Destroy(gameObject);
+                Debug.Log("detruit l'instance");
 
-            return;
-        }
+                return;
+            }
 
         _instance = this;
         _gameDebriefing = new GameDebriefing();
         
 
-        InitScore();
-    }
+            InitScore();
+        }
 
-    private void Update()
-    {
-
-        Debug.Log("entrer dans le Update");
-        if (_isPlaying)
+        private void Update()
         {
-            timerAction = Time.time - _timer;
+
+            Debug.Log("entrer dans le Update");
+            if (_isPlaying)
+            {
+                timerAction = Time.time - _timer;
 
             if (timerAction >= timeMax) 
             {
@@ -76,13 +78,13 @@ public class ScoreManager : MonoBehaviour
         _isPlaying = false;
     }
 
-    private void OnEnable()
-    {
-        foreach (var triggerable in _triggerables)
+        private void OnEnable()
         {
-            triggerable.Triggered.AddListener(OnActionTriggered);
+            foreach (var triggerable in _triggerables)
+            {
+                triggerable.Triggered.AddListener(OnActionTriggered);
+            }
         }
-    }
 
     private void OnDisable()
     {
@@ -104,45 +106,45 @@ public class ScoreManager : MonoBehaviour
         {
             timerAction = Time.time - _timer;
 
-            if (action == eMonitoredAction.FinishLine)
-            {
-                StopScoreSystem();
-                SaveActionScore(action, score, timerAction);
-                SaveFinalScore(timerAction);
+                if (action == eMonitoredAction.FinishLine)
+                {
+                    StopScoreSystem();
+                    SaveActionScore(action, score, timerAction);
+                    SaveFinalScore(timerAction);
+                }
+                else if (action == eMonitoredAction.WalkIntoFire || action == eMonitoredAction.TimerOut)
+                {
+                    StopScoreSystem();
+                    score = -_totalscore;
+                    SaveActionScore(action, score, timerAction);
+                    SaveFinalScore(timerAction);
+                }
+                else
+                    SaveActionScore(action, score, timerAction);
             }
-            else if(action == eMonitoredAction.WalkIntoFire || action == eMonitoredAction.TimerOut)
-            {
-                StopScoreSystem();
-                score = -_totalscore;
-                SaveActionScore(action, score, timerAction);
-                SaveFinalScore(timerAction);
-            }
-            else
-                SaveActionScore(action, score, timerAction);
+
         }
 
-    }
-
-    private void SaveActionScore(eMonitoredAction action, int score, float time)
-    {
-        
-        _totalscore += score;
-        ScoreLog log = new()
+        private void SaveActionScore(eMonitoredAction action, int score, float time)
         {
-            timeAction = time,
-            action = action,
-            scoreValid = score
-        };
 
-        _logs.Add(log);
+            _totalscore += score;
+            ScoreLog log = new()
+            {
+                timeAction = time,
+                action = action,
+                scoreValid = score
+            };
+
+            _logs.Add(log);
 
     }
 
-    private void SaveFinalScore(float time)
-    {
-        _gameDebriefing.timeGame = time;
-        _gameDebriefing.scoreEnd = _totalscore;
-        _gameDebriefing.scoreLogs = _logs;
+        private void SaveFinalScore(float time)
+        {
+            _gameDebriefing.timeGame = time;
+            _gameDebriefing.scoreEnd = _totalscore;
+            _gameDebriefing.scoreLogs = _logs;
 
         _textDebriefing.text += ReadingDebriefing();
 
@@ -153,24 +155,25 @@ public class ScoreManager : MonoBehaviour
     {
         string debriefing = $"\nVotre temps de simulation est : {_gameDebriefing.timeGame}, et le total des points est : {_gameDebriefing.scoreEnd}\n\n";
 
-        debriefing += "voici les points en detail avec le temps et l'action realiser : \n";
+            debriefing += "voici les points en detail avec le temps et l'action realiser : \n";
 
-        foreach (var item in _logs)
-        {
-            debriefing += $"\tpoint : {item.scoreValid} | temps : {item.timeAction} | action : {item.action} \n ";
+            foreach (var item in _logs)
+            {
+                debriefing += $"\tpoint : {item.scoreValid} | temps : {item.timeAction} | action : {item.action} \n ";
+            }
+
+            return debriefing;
         }
 
-        return debriefing;
-    }
+        [Obsolete("on n'utilise pas pour le moment")]
+        private void SaveOnDocument(GameDebriefing debriefing)
+        {
+            SaveOnFile saveOnFile = new();
 
-    [Obsolete("on n'utilise pas pour le moment")]
-    private void SaveOnDocument(GameDebriefing debriefing)
-    {
-        SaveOnFile saveOnFile = new();
+            saveOnFile.InitBased();
 
-        saveOnFile.InitBased();
+            saveOnFile.SaveDocument(debriefing);
 
-        saveOnFile.SaveDocument(debriefing);
-        
+        }
     }
 }

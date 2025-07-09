@@ -1,15 +1,18 @@
 using UnityEngine;
 
-public class CloseDoor : MonoBehaviour
+namespace TcT.FireSim
 {
-    [SerializeField] private GameObject[] _doors;
-
-    private void Awake()
+    public class CloseDoor : MonoBehaviour
     {
-        foreach (var door in _doors)
-        {
-            door.SetActive(false);
-        }
-    }
+        [SerializeField] private GameObject[] _doors;
 
+        private void Awake()
+        {
+            foreach (var door in _doors)
+            {
+                door.SetActive(false);
+            }
+        }
+
+    }
 }

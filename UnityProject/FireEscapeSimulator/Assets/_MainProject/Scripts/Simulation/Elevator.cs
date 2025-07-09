@@ -1,10 +1,13 @@
 using UnityEngine;
 
-public class Elevator : TriggerableByPlayer
+namespace TcT.FireSim
 {
-    
-    private void OnTriggerEnter(Collider other)
+    public class Elevator : TriggerableByPlayer
     {
-        OnTriggeredByPlayer(eMonitoredAction.TouchElevator);
+
+        private void OnTriggerEnter(Collider other)
+        {
+            OnTriggeredByPlayer(eMonitoredAction.TouchElevator);
+        }
     }
 }

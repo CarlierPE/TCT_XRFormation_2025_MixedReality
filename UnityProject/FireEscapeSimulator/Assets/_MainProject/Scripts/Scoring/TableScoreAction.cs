@@ -1,9 +1,10 @@
 using System.Collections.Generic;
-using UnityEngine;
 
-public static class ScoreAction
+namespace TcT.FireSim
 {
-    public static Dictionary<eMonitoredAction, int> tableScoreAction = new ()
+    public static class ScoreAction
+    {
+        public static Dictionary<eMonitoredAction, int> tableScoreAction = new()
     {
         { eMonitoredAction.OpenAlarmBox, 0 },
         { eMonitoredAction.PressAlarmButton, 300 },
@@ -18,5 +19,5 @@ public static class ScoreAction
         { eMonitoredAction.Appel,150},
         { eMonitoredAction.TouchElevator,-200},
     };
+    }
 }
-

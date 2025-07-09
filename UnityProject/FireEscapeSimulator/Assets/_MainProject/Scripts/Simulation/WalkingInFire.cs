@@ -1,9 +1,12 @@
 using UnityEngine;
 
-public class WalkingInFire : TriggerableByPlayer
+namespace TcT.FireSim
 {
-    private void OnTriggerEnter(Collider other)
+    public class WalkingInFire : TriggerableByPlayer
     {
-        OnTriggeredByPlayer(eMonitoredAction.WalkIntoFire);
+        private void OnTriggerEnter(Collider other)
+        {
+            OnTriggeredByPlayer(eMonitoredAction.WalkIntoFire);
+        }
     }
 }

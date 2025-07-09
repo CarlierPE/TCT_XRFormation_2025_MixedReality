@@ -1,8 +1,7 @@
-using System.Collections.Generic;
-using UnityEngine;
-using TMPro;
 using System.Collections;
-using UnityEngine.UI; // pour le bouton
+using System.Collections.Generic;
+using TMPro;
+using UnityEngine;
 
 public class textUpdateOnCanvas : MonoBehaviour
 {

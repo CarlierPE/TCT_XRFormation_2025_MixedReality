@@ -1,9 +1,12 @@
 using UnityEngine;
 
-public class DoorClose : TriggerableByPlayer
+namespace TcT.FireSim
 {
-    private void OnTriggerEnter(Collider other)
+    public class DoorClose : TriggerableByPlayer
     {
-        OnTriggeredByPlayer(eMonitoredAction.CloseDoor);
+        private void OnTriggerEnter(Collider other)
+        {
+            OnTriggeredByPlayer(eMonitoredAction.CloseDoor);
+        }
     }
 }
