@@ -1,15 +1,15 @@
-using TcT.FireSim;
 using UnityEngine;
 
-
-[RequireComponent(typeof(MeshRenderer))]
-public class Door : TriggerableByPlayer
+namespace TcT.FireSim
 {
-    [SerializeField] private GameObject _door;
-    [SerializeField] private AudioSource _audio;
+    [RequireComponent(typeof(MeshRenderer))]
+    public class Door : TriggerableByPlayer
+    {
+        [SerializeField] private GameObject _door;
+        [SerializeField] private AudioSource _audio;
 
-    private bool _triggered = false;
-    private MeshRenderer _renderer;
+        private bool _triggered = false;
+        private MeshRenderer _renderer;
 
         private void Awake()
         {
@@ -19,12 +19,12 @@ public class Door : TriggerableByPlayer
         {
             if (_triggered) return;
 
-        _door.SetActive(true);
-        _audio.Play();
-        OnTriggeredByPlayer(eMonitoredAction.CloseDoor);
-        _triggered = true;
-        _renderer.enabled = false;
-    }
+            _door.SetActive(true);
+            _audio.Play();
+            OnTriggeredByPlayer(eMonitoredAction.CloseDoor);
+            _triggered = true;
+            _renderer.enabled = false;
+        }
 
         public void Reset()
         {
