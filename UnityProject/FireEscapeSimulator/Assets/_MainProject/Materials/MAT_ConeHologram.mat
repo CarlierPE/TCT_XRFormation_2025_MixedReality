@@ -85,6 +85,14 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_4f6d2ca87267448da80f61e97f156c02_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: f9cd1645178758447948a71abae10856, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_8ff868ef7ec74a1f848452f9e4f95675_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: f9cd1645178758447948a71abae10856, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -130,14 +138,16 @@ Material:
     - _DrawOrder: 0
     - _DstBlend: 0
     - _DstBlendAlpha: 0
+    - _EdgeFallof: 0.78
     - _EnvironmentReflections: 1
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
-    - _Intensity: 1.44
+    - _Intensity: 4.48
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
+    - _Opacity: 4.1
     - _Parallax: 0.005
     - _QueueControl: 0
     - _QueueOffset: 0
@@ -155,7 +165,11 @@ Material:
     m_Colors:
     - _BaseColor: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
     - _BottomColor: {r: 0.29999998, g: 0.29999998, b: 1, a: 1}
-    - _Color: {r: 1, g: 0.64182055, b: 0, a: 1}
+    - _Color: {r: 0.8396226, g: 0.48072514, b: 0, a: 1}
+    - _ColorOne: {r: 1, g: 0.5249417, b: 0, a: 0}
+    - _ColorOrange: {r: 1, g: 0.7082283, b: 0, a: 0}
+    - _ColorTwo: {r: 1, g: 0.80576324, b: 0, a: 0}
+    - _ColorYellow: {r: 1, g: 0.9071804, b: 0, a: 0}
     - _Direction: {r: 0, g: 1, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _MiddleColor: {r: 1, g: 1, b: 1, a: 1}
