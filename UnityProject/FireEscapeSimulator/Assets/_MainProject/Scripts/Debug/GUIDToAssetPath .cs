@@ -7,6 +7,7 @@ namespace TcT.FireSim
     {
         string guid = "";
         string path = "";
+
         [MenuItem("APIExamples/GUIDToAssetPath")]
         static void CreateWindow()
         {
