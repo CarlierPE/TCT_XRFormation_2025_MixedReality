@@ -1,6 +1,5 @@
 using System.Linq;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 namespace Ldm.Relocator
 {
@@ -14,8 +13,8 @@ namespace Ldm.Relocator
             var bc = new Side(_triangle.B, _triangle.C);
             var ca = new Side(_triangle.C, _triangle.A);
 
-            var allSides = new Side[3] { ab, bc, ca }.OrderByDescending(s=>s.Length).ToArray();
-            
+            var allSides = new Side[3] { ab, bc, ca }.OrderByDescending(s => s.Length).ToArray();
+
             var longSide = allSides[0];
 
             _zero = new Vector3[3] { _triangle.A, _triangle.B, _triangle.C }.Except(new Vector3[2] { longSide.A, longSide.B }).First();
@@ -25,7 +24,7 @@ namespace Ldm.Relocator
             var calcVector2 = longSide.B - _zero;
             Vector3 shortVector;
             Vector3 midVector;
-            if(calcVector1.magnitude < calcVector2.magnitude)
+            if (calcVector1.magnitude < calcVector2.magnitude)
             {
                 shortVector = calcVector1;
                 midVector = calcVector2;

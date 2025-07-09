@@ -1,26 +1,29 @@
 using System;
 using UnityEngine;
 
-[Obsolete("mauvaise idée, on va mettre un guide dans la scène et y aller de façon plus classique")]
-public class GuideProvider : MonoBehaviour
+namespace TcT.FireSim
 {
-    [SerializeField] Guide _guidePrefab;
-    static Guide _guideInstance;
-
-    static GuideProvider _instance;
-
-    private void Awake()
+    [Obsolete("mauvaise idée, on va mettre un guide dans la scène et y aller de façon plus classique")]
+    public class GuideProvider : MonoBehaviour
     {
-        if (_instance != null && _instance != this)
-        {
-            Destroy(gameObject);
-            return;
-        }
-        
-        _instance = this;
-        _guideInstance = Instantiate(_guidePrefab);
-        _guideInstance.gameObject.SetActive(false);
-    }
+        [SerializeField] Guide _guidePrefab;
+        static Guide _guideInstance;
 
-    public Guide GetGuide() => _guideInstance;
+        static GuideProvider _instance;
+
+        private void Awake()
+        {
+            if (_instance != null && _instance != this)
+            {
+                Destroy(gameObject);
+                return;
+            }
+
+            _instance = this;
+            _guideInstance = Instantiate(_guidePrefab);
+            _guideInstance.gameObject.SetActive(false);
+        }
+
+        public Guide GetGuide() => _guideInstance;
+    }
 }

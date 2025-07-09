@@ -1,14 +1,17 @@
-using FireSim.SSM;
+using TcT.FireSim.SSM;
 using UnityEngine;
 
-public class DebriefingState : ScriptBasedGameState
+namespace TcT.FireSim
 {
-    public DebriefingState(MonoBehaviour script) : base(script) { }
-
-    public override eGameStateID ID => eGameStateID.Debriefing;
-
-    public override bool CanTransitionTo(eGameStateID nextState)
+    public class DebriefingState : ScriptBasedGameState
     {
-        return nextState == eGameStateID.Started;
+        public DebriefingState(MonoBehaviour script) : base(script) { }
+
+        public override eGameStateID ID => eGameStateID.Debriefing;
+
+        public override bool CanTransitionTo(eGameStateID nextState)
+        {
+            return nextState == eGameStateID.Started;
+        }
     }
 }

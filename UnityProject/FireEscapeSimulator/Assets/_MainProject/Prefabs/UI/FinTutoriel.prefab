@@ -51,8 +51,7 @@ MonoBehaviour:
   displayImage: {fileID: 0}
   imageContainer: {fileID: 0}
   maxContainerSize: {fileID: 0}
-  texturePaths:
-  - {fileID: 2800000, guid: 31270c6060bf46e45ae5f86eeda79310, type: 3}
+  texturePaths: []
   objectsToCycle: []
 --- !u!114 &3455509315192910546
 MonoBehaviour:
@@ -66,7 +65,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  autoPlay: 0
+  autoPlay: 1
   changeInterval: 3
   objectsToCycle:
   - {fileID: 0}
@@ -75,8 +74,6 @@ MonoBehaviour:
   textContents:
   - Objets qui crament
   buttonToShow: {fileID: 0}
-  manualNextButton: {fileID: 0}
-  manualNextButton0: {fileID: 0}
 --- !u!114 &5272563970792873174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -90,12 +87,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   autoPlay: 1
-  changeInterval: 999
+  changeInterval: 3
   objectsToCycle: []
   displayText: {fileID: 0}
   canvas: {fileID: 0}
   textContents:
   - Viens, on va voir dans la cuisine, tout les objets qui peuvent cramerf
   buttonToShow: {fileID: 0}
-  manualNextButton: {fileID: 0}
-  manualNextButton0: {fileID: 0}
