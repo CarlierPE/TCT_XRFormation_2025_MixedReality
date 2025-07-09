@@ -2768,7 +2768,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90f7a8410d50fa641846bc2ef5aa508e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _textDebriefing: {fileID: 0}
+  _textDebriefing: {fileID: 718215115}
   _triggerables:
   - {fileID: 435253736}
   - {fileID: 444272285}
