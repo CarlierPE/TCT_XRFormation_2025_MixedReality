@@ -21,12 +21,6 @@ namespace TcT.FireSim
             _tutorialScript.OnTutorialValidated.RemoveListener(TutorialIsOver);
         }
 
-        // Update is called once per frame
-        void Update()
-        {
-
-        }
-
         void TutorialIsOver()
         {
             Debug.Log("Tutorial Has Been Completed");
