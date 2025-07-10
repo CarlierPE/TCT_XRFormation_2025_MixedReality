@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:UnityProject/FireEscapeSimulator/Assets/_MainProject/ImageUI/Assistant_IMG.png.meta
+guid: 1f292a72a01a60a44877993db77fbc38
+========
 guid: abd87582f1eccf04ab954f2a97f46ec5
+>>>>>>>> d9c84a296037784af63b6e242857ad9e5f5bf050:UnityProject/FireEscapeSimulator/Assets/Team/DAVID DEGHISLAGE/PNG/Eye_NRML_TEST.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

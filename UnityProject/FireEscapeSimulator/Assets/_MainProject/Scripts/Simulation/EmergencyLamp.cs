@@ -1,23 +1,26 @@
 using UnityEngine;
 
-public class EmergencyLamp 
+namespace TcT.FireSim
 {
-
-    [SerializeField] private GameObject lampLight;
-    [SerializeField] private GameObject lampMesh;
-    private bool isOn = false;
-    private void ToggleLamp()
+    public class EmergencyLamp
     {
-        isOn = !isOn;
-        lampLight.SetActive(isOn);
-        lampMesh.SetActive(isOn);
-    }
 
-    public void RecivedSignal(eMonitoredAction action)
-    {
-        if (action == eMonitoredAction.PressAlarmButton)
+        [SerializeField] private GameObject lampLight;
+        [SerializeField] private GameObject lampMesh;
+        private bool isOn = false;
+        private void ToggleLamp()
         {
-            ToggleLamp();
+            isOn = !isOn;
+            lampLight.SetActive(isOn);
+            lampMesh.SetActive(isOn);
+        }
+
+        public void RecivedSignal(eMonitoredAction action)
+        {
+            if (action == eMonitoredAction.PressAlarmButton)
+            {
+                ToggleLamp();
+            }
         }
     }
 }

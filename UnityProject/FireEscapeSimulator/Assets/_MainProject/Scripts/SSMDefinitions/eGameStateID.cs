@@ -1,5 +1,4 @@
-using UnityEngine;
-namespace FireSim.SSM
+namespace TcT.FireSim.SSM
 {
     public enum eGameStateID
     {
