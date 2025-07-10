@@ -33,7 +33,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_9166b98852604b26a61dd449f9a7f183_Texture_1_Texture2D:
-        m_Texture: {fileID: 2800000, guid: 4946738e24fb57a43b2e579965c5a72b, type: 3}
+        m_Texture: {fileID: 2800000, guid: a9b021bd881b94248b03ed60c974cf22, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ScanLineTexture:
@@ -60,7 +60,7 @@ Material:
     - _CastShadows: 1
     - _Cull: 2
     - _DstBlend: 10
-    - _FresnelPower: 1
+    - _FresnelPower: 1.02
     - _QueueControl: 0
     - _QueueOffset: 0
     - _SrcBlend: 5
