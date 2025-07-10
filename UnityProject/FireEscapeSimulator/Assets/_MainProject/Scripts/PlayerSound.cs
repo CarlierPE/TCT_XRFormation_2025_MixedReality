@@ -13,16 +13,11 @@ namespace TcT.FireSim
 
         private float _timeStart;
         private float _timeElpase;
+        
 
         private void Awake()
         {
             _timeStart = Time.time;
-        }
-
-        // Start is called once before the first execution of Update after the MonoBehaviour is created
-        void Start()
-        {
-
         }
 
         // Update is called once per frame
