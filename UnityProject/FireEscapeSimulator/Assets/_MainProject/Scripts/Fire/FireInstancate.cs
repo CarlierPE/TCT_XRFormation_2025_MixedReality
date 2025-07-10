@@ -42,6 +42,7 @@ namespace TcT.FireSim
 
         public void StartFire()
         {
+            //TODO - virer l'intervalle pour premier feu?
             _nextSpawnTime = Time.time + _spawnInterval; // Initialize the next spawn time to the current time
             _spawnCount = 0;
             _isFireMax = false;

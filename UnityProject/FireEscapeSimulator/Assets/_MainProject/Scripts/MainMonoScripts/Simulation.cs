@@ -22,6 +22,7 @@ namespace TcT.FireSim
         [SerializeField] DoorManager _doorManager;
         [SerializeField] FireInstancate _fireManager;
         [SerializeField] List<GameObject> _simulationItems;
+        bool _startFire = false;
 
         private void OnEnable()
         {
@@ -30,8 +31,17 @@ namespace TcT.FireSim
             _scoreManager.OnGameIsFinished.AddListener(EndGame);
             _doorManager.gameObject.SetActive(true);
             _doorManager.ResetDoors();
-            _fireManager.StartFire();
-            _scoreManager.InitScore();
+            _startFire = true;
+        }
+
+        private void Update()
+        {
+            if (_startFire)
+            {
+                _fireManager.StartFire();
+                _scoreManager.InitScore();
+                _startFire = false;
+            }
         }
 
         private void OnDisable()

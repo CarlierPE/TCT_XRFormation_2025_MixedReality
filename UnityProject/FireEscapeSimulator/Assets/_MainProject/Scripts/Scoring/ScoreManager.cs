@@ -50,7 +50,6 @@ namespace TcT.FireSim
         private void Update()
         {
 
-            Debug.Log("entrer dans le Update");
             if (_isPlaying)
             {
                 timerAction = Time.time - _timer;
