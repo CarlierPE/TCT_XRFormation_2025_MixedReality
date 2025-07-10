@@ -1,10 +1,16 @@
 using UnityEngine;
 
-public class FireCollider : TriggerableByPlayer
+namespace TcT.FireSim
 {
-    //we only collide with the Player layer
-    private void OnTriggerEnter(Collider other)
+    public class FireCollider : TriggerableByPlayer
     {
-        OnTriggeredByPlayer(eMonitoredAction.WalkIntoFire);
+        public AudioSource onFire;
+
+        //we only collide with the Player layer
+        private void OnTriggerEnter(Collider other)
+        {
+            onFire.Play();
+            OnTriggeredByPlayer(eMonitoredAction.WalkIntoFire);
+        }
     }
 }
