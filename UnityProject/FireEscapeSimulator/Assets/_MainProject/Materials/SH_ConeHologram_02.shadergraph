@@ -450,8 +450,8 @@
     },
     "m_FragmentContext": {
         "m_Position": {
-            "x": 351.0000915527344,
-            "y": -267.99993896484377
+            "x": 359.0,
+            "y": -936.0
         },
         "m_Blocks": [
             {
@@ -2311,10 +2311,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -53.99993133544922,
-            "y": 5.999969959259033,
-            "width": 207.99996948242188,
-            "height": 433.00006103515627
+            "x": -419.99993896484377,
+            "y": 225.0,
+            "width": 207.9999542236328,
+            "height": 433.0
         }
     },
     "m_Slots": [
@@ -2505,7 +2505,7 @@
     "m_StageCapability": 3,
     "m_BareResource": false,
     "m_Texture": {
-        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"a9b021bd881b94248b03ed60c974cf22\",\"type\":3}}",
+        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"4946738e24fb57a43b2e579965c5a72b\",\"type\":3}}",
         "m_Guid": ""
     },
     "m_DefaultType": 0
@@ -2903,8 +2903,8 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 471.0,
-            "y": -10.0,
+            "x": -57.0,
+            "y": -133.0,
             "width": 208.0,
             "height": 302.0
         }
@@ -3249,8 +3249,8 @@
     "m_ObjectId": "d79d2970ab33447ba349e11bec7131db",
     "m_Title": "Fresnel",
     "m_Position": {
-        "x": -2394.000244140625,
-        "y": 40.999977111816409
+        "x": -2394.0,
+        "y": 41.0
     }
 }
 
@@ -3338,8 +3338,8 @@
     "m_ObjectId": "dadc68a1d5ac4eb6ae0b13a1b4de4596",
     "m_Title": "ScanLines",
     "m_Position": {
-        "x": -2710.000244140625,
-        "y": 508.00006103515627
+        "x": -2710.0,
+        "y": 508.0
     }
 }
 
