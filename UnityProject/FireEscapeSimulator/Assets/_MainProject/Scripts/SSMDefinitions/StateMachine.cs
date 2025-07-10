@@ -1,8 +1,7 @@
-using FireSim.SSM;
 using System;
 using System.Collections.Generic;
 
-namespace FireSim.SSM
+namespace TcT.FireSim.SSM
 {
     public class StateMachine
     {

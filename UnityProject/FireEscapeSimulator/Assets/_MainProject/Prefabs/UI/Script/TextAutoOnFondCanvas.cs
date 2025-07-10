@@ -52,23 +52,20 @@ public class textUpdateOnCanvas : MonoBehaviour
         {
             currentIndex++;
             ShowCurrent();
-
-            // Redémarrer la coroutine (remettre le timer à zéro)
-            if (autoNextCoroutine != null)
-                StopCoroutine(autoNextCoroutine);
-
-            autoNextCoroutine = StartCoroutine(AutoNextCoroutine());
+            
         }
         else
         {
             // Fin de la liste : on affiche le bouton final
             if (autoNextCoroutine != null)
+            {    
                 StopCoroutine(autoNextCoroutine);
-
-            if (buttonToShow != null)
-                buttonToShow.SetActive(true);
-            if (manualNextButton0 != null)
-                manualNextButton0.SetActive(false);
+            
+                if (buttonToShow != null)
+                    buttonToShow.SetActive(true);
+                if (manualNextButton0 != null)
+                    manualNextButton0.SetActive(false);
+            }
         }
     }
 
