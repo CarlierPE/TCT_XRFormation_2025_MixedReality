@@ -9,10 +9,10 @@ namespace TcT.FireSim
 {
 
     public class ScoreManager : MonoBehaviour
-{
-    [SerializeField] private TextMeshProUGUI _textDebriefing;
+    {
+        [SerializeField] private TextMeshProUGUI _textDebriefing;
 
-    static ScoreManager _instance;
+        static ScoreManager _instance;
 
         private int _totalscore = 0;
 
@@ -43,11 +43,8 @@ namespace TcT.FireSim
                 return;
             }
 
-        _instance = this;
-        _gameDebriefing = new GameDebriefing();
-        
-
-            InitScore();
+            _instance = this;
+            _gameDebriefing = new GameDebriefing();
         }
 
         private void Update()
@@ -58,25 +55,25 @@ namespace TcT.FireSim
             {
                 timerAction = Time.time - _timer;
 
-            if (timerAction >= timeMax) 
-            {
-                _isPlaying = false;
-                OnActionTriggered(eMonitoredAction.TimerOut);
+                if (timerAction >= timeMax)
+                {
+                    _isPlaying = false;
+                    OnActionTriggered(eMonitoredAction.TimerOut);
+                }
             }
         }
-    }
 
-    public void StartScoreSystem()
-    {
-        _timer = Time.time;
-        _isPlaying = true;
-    }
+        public void StartScoreSystem()
+        {
+            _timer = Time.time;
+            _isPlaying = true;
+        }
 
-    public void StopScoreSystem()
-    {
-        _timer = Time.time - _timer;
-        _isPlaying = false;
-    }
+        public void StopScoreSystem()
+        {
+            _timer = Time.time - _timer;
+            _isPlaying = false;
+        }
 
         private void OnEnable()
         {
@@ -86,25 +83,25 @@ namespace TcT.FireSim
             }
         }
 
-    private void OnDisable()
-    {
-        foreach (var triggerable in _triggerables)
+        private void OnDisable()
         {
-            triggerable.Triggered.RemoveListener(OnActionTriggered);
+            foreach (var triggerable in _triggerables)
+            {
+                triggerable.Triggered.RemoveListener(OnActionTriggered);
+            }
         }
-    }
 
-    public void InitScore()
-    {
-        _totalscore = 0;
-        StartScoreSystem();
-    }
-
-    private void OnActionTriggered(eMonitoredAction action)
-    {
-        if (ScoreAction.tableScoreAction.TryGetValue(action, out int score))
+        public void InitScore()
         {
-            timerAction = Time.time - _timer;
+            _totalscore = 0;
+            StartScoreSystem();
+        }
+
+        private void OnActionTriggered(eMonitoredAction action)
+        {
+            if (ScoreAction.tableScoreAction.TryGetValue(action, out int score))
+            {
+                timerAction = Time.time - _timer;
 
                 if (action == eMonitoredAction.FinishLine)
                 {
@@ -138,7 +135,7 @@ namespace TcT.FireSim
 
             _logs.Add(log);
 
-    }
+        }
 
         private void SaveFinalScore(float time)
         {
@@ -146,14 +143,14 @@ namespace TcT.FireSim
             _gameDebriefing.scoreEnd = _totalscore;
             _gameDebriefing.scoreLogs = _logs;
             //TODO - fix ce truc
-        _textDebriefing.text += ReadingDebriefing();
+            //_textDebriefing.text += ReadingDebriefing();
             OnGameIsFinished.Invoke();
-        //SaveOnDocument(_gameDebriefing);
-    }
-    
-    public string ReadingDebriefing()
-    {
-        string debriefing = $"\nVotre temps de simulation est : {_gameDebriefing.timeGame}, et le total des points est : {_gameDebriefing.scoreEnd}\n\n";
+            //SaveOnDocument(_gameDebriefing);
+        }
+
+        public string ReadingDebriefing()
+        {
+            string debriefing = $"\nVotre temps de simulation est : {_gameDebriefing.timeGame}, et le total des points est : {_gameDebriefing.scoreEnd}\n\n";
 
             debriefing += "voici les points en detail avec le temps et l'action realiser : \n";
 

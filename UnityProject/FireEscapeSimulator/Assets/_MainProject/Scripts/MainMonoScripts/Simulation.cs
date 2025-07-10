@@ -30,10 +30,8 @@ namespace TcT.FireSim
             _scoreManager.OnGameIsFinished.AddListener(EndGame);
             _doorManager.gameObject.SetActive(true);
             _doorManager.ResetDoors();
-            _scoreManager.InitScore();
-            _scoreManager.StartScoreSystem();
-            _fireManager.ResetFire();
             _fireManager.StartFire();
+            _scoreManager.InitScore();
         }
 
         private void OnDisable()

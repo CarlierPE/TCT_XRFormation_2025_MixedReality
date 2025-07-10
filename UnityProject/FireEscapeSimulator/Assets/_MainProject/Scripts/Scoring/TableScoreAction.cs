@@ -18,6 +18,7 @@ namespace TcT.FireSim
         { eMonitoredAction.TakePhone,20},
         { eMonitoredAction.Appel,150},
         { eMonitoredAction.TouchElevator,-200},
+        { eMonitoredAction.TimerOut, 0 },
     };
     }
 }

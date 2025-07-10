@@ -14,17 +14,9 @@ namespace TcT.FireSim
 
         private float _nextSpawnTime; // Time when the next fire will be spawned
         private bool _isFireActive; // Flag to check if fire is active
-        private int _fireCount; // Counter for the number of fires spawned
+        private int _fireCount => _firePrefab.Count;// Counter for the number of fires spawned
         private int _spawnCount = 0;
         private bool _isFireMax = false; // Flag to check if the maximum number of fires has been reached
-        Vector3 positionStart;
-        void Awake()
-        {
-            DisableAllFirePrefab();
-            DisableAllSounds();
-            _fireCount = _firePrefab.Count;
-            positionStart = _startFire.transform.position;
-        }
 
         // Update is called once per frame
         void Update()
@@ -38,11 +30,9 @@ namespace TcT.FireSim
 
         public void StartFire()
         {
-            if (_nextSpawnTime is 0) // Check if the next spawn time is not set
-            {
-                _nextSpawnTime = Time.time + _spawnInterval; // Initialize the next spawn time to the current time
-            }
-
+            _nextSpawnTime = Time.time + _spawnInterval; // Initialize the next spawn time to the current time
+            _spawnCount = 0;
+            _isFireMax = false;
             _isFireActive = true; // Set the fire active flag to true
         }
 
@@ -52,7 +42,7 @@ namespace TcT.FireSim
 
             if (_spawnCount >= _fireCount) // Check if all fire prefabs have been spawned
             {
-                FireMax(); // Stop spawning fires if all have been spawned
+                _isFireMax = true;
                 return;
             }
 
@@ -72,10 +62,6 @@ namespace TcT.FireSim
 
         }
 
-        private void FireMax()
-        {
-            _isFireMax = true; // Set the fire active flag to false
-        }
 
         public void ResetFire()
         {
