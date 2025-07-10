@@ -1,6 +1,4 @@
-using UnityEngine;
-
-namespace FireSim.SSM
+namespace TcT.FireSim.SSM
 {
     public abstract class GameState
     {

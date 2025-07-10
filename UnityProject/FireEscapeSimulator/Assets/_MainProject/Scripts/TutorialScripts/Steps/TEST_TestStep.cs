@@ -1,13 +1,15 @@
-using NUnit.Framework;
 using UnityEngine;
 
-public class TEST_TestStep : TutorialStep
+namespace TcT.FireSim
 {
-    protected override void DoStep()
+    public class TEST_TestStep : TutorialStep
     {
-        Debug.Log("TestStep has started");
-        OnStepCompleted?.Invoke();
-        Debug.Log("TestStep has fired its event");
-    }
+        protected override void DoStep()
+        {
+            Debug.Log("TestStep has started");
+            OnStepCompleted?.Invoke();
+            Debug.Log("TestStep has fired its event");
+        }
 
+    }
 }

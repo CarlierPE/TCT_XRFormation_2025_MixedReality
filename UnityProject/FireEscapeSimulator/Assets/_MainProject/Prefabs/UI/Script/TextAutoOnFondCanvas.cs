@@ -1,8 +1,8 @@
-using System.Collections.Generic;
-using UnityEngine;
-using TMPro;
 using System.Collections;
-using UnityEngine.UI; // pour le bouton
+using System.Collections.Generic;
+using TMPro;
+using UnityEngine;
+using UnityEngine.UI;
 
 public class textUpdateOnCanvas : MonoBehaviour
 {
@@ -18,49 +18,93 @@ public class textUpdateOnCanvas : MonoBehaviour
     public Canvas canvas;
     public List<string> textContents;
 
-    [Header("Bouton à afficher après 2 cycles")]
-    public GameObject buttonToShow;
+    [Header("Boutons")]
+    public GameObject buttonToShow; // Bouton de fin
+    public Button manualNextButton; // Bouton manuel pour passer au slide suivant
+    public GameObject manualNextButton0;
 
     private int currentIndex = 0;
-    private int autoNextCount = 0; // compteur de fois où AutoNext est appelé
+    private Coroutine autoNextCoroutine;
 
     void Start()
     {
         if (buttonToShow != null)
-            buttonToShow.SetActive(false); // on cache le bouton au départ
+            buttonToShow.SetActive(false);
+        if (manualNextButton != null)
+            manualNextButton0.SetActive(false);
 
         ShowCurrent();
+
         if (autoPlay)
-            StartCoroutine(AutoNextCoroutine());
+            autoNextCoroutine = StartCoroutine(AutoNextCoroutine());
+
+        // On connecte le bouton manuel s’il est assigné
+        if (manualNextButton != null)
+            manualNextButton.onClick.AddListener(ManualNext);
+        // ✅ Lancer la coroutine d'affichage du bouton manuel après 2 secondes
+        StartCoroutine(ShowManualButtonAfterDelay());
     }
 
     [ContextMenu("Next")]
-    public void Next()
+    public void ManualNext()
     {
-        int maxCount = Mathf.Max(textContents.Count, objectsToCycle.Count);
-        currentIndex = (currentIndex + 1) % maxCount;
-        ShowCurrent();
-        displayText.SetAllDirty();
+        if (currentIndex < textContents.Count - 1)
+        {
+            currentIndex++;
+            ShowCurrent();
+            
+        }
+        else
+        {
+            // Fin de la liste : on affiche le bouton final
+            if (autoNextCoroutine != null)
+            {    
+                StopCoroutine(autoNextCoroutine);
+            
+                if (buttonToShow != null)
+                    buttonToShow.SetActive(true);
+                if (manualNextButton0 != null)
+                    manualNextButton0.SetActive(false);
+            }
+        }
     }
 
     void ShowCurrent()
     {
-        Debug.Log("Texte à afficher : " + textContents[currentIndex]);
-        displayText.text = textContents[currentIndex];
-        displayText.ForceMeshUpdate();
+        if (currentIndex < textContents.Count)
+        {
+            Debug.Log("Texte à afficher : " + textContents[currentIndex]);
+            displayText.text = textContents[currentIndex];
+            displayText.ForceMeshUpdate();
+        }
     }
 
     private IEnumerator AutoNextCoroutine()
     {
-        while (autoNextCount < 1)
+        yield return new WaitForSeconds(changeInterval);
+
+        if (currentIndex < textContents.Count - 1)
         {
-            yield return new WaitForSeconds(changeInterval);
-            Next();
-            autoNextCount++;
+            currentIndex++;
+            ShowCurrent();
+
+            autoNextCoroutine = StartCoroutine(AutoNextCoroutine());
+        }
+        else
+        {
+            if (buttonToShow != null)
+                buttonToShow.SetActive(true);
+        }
+    }
+
+    private IEnumerator ShowManualButtonAfterDelay()
+        {
+            yield return new WaitForSeconds(2f); // délai en secondes
+
+            if (manualNextButton0 != null)
+                manualNextButton0.SetActive(true);
+         
         }
 
-        
-        if (buttonToShow != null)
-            buttonToShow.SetActive(true);
     }
-}
+

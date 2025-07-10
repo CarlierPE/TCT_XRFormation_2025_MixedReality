@@ -14,7 +14,7 @@ namespace Ldm.Relocator
 
         public float ErrorMargin => _errorMargin;
         public GameObject ObjectToRelocate => _objectToRelocate;
-        public Triangle3D Triangle => new Triangle3D { A = _vertex1.position, B = _vertex2.position, C = _vertex3.position };
+        public Triangle3D Triangle => new() { A = _vertex1.position, B = _vertex2.position, C = _vertex3.position };
 
         private void OnValidate()
         {
