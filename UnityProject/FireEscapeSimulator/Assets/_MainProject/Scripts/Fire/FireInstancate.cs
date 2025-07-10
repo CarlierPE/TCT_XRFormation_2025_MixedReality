@@ -1,10 +1,16 @@
 using System.Collections.Generic;
+using System.Runtime.InteropServices.ComTypes;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace TcT.FireSim
 {
     public class FireInstancate : MonoBehaviour
     {
+        //test
+        //public InputActionReference start;
+        //public InputActionReference end;
+
         [SerializeField] GameObject _startSimultion;
         [SerializeField] GameObject _startSoundFIre;
         [SerializeField] List<GameObject> _firePrefab; // Reference to the fire prefab
@@ -18,6 +24,12 @@ namespace TcT.FireSim
         private int _spawnCount = 0;
         private bool _isFireMax = false; // Flag to check if the maximum number of fires has been reached
 
+        //test Manette il y a un delai avant la premiere flamme
+        //private void Awake()
+        //{
+        //    start.action.performed += ctx => StartFire();
+        //    end.action.performed += ctx => ResetFire();
+        //}
         // Update is called once per frame
         void Update()
         {
