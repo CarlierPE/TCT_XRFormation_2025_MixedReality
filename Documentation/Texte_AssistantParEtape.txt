@@ -25,7 +25,7 @@
 (Extincteur) :
 "L'extincteur sert à éteindre un départ d'incendie, utilisez-le sur la base des flammes pour limiter la propagation. Ne l'utilisez pas si le feu est déjà hors de contrôle."
 
-(Issues de secours) :
+(Escaliers) :
 "Les issues de secours sont généralement des escaliers menant au rez-de-chaussée, ne montez jamais aux étages, l'air frais se trouve proche du sol."
 
 (toujours près des issues de secours) :

@@ -1,30 +1,27 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace TcT.FireSim
+public class DiaporamaGameObject : MonoBehaviour
 {
-    public class DiaporamaGameObject : MonoBehaviour
+    public List<GameObject> objectsToCycle;
+    private int currentIndex = 0;
+
+    void Start()
     {
-        public List<GameObject> objectsToCycle;
-        private int currentIndex = 0;
+        UpdateObjects();
+    }
 
-        void Start()
-        {
-            UpdateObjects();
-        }
+    public void NextObject()
+    {
+        currentIndex = (currentIndex + 1) % objectsToCycle.Count;
+        UpdateObjects();
+    }
 
-        public void NextObject()
+    void UpdateObjects()
+    {
+        for (int i = 0; i < objectsToCycle.Count; i++)
         {
-            currentIndex = (currentIndex + 1) % objectsToCycle.Count;
-            UpdateObjects();
-        }
-
-        void UpdateObjects()
-        {
-            for (int i = 0; i < objectsToCycle.Count; i++)
-            {
-                objectsToCycle[i].SetActive(i == currentIndex);
-            }
+            objectsToCycle[i].SetActive(i == currentIndex);
         }
     }
 }

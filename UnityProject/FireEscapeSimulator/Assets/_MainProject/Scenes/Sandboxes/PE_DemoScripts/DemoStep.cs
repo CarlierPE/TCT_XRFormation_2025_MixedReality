@@ -1,23 +1,20 @@
 using System.Collections;
 using UnityEngine;
 
-namespace TcT.FireSim
+public class DemoStep : TutorialStep
 {
-    public class DemoStep : TutorialStep
+    [SerializeField] GameObject _itemToToggle;
+    [SerializeField] float _timeToWait;
+
+    protected override void DoStep()
     {
-        [SerializeField] GameObject _itemToToggle;
-        [SerializeField] float _timeToWait;
+        StartCoroutine(ToggleDelayed());
+    }
 
-        protected override void DoStep()
-        {
-            StartCoroutine(ToggleDelayed());
-        }
-
-        IEnumerator ToggleDelayed()
-        {
-            yield return new WaitForSeconds(_timeToWait);
-            _itemToToggle.SetActive(!_itemToToggle.activeSelf);
-            OnStepCompleted.Invoke();
-        }
+    IEnumerator ToggleDelayed()
+    {
+        yield return new WaitForSeconds(_timeToWait);
+        _itemToToggle.SetActive(!_itemToToggle.activeSelf);
+        OnStepCompleted.Invoke();
     }
 }
