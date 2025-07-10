@@ -60,7 +60,7 @@ namespace TcT.FireSim
             _confirmCalibrationScript.OnCalibrationFailed.AddListener(OnCalibrationInvalidated);
 
             _beforeTutorialScript.OnTutorialStarting.AddListener(OnTutorialStarting);
-            _tutorialScript.OnTutorialValidated.AddListener(OnTutorialEnded);
+            _tutorialScript.OnTutorialValidated.AddListener(OnTutorialEnding);
             //_tutorialScript.OnTutorialFailed.AddListener(OnTutorialRepeat);
             _afterTutorialScript.OnTutorialEnded.AddListener(OnTutorialEnded);
 

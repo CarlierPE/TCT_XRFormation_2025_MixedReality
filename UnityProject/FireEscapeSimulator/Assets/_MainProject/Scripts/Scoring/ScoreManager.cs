@@ -145,9 +145,9 @@ namespace TcT.FireSim
             _gameDebriefing.timeGame = time;
             _gameDebriefing.scoreEnd = _totalscore;
             _gameDebriefing.scoreLogs = _logs;
-
+            //TODO - fix ce truc
         _textDebriefing.text += ReadingDebriefing();
-
+            OnGameIsFinished.Invoke();
         //SaveOnDocument(_gameDebriefing);
     }
     

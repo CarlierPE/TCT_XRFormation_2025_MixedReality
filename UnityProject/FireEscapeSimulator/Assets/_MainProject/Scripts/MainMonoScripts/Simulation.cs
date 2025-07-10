@@ -1,5 +1,7 @@
+using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.Events;
+using System.Collections.Generic;
 
 namespace TcT.FireSim
 {
@@ -19,14 +21,12 @@ namespace TcT.FireSim
         [SerializeField] ScoreManager _scoreManager;
         [SerializeField] DoorManager _doorManager;
         [SerializeField] FireInstancate _fireManager;
+        [SerializeField] List<GameObject> _simulationItems;
 
         private void OnEnable()
         {
-            //TODO:
-            /*
-             * reset le feu et le déclencher
-             * 
-             */
+            _simulationItems.ForEach(i => i.SetActive(true));
+            
             _scoreManager.OnGameIsFinished.AddListener(EndGame);
             _doorManager.gameObject.SetActive(true);
             _doorManager.ResetDoors();
@@ -38,6 +38,8 @@ namespace TcT.FireSim
 
         private void OnDisable()
         {
+            _simulationItems.ForEach(i => i.SetActive(false));
+
             _fireManager.ResetFire();
             _scoreManager.OnGameIsFinished.RemoveListener(EndGame);
             _doorManager.gameObject.SetActive(false);

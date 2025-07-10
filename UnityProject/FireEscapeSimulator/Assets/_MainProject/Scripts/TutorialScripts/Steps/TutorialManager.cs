@@ -49,7 +49,7 @@ namespace TcT.FireSim
             }
             else
             {
-                OnLastStepCompleted?.Invoke();
+                OnLastStepCompleted.Invoke();
             }
         }
     }

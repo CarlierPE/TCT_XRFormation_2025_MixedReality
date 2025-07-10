@@ -33,8 +33,10 @@ namespace TcT.FireSim
         //}
         public void Spawn(Transform lookAtTarget)
         {
+            var positionToLookAt = lookAtTarget.position;
+            positionToLookAt.y = 0f;
             //se positionne à la position en regardant à lookattarget et joue son animation de spawn
-            transform.LookAt(lookAtTarget, Vector3.up);
+            transform.LookAt(positionToLookAt, Vector3.up);
             gameObject.SetActive(true);
             //jouer animation ici
             //...
