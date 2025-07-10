@@ -1,13 +1,16 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-public abstract class TriggerableByPlayer : MonoBehaviour
+namespace TcT.FireSim
 {
-    [HideInInspector]
-    public UnityEvent<eMonitoredAction> Triggered;
-
-    protected void OnTriggeredByPlayer(eMonitoredAction action)
+    public abstract class TriggerableByPlayer : MonoBehaviour
     {
-        Triggered?.Invoke(action);
+        [HideInInspector]
+        public UnityEvent<eMonitoredAction> Triggered;
+
+        protected void OnTriggeredByPlayer(eMonitoredAction action)
+        {
+            Triggered?.Invoke(action);
+        }
     }
 }
