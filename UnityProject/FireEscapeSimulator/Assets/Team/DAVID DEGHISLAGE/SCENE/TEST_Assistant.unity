@@ -377,7 +377,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 8.741, y: -180, z: 0}
---- !u!1001 &382508552305579849
+--- !u!1001 &7751733078732621138
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -385,59 +385,59 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 8563273249028539926, guid: 45e2d6f1528092a4f9267195ad0221bb, type: 3}
+    - target: {fileID: 191724936613171043, guid: 36cc5cdaf4ab5c94d9311df8ad4454f7, type: 3}
+      propertyPath: m_Name
+      value: ANI_RedHelmet_ALL_Final-01
+      objectReference: {fileID: 0}
+    - target: {fileID: 712400508783547865, guid: 36cc5cdaf4ab5c94d9311df8ad4454f7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.0454113
+      value: -2.1279073
       objectReference: {fileID: 0}
-    - target: {fileID: 8563273249028539926, guid: 45e2d6f1528092a4f9267195ad0221bb, type: 3}
+    - target: {fileID: 712400508783547865, guid: 36cc5cdaf4ab5c94d9311df8ad4454f7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.000000029802322
       objectReference: {fileID: 0}
-    - target: {fileID: 8563273249028539926, guid: 45e2d6f1528092a4f9267195ad0221bb, type: 3}
+    - target: {fileID: 712400508783547865, guid: 36cc5cdaf4ab5c94d9311df8ad4454f7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.724691
+      value: -7.1989627
       objectReference: {fileID: 0}
-    - target: {fileID: 8563273249028539926, guid: 45e2d6f1528092a4f9267195ad0221bb, type: 3}
+    - target: {fileID: 712400508783547865, guid: 36cc5cdaf4ab5c94d9311df8ad4454f7, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8563273249028539926, guid: 45e2d6f1528092a4f9267195ad0221bb, type: 3}
+    - target: {fileID: 712400508783547865, guid: 36cc5cdaf4ab5c94d9311df8ad4454f7, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8563273249028539926, guid: 45e2d6f1528092a4f9267195ad0221bb, type: 3}
+    - target: {fileID: 712400508783547865, guid: 36cc5cdaf4ab5c94d9311df8ad4454f7, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8563273249028539926, guid: 45e2d6f1528092a4f9267195ad0221bb, type: 3}
+    - target: {fileID: 712400508783547865, guid: 36cc5cdaf4ab5c94d9311df8ad4454f7, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8563273249028539926, guid: 45e2d6f1528092a4f9267195ad0221bb, type: 3}
+    - target: {fileID: 712400508783547865, guid: 36cc5cdaf4ab5c94d9311df8ad4454f7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8563273249028539926, guid: 45e2d6f1528092a4f9267195ad0221bb, type: 3}
+    - target: {fileID: 712400508783547865, guid: 36cc5cdaf4ab5c94d9311df8ad4454f7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8563273249028539926, guid: 45e2d6f1528092a4f9267195ad0221bb, type: 3}
+    - target: {fileID: 712400508783547865, guid: 36cc5cdaf4ab5c94d9311df8ad4454f7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9051402966887816364, guid: 45e2d6f1528092a4f9267195ad0221bb, type: 3}
-      propertyPath: m_Name
-      value: ANI_RedHelmet_ALL_VER-005
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 45e2d6f1528092a4f9267195ad0221bb, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 36cc5cdaf4ab5c94d9311df8ad4454f7, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 961739753}
   - {fileID: 203844589}
-  - {fileID: 382508552305579849}
+  - {fileID: 7751733078732621138}
