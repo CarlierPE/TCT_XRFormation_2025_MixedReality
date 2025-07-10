@@ -60,7 +60,7 @@ Material:
     - _CastShadows: 1
     - _Cull: 2
     - _DstBlend: 10
-    - _FresnelPower: 1.02
+    - _FresnelPower: 1
     - _QueueControl: 0
     - _QueueOffset: 0
     - _SrcBlend: 5
