@@ -1,18 +1,11 @@
-using UnityEngine;
-
-public class Extinguisher : TriggerableByPlayer
+namespace TcT.FireSim
 {
-    private eMonitoredAction _action;
-    public void TrapExtinguisher()
+    public class Extinguisher : TriggerableByPlayer
     {
-        _action = eMonitoredAction.ExtinguisherTake;
-        OnTriggeredByPlayer(_action);
-    }
+        public void PutOutTheFire()
+        {
+            OnTriggeredByPlayer(eMonitoredAction.ExtinguisherPutOut);
+        }
 
-    public void PutOutTheFire()
-    {
-        _action = eMonitoredAction.ExtinguisherPutOut;
-        OnTriggeredByPlayer(_action);
     }
-
 }

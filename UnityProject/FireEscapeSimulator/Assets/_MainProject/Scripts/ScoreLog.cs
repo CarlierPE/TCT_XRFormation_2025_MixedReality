@@ -1,10 +1,12 @@
 using System;
-using UnityEngine;
 
-[Serializable]
-public class ScoreLog 
+namespace TcT.FireSim
 {
-    public float timeAction;
-    public eMonitoredAction action;
-    public int scoreValid;
+    [Serializable]
+    public class ScoreLog
+    {
+        public float timeAction;
+        public eMonitoredAction action;
+        public int scoreValid;
+    }
 }

@@ -1,10 +1,12 @@
 using UnityEngine;
 
-public class EmergencyExit : TriggerableByPlayer
+namespace TcT.FireSim
 {
-    public void EntryEmergnecyExit()
+    public class EmergencyExit : TriggerableByPlayer
     {
-        eMonitoredAction action = eMonitoredAction.FinishLine;
-        OnTriggeredByPlayer(action);
+        private void OnTriggerEnter(Collider other)
+        {
+            OnTriggeredByPlayer(eMonitoredAction.FinishLine);
+        }
     }
 }

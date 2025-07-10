@@ -1,15 +1,15 @@
-using Meta.WitAi.Speech;
-using System;
-using Unity.VisualScripting;
 using UnityEngine;
 
-public class Victory : TriggerableByPlayer
+namespace TcT.FireSim
 {
-    public ScoreManager TheEndingShower;
-
-    void OnTriggerEnter(Collider other)
+    public class Victory : TriggerableByPlayer
     {
-        base.OnTriggeredByPlayer(eMonitoredAction.FinishLine);
-    }
+        public ScoreManager TheEndingShower;
 
+        void OnTriggerEnter(Collider other)
+        {
+            OnTriggeredByPlayer(eMonitoredAction.FinishLine);
+        }
+
+    }
 }
