@@ -154,7 +154,7 @@ namespace TcT.FireSim
 
             foreach (var item in _logs)
             {
-                debriefing += $"\tpoint : {item.scoreValid} | temps : {item.timeAction} | action : {item.action} \n ";
+                debriefing += $"\tpoint : {item.scoreValid} | temps : {item.timeAction:0.##} | action : {item.action} \n ";
             }
 
             return debriefing;
