@@ -4954,7 +4954,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5527759413207150807, guid: 0ba5044bc1ccf034780cd55a5c227cbb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 19.511
+      value: 19.486
       objectReference: {fileID: 0}
     - target: {fileID: 5621041148647088893, guid: 0ba5044bc1ccf034780cd55a5c227cbb, type: 3}
       propertyPath: m_IsActive
@@ -6791,7 +6791,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 1567284260}
   canvasObject: {fileID: 787998184}
-  offset: {x: 0, y: 1.6, z: 1.4}
+  offset: {x: 0, y: 0, z: 0.6}
 --- !u!223 &787998191 stripped
 Canvas:
   m_CorrespondingSourceObject: {fileID: 3508060551970266168, guid: a0fbf75b12956b04da4d1573f0eb9749, type: 3}
