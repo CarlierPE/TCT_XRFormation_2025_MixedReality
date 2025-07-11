@@ -1,6 +1,7 @@
 using System;
 using System.IO;
 using UnityEngine;
+using System.Collections.Generic;
 
 namespace TcT.FireSim
 {
@@ -22,11 +23,11 @@ namespace TcT.FireSim
         private int _numFile = 1;
         private int _fileCount = 0;
 
-        //private readonly List<GameDebriefing> _gameDebriefings;
+        private readonly List<GameDebriefing> _gameDebriefings;
 
         public void InitBased()
         {
-            //_gameDebriefings.Clear();
+            _gameDebriefings.Clear();
 
             _currentDate = DateTime.Now.ToString("yyyy-MM-dd");
             _folderName = _currentDate.Replace("-", "_");
@@ -82,9 +83,10 @@ namespace TcT.FireSim
             _rootPathToSave = GenerateFileName();
         }
 
+        /*
         private void LoadAllFiles()
         {
-            //_gameDebriefings.Clear();
+            _gameDebriefings.Clear();
 
             string[] fichiersJson = Directory.GetFiles(_PathCreatedFolder, "*.json");
 
@@ -97,11 +99,12 @@ namespace TcT.FireSim
 
                     if (data != null)
                     {
-                        //_gameDebriefings.Add(data);
+                        _gameDebriefings.Add(data);
                     }
                 }
             }
         }
+        */
 
         //public List<GameDebriefing> GetAllDebriefings()
         //{
