@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4779656034458709209}
-  - component: {fileID: 8716324251736537560}
   m_Layer: 0
   m_Name: StadeTuto
   m_TagString: Untagged
@@ -40,35 +39,9 @@ Transform:
   - {fileID: 8469345139481253924}
   - {fileID: 2085168502020173922}
   - {fileID: 537276959428864223}
+  - {fileID: 3803123078933941786}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8716324251736537560
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 579702858702279911}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ba8b94014934df488156ea61f26049d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onButtonPressed:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.Component, UnityEngine
-        m_MethodName: SendMessage
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Passer a la suite
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &1263045711652785982
 GameObject:
   m_ObjectHideFlags: 0
@@ -81,6 +54,7 @@ GameObject:
   - component: {fileID: 6955282444265230169}
   - component: {fileID: 7741982573264241920}
   - component: {fileID: 2496372569268666532}
+  - component: {fileID: 7409038571954812470}
   m_Layer: 0
   m_Name: extincteur$
   m_TagString: Untagged
@@ -139,17 +113,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  autoPlay: 1
-  changeInterval: 10
-  objectsToCycle:
-  - {fileID: 0}
+  autoPlay: 0
+  changeInterval: 999
   displayText: {fileID: 0}
   canvas: {fileID: 0}
   textContents:
-  - 
-  - 
-  - 
+  - Un extincteur est un appareil de lutte contre l'incendie
+  - "L'extincteur sert \xE0 \xE9teindre un d\xE9part d'incendie, utilisez-le sur
+    la base des flammes pour limiter la propagation. Ne l'utilisez pas si le feu
+    est d\xE9j\xE0 hors de contr\xF4le."
   buttonToShow: {fileID: 0}
+  manualNextButton: {fileID: 0}
 --- !u!114 &2496372569268666532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -164,12 +138,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   autoPlay: 1
   changeInterval: 3
-  objectsToCycle: []
   displayText: {fileID: 0}
   canvas: {fileID: 0}
   textContents:
   - Extincteur
   buttonToShow: {fileID: 0}
+  manualNextButton: {fileID: 0}
+--- !u!114 &7409038571954812470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263045711652785982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoPlay: 1
+  changeInterval: 3
+  displayText: {fileID: 0}
+  canvas: {fileID: 0}
+  textContents:
+  - Extincteur
+  buttonToShow: {fileID: 0}
+  manualNextButton: {fileID: 0}
 --- !u!1 &1605001227334432218
 GameObject:
   m_ObjectHideFlags: 0
@@ -182,6 +176,7 @@ GameObject:
   - component: {fileID: 2490763061763603747}
   - component: {fileID: 1226342828346997407}
   - component: {fileID: 7019222533331319716}
+  - component: {fileID: 1165667516231273598}
   m_Layer: 0
   m_Name: "Lumi\xE8re"
   m_TagString: Untagged
@@ -216,13 +211,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 184bbeb9fcd4fe14f838394d67b8261c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  autoPlay: 1
+  autoPlay: 0
   changeInterval: 3
   displayImage: {fileID: 0}
   imageContainer: {fileID: 0}
   maxContainerSize: {fileID: 0}
   texturePaths:
-  - {fileID: 0}
+  - {fileID: 2800000, guid: 1c6d13ee576f4b94aa8ddd4c443ed6cc, type: 3}
+  - {fileID: 2800000, guid: 1c6d13ee576f4b94aa8ddd4c443ed6cc, type: 3}
   objectsToCycle:
   - {fileID: 0}
   - {fileID: 0}
@@ -238,16 +234,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  autoPlay: 1
-  changeInterval: 5
-  objectsToCycle:
-  - {fileID: 0}
+  autoPlay: 0
+  changeInterval: 999
   displayText: {fileID: 0}
   canvas: {fileID: 0}
   textContents:
   - "Ces \xE9clairages de s\xE9curit\xE9 servent \xE0 s'orienter et \xE0 indiquer
     les voies de secours en cas d'incident provoquant l'obscurit\xE9."
   buttonToShow: {fileID: 0}
+  manualNextButton: {fileID: 0}
 --- !u!114 &7019222533331319716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -262,12 +257,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   autoPlay: 0
   changeInterval: 3
-  objectsToCycle: []
   displayText: {fileID: 0}
   canvas: {fileID: 0}
   textContents:
   - "Lumi\xE8re"
   buttonToShow: {fileID: 0}
+  manualNextButton: {fileID: 0}
+--- !u!114 &1165667516231273598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1605001227334432218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoPlay: 0
+  changeInterval: 3
+  displayText: {fileID: 0}
+  canvas: {fileID: 0}
+  textContents:
+  - "Lumi\xE8re"
+  buttonToShow: {fileID: 0}
+  manualNextButton: {fileID: 0}
 --- !u!1 &2037691967761874643
 GameObject:
   m_ObjectHideFlags: 0
@@ -339,22 +354,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  autoPlay: 1
-  changeInterval: 12
-  objectsToCycle:
-  - {fileID: 0}
+  autoPlay: 0
+  changeInterval: 999
   displayText: {fileID: 0}
   canvas: {fileID: 0}
   textContents:
   - " Son installation est obligatoire dans les b\xE2timents destin\xE9s au public,
-    les immeubles d\u2019habitation, les b\xE2timents industriels. Donc, si tu vois
-    que le b\xE2timent dans lequel tu vis ou travailles n\u2019en poss\xE8de pas
-    en Belgique, tu contactes les pompiers de Bruxelles au 02 208 84 30. Elles doivent
-    \xEAtre toujours plac\xE9es afin de compartimenter les b\xE2timents et aux issues
-    de secours pour les garder praticables."
+    les immeubles d\u2019habitation, les b\xE2timents industriels. "
+  - "Donc, si tu vois que le b\xE2timent dans lequel tu vis ou travailles n\u2019en
+    poss\xE8de pas en Belgique, tu contactes les pompiers de Bruxelles au 02 208
+    84 30. "
+  - "Elles doivent \xEAtre toujours plac\xE9es afin de compartimenter les b\xE2timents
+    et aux issues de secours pour les garder praticables."
   - "Celle-ci sert principalement \xE0 \xE9viter la propagation du feu et la fum\xE9e
-    de se r\xE9pandre. Ainsi lors d'un incendie n'oublie pas de les refermer et de
-    les laisser ferm\xE9es."
+    de se r\xE9pandre."
+  - "Ainsi lors d'un incendie n'oublie pas de les refermer et de les laisser ferm\xE9es."
   - "ll permet de compartimenter les espaces, de prot\xE9ger les voies d'\xE9vacuation
     et de donner plus de temps aux occupants pour quitter les lieux en toute s\xE9curit\xE9
     et aux services de secours pour intervenir. "
@@ -363,6 +377,7 @@ MonoBehaviour:
     DI \u2013 le temps de r\xE9sistance \u2013 ainsi qu\u2019un num\xE9ro de secours,
     ici celui des pompiers de Bruxelles. "
   buttonToShow: {fileID: 0}
+  manualNextButton: {fileID: 0}
 --- !u!114 &8078452199380288882
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -377,12 +392,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   autoPlay: 0
   changeInterval: 3
-  objectsToCycle: []
   displayText: {fileID: 0}
   canvas: {fileID: 0}
   textContents:
   - Porte Coupe-feu
   buttonToShow: {fileID: 0}
+  manualNextButton: {fileID: 0}
 --- !u!1 &2741690341026141596
 GameObject:
   m_ObjectHideFlags: 0
@@ -430,7 +445,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   autoPlay: 1
-  changeInterval: 1
+  changeInterval: 3
   displayImage: {fileID: 0}
   imageContainer: {fileID: 0}
   maxContainerSize: {fileID: 0}
@@ -451,10 +466,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  autoPlay: 1
-  changeInterval: 10
-  objectsToCycle:
-  - {fileID: 0}
+  autoPlay: 0
+  changeInterval: 999
   displayText: {fileID: 0}
   canvas: {fileID: 0}
   textContents:
@@ -463,6 +476,7 @@ MonoBehaviour:
   - "Suis moi, on va rejoindre la sortie de secours tout droit o\xF9 on va retrouver
     le prochain \xE9l\xE9ment : une porte coupe-feu. "
   buttonToShow: {fileID: 0}
+  manualNextButton: {fileID: 0}
 --- !u!114 &1854118554565977174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -477,12 +491,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   autoPlay: 0
   changeInterval: 3
-  objectsToCycle: []
   displayText: {fileID: 0}
   canvas: {fileID: 0}
   textContents:
   - Issue de secours
   buttonToShow: {fileID: 0}
+  manualNextButton: {fileID: 0}
 --- !u!1 &3283782696849422163
 GameObject:
   m_ObjectHideFlags: 0
@@ -495,6 +509,7 @@ GameObject:
   - component: {fileID: 5522606138589112813}
   - component: {fileID: 8655823270767389670}
   - component: {fileID: 3889714419246971879}
+  - component: {fileID: 3098682617607965902}
   m_Layer: 0
   m_Name: Ascenceur
   m_TagString: Untagged
@@ -529,13 +544,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 184bbeb9fcd4fe14f838394d67b8261c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  autoPlay: 1
+  autoPlay: 0
   changeInterval: 3
   displayImage: {fileID: 0}
   imageContainer: {fileID: 0}
   maxContainerSize: {fileID: 0}
   texturePaths:
-  - {fileID: 0}
+  - {fileID: 2800000, guid: ab546f67aad236447982f8118031d43b, type: 3}
+  - {fileID: 2800000, guid: ab546f67aad236447982f8118031d43b, type: 3}
   objectsToCycle:
   - {fileID: 0}
   - {fileID: 0}
@@ -551,17 +567,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  autoPlay: 1
-  changeInterval: 10
-  objectsToCycle:
-  - {fileID: 0}
+  autoPlay: 0
+  changeInterval: 999
   displayText: {fileID: 0}
   canvas: {fileID: 0}
   textContents:
-  - 
-  - 
-  - 
+  - 'ne surtout pas prendre l''ascenseur par-ce que '
+  - "un ascenseur peut se retrouver bloqu\xE9 si l'alimentation est coup\xE9e."
+  - "D\xE9gagement de fum\xE9e : la cabine peut devenir une zone dangereuse en raison
+    de l'inhalation de fum\xE9es toxiques."
+  - "Propagation des flammes : certaines cages d'ascenseurs peuvent faciliter la
+    propagation du feu entre les \xE9tages."
   buttonToShow: {fileID: 0}
+  manualNextButton: {fileID: 0}
 --- !u!114 &3889714419246971879
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -576,12 +594,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   autoPlay: 1
   changeInterval: 3
-  objectsToCycle: []
   displayText: {fileID: 0}
   canvas: {fileID: 0}
   textContents:
   - Ascenceur
   buttonToShow: {fileID: 0}
+  manualNextButton: {fileID: 0}
+--- !u!114 &3098682617607965902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3283782696849422163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoPlay: 1
+  changeInterval: 3
+  displayText: {fileID: 0}
+  canvas: {fileID: 0}
+  textContents:
+  - Ascenceur
+  buttonToShow: {fileID: 0}
+  manualNextButton: {fileID: 0}
 --- !u!1 &3418460974007654773
 GameObject:
   m_ObjectHideFlags: 0
@@ -634,7 +672,13 @@ MonoBehaviour:
   imageContainer: {fileID: 0}
   maxContainerSize: {fileID: 0}
   texturePaths:
-  - {fileID: 0}
+  - {fileID: 2800000, guid: 30ee6df56fe5ded4a864a779a44bd70d, type: 3}
+  - {fileID: 2800000, guid: c3e952b1012b8d64ba2679cd0b520127, type: 3}
+  - {fileID: 2800000, guid: 281562e9d42ac0942bdda25e6de3213a, type: 3}
+  - {fileID: 2800000, guid: 5f29f68e060c8d04aac087df43047c7f, type: 3}
+  - {fileID: 2800000, guid: 1e24903f55b69d34b81419f8bd2c3559, type: 3}
+  - {fileID: 2800000, guid: 0a372a8efe599c447a87141f512bafc5, type: 3}
+  - {fileID: 2800000, guid: b891bf4a4ca6d0f4bacf4ff39d394c30, type: 3}
   objectsToCycle:
   - {fileID: 0}
   - {fileID: 0}
@@ -650,10 +694,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  autoPlay: 1
-  changeInterval: 10
-  objectsToCycle:
-  - {fileID: 0}
+  autoPlay: 0
+  changeInterval: 999
   displayText: {fileID: 0}
   canvas: {fileID: 0}
   textContents:
@@ -664,6 +706,7 @@ MonoBehaviour:
   - "Les tuyaux d'incendie sont con\xE7us pour acheminer de grandes quantit\xE9s
     d'eau, ou parfois des mousses, vers le lieu de l'incendie. "
   buttonToShow: {fileID: 0}
+  manualNextButton: {fileID: 0}
 --- !u!114 &667662594221385048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -678,12 +721,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   autoPlay: 1
   changeInterval: 3
-  objectsToCycle: []
   displayText: {fileID: 0}
   canvas: {fileID: 0}
   textContents:
   - Tuyaux de pompier
   buttonToShow: {fileID: 0}
+  manualNextButton: {fileID: 0}
 --- !u!1 &3851652837393583665
 GameObject:
   m_ObjectHideFlags: 0
@@ -696,6 +739,7 @@ GameObject:
   - component: {fileID: 982057646987781753}
   - component: {fileID: 3591623091492035339}
   - component: {fileID: 1404464661469119540}
+  - component: {fileID: 2747985762431858440}
   m_Layer: 0
   m_Name: "r\xE8gle"
   m_TagString: Untagged
@@ -730,13 +774,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 184bbeb9fcd4fe14f838394d67b8261c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  autoPlay: 1
+  autoPlay: 0
   changeInterval: 3
   displayImage: {fileID: 0}
   imageContainer: {fileID: 0}
   maxContainerSize: {fileID: 0}
   texturePaths:
-  - {fileID: 0}
+  - {fileID: 2800000, guid: 741e990581e65c24badba881e2dd83fb, type: 3}
+  - {fileID: 2800000, guid: 741e990581e65c24badba881e2dd83fb, type: 3}
   objectsToCycle:
   - {fileID: 0}
   - {fileID: 0}
@@ -752,13 +797,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  autoPlay: 1
-  changeInterval: 10
-  objectsToCycle:
-  - {fileID: 3851652837393583665}
-  - {fileID: 3851652837393583665}
-  - {fileID: 3851652837393583665}
-  - {fileID: 3851652837393583665}
+  autoPlay: 0
+  changeInterval: 999
   displayText: {fileID: 0}
   canvas: {fileID: 0}
   textContents:
@@ -766,6 +806,7 @@ MonoBehaviour:
   - "n'oubliez pas qu'apr\xE8s \xEAtre sorti, dites aux pompier o\xF9 se situe le
     d\xE9but d'incendie"
   buttonToShow: {fileID: 0}
+  manualNextButton: {fileID: 0}
 --- !u!114 &1404464661469119540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -780,12 +821,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   autoPlay: 0
   changeInterval: 3
-  objectsToCycle: []
   displayText: {fileID: 0}
   canvas: {fileID: 0}
   textContents:
   - "R\xE8gles"
   buttonToShow: {fileID: 0}
+  manualNextButton: {fileID: 0}
+--- !u!114 &2747985762431858440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3851652837393583665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoPlay: 0
+  changeInterval: 3
+  displayText: {fileID: 0}
+  canvas: {fileID: 0}
+  textContents:
+  - "R\xE8gles"
+  buttonToShow: {fileID: 0}
+  manualNextButton: {fileID: 0}
 --- !u!1 &5688462387169483448
 GameObject:
   m_ObjectHideFlags: 0
@@ -838,11 +899,9 @@ MonoBehaviour:
   imageContainer: {fileID: 0}
   maxContainerSize: {fileID: 0}
   texturePaths:
-  - {fileID: 2800000, guid: 1a5f6bda9ef104f4eb020a470f5ae3df, type: 3}
-  - {fileID: 2800000, guid: 5d7b55a17bb706c43bd8dc1e7c8f6c7f, type: 3}
-  objectsToCycle:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2800000, guid: 71d7f8fb371af944ebe9e317daaa376f, type: 3}
+  - {fileID: 2800000, guid: 0a6061db165cf1a42bb90dd20de2c421, type: 3}
+  objectsToCycle: []
 --- !u!114 &7517174337173555971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -855,16 +914,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  autoPlay: 1
-  changeInterval: 5
-  objectsToCycle:
-  - {fileID: 0}
+  autoPlay: 0
+  changeInterval: 999
   displayText: {fileID: 0}
   canvas: {fileID: 0}
   textContents:
   - "D\xE8s que vous \xEAtes hors de danger, pr\xE9venez imm\xE9diatement les pompiers
     en appelant le 112. Donnez des indications claires et pr\xE9cises."
   buttonToShow: {fileID: 0}
+  manualNextButton: {fileID: 0}
 --- !u!114 &6103700380591891339
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -879,12 +937,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   autoPlay: 0
   changeInterval: 3
-  objectsToCycle: []
   displayText: {fileID: 0}
   canvas: {fileID: 0}
   textContents:
   - "T\xE9l\xE9phone"
   buttonToShow: {fileID: 0}
+  manualNextButton: {fileID: 0}
 --- !u!1 &6759783852052906140
 GameObject:
   m_ObjectHideFlags: 0
@@ -897,6 +955,7 @@ GameObject:
   - component: {fileID: 5428999239146293789}
   - component: {fileID: 2170510584085285613}
   - component: {fileID: 1101878550339834399}
+  - component: {fileID: 8523342500342203485}
   m_Layer: 0
   m_Name: Alarme
   m_TagString: Untagged
@@ -955,10 +1014,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  autoPlay: 1
-  changeInterval: 12
-  objectsToCycle:
-  - {fileID: 0}
+  autoPlay: 0
+  changeInterval: 999
   displayText: {fileID: 0}
   canvas: {fileID: 0}
   textContents:
@@ -978,6 +1035,7 @@ MonoBehaviour:
     qui fournit des informations cruciales sur l'\xE9tat et le fonctionnement de
     l'alarme."
   buttonToShow: {fileID: 0}
+  manualNextButton: {fileID: 0}
 --- !u!114 &1101878550339834399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -992,12 +1050,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   autoPlay: 1
   changeInterval: 3
-  objectsToCycle: []
   displayText: {fileID: 0}
   canvas: {fileID: 0}
   textContents:
   - Alarme
   buttonToShow: {fileID: 0}
+  manualNextButton: {fileID: 0}
+--- !u!114 &8523342500342203485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6759783852052906140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoPlay: 1
+  changeInterval: 3
+  displayText: {fileID: 0}
+  canvas: {fileID: 0}
+  textContents:
+  - Alarme
+  buttonToShow: {fileID: 0}
+  manualNextButton: {fileID: 0}
 --- !u!1 &7025037063489134796
 GameObject:
   m_ObjectHideFlags: 0
@@ -1007,16 +1085,16 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5497260233708059522}
-  - component: {fileID: 2977150780997978353}
-  - component: {fileID: 6108616259358439270}
-  - component: {fileID: 3383566351586585668}
+  - component: {fileID: 3880109594434471065}
+  - component: {fileID: 2032824542476764826}
+  - component: {fileID: 6590042512328208772}
   m_Layer: 0
   m_Name: Spawned
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5497260233708059522
 Transform:
   m_ObjectHideFlags: 0
@@ -1032,7 +1110,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4779656034458709209}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2977150780997978353
+--- !u!114 &3880109594434471065
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1045,8 +1123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   autoPlay: 1
-  changeInterval: 10
-  objectsToCycle: []
+  changeInterval: 999
   displayText: {fileID: 0}
   canvas: {fileID: 0}
   textContents:
@@ -1063,7 +1140,8 @@ MonoBehaviour:
     celui si t'indiquera toujours la direction vers la sortie de secourt peut importe
     le pays except\xE9 les \xE9tats unis"
   buttonToShow: {fileID: 0}
---- !u!114 &6108616259358439270
+  manualNextButton: {fileID: 0}
+--- !u!114 &2032824542476764826
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1077,13 +1155,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   autoPlay: 0
   changeInterval: 3
-  objectsToCycle: []
   displayText: {fileID: 0}
   canvas: {fileID: 0}
   textContents:
   - Commencement tuto
   buttonToShow: {fileID: 0}
---- !u!114 &3383566351586585668
+  manualNextButton: {fileID: 0}
+--- !u!114 &6590042512328208772
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1100,5 +1178,93 @@ MonoBehaviour:
   displayImage: {fileID: 0}
   imageContainer: {fileID: 0}
   maxContainerSize: {fileID: 0}
-  texturePaths: []
+  texturePaths:
+  - {fileID: 2800000, guid: 4d989058b87366747903b52ec411a80e, type: 3}
+  - {fileID: 2800000, guid: 4d989058b87366747903b52ec411a80e, type: 3}
   objectsToCycle: []
+--- !u!1001 &8009159890654349101
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4779656034458709209}
+    m_Modifications:
+    - target: {fileID: 5031015787293722724, guid: df96d78510134824c9c5631134ee520a, type: 3}
+      propertyPath: autoPlay
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5031015787293722724, guid: df96d78510134824c9c5631134ee520a, type: 3}
+      propertyPath: texturePaths.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5031015787293722724, guid: df96d78510134824c9c5631134ee520a, type: 3}
+      propertyPath: 'texturePaths.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2800000, guid: 4d989058b87366747903b52ec411a80e, type: 3}
+    - target: {fileID: 5031015787293722724, guid: df96d78510134824c9c5631134ee520a, type: 3}
+      propertyPath: 'texturePaths.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2800000, guid: 4d989058b87366747903b52ec411a80e, type: 3}
+    - target: {fileID: 5272563970792873174, guid: df96d78510134824c9c5631134ee520a, type: 3}
+      propertyPath: autoPlay
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6620617140329302327, guid: df96d78510134824c9c5631134ee520a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.5232654
+      objectReference: {fileID: 0}
+    - target: {fileID: 6620617140329302327, guid: df96d78510134824c9c5631134ee520a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.6903855
+      objectReference: {fileID: 0}
+    - target: {fileID: 6620617140329302327, guid: df96d78510134824c9c5631134ee520a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 22.637453
+      objectReference: {fileID: 0}
+    - target: {fileID: 6620617140329302327, guid: df96d78510134824c9c5631134ee520a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6620617140329302327, guid: df96d78510134824c9c5631134ee520a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6620617140329302327, guid: df96d78510134824c9c5631134ee520a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6620617140329302327, guid: df96d78510134824c9c5631134ee520a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6620617140329302327, guid: df96d78510134824c9c5631134ee520a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6620617140329302327, guid: df96d78510134824c9c5631134ee520a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6620617140329302327, guid: df96d78510134824c9c5631134ee520a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7656288569031912704, guid: df96d78510134824c9c5631134ee520a, type: 3}
+      propertyPath: m_Name
+      value: FinTutoriel
+      objectReference: {fileID: 0}
+    - target: {fileID: 7656288569031912704, guid: df96d78510134824c9c5631134ee520a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: df96d78510134824c9c5631134ee520a, type: 3}
+--- !u!4 &3803123078933941786 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6620617140329302327, guid: df96d78510134824c9c5631134ee520a, type: 3}
+  m_PrefabInstance: {fileID: 8009159890654349101}
+  m_PrefabAsset: {fileID: 0}
