@@ -153,7 +153,8 @@ namespace TcT.FireSim
 
         public void OnGameReset()
         {
-            _stateMachine.ChangeState(eGameStateID.Started);
+            //_stateMachine.ChangeState(eGameStateID.Started);
+            Application.Quit();//because the loop currently causes issues and the tutorial part cannot be replayed for some reason
         }
     }
 }
