@@ -1,0 +1,81 @@
+Spawned : 
+
+	Element 0 : Bonjour et bienvenue dans FireEscapeSimulator ! Je serai votre assistant lors de cette simulation.
+
+	Element 1 : Nous allons voir ensemble la marche à suivre en cas d'incendie afin de réussir à évacuer et prévenir en tout sécurité. Êtes-vous prêt à commencer ?
+
+	Element 2 : Mais avant toute explication de la procédure, je vais d'abord vous faire de la prévention et vous expliquer les différentes marches à suivre pour éviter qu’un incendie survienne dans votre lieu de travail ou à la maison. 
+
+	Element 3 : Maintenant commençons l'explication des différentes procédure d'évacuation d'abord tourne toi et regarde en haut à gauche ;
+
+	Element 4 : Tu verras un panneaux d'évacuation celui si t'indiquera toujours la direction vers la sortie de secours peu importe le pays excepté les états unis.
+
+Issue de secours :
+
+	Element 0 : Ceci est un panneau d'évacuation, il montre la direction de la sortie de secours la plus proche
+
+	Element 1 : Suis moi, on va rejoindre la sortie de secours tout droit où on va retrouver le prochain élément : une porte coupe-feu. 
+
+Porte de secours : 
+
+	Element 0 :  Son installation est obligatoire dans les bâtiments destinés au public, les immeubles d’habitation, les bâtiments industriels. 
+
+	Element 1 : Donc, si tu vois que le bâtiment dans lequel tu vis ou travailles n’en possède pas en Belgique, tu contactes les pompiers de Bruxelles au 02 208 84 30. 
+
+	Element 2 : Elles doivent être toujours placées afin de compartimenter les bâtiments et aux issues de secours pour les garder praticables.
+
+	Element 3 : Celle-ci sert principalement à éviter la propagation du feu et la fumée de se répandre.
+
+	Element 4 : Ainsi lors d'un incendie n'oublie pas de les refermer et de les laisser fermées.
+
+	Element 5 : ll permet de compartimenter les espaces, de protéger les voies d'évacuation et de donner plus de temps aux occupants pour quitter les lieux en toute sécurité et aux services de secours pour intervenir. 
+
+Alarme : 
+
+	Element 0 : Elle sert principalement à détecter un début d'incendie et à avertir rapidement les occupants d'un bâtiment afin qu'ils puissent évacuer en toute sécurité.
+
+	Element 1 :  Elle joue un rôle crucial dans la prévention des incendies et la protection des vies et des biens. 
+
+	Element 2 : Celle-ci doit toujours être déclenchée en priorité en cas d’incendie pour pouvoir prévenir tout le monde rapidement. De plus, dans ce bâtiment, celle-ci est liée aux détecteurs de fumée et au numéro des pompiers.
+
+	Element 3 : Dans d’autres bâtiments, elle pourrait permettre de déverrouiller les issues de secours. Ainsi, à cause de toutes ces variables possibles, l’alarme doit toujours être manuellement déclenchée, et tu dois appeler les pompiers dès que ta vie n’est plus en danger. 
+
+	Element 4 : Une caractéristique importante des alarmes incendie est le voyant lumineux, qui fournit des informations cruciales sur l'état et le fonctionnement de l'alarme.
+
+Tuyaux de pompiers : 
+
+	Element 0 : Les tuyaux d'incendie servent principalement à acheminer l'eau, ou d'autres agents extincteurs, sous pression vers les foyers d'incendie pour les éteindre.
+
+	Element 1 : Ils sont un élément essentiel de la lutte contre l'incendie, permettant aux pompiers d'atteindre et de maîtriser le feu à distance. 
+
+	Element 2 : Les tuyaux d'incendie sont conçus pour acheminer de grandes quantités d'eau, ou parfois des mousses, vers le lieu de l'incendie. 
+
+Téléphone : 
+	
+	ELement 0 : Dès que vous êtes hors de danger, prévenez immédiatement les pompiers en appelant le 112. Donnez des indications claires et précises.
+
+Lumière : 
+
+	Element 0 : Ces éclairages de sécurité servent à s'orienter et à indiquer les voies de secours en cas d'incident provoquant l'obscurité.
+
+Règle : 
+
+	Element 0 : Veuillez lire les règles.
+
+	Element 1 : n'oubliez pas qu'après être sorti, dites aux pompier où se situe le début d'incendie
+
+Ascenseur : 
+
+	Element 0 : ne surtout pas prendre l'ascenseur par-ce que 
+
+	Element 1 : un ascenseur peut se retrouver bloqué si l'alimentation est coupée.
+
+	Element 2 : Dégagement de fumée : la cabine peut devenir une zone dangereuse en raison de l'inhalation de fumées toxiques.
+
+	Element 3 : Propagation des flammes : certaines cages d'ascenseurs peuvent faciliter la propagation du feu entre les étages.
+
+extincteur : 
+
+	Element 0 : Un extincteur est un appareil de lutte contre l'incendie
+
+	Element 1 : L'extincteur sert à éteindre un départ d'incendie, utilisez-le sur la base des flammes pour limiter la propagation. Ne l'utilisez pas si le feu est déjà hors de contrôle.
