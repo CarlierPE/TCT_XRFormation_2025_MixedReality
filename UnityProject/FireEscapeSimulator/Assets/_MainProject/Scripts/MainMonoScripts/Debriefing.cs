@@ -1,5 +1,7 @@
+using System;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 namespace TcT.FireSim
 {
@@ -17,9 +19,23 @@ namespace TcT.FireSim
         [HideInInspector]
         public UnityEvent OnDebriefingExited;
 
+        [SerializeField] Button _okButton;
+        [SerializeField] GameObject _debriefingUI;
+
         private void OnEnable()
         {
-            //TODO - afficher l'UI etc
+            _debriefingUI.SetActive(true);
+            _okButton.onClick.AddListener(ExitGame);
+        }
+
+        private void OnDisable()
+        {
+            _debriefingUI.SetActive(false);
+            _okButton.onClick.RemoveListener(ExitGame);
+        }
+
+        private void ExitGame()
+        {
             OnDebriefingExited.Invoke();
         }
     }

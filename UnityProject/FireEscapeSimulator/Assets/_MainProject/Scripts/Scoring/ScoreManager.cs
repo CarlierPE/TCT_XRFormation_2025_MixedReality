@@ -151,11 +151,11 @@ namespace TcT.FireSim
         {
             string debriefing = $"\nVotre temps de simulation est : {_gameDebriefing.timeGame}, et le total des points est : {_gameDebriefing.scoreEnd}\n\n";
 
-            debriefing += "voici les points en detail avec le temps et l'action realiser : \n";
+            debriefing += "voici les points en detail avec le temps et les actions realisees : \n";
 
             foreach (var item in _logs)
             {
-                debriefing += $"\tpoint : {item.scoreValid} | temps : {item.timeAction} | action : {item.action} \n ";
+                debriefing += $"\tpoint : {item.scoreValid} | temps : {item.timeAction:0.##} | action : {item.action} \n ";
             }
 
             return debriefing;
