@@ -79,3 +79,7 @@ extincteur :
 	Element 0 : Un extincteur est un appareil de lutte contre l'incendie
 
 	Element 1 : L'extincteur sert à éteindre un départ d'incendie, utilisez-le sur la base des flammes pour limiter la propagation. Ne l'utilisez pas si le feu est déjà hors de contrôle.
+
+Fin tuto :
+
+	Element 0 : Viens, on va voir dans la cuisine, tout les objets qui peuvent cramerf
