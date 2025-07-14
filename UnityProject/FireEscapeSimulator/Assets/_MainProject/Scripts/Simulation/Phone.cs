@@ -1,17 +1,12 @@
 using UnityEngine;
 
-public class Phone : TriggerableByPlayer
+namespace TcT.FireSim
 {
-    private eMonitoredAction _action;
-
-    public void TakePhone()
+    public class Phone : TriggerableByPlayer
     {
-        _action = eMonitoredAction.TakePhone;
-        OnTriggeredByPlayer(_action);
-    }
-    public void Appel()
-    {
-        _action = eMonitoredAction.Appel;
-        OnTriggeredByPlayer(_action);
+        private void OnTriggerEnter(Collider other)
+        {
+            OnTriggeredByPlayer(eMonitoredAction.Appel);
+        }
     }
 }
