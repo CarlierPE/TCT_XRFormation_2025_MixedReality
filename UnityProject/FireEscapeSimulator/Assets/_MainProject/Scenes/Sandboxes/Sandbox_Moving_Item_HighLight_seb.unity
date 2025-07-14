@@ -5340,6 +5340,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 9114634584973833987, guid: 0ba5044bc1ccf034780cd55a5c227cbb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 388085923}
+    - targetCorrespondingSourceObject: {fileID: 4303631131107525167, guid: 0ba5044bc1ccf034780cd55a5c227cbb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1188784265}
     - targetCorrespondingSourceObject: {fileID: 590758758896831878, guid: 0ba5044bc1ccf034780cd55a5c227cbb, type: 3}
       insertIndex: 6
       addedObject: {fileID: 3603811668364251060}
@@ -9247,6 +9250,11 @@ Transform:
   - {fileID: 975028187}
   m_Father: {fileID: 475020121}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1188784265 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3169765454791844289, guid: 3502856e33c55464680305e02e0707f9, type: 3}
+  m_PrefabInstance: {fileID: 2965744401481609285}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1192496307
 GameObject:
   m_ObjectHideFlags: 0
@@ -14373,6 +14381,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 971122173}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1881784383 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4303631131107525167, guid: 0ba5044bc1ccf034780cd55a5c227cbb, type: 3}
+  m_PrefabInstance: {fileID: 624432933}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1894319087 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1716274846759478750, guid: 0ba5044bc1ccf034780cd55a5c227cbb, type: 3}
@@ -16583,6 +16596,63 @@ MonoBehaviour:
   buttonToShow: {fileID: 0}
   manualNextButton: {fileID: 0}
   manualNextButton0: {fileID: 0}
+--- !u!1001 &2965744401481609285
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1881784383}
+    m_Modifications:
+    - target: {fileID: 3169765454791844289, guid: 3502856e33c55464680305e02e0707f9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.032
+      objectReference: {fileID: 0}
+    - target: {fileID: 3169765454791844289, guid: 3502856e33c55464680305e02e0707f9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.158
+      objectReference: {fileID: 0}
+    - target: {fileID: 3169765454791844289, guid: 3502856e33c55464680305e02e0707f9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 21.462
+      objectReference: {fileID: 0}
+    - target: {fileID: 3169765454791844289, guid: 3502856e33c55464680305e02e0707f9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3169765454791844289, guid: 3502856e33c55464680305e02e0707f9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3169765454791844289, guid: 3502856e33c55464680305e02e0707f9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3169765454791844289, guid: 3502856e33c55464680305e02e0707f9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3169765454791844289, guid: 3502856e33c55464680305e02e0707f9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3169765454791844289, guid: 3502856e33c55464680305e02e0707f9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 3169765454791844289, guid: 3502856e33c55464680305e02e0707f9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8853170787171502829, guid: 3502856e33c55464680305e02e0707f9, type: 3}
+      propertyPath: m_Name
+      value: P_RegleIncendie
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3502856e33c55464680305e02e0707f9, type: 3}
 --- !u!114 &3138760144431973244
 MonoBehaviour:
   m_ObjectHideFlags: 0
