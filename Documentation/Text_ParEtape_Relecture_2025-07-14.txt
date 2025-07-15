@@ -1,0 +1,75 @@
+Spawned : 
+
+	Élément 0 : Bonjour et bienvenue dans Fire Escape Simulator ! Je serai votre assistant lors de cette simulation.
+
+	Élément 1 : Nous allons voir ensemble la marche à suivre en cas d'incendie afin de réussir à évacuer et prévenir en tout sécurité. Êtes-vous prêt à commencer ?
+
+	Élément 2 : Mais, avant toute explication de la procédure, je vais d'abord vous faire de la prévention et vous expliquer les différentes marches à suivre pour éviter qu’un incendie ne survienne dans votre lieu de travail ou à la maison. 
+
+	Élément 3 : Maintenant, commençons l'explication des différentes procédures d'évacuation. D'abord tournez-vous et regardez en haut à gauche.
+
+	Élément 4 : Vous verrez un panneau d'évacuation ; celui-ci vous indiquera toujours la direction vers la sortie de secours, peu importe le pays (Excepté les États Unis).
+
+Issue de secours :
+
+	Élément 0 : Ceci est un panneau d'évacuation. Il montre la direction de la sortie de secours la plus proche.
+
+	Élément 1 : Suivez-moi. On va rejoindre la sortie de secours, tout droit, où l'on va retrouver le prochain élément : Une porte coupe-feu. 
+
+Porte coupe-feu : 
+
+	Élément 0 : Son installation est obligatoire dans les bâtiments destinés au public, les immeubles d’habitation, les bâtiments industriels. 
+
+	Élément 1 : Celles-ci servent principalement à éviter la propagation du feu et à empêcher la fumée de se répandre.
+
+	Élément 2 : Elles doivent toujours être placées afin de compartimenter les bâtiments et de garder praticables les issues de secours, dans le but de donner plus de temps aux occupants pour quitter les lieux en toute sécurité et aux services de secours pour intervenir.
+
+	Élément 3 : Ainsi, lors d'un incendie, n'oubliez pas de les refermer et de les laisser fermées.
+
+Alarme : 
+
+	Élément 0 : Elle sert principalement à détecter un début d'incendie et à avertir rapidement les occupants d'un bâtiment afin qu'ils puissent évacuer en toute sécurité.
+
+	Élément 1 : Elle joue un rôle crucial dans la prévention des incendies et la protection des vies. 
+
+	Élément 2 : Celle-ci doit toujours être déclenchée en priorité en cas d’incendie pour pouvoir prévenir tout le monde rapidement. De plus, dans ce bâtiment, celle-ci est liée aux détecteurs de fumée et au numéro des pompiers.
+
+	Élément 3 : Dans d’autres bâtiments, elle pourrait permettre de déverrouiller les issues de secours. Ainsi, à cause de toutes ces variables possibles, l’alarme doit toujours être déclenchée manuellement et vous devez appeler les pompiers dès que vous êtes hors de danger.
+
+	Élément 4 : Une caractéristique importante des alarmes incendie est le voyant lumineux qui fournit des informations cruciales sur l'état et le fonctionnement de l'alarme.
+
+Tuyaux d'incendie : 
+
+	Élément 0 : Les tuyaux d'incendie servent principalement à acheminer l'eau, ou d'autres agents extincteurs (Mousse,...), sous pression vers les foyers d'incendie pour les éteindre.
+
+	Élément 1 : Ils sont un élément essentiel de la lutte contre l'incendie, permettant aux pompiers d'atteindre et de maîtriser le feu à distance. 
+
+Téléphone : 
+	
+	Élément 0 : Dès que vous êtes hors de danger, prévenez immédiatement les pompiers en appelant le 112. Donnez des indications claires et précises.
+
+Lumière : 
+
+	Élément 0 : Ces éclairages de sécurité servent à s'orienter et à indiquer les voies de secours en cas d'incident provoquant l'obscurité.
+
+Règles : 
+
+	Élément 0 : Veuillez lire les règles.
+
+Ascenseur : 
+
+	Élément 0 : Ne surtout pas prendre l'ascenseur parce que : 
+
+	Élément 1 : Un ascenseur peut se retrouver bloqué si l'alimentation est coupée.
+
+	Élément 2 : Dégagement de fumée : la cabine peut devenir une zone dangereuse en raison de l'inhalation de fumées toxiques, la chaleur ou encore la rupture du câble.
+
+	Élément 3 : Certaines cages d'ascenseurs peuvent faciliter la propagation du feu entre les étages.
+
+Extincteur : 
+
+	Élément 0 : Un extincteur est un appareil de lutte contre l'incendie.
+
+	Élément 1 : L'extincteur sert à éteindre un départ d'incendie. Utilisez-le sur la base des flammes pour limiter leur propagation. Ne l'utilisez pas si le feu est déjà hors de contrôle.
+
+

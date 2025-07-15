@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:UnityProject/FireEscapeSimulator/Assets/_LdmRelocator/Demo/DemoScene.unity.meta
 guid: e2a5318617664534b9dde51e5ebe286c
+========
+guid: 3a09fdd43e5888b42a222f1518b8e549
+>>>>>>>> develop:UnityProject/FireEscapeSimulator/Assets/_MainProject/Scenes/Sandboxes/OldStuff_PE.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 

@@ -1,14 +1,17 @@
-using FireSim.SSM;
+using TcT.FireSim.SSM;
 using UnityEngine;
 
-public class BeforeSimulationState : ScriptBasedGameState
+namespace TcT.FireSim
 {
-    public BeforeSimulationState(MonoBehaviour script) : base(script) { }
-
-    public override eGameStateID ID => eGameStateID.BeforeSimulation;
-
-    public override bool CanTransitionTo(eGameStateID nextState)
+    public class BeforeSimulationState : ScriptBasedGameState
     {
-        return nextState == eGameStateID.Simulation;
+        public BeforeSimulationState(MonoBehaviour script) : base(script) { }
+
+        public override eGameStateID ID => eGameStateID.BeforeSimulation;
+
+        public override bool CanTransitionTo(eGameStateID nextState)
+        {
+            return nextState == eGameStateID.Simulation;
+        }
     }
 }

@@ -1,13 +1,12 @@
 using UnityEngine;
 
-public class StairsDown : TriggerableByPlayer
+namespace TcT.FireSim
 {
-
-    private eMonitoredAction _action;
-
-    public void DownStair()
+    public class StairsDown : TriggerableByPlayer
     {
-        _action = eMonitoredAction.FinishLine;
-        OnTriggeredByPlayer(_action);
+        private void OnTriggerEnter(Collider other)
+        {
+            OnTriggeredByPlayer(eMonitoredAction.FinishLine);
+        }
     }
 }
