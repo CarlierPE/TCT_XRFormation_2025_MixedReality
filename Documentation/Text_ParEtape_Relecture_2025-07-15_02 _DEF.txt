@@ -1,0 +1,73 @@
+Spawned :
+
+	Élément 0 : Bonjour et bienvenue dans Fire Escape Simulator ! Je serai votre assistant lors de cette simulation.
+
+	Élément 1 : Nous allons voir ensemble la marche à suivre en cas d'incendie afin de prévenir les occupants et réussir à évacuer en toute sécurité. Êtes-vous prêt à commencer ?
+
+	Élément 2 : Mais avant toute explication de la procédure, je vais d'abord vous faire de la prévention et vous expliquer les différentes marches à suivre pour éviter qu’un incendie ne survienne dans votre lieu de travail ou à la maison.
+
+	Élément 3 : Commençons l'explication des différentes procédures par le panneau d'évacuation.
+
+Panneau d'évacuation :
+
+	Élément 0 : Levez les yeux vers le panneau. Il indique la direction de la sortie de secours la plus proche.
+
+	Élément 1 : Suivez-moi. Nous allons rejoindre la sortie de secours.
+
+Porte coupe-feu :
+
+	Élément 0 : Voici une porte coupe-feu. Son installation est obligatoire dans les bâtiments destinés au public, les immeubles d’habitation et les bâtiments industriels.
+
+	Élément 1 : Celles-ci servent principalement à éviter la propagation du feu et à empêcher la fumée de se répandre.
+
+	Élément 2 : Elles doivent toujours être placées de manière à compartimenter les bâtiments et à garder les issues de secours praticables.
+
+	Élément 3 : Ainsi, en cas d'incendie, n'oubliez pas de les refermer.
+
+Alarme :
+
+	Élément 0 : Regardons maintenant l'alarme incendie. Elle sert principalement à avertir rapidement les occupants d'un bâtiment afin qu'ils puissent évacuer en toute sécurité.
+
+	Élément 1 : Celle-ci doit toujours être déclenchée en priorité en cas d’incendie, pour pouvoir prévenir tout le monde rapidement.
+
+	Élément 2 : Dans ce bâtiment, elle est reliée aux détecteurs de fumée et au numéro des pompiers. Dans d’autres bâtiments, elle pourrait permettre de déverrouiller les issues de secours. Ainsi, à cause de toutes ces variables possibles, l’alarme doit toujours être déclenchée manuellement et vous devez appeler les pompiers dès que vous êtes hors de danger.
+
+Lance d'incendie :
+
+	Élément 0 : Les lances d'incendie servent principalement à projeter de l'eau sous pression, ou d'autres agents extincteurs, vers la base des incendies pour les éteindre.
+
+	Élément 1 : Elles sont un élément essentiel dans la lutte contre les incendies, mais seules des personnes formées peuvent les utiliser.
+
+Téléphone :
+
+	Élément 0 : Dès que vous êtes hors de danger, prévenez immédiatement les pompiers en appelant le 112.
+
+	Élément 1 : N'oubliez pas de donner des indications claires et précises concernant l'adresse du bâtiment.
+
+Lumière :
+
+	Élément 0 : Ces éclairages de sécurité servent à s'orienter et à indiquer les voies de secours en cas d'incident provoquant l'obscurité.
+
+Ascenseur :
+
+	Élément 0 : Ne prenez surtout pas l'ascenseur en cas d'incendie, car il se bloque si l'alimentation est coupée.
+
+	Élément 1 : La cabine pourrait alors devenir une zone dangereuse en raison de l'inhalation de fumées toxiques, de la chaleur ou encore de la rupture du câble.
+
+	Élément 2 : Les cages d'ascenseur facilitent la propagation du feu entre les étages.
+
+Extincteur :
+
+	Élément 0 : Un extincteur est un appareil de lutte contre les incendies. Il sert à éteindre un départ de feu.
+
+	Élément 1 : Utilisez-le à la base des flammes pour limiter leur propagation.
+
+	Élément 2 : Ne l'utilisez pas si le feu est déjà hors de contrôle.
+
+Règles :
+
+	Élément 0 : Il y a des règles de sécurité dans chaque bâtiment. Elles rappellent toutes les procédures. N'hésitez pas à les relire régulièrement.
+
+Fin des explications :
+
+	Élément 0 : Merci d'avoir suivi mes explications. Vous pouvez maintenant aller dans la cuisine pour prendre un café.
