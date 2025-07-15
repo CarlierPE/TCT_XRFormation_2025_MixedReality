@@ -60,7 +60,7 @@ namespace TcT.FireSim
         {
             if (_highlight != null)
                 _highlight.SetActive(true);
-            _guide.ShowPanel(_picto);
+            _guide.ShowPanel();
         }
 
     }
