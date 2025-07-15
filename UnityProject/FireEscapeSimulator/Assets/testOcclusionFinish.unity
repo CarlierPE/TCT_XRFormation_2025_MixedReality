@@ -5168,7 +5168,7 @@ PrefabInstance:
       objectReference: {fileID: 787998186}
     - target: {fileID: 3868369982666331723, guid: 0ba5044bc1ccf034780cd55a5c227cbb, type: 3}
       propertyPath: _triggerables.Array.size
-      value: 18
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 3868369982666331723, guid: 0ba5044bc1ccf034780cd55a5c227cbb, type: 3}
       propertyPath: '_triggerables.Array.data[8]'
@@ -5213,7 +5213,7 @@ PrefabInstance:
     - target: {fileID: 3868369982666331723, guid: 0ba5044bc1ccf034780cd55a5c227cbb, type: 3}
       propertyPath: '_triggerables.Array.data[18]'
       value: 
-      objectReference: {fileID: 7297466197241615018}
+      objectReference: {fileID: 7297466197241615019}
     - target: {fileID: 3868369982666331723, guid: 0ba5044bc1ccf034780cd55a5c227cbb, type: 3}
       propertyPath: '_triggerables.Array.data[19]'
       value: 
@@ -7583,7 +7583,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 94e22351cc3035f468fd6d5dd56c19e5, type: 2}
     - target: {fileID: 919132149155446097, guid: 9d202e997de63ab45b067c2f7468d9b1, type: 3}
       propertyPath: m_Name
-      value: MES_Phone
+      value: P_Phone
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18554,6 +18554,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9175071127534941284, guid: 9c366a60e0c31ca42a4a34630998b80e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18573,6 +18577,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 53a3436b5152f5848a988aa4453b85bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7297466197241615019 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5779271261223607160, guid: 9c366a60e0c31ca42a4a34630998b80e, type: 3}
+  m_PrefabInstance: {fileID: 7297466197241615016}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0460450bb8acf8a418d05a911ee2c5bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &7333822345838750492

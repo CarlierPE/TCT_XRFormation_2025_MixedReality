@@ -8450,7 +8450,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _monoscopic: 0
   _sharpenType: 0
-  _enableDynamicResolution: 0
+  _enableDynamicResolution: 1
   minDynamicResolutionScale: 1
   maxDynamicResolutionScale: 1
   quest2MinDynamicResolutionScale: 0.7
@@ -17797,7 +17797,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3880109594434471065, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       propertyPath: 'textContents.Array.data[4]'
-      value: "tu verras un panneaux d'\xE9vacuation celui si t'indiquera toujours
+      value: "Tu verras un panneaux d'\xE9vacuation celui si t'indiquera toujours
         la direction vers la sortie de secours peu importe le pays except\xE9 les
         \xE9tats unis."
       objectReference: {fileID: 0}
