@@ -20,7 +20,11 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<<< HEAD:UnityProject/FireEscapeSimulator/Assets/_MainProject/Shaders/SHA_ConeHologram.mat
+  m_Name: SHA_ConeHologram
+========
   m_Name: MAT_ConeHologram_01
+>>>>>>>> 8789ce5eb88f5d2cfee440843256b8c2256f3d7b:UnityProject/FireEscapeSimulator/Assets/_MainProject/Materials/MAT_ConeHologram_01.mat
   m_Shader: {fileID: -6465566751694194690, guid: d7288f66e4fb0634c9afef98c31b722a, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -86,11 +90,19 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_4f6d2ca87267448da80f61e97f156c02_Texture_1_Texture2D:
+<<<<<<<< HEAD:UnityProject/FireEscapeSimulator/Assets/_MainProject/Shaders/SHA_ConeHologram.mat
+        m_Texture: {fileID: 2800000, guid: b387a94a3c4f5eb4d8643387c9bad2d2, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_8ff868ef7ec74a1f848452f9e4f95675_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: b387a94a3c4f5eb4d8643387c9bad2d2, type: 3}
+========
         m_Texture: {fileID: 2800000, guid: 89f38b47deb8aca40abbcbb54269f75d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_8ff868ef7ec74a1f848452f9e4f95675_Texture_1_Texture2D:
         m_Texture: {fileID: 2800000, guid: 89f38b47deb8aca40abbcbb54269f75d, type: 3}
+>>>>>>>> 8789ce5eb88f5d2cfee440843256b8c2256f3d7b:UnityProject/FireEscapeSimulator/Assets/_MainProject/Materials/MAT_ConeHologram_01.mat
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
@@ -139,7 +151,11 @@ Material:
     - _DrawOrder: 0
     - _DstBlend: 0
     - _DstBlendAlpha: 0
+<<<<<<<< HEAD:UnityProject/FireEscapeSimulator/Assets/_MainProject/Shaders/SHA_ConeHologram.mat
+    - _EdgeFallof: 2
+========
     - _EdgeFallof: 36.17
+>>>>>>>> 8789ce5eb88f5d2cfee440843256b8c2256f3d7b:UnityProject/FireEscapeSimulator/Assets/_MainProject/Materials/MAT_ConeHologram_01.mat
     - _EnvironmentReflections: 1
     - _GlossMapScale: 0
     - _Glossiness: 0
@@ -148,7 +164,11 @@ Material:
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
+<<<<<<<< HEAD:UnityProject/FireEscapeSimulator/Assets/_MainProject/Shaders/SHA_ConeHologram.mat
+    - _Opacity: 10
+========
     - _Opacity: 1.9
+>>>>>>>> 8789ce5eb88f5d2cfee440843256b8c2256f3d7b:UnityProject/FireEscapeSimulator/Assets/_MainProject/Materials/MAT_ConeHologram_01.mat
     - _Parallax: 0.005
     - _QueueControl: 0
     - _QueueOffset: 0
@@ -168,11 +188,17 @@ Material:
     m_Colors:
     - _BaseColor: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
     - _BottomColor: {r: 0.29999998, g: 0.29999998, b: 1, a: 1}
+<<<<<<<< HEAD:UnityProject/FireEscapeSimulator/Assets/_MainProject/Shaders/SHA_ConeHologram.mat
+    - _Color: {r: 1, g: 0.64182055, b: 0, a: 1}
+    - _ColorOne: {r: 0, g: 0.37159556, b: 1, a: 0}
+    - _ColorTwo: {r: 0, g: 0.8678257, b: 1, a: 0}
+========
     - _Color: {r: 0.8396226, g: 0.48072514, b: 0, a: 1}
     - _ColorOne: {r: 1, g: 0.5249417, b: 0, a: 0}
     - _ColorOrange: {r: 1, g: 0.7082283, b: 0, a: 0}
     - _ColorTwo: {r: 1, g: 0.80576324, b: 0, a: 0}
     - _ColorYellow: {r: 1, g: 0.9071804, b: 0, a: 0}
+>>>>>>>> 8789ce5eb88f5d2cfee440843256b8c2256f3d7b:UnityProject/FireEscapeSimulator/Assets/_MainProject/Materials/MAT_ConeHologram_01.mat
     - _Direction: {r: 0, g: 1, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _MiddleColor: {r: 1, g: 1, b: 1, a: 1}

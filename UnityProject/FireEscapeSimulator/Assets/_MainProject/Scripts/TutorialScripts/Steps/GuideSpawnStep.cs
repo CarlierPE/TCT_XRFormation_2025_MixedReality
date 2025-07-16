@@ -16,7 +16,7 @@ namespace TcT.FireSim
         {
             if (_spawned && !_panelShown)
             {
-                _guide.ShowPanel(_picto);
+                _guide.ShowPanel();
                 _panelShown = true;
             }
         }

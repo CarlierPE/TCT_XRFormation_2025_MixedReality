@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
-
 namespace TcT.FireSim
 {
     public class SphereMovement : MonoBehaviour
@@ -49,7 +48,7 @@ namespace TcT.FireSim
                         fini = true;
 
                         OnPathCompleted?.Invoke();
-
+                        _guide.ShowPanel();
                         Debug.Log("c'est finiiiiiiiiii");
                         return;
 
@@ -70,10 +69,10 @@ namespace TcT.FireSim
         {
             RotateTowards(_follower.position);
         }
-
+        // Fonction qui permet à l'assistant de suivre le joueur
         private void RotateTowards(Vector3 destination)
         {
-            Vector3 dir = destination - _guide.transform.position;
+            Vector3 dir = (destination - _guide.transform.position);
             dir.y = 0;
             if (dir.sqrMagnitude < 0.0001f) return;
             Quaternion rot = Quaternion.LookRotation(dir, Vector3.up);
@@ -82,7 +81,7 @@ namespace TcT.FireSim
             );
             OnPathWait?.Invoke();
         }
-
+        // permet de lancer l'animation
         public void StarteAction()
         {
 
@@ -92,6 +91,7 @@ namespace TcT.FireSim
 
         }
 
+        //Permet de mettre en pause
         public void BreakAction()
         {
             _firstStart = false;
@@ -99,7 +99,7 @@ namespace TcT.FireSim
             ToLookPlayer();
             _guide.PlayIdleAnimation();
         }
-
+        // Dessine le trajet dans l'éditeur
         private void OnDrawGizmos()
         {
             if (_transformList == null || _transformList.Count < 2) return;
@@ -110,5 +110,6 @@ namespace TcT.FireSim
                     Gizmos.DrawLine(_transformList[i].position, _transformList[i + 1].position);
             }
         }
+
     }
 }

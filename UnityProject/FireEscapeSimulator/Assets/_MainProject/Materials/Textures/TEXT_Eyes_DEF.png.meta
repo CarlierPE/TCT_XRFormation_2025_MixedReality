@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:UnityProject/FireEscapeSimulator/Assets/_MainProject/ImageUI/Assistant_IMG.png.meta
-guid: 2514b38dd7db115418366705303f37ca
-========
-guid: f9cd1645178758447948a71abae10856
->>>>>>>> 0ac70c4e933a25a5bb124d99c47eea32bead4267:UnityProject/FireEscapeSimulator/Assets/_MainProject/Materials/Textures/verticalRayTexture.png.meta
+guid: 05a88d67d321ee7438b2c3020db79717
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
