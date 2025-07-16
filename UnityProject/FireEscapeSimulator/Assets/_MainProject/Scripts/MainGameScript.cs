@@ -1,5 +1,6 @@
 using TcT.FireSim.SSM;
 using UnityEngine;
+using UnityEngine.Video;
 
 namespace TcT.FireSim
 {
@@ -7,6 +8,7 @@ namespace TcT.FireSim
     {
         private StateMachine _stateMachine;
         [Header("Main component of each game state")]
+        [SerializeField] IntroScript _introScript;
         [SerializeField] StartScript _startingScript;//will be the UI script Shawn is working on and not a GameObject
         [SerializeField] Calibration _calibrationScript;//it needs more than a simple UI
         [SerializeField] CalibrationConfirmation _confirmCalibrationScript;//will be UI script
@@ -33,6 +35,7 @@ namespace TcT.FireSim
             _stateMachine = new StateMachine();
 
             _ = _stateMachine
+                    .AddState(new IntroState(_introScript))
                     .AddState(new StartedState(_startingScript))
                     .AddState(new UncalibratedState(_calibrationScript))
                     .AddState(new CalibratedState(_confirmCalibrationScript))
@@ -48,11 +51,12 @@ namespace TcT.FireSim
 
         private void Start()
         {
-            _stateMachine.SetInitialState(eGameStateID.Started);
+            _stateMachine.SetInitialState(eGameStateID.Intro);
         }
 
         private void OnEnable()
         {
+            _introScript.OnIntroFinished.AddListener(OnIntroFinished);
             _startingScript.OnSessionStart.AddListener(OnGameStarted);
 
             _calibrationScript.OnCalibration.AddListener(OnCalibrated);
@@ -73,6 +77,7 @@ namespace TcT.FireSim
 
         private void OnDisable()
         {
+            _introScript.OnIntroFinished.RemoveListener(OnIntroFinished);
             _startingScript.OnSessionStart.RemoveListener(OnGameStarted);
 
             _calibrationScript.OnCalibration.RemoveListener(OnCalibrated);
@@ -91,67 +96,72 @@ namespace TcT.FireSim
             _debriefingScript.OnDebriefingExited.RemoveListener(OnGameReset);
         }
 
+        private void OnIntroFinished()
+        {
+            _stateMachine.ChangeState(eGameStateID.Started);
+        }
+
         private void Update()
         {
             _stateMachine.OnUpdate();
         }
 
-        public void OnGameStarted()
+        void OnGameStarted()
         {
             _stateMachine.ChangeState(eGameStateID.Uncalibrated);
         }
 
-        public void OnCalibrated()
+        void OnCalibrated()
         {
             _stateMachine.ChangeState(eGameStateID.Calibrated);
         }
 
-        public void OnCalibrationConfirmed()
+        void OnCalibrationConfirmed()
         {
             _stateMachine.ChangeState(eGameStateID.BeforeTutorial);
         }
 
-        public void OnCalibrationInvalidated()
+        void OnCalibrationInvalidated()
         {
             _stateMachine.ChangeState(eGameStateID.Uncalibrated);
         }
 
-        public void OnTutorialStarting()
+        void OnTutorialStarting()
         {
             _stateMachine.ChangeState(eGameStateID.Tutorial);
         }
 
-        public void OnTutorialEnding()
+        void OnTutorialEnding()
         {
             _stateMachine.ChangeState(eGameStateID.AfterTutorial);
         }
 
-        public void OnTutorialRepeat()
+        void OnTutorialRepeat()
         {
             _stateMachine.ChangeState(eGameStateID.BeforeTutorial);
         }
 
-        public void OnTutorialEnded()
+        void OnTutorialEnded()
         {
             _stateMachine.ChangeState(eGameStateID.BeforeSimulation);
         }
 
-        public void OnSimulationStarting()
+        void OnSimulationStarting()
         {
             _stateMachine.ChangeState(eGameStateID.Simulation);
         }
 
-        public void OnSimulationEnding()
+        void OnSimulationEnding()
         {
             _stateMachine.ChangeState(eGameStateID.AfterSimulation);
         }
 
-        public void OnSimulationEnded()
+        void OnSimulationEnded()
         {
             _stateMachine.ChangeState(eGameStateID.Debriefing);
         }
 
-        public void OnGameReset()
+        void OnGameReset()
         {
             //_stateMachine.ChangeState(eGameStateID.Started);
             Application.Quit();//because the loop currently causes issues and the tutorial part cannot be replayed for some reason

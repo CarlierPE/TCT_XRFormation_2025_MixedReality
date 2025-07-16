@@ -2,6 +2,7 @@ namespace TcT.FireSim.SSM
 {
     public enum eGameStateID
     {
+        Intro,
         Started,
         Uncalibrated,
         Calibrated,
