@@ -48,7 +48,7 @@ namespace TcT.FireSim
                         fini = true;
 
                         OnPathCompleted?.Invoke();
-                        _guide.ShowPanel();
+                        
                         Debug.Log("c'est finiiiiiiiiii");
                         return;
 

@@ -12,7 +12,6 @@ namespace TcT.FireSim
          * and the path manager 
          * 
          */
-        private GameObject _picto;
         private GameObject _currentPicto;
         private Animator _anim;
         [HideInInspector]
@@ -49,10 +48,10 @@ namespace TcT.FireSim
             gameObject.SetActive(false);
         }
 
-        public void ShowPanel()
+        public void ShowPanel(GameObject picto)
         {
             //jouer l'animation du casque qui s'ouvre et montrer le picto
-            _currentPicto = _picto;
+            _currentPicto = picto;
             _anim.SetBool("Open", true);
             _currentPicto.SetActive(true);
         }

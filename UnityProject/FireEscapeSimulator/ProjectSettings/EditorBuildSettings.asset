@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/EloiStree/TchadCinematic/LoadCinematic.unity
     guid: b5051a8a8a48b39498b39cd9f28f70d3
   - enabled: 0
@@ -42,7 +42,7 @@ EditorBuildSettings:
     path: Assets/TestVideoGameMainScene.unity
     guid: 0fe535daea2490c4a9e90eb1174e46d8
   - enabled: 1
-    path: Assets/RealMainScene.unity
+    path: Assets/_MainProject/Scenes/RealMainScene.unity
     guid: e32c7164058f0e044805fa17456200f7
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
