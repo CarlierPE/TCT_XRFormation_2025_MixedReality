@@ -1,5 +1,12 @@
 {
   "dependencies": {
+    "be.elab.tickcollection": {
+      "version": "https://github.com/EloiStree/OpenUPM_TickCollection.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "c8f8cdef833d0027222afc397dd9c803969e1d94"
+    },
     "be.tchadevers.uiandfxmr": {
       "version": "https://github.com/TchadEvers/XR_PROJET_MR_VFX_UI.git",
       "depth": 0,

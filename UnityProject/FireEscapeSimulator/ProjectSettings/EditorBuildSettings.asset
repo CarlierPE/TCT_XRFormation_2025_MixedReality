@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/EloiStree/TchadCinematic/LoadCinematic.unity
     guid: b5051a8a8a48b39498b39cd9f28f70d3
   - enabled: 0
