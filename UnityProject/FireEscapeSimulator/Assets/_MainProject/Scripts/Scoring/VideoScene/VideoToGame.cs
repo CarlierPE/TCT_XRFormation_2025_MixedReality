@@ -1,11 +1,13 @@
+using TcT.FireSim;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Video;
 
 public class VideoToGame : MonoBehaviour
 {
+    public MainGameScript mainGameScript;
     public VideoPlayer videoPlayer;
-    public string sceneToLoad = "MainScene"; // nom de la scène du jeu
+   [SerializeField] string sceneToLoad = "MainScene"; // nom de la scène du jeu
 
     void Start()
     {
@@ -15,6 +17,7 @@ public class VideoToGame : MonoBehaviour
 
     void EndReached(VideoPlayer vp)
     {
-        SceneManager.LoadScene(sceneToLoad);
+        
+      
     }
 }

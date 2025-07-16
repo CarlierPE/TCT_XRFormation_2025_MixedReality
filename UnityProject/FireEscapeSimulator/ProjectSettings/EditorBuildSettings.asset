@@ -5,6 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 1
+    path: Assets/EloiStree/TchadCinematic/LoadCinematic.unity
+    guid: b5051a8a8a48b39498b39cd9f28f70d3
   - enabled: 0
     path: Assets/_MainProject/Scenes/Sandboxes/Sandbox_PE.unity
     guid: ce7c432f5b3eb4341a8dfe943be3f86e
@@ -32,8 +35,14 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/_MainProject/Scenes/DebugAssistant/MainScene 1.unity
     guid: c219a763af55063449a6c577d24d6583
+  - enabled: 0
+    path: Assets/_MainProject/Scenes/videoLancementGame.unity
+    guid: b68ea5ffc250d6a46b9035129bf1980e
+  - enabled: 0
+    path: Assets/TestVideoGameMainScene.unity
+    guid: 0fe535daea2490c4a9e90eb1174e46d8
   - enabled: 1
-    path: Assets/testOcclusionFinish.unity
+    path: Assets/RealMainScene.unity
     guid: e32c7164058f0e044805fa17456200f7
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
