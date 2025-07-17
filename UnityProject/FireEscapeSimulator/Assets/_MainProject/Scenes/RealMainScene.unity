@@ -18087,7 +18087,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 659789500178946409, guid: ddebed8da42994a4b81bc65990bcab27, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 250
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 659789500178946409, guid: ddebed8da42994a4b81bc65990bcab27, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -18111,7 +18111,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1463423290505802513, guid: ddebed8da42994a4b81bc65990bcab27, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 450
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1463423290505802513, guid: ddebed8da42994a4b81bc65990bcab27, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -18155,11 +18155,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4554541254047267533, guid: ddebed8da42994a4b81bc65990bcab27, type: 3}
       propertyPath: m_SizeDelta.x
-      value: -221.39
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4554541254047267533, guid: ddebed8da42994a4b81bc65990bcab27, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 35.76
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4706682470669775248, guid: ddebed8da42994a4b81bc65990bcab27, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -18477,6 +18477,11 @@ PrefabInstance:
       propertyPath: manualNextButton
       value: 
       objectReference: {fileID: 2372290256785290726}
+    - target: {fileID: 2742033030635035643, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: 'textContents.Array.data[0]'
+      value: "Viens, va voir dans la cuisine tout les objets qui peuvent cramer,
+        moi je vais dispara\xEEtre, j'ai finis mon travail."
+      objectReference: {fileID: 0}
     - target: {fileID: 2817804362515136911, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       propertyPath: canvas
       value: 
