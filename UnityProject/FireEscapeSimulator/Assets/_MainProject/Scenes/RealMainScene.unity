@@ -15242,6 +15242,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 860941676278550331, guid: 37c7da4b6fb4f744f9963f05d0db4209, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3572734463996582926, guid: 37c7da4b6fb4f744f9963f05d0db4209, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4748357534640581081, guid: 37c7da4b6fb4f744f9963f05d0db4209, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -15291,9 +15299,13 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6836641662669732128, guid: 37c7da4b6fb4f744f9963f05d0db4209, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6836641662669732128, guid: 37c7da4b6fb4f744f9963f05d0db4209, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: -876546973899608171, guid: 9dc2f081419feb8419caa80089c5cd34, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 6836641662669732128, guid: 37c7da4b6fb4f744f9963f05d0db4209, type: 3}
       propertyPath: 'm_BlendShapeWeights.Array.data[0]'
       value: 0
@@ -15307,9 +15319,13 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8260958702347703561, guid: 37c7da4b6fb4f744f9963f05d0db4209, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8260958702347703561, guid: 37c7da4b6fb4f744f9963f05d0db4209, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: -876546973899608171, guid: 9dc2f081419feb8419caa80089c5cd34, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 8260958702347703561, guid: 37c7da4b6fb4f744f9963f05d0db4209, type: 3}
       propertyPath: 'm_BlendShapeWeights.Array.data[0]'
       value: 0

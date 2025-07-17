@@ -98,6 +98,8 @@ namespace TcT.FireSim
 
         private void OnActionTriggered(eMonitoredAction action)
         {
+            if (!_isPlaying) return;
+
             if (ScoreAction.tableScoreAction.TryGetValue(action, out int score))
             {
                 timerAction = Time.time - _timer;
@@ -150,11 +152,14 @@ namespace TcT.FireSim
         {
             string debriefing = $"\nVotre temps de simulation est : {_gameDebriefing.timeGame}, et le total des points est : {_gameDebriefing.scoreEnd}\n\n";
 
-            debriefing += "voici les points en detail avec le temps et les actions realisees : \n";
+            debriefing += "Actions realisees : \n";
 
             foreach (var item in _logs)
             {
-                debriefing += $"\tpoint : {item.scoreValid} | temps : {item.timeAction:0.##} | action : {item.action} \n ";
+                var descr = ScoreAction.GetFrenchDescription(item.action);
+                if (string.IsNullOrWhiteSpace(descr)) continue;
+
+                debriefing += $"\t{descr} : {item.scoreValid} \n ";
             }
 
             return debriefing;

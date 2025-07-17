@@ -20,5 +20,24 @@ namespace TcT.FireSim
         { eMonitoredAction.TouchElevator,-200},
         { eMonitoredAction.TimerOut, 0 },
     };
+
+        public static string GetFrenchDescription(eMonitoredAction action)
+        {
+            switch (action)
+            {
+                case eMonitoredAction.PressAlarmButton:
+                    return "Alarme incendie";
+                case eMonitoredAction.WalkIntoFire:
+                    return "Contact avec le feu";
+                case eMonitoredAction.CloseDoor:
+                    return "Porte coupe-feu";
+                case eMonitoredAction.FinishLine:
+                    return "Succès";
+                case eMonitoredAction.TimerOut:
+                    return "Temps écoulé";
+                default:
+                    return null;
+            }
+        }
     }
 }

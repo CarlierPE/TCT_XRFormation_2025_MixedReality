@@ -10,7 +10,7 @@ public class CanvasFollowCamera : MonoBehaviour
     {
         if (mainCamera == null)
             mainCamera = Camera.main;
-        canvasObject.transform.position = mainCamera.transform.position + mainCamera.transform.rotation * offset;
+        canvasObject.transform.position = mainCamera.transform.position +  offset;
         canvasObject.transform.rotation = mainCamera.transform.rotation;
     }
 
@@ -18,7 +18,7 @@ public class CanvasFollowCamera : MonoBehaviour
     {
         if (canvasObject != null && !canvasObject.activeSelf)
         {
-            canvasObject.transform.position = mainCamera.transform.position + mainCamera.transform.rotation * offset;
+            canvasObject.transform.position = mainCamera.transform.position +  offset;
             canvasObject.transform.rotation = mainCamera.transform.rotation;
         }
     }
