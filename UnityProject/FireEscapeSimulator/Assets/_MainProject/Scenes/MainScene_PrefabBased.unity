@@ -8299,6 +8299,14 @@ PrefabInstance:
       propertyPath: mainCamera
       value: 
       objectReference: {fileID: 2125495881}
+    - target: {fileID: 7074505403346131996, guid: 7ff051a7cb12fc243858042002f0a7f9, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7430684253960300301, guid: 7ff051a7cb12fc243858042002f0a7f9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7823300192495703887, guid: 7ff051a7cb12fc243858042002f0a7f9, type: 3}
       propertyPath: _follower
       value: 
@@ -8345,6 +8353,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8076056855655772954, guid: 7ff051a7cb12fc243858042002f0a7f9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8213909690219764191, guid: 7ff051a7cb12fc243858042002f0a7f9, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8704730656505714396, guid: 7ff051a7cb12fc243858042002f0a7f9, type: 3}
