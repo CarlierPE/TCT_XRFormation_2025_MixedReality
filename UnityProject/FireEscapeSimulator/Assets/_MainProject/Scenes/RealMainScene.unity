@@ -1850,7 +1850,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1392558436981383443, guid: 06869a3f921f5844492dc1305a6645e9, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2451155458218557263, guid: 06869a3f921f5844492dc1305a6645e9, type: 3}
       propertyPath: m_IsActive
@@ -18087,7 +18087,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 659789500178946409, guid: ddebed8da42994a4b81bc65990bcab27, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 250
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 659789500178946409, guid: ddebed8da42994a4b81bc65990bcab27, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -18111,7 +18111,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1463423290505802513, guid: ddebed8da42994a4b81bc65990bcab27, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 450
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1463423290505802513, guid: ddebed8da42994a4b81bc65990bcab27, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -18155,11 +18155,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4554541254047267533, guid: ddebed8da42994a4b81bc65990bcab27, type: 3}
       propertyPath: m_SizeDelta.x
-      value: -221.39
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4554541254047267533, guid: ddebed8da42994a4b81bc65990bcab27, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 35.76
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4706682470669775248, guid: ddebed8da42994a4b81bc65990bcab27, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -18326,10 +18326,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6680635241278634855}
     - target: {fileID: 667662594221385048, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: autoPlay
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 667662594221385048, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       propertyPath: displayText
       value: 
       objectReference: {fileID: 6680635241278634860}
@@ -18349,10 +18345,6 @@ PrefabInstance:
       propertyPath: canvas
       value: 
       objectReference: {fileID: 6680635241278634855}
-    - target: {fileID: 1101878550339834399, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: autoPlay
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1101878550339834399, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       propertyPath: displayText
       value: 
@@ -18450,10 +18442,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6680635241278634855}
     - target: {fileID: 2496372569268666532, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: autoPlay
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2496372569268666532, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       propertyPath: displayText
       value: 
       objectReference: {fileID: 6680635241278634860}
@@ -18489,142 +18477,87 @@ PrefabInstance:
       propertyPath: manualNextButton
       value: 
       objectReference: {fileID: 2372290256785290726}
-    - target: {fileID: 2817804362515136911, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: canvas
-      value: 
-      objectReference: {fileID: 6680635241278634855}
-    - target: {fileID: 2817804362515136911, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: displayText
-      value: 
-      objectReference: {fileID: 6680635241278634859}
-    - target: {fileID: 2817804362515136911, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: buttonToShow
-      value: 
-      objectReference: {fileID: 6680635241278634857}
-    - target: {fileID: 2817804362515136911, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: manualNextButton
-      value: 
-      objectReference: {fileID: 2372290256785290726}
-    - target: {fileID: 3003372755202156615, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: displayImage
-      value: 
-      objectReference: {fileID: 6680635241278634863}
-    - target: {fileID: 3003372755202156615, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: imageContainer
-      value: 
-      objectReference: {fileID: 6680635241278634862}
-    - target: {fileID: 3003372755202156615, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: maxContainerSize
-      value: 
-      objectReference: {fileID: 6680635241278634861}
-    - target: {fileID: 3096086546982637385, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: displayImage
-      value: 
-      objectReference: {fileID: 6680635241278634863}
-    - target: {fileID: 3096086546982637385, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: imageContainer
-      value: 
-      objectReference: {fileID: 6680635241278634862}
-    - target: {fileID: 3096086546982637385, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: maxContainerSize
-      value: 
-      objectReference: {fileID: 6680635241278634861}
-    - target: {fileID: 3096086546982637385, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: 'texturePaths.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2800000, guid: 7c376e6af3598bc428d15d1839b4c92d, type: 3}
-    - target: {fileID: 3096086546982637385, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: 'texturePaths.Array.data[1]'
-      value: 
-      objectReference: {fileID: 2800000, guid: 7c376e6af3598bc428d15d1839b4c92d, type: 3}
-    - target: {fileID: 3591623091492035339, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: canvas
-      value: 
-      objectReference: {fileID: 6680635241278634855}
-    - target: {fileID: 3591623091492035339, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: displayText
-      value: 
-      objectReference: {fileID: 6680635241278634859}
-    - target: {fileID: 3591623091492035339, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: buttonToShow
-      value: 
-      objectReference: {fileID: 6680635241278634857}
-    - target: {fileID: 3591623091492035339, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: manualNextButton
-      value: 
-      objectReference: {fileID: 2372290256785290726}
-    - target: {fileID: 3880109594434471065, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: canvas
-      value: 
-      objectReference: {fileID: 6680635241278634855}
-    - target: {fileID: 3880109594434471065, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: displayText
-      value: 
-      objectReference: {fileID: 6680635241278634859}
-    - target: {fileID: 3880109594434471065, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: buttonToShow
-      value: 
-      objectReference: {fileID: 6680635241278634857}
-    - target: {fileID: 3880109594434471065, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: manualNextButton
-      value: 
-      objectReference: {fileID: 2372290256785290726}
-    - target: {fileID: 3880109594434471065, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: textContents.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3880109594434471065, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+    - target: {fileID: 2742033030635035643, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       propertyPath: 'textContents.Array.data[0]'
-      value: Bonjour et bienvenue dans FireEscapeSimulator ! Je serai votre assistant
-        lors de cette simulation.
+      value: "Viens, va voir dans la cuisine tout les objets qui peuvent cramer,
+        moi je vais dispara\xEEtre, j'ai finis mon travail."
       objectReference: {fileID: 0}
+    - target: {fileID: 2817804362515136911, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 6680635241278634855}
+    - target: {fileID: 2817804362515136911, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: displayText
+      value: 
+      objectReference: {fileID: 6680635241278634859}
+    - target: {fileID: 2817804362515136911, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: buttonToShow
+      value: 
+      objectReference: {fileID: 6680635241278634857}
+    - target: {fileID: 2817804362515136911, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: manualNextButton
+      value: 
+      objectReference: {fileID: 2372290256785290726}
+    - target: {fileID: 3003372755202156615, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: displayImage
+      value: 
+      objectReference: {fileID: 6680635241278634863}
+    - target: {fileID: 3003372755202156615, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: imageContainer
+      value: 
+      objectReference: {fileID: 6680635241278634862}
+    - target: {fileID: 3003372755202156615, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: maxContainerSize
+      value: 
+      objectReference: {fileID: 6680635241278634861}
+    - target: {fileID: 3096086546982637385, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: displayImage
+      value: 
+      objectReference: {fileID: 6680635241278634863}
+    - target: {fileID: 3096086546982637385, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: imageContainer
+      value: 
+      objectReference: {fileID: 6680635241278634862}
+    - target: {fileID: 3096086546982637385, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: maxContainerSize
+      value: 
+      objectReference: {fileID: 6680635241278634861}
+    - target: {fileID: 3591623091492035339, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 6680635241278634855}
+    - target: {fileID: 3591623091492035339, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: displayText
+      value: 
+      objectReference: {fileID: 6680635241278634859}
+    - target: {fileID: 3591623091492035339, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: buttonToShow
+      value: 
+      objectReference: {fileID: 6680635241278634857}
+    - target: {fileID: 3591623091492035339, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+      propertyPath: manualNextButton
+      value: 
+      objectReference: {fileID: 2372290256785290726}
     - target: {fileID: 3880109594434471065, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: 'textContents.Array.data[1]'
-      value: "Nous allons voir ensemble la marche \xE0 suivre en cas d'incendie afin
-        de r\xE9ussir \xE0 \xE9vacuer et pr\xE9venir en tout s\xE9curit\xE9. \xCAtes-vous
-        pr\xEAt \xE0 commencer ?"
-      objectReference: {fileID: 0}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 6680635241278634855}
     - target: {fileID: 3880109594434471065, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: 'textContents.Array.data[2]'
-      value: "Mais avant toute explication de la proc\xE9dure, je vais d'abord vous
-        faire de la pr\xE9vention et vous expliquer les diff\xE9rentes marches \xE0
-        suivre pour \xE9viter qu\u2019un incendie survienne dans votre lieu de travail
-        ou \xE0 la maison. "
-      objectReference: {fileID: 0}
+      propertyPath: displayText
+      value: 
+      objectReference: {fileID: 6680635241278634859}
     - target: {fileID: 3880109594434471065, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: 'textContents.Array.data[3]'
-      value: "tu verras un panneaux d'\xE9vacuation celui si t'indiquera toujours
-        la direction vers la sortie de secours peu importe le pays except\xE9 les
-        \xE9tats unis."
-      objectReference: {fileID: 0}
+      propertyPath: buttonToShow
+      value: 
+      objectReference: {fileID: 6680635241278634857}
     - target: {fileID: 3880109594434471065, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: 'textContents.Array.data[4]'
-      value: "tu verras un panneaux d'\xE9vacuation celui si t'indiquera toujours
-        la direction vers la sortie de secours peu importe le pays except\xE9 les
-        \xE9tats unis."
-      objectReference: {fileID: 0}
-    - target: {fileID: 3880109594434471065, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: 'textContents.Array.data[5]'
-      value: "Maintenant commen\xE7ons l'explication des diff\xE9rentes proc\xE9dure
-        d'\xE9vacuation d'abord tourne toi et regarde en haut \xE0 gauche tu verra
-        un panneaux d'\xE9vacuation celui si t'indiquera toujours la direction vers
-        la sortie de secourt peut importe le pays except\xE9 les \xE9tats unis"
-      objectReference: {fileID: 0}
-    - target: {fileID: 3880109594434471065, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: 'textContents.Array.data[6]'
-      value: "Maintenant commen\xE7ons l'explication des diff\xE9rentes proc\xE9dure
-        d'\xE9vacuation d'abord tourne toi et regarde en haut \xE0 gauche tu verra
-        un panneaux d'\xE9vacuation celui si t'indiquera toujours la direction vers
-        la sortie de secourt peut importe le pays except\xE9 les \xE9tats unis"
-      objectReference: {fileID: 0}
+      propertyPath: manualNextButton
+      value: 
+      objectReference: {fileID: 2372290256785290726}
     - target: {fileID: 3889714419246971879, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       propertyPath: canvas
       value: 
       objectReference: {fileID: 6680635241278634855}
-    - target: {fileID: 3889714419246971879, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: autoPlay
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3889714419246971879, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       propertyPath: displayText
       value: 
@@ -18713,14 +18646,6 @@ PrefabInstance:
       propertyPath: maxContainerSize
       value: 
       objectReference: {fileID: 6680635241278634861}
-    - target: {fileID: 5522606138589112813, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: 'texturePaths.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2800000, guid: 861c055f68ac859489133e1d17ce25ba, type: 3}
-    - target: {fileID: 5522606138589112813, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: 'texturePaths.Array.data[1]'
-      value: 
-      objectReference: {fileID: 2800000, guid: 5104c61cae5df1047aaa7a6e36d876a9, type: 3}
     - target: {fileID: 6103700380591891339, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       propertyPath: canvas
       value: 
@@ -18741,14 +18666,6 @@ PrefabInstance:
       propertyPath: maxContainerSize
       value: 
       objectReference: {fileID: 6680635241278634861}
-    - target: {fileID: 6590042512328208772, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: 'texturePaths.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2800000, guid: 7c376e6af3598bc428d15d1839b4c92d, type: 3}
-    - target: {fileID: 6590042512328208772, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-      propertyPath: 'texturePaths.Array.data[1]'
-      value: 
-      objectReference: {fileID: 2800000, guid: 7c376e6af3598bc428d15d1839b4c92d, type: 3}
     - target: {fileID: 6955282444265230169, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
       propertyPath: displayImage
       value: 
@@ -18853,12 +18770,7 @@ PrefabInstance:
       propertyPath: maxContainerSize
       value: 
       objectReference: {fileID: 6680635241278634861}
-    m_RemovedComponents:
-    - {fileID: 8523342500342203485, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-    - {fileID: 1165667516231273598, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-    - {fileID: 2747985762431858440, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-    - {fileID: 3098682617607965902, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
-    - {fileID: 7409038571954812470, guid: f30e7d6744b9d6e4e89103e86099de3a, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
