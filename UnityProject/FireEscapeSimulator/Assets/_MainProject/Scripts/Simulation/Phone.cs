@@ -6,6 +6,7 @@ namespace TcT.FireSim
     {
         private void OnTriggerEnter(Collider other)
         {
+            OnTriggeredByPlayer(eMonitoredAction.TakePhone);
             OnTriggeredByPlayer(eMonitoredAction.Appel);
         }
     }
