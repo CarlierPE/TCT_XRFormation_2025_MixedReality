@@ -54,7 +54,6 @@ GameObject:
   - component: {fileID: 6955282444265230169}
   - component: {fileID: 7741982573264241920}
   - component: {fileID: 2496372569268666532}
-  - component: {fileID: 7409038571954812470}
   m_Layer: 0
   m_Name: extincteur$
   m_TagString: Untagged
@@ -118,10 +117,10 @@ MonoBehaviour:
   displayText: {fileID: 0}
   canvas: {fileID: 0}
   textContents:
-  - Un extincteur est un appareil de lutte contre l'incendie
-  - "L'extincteur sert \xE0 \xE9teindre un d\xE9part d'incendie, utilisez-le sur
-    la base des flammes pour limiter la propagation. Ne l'utilisez pas si le feu
-    est d\xE9j\xE0 hors de contr\xF4le."
+  - "Un extincteur est un appareil de lutte contre les incendies. Il sert \xE0 \xE9teindre
+    un d\xE9part de feu."
+  - "Utilisez-le \xE0 la base des flammes pour limiter leur propagation. "
+  - "Ne l'utilisez pas si le feu est d\xE9j\xE0 hors de contr\xF4le."
   buttonToShow: {fileID: 0}
   manualNextButton: {fileID: 0}
 --- !u!114 &2496372569268666532
@@ -136,27 +135,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  autoPlay: 1
-  changeInterval: 3
-  displayText: {fileID: 0}
-  canvas: {fileID: 0}
-  textContents:
-  - Extincteur
-  buttonToShow: {fileID: 0}
-  manualNextButton: {fileID: 0}
---- !u!114 &7409038571954812470
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1263045711652785982}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  autoPlay: 1
+  autoPlay: 0
   changeInterval: 3
   displayText: {fileID: 0}
   canvas: {fileID: 0}
@@ -176,7 +155,6 @@ GameObject:
   - component: {fileID: 2490763061763603747}
   - component: {fileID: 1226342828346997407}
   - component: {fileID: 7019222533331319716}
-  - component: {fileID: 1165667516231273598}
   m_Layer: 0
   m_Name: "Lumi\xE8re"
   m_TagString: Untagged
@@ -239,31 +217,11 @@ MonoBehaviour:
   displayText: {fileID: 0}
   canvas: {fileID: 0}
   textContents:
-  - "Ces \xE9clairages de s\xE9curit\xE9 servent \xE0 s'orienter et \xE0 indiquer
-    les voies de secours en cas d'incident provoquant l'obscurit\xE9."
+  - " Ces \xE9clairages de s\xE9curit\xE9 servent \xE0 s'orienter et \xE0 indiquer
+    les voies de secours en cas d'incident provoquant l'obscurit\xE9.  "
   buttonToShow: {fileID: 0}
   manualNextButton: {fileID: 0}
 --- !u!114 &7019222533331319716
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1605001227334432218}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  autoPlay: 0
-  changeInterval: 3
-  displayText: {fileID: 0}
-  canvas: {fileID: 0}
-  textContents:
-  - "Lumi\xE8re"
-  buttonToShow: {fileID: 0}
-  manualNextButton: {fileID: 0}
---- !u!114 &1165667516231273598
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -359,23 +317,13 @@ MonoBehaviour:
   displayText: {fileID: 0}
   canvas: {fileID: 0}
   textContents:
-  - " Son installation est obligatoire dans les b\xE2timents destin\xE9s au public,
-    les immeubles d\u2019habitation, les b\xE2timents industriels. "
-  - "Donc, si tu vois que le b\xE2timent dans lequel tu vis ou travailles n\u2019en
-    poss\xE8de pas en Belgique, tu contactes les pompiers de Bruxelles au 02 208
-    84 30. "
-  - "Elles doivent \xEAtre toujours plac\xE9es afin de compartimenter les b\xE2timents
-    et aux issues de secours pour les garder praticables."
-  - "Celle-ci sert principalement \xE0 \xE9viter la propagation du feu et la fum\xE9e
-    de se r\xE9pandre."
-  - "Ainsi lors d'un incendie n'oublie pas de les refermer et de les laisser ferm\xE9es."
-  - "ll permet de compartimenter les espaces, de prot\xE9ger les voies d'\xE9vacuation
-    et de donner plus de temps aux occupants pour quitter les lieux en toute s\xE9curit\xE9
-    et aux services de secours pour intervenir. "
-  - "Enfin, tu retrouveras sur le c\xF4t\xE9 de la porte des informations telles
-    que la dur\xE9e \xE0 laquelle elle r\xE9siste \xE0 un feu sous forme d\u2019un
-    DI \u2013 le temps de r\xE9sistance \u2013 ainsi qu\u2019un num\xE9ro de secours,
-    ici celui des pompiers de Bruxelles. "
+  - " Voici une porte coupe-feu. Son installation est obligatoire dans les b\xE2timents
+    destin\xE9s au public, les immeubles d\u2019habitation et les b\xE2timents industriels."
+  - "Celles-ci servent principalement \xE0 \xE9viter la propagation du feu et \xE0
+    emp\xEAcher la fum\xE9e de se r\xE9pandre. "
+  - "Elles doivent toujours \xEAtre plac\xE9es de mani\xE8re \xE0 compartimenter
+    les b\xE2timents et \xE0 garder les issues de secours praticables.  "
+  - 'Ainsi, en cas d''incendie, n''oubliez pas de les refermer. '
   buttonToShow: {fileID: 0}
   manualNextButton: {fileID: 0}
 --- !u!114 &8078452199380288882
@@ -395,7 +343,7 @@ MonoBehaviour:
   displayText: {fileID: 0}
   canvas: {fileID: 0}
   textContents:
-  - Porte Coupe-feu
+  - sortie de secours
   buttonToShow: {fileID: 0}
   manualNextButton: {fileID: 0}
 --- !u!1 &2741690341026141596
@@ -471,10 +419,9 @@ MonoBehaviour:
   displayText: {fileID: 0}
   canvas: {fileID: 0}
   textContents:
-  - "Ceci est un panneau d'\xE9vacuation, il montre la direction de la sortie de
-    secours la plus proche"
-  - "Suis moi, on va rejoindre la sortie de secours tout droit o\xF9 on va retrouver
-    le prochain \xE9l\xE9ment : une porte coupe-feu. "
+  - ' Levez les yeux vers le panneau. Il indique la direction de la sortie de secours
+    la plus proche. '
+  - 'Suivez-moi. Nous allons rejoindre la sortie de secours. '
   buttonToShow: {fileID: 0}
   manualNextButton: {fileID: 0}
 --- !u!114 &1854118554565977174
@@ -494,7 +441,7 @@ MonoBehaviour:
   displayText: {fileID: 0}
   canvas: {fileID: 0}
   textContents:
-  - Issue de secours
+  - "panneau d'\xE9vacuation"
   buttonToShow: {fileID: 0}
   manualNextButton: {fileID: 0}
 --- !u!1 &3283782696849422163
@@ -509,7 +456,6 @@ GameObject:
   - component: {fileID: 5522606138589112813}
   - component: {fileID: 8655823270767389670}
   - component: {fileID: 3889714419246971879}
-  - component: {fileID: 3098682617607965902}
   m_Layer: 0
   m_Name: Ascenceur
   m_TagString: Untagged
@@ -550,8 +496,8 @@ MonoBehaviour:
   imageContainer: {fileID: 0}
   maxContainerSize: {fileID: 0}
   texturePaths:
-  - {fileID: 2800000, guid: ab546f67aad236447982f8118031d43b, type: 3}
-  - {fileID: 2800000, guid: ab546f67aad236447982f8118031d43b, type: 3}
+  - {fileID: 2800000, guid: 861c055f68ac859489133e1d17ce25ba, type: 3}
+  - {fileID: 2800000, guid: 5104c61cae5df1047aaa7a6e36d876a9, type: 3}
   objectsToCycle:
   - {fileID: 0}
   - {fileID: 0}
@@ -572,12 +518,11 @@ MonoBehaviour:
   displayText: {fileID: 0}
   canvas: {fileID: 0}
   textContents:
-  - 'ne surtout pas prendre l''ascenseur par-ce que '
-  - "un ascenseur peut se retrouver bloqu\xE9 si l'alimentation est coup\xE9e."
-  - "D\xE9gagement de fum\xE9e : la cabine peut devenir une zone dangereuse en raison
-    de l'inhalation de fum\xE9es toxiques."
-  - "Propagation des flammes : certaines cages d'ascenseurs peuvent faciliter la
-    propagation du feu entre les \xE9tages."
+  - "\xC9l\xE9ment 0 : Ne prenez surtout pas l'ascenseur en cas d'incendie, car il
+    se bloque si l'alimentation est coup\xE9e. "
+  - "La cabine pourrait alors devenir une zone dangereuse en raison de l'inhalation
+    de fum\xE9es toxiques, de la chaleur ou encore de la rupture du c\xE2ble. "
+  - "Les cages d'ascenseur facilitent la propagation du feu entre les \xE9tages. "
   buttonToShow: {fileID: 0}
   manualNextButton: {fileID: 0}
 --- !u!114 &3889714419246971879
@@ -592,27 +537,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  autoPlay: 1
-  changeInterval: 3
-  displayText: {fileID: 0}
-  canvas: {fileID: 0}
-  textContents:
-  - Ascenceur
-  buttonToShow: {fileID: 0}
-  manualNextButton: {fileID: 0}
---- !u!114 &3098682617607965902
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3283782696849422163}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  autoPlay: 1
+  autoPlay: 0
   changeInterval: 3
   displayText: {fileID: 0}
   canvas: {fileID: 0}
@@ -699,12 +624,10 @@ MonoBehaviour:
   displayText: {fileID: 0}
   canvas: {fileID: 0}
   textContents:
-  - "Les tuyaux d'incendie servent principalement \xE0 acheminer l'eau, ou d'autres
-    agents extincteurs, sous pression vers les foyers d'incendie pour les \xE9teindre."
-  - " Ils sont un \xE9l\xE9ment essentiel de la lutte contre l'incendie, permettant
-    aux pompiers d'atteindre et de ma\xEEtriser le feu \xE0 distance. "
-  - "Les tuyaux d'incendie sont con\xE7us pour acheminer de grandes quantit\xE9s
-    d'eau, ou parfois des mousses, vers le lieu de l'incendie. "
+  - "Les lances d'incendie servent principalement \xE0 projeter de l'eau sous pression,
+    ou d'autres agents extincteurs, vers la base des incendies pour les \xE9teindre.  "
+  - "Elles sont un \xE9l\xE9ment essentiel dans la lutte contre les incendies, mais
+    seules des personnes form\xE9es peuvent les utiliser.  "
   buttonToShow: {fileID: 0}
   manualNextButton: {fileID: 0}
 --- !u!114 &667662594221385048
@@ -719,12 +642,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  autoPlay: 1
+  autoPlay: 0
   changeInterval: 3
   displayText: {fileID: 0}
   canvas: {fileID: 0}
   textContents:
-  - Tuyaux de pompier
+  - lances d'incendies
   buttonToShow: {fileID: 0}
   manualNextButton: {fileID: 0}
 --- !u!1 &3851652837393583665
@@ -739,7 +662,6 @@ GameObject:
   - component: {fileID: 982057646987781753}
   - component: {fileID: 3591623091492035339}
   - component: {fileID: 1404464661469119540}
-  - component: {fileID: 2747985762431858440}
   m_Layer: 0
   m_Name: "r\xE8gle"
   m_TagString: Untagged
@@ -802,32 +724,13 @@ MonoBehaviour:
   displayText: {fileID: 0}
   canvas: {fileID: 0}
   textContents:
-  - "Veuillez lire les r\xE8gles."
+  - " Il y a des r\xE8gles de s\xE9curit\xE9 dans chaque b\xE2timent. Elles rappellent
+    toutes les proc\xE9dures. N'h\xE9sitez pas \xE0 les relire r\xE9guli\xE8rement."
   - "n'oubliez pas qu'apr\xE8s \xEAtre sorti, dites aux pompier o\xF9 se situe le
     d\xE9but d'incendie"
   buttonToShow: {fileID: 0}
   manualNextButton: {fileID: 0}
 --- !u!114 &1404464661469119540
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3851652837393583665}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  autoPlay: 0
-  changeInterval: 3
-  displayText: {fileID: 0}
-  canvas: {fileID: 0}
-  textContents:
-  - "R\xE8gles"
-  buttonToShow: {fileID: 0}
-  manualNextButton: {fileID: 0}
---- !u!114 &2747985762431858440
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -921,6 +824,8 @@ MonoBehaviour:
   textContents:
   - "D\xE8s que vous \xEAtes hors de danger, pr\xE9venez imm\xE9diatement les pompiers
     en appelant le 112. Donnez des indications claires et pr\xE9cises."
+  - " N'oubliez pas de donner des indications claires et pr\xE9cises concernant l'adresse
+    du b\xE2timent."
   buttonToShow: {fileID: 0}
   manualNextButton: {fileID: 0}
 --- !u!114 &6103700380591891339
@@ -955,7 +860,6 @@ GameObject:
   - component: {fileID: 5428999239146293789}
   - component: {fileID: 2170510584085285613}
   - component: {fileID: 1101878550339834399}
-  - component: {fileID: 8523342500342203485}
   m_Layer: 0
   m_Name: Alarme
   m_TagString: Untagged
@@ -1019,21 +923,16 @@ MonoBehaviour:
   displayText: {fileID: 0}
   canvas: {fileID: 0}
   textContents:
-  - "Elle sert principalement \xE0 d\xE9tecter un d\xE9but d'incendie et \xE0 avertir
-    rapidement les occupants d'un b\xE2timent afin qu'ils puissent \xE9vacuer en
-    toute s\xE9curit\xE9."
-  - " Elle joue un r\xF4le crucial dans la pr\xE9vention des incendies et la protection
-    des vies et des biens. "
-  - "Celle-ci doit toujours \xEAtre d\xE9clench\xE9e en priorit\xE9 en cas d\u2019incendie
-    pour pouvoir pr\xE9venir tout le monde rapidement. De plus, dans ce b\xE2timent,
-    celle-ci est li\xE9e aux d\xE9tecteurs de fum\xE9e et au num\xE9ro des pompiers."
-  - "Dans d\u2019autres b\xE2timents, elle pourrait permettre de d\xE9verrouiller
-    les issues de secours. Ainsi, \xE0 cause de toutes ces variables possibles, l\u2019alarme
-    doit toujours \xEAtre manuellement d\xE9clench\xE9e, et tu dois appeler les pompiers
-    d\xE8s que ta vie n\u2019est plus en danger. "
-  - "Une caract\xE9ristique importante des alarmes incendie est le voyant lumineux,
-    qui fournit des informations cruciales sur l'\xE9tat et le fonctionnement de
-    l'alarme."
+  - "\xC9l\xE9ment 0 : Regardons maintenant l'alarme incendie. Elle sert principalement
+    \xE0 avertir rapidement les occupants d'un b\xE2timent afin qu'ils puissent \xE9vacuer
+    en toute s\xE9curit\xE9. "
+  - "Celle-ci doit toujours \xEAtre d\xE9clench\xE9e en priorit\xE9 en cas d\u2019incendie,
+    pour pouvoir pr\xE9venir tout le monde rapidement. "
+  - " Dans ce b\xE2timent, elle est reli\xE9e aux d\xE9tecteurs de fum\xE9e et au
+    num\xE9ro des pompiers. Dans d\u2019autres b\xE2timents, elle pourrait permettre
+    de d\xE9verrouiller les issues de secours. Ainsi, \xE0 cause de toutes ces variables
+    possibles, l\u2019alarme doit toujours \xEAtre d\xE9clench\xE9e manuellement
+    et vous devez appeler les pompiers d\xE8s que vous \xEAtes hors de danger."
   buttonToShow: {fileID: 0}
   manualNextButton: {fileID: 0}
 --- !u!114 &1101878550339834399
@@ -1048,27 +947,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  autoPlay: 1
-  changeInterval: 3
-  displayText: {fileID: 0}
-  canvas: {fileID: 0}
-  textContents:
-  - Alarme
-  buttonToShow: {fileID: 0}
-  manualNextButton: {fileID: 0}
---- !u!114 &8523342500342203485
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6759783852052906140}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: abf1a08cc12f28a41884a53e7b6d9bce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  autoPlay: 1
+  autoPlay: 0
   changeInterval: 3
   displayText: {fileID: 0}
   canvas: {fileID: 0}
@@ -1127,18 +1006,17 @@ MonoBehaviour:
   displayText: {fileID: 0}
   canvas: {fileID: 0}
   textContents:
-  - "Bonjour et bienvenue dans FireEscapeSimulator ! Je serai votre assistant lors
-    de cette simulation. Nous allons voir ensemble la marche \xE0 suivre en cas d'incendie
-    afin de r\xE9ussir \xE0 \xE9vacuer et pr\xE9venir en tout s\xE9curit\xE9. \xCAtes-vous
+  - ' Bonjour et bienvenue dans Fire Escape Simulator ! Je serai votre assistant
+    lors de cette simulation. '
+  - " Nous allons voir ensemble la marche \xE0 suivre en cas d'incendie afin de pr\xE9venir
+    les occupants et r\xE9ussir \xE0 \xE9vacuer en toute s\xE9curit\xE9. \xCAtes-vous
     pr\xEAt \xE0 commencer ?"
-  - "Mais avant toute explication de la proc\xE9dure, je vais d'abord vous faire
+  - " Mais avant toute explication de la proc\xE9dure, je vais d'abord vous faire
     de la pr\xE9vention et vous expliquer les diff\xE9rentes marches \xE0 suivre
-    pour \xE9viter qu\u2019un incendie survienne dans votre lieu de travail ou \xE0
-    la maison. "
-  - "Maintenant commen\xE7ons l'explication des diff\xE9rentes proc\xE9dure d'\xE9vacuation
-    d'abord tourne toi et regarde en haut \xE0 gauche tu verra un panneaux d'\xE9vacuation
-    celui si t'indiquera toujours la direction vers la sortie de secourt peut importe
-    le pays except\xE9 les \xE9tats unis"
+    pour \xE9viter qu\u2019un incendie ne survienne dans votre lieu de travail ou
+    \xE0 la maison. "
+  - "Commen\xE7ons l'explication des diff\xE9rentes proc\xE9dures par le panneau
+    d'\xE9vacuation. "
   buttonToShow: {fileID: 0}
   manualNextButton: {fileID: 0}
 --- !u!114 &2032824542476764826
@@ -1179,8 +1057,8 @@ MonoBehaviour:
   imageContainer: {fileID: 0}
   maxContainerSize: {fileID: 0}
   texturePaths:
-  - {fileID: 2800000, guid: 4d989058b87366747903b52ec411a80e, type: 3}
-  - {fileID: 2800000, guid: 4d989058b87366747903b52ec411a80e, type: 3}
+  - {fileID: 2800000, guid: 7c376e6af3598bc428d15d1839b4c92d, type: 3}
+  - {fileID: 2800000, guid: 7c376e6af3598bc428d15d1839b4c92d, type: 3}
   objectsToCycle: []
 --- !u!1001 &8009159890654349101
 PrefabInstance:
@@ -1190,6 +1068,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4779656034458709209}
     m_Modifications:
+    - target: {fileID: 3455509315192910546, guid: df96d78510134824c9c5631134ee520a, type: 3}
+      propertyPath: 'textContents.Array.data[0]'
+      value: Objets qui peuvent cramer
+      objectReference: {fileID: 0}
     - target: {fileID: 5031015787293722724, guid: df96d78510134824c9c5631134ee520a, type: 3}
       propertyPath: autoPlay
       value: 0
@@ -1201,14 +1083,18 @@ PrefabInstance:
     - target: {fileID: 5031015787293722724, guid: df96d78510134824c9c5631134ee520a, type: 3}
       propertyPath: 'texturePaths.Array.data[0]'
       value: 
-      objectReference: {fileID: 2800000, guid: 4d989058b87366747903b52ec411a80e, type: 3}
+      objectReference: {fileID: 2800000, guid: 7c376e6af3598bc428d15d1839b4c92d, type: 3}
     - target: {fileID: 5031015787293722724, guid: df96d78510134824c9c5631134ee520a, type: 3}
       propertyPath: 'texturePaths.Array.data[1]'
       value: 
-      objectReference: {fileID: 2800000, guid: 4d989058b87366747903b52ec411a80e, type: 3}
+      objectReference: {fileID: 2800000, guid: 7c376e6af3598bc428d15d1839b4c92d, type: 3}
     - target: {fileID: 5272563970792873174, guid: df96d78510134824c9c5631134ee520a, type: 3}
       propertyPath: autoPlay
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5272563970792873174, guid: df96d78510134824c9c5631134ee520a, type: 3}
+      propertyPath: 'textContents.Array.data[0]'
+      value: Viens, on va voir dans la cuisine, tout les objets qui peuvent cramer
       objectReference: {fileID: 0}
     - target: {fileID: 6620617140329302327, guid: df96d78510134824c9c5631134ee520a, type: 3}
       propertyPath: m_LocalPosition.x
