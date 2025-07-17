@@ -41,9 +41,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/TestVideoGameMainScene.unity
     guid: 0fe535daea2490c4a9e90eb1174e46d8
-  - enabled: 1
+  - enabled: 0
     path: Assets/_MainProject/Scenes/RealMainScene.unity
     guid: e32c7164058f0e044805fa17456200f7
+  - enabled: 1
+    path: Assets/_MainProject/Scenes/MainScene_PrefabBased.unity
+    guid: 4d6cc9f51fd54094ba761419c3a4139d
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 15e558c5dfe264d4e8e4d162795b1d9f, type: 2}
