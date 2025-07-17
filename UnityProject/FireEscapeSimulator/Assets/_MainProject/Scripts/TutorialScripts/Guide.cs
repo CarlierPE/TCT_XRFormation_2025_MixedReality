@@ -12,6 +12,7 @@ namespace TcT.FireSim
          * and the path manager 
          * 
          */
+
         private GameObject _currentPicto;
         private Animator _anim;
         [HideInInspector]

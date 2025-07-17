@@ -5500,7 +5500,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6030222859400619097, guid: 0ba5044bc1ccf034780cd55a5c227cbb, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6142495318810770323, guid: 0ba5044bc1ccf034780cd55a5c227cbb, type: 3}
       propertyPath: _audio
@@ -5754,6 +5754,10 @@ PrefabInstance:
       propertyPath: onFire
       value: 
       objectReference: {fileID: 893809641}
+    - target: {fileID: 8205994358868549347, guid: 0ba5044bc1ccf034780cd55a5c227cbb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8209448097555383643, guid: 0ba5044bc1ccf034780cd55a5c227cbb, type: 3}
       propertyPath: _guide
       value: 
@@ -15041,6 +15045,18 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: -876546973899608171, guid: 9dc2f081419feb8419caa80089c5cd34, type: 3}
+    - target: {fileID: 6836641662669732128, guid: 37c7da4b6fb4f744f9963f05d0db4209, type: 3}
+      propertyPath: 'm_BlendShapeWeights.Array.data[0]'
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7199585232816230338, guid: 37c7da4b6fb4f744f9963f05d0db4209, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7199585232816230338, guid: 37c7da4b6fb4f744f9963f05d0db4209, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8260958702347703561, guid: 37c7da4b6fb4f744f9963f05d0db4209, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
